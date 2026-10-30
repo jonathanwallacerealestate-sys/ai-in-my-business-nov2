@@ -121,7 +121,22 @@ You make the one thing. The AI reshapes it for each platform. You review and pos
 
 ---
 
-## 8. Starter prompt
+## 8. Advanced: AI-built client presentations
+
+Once the basics are working, AI can turn detailed data into a visual, live presentation website for a client. Everything lives in one place, on one link.
+
+Good uses:
+
+- **Listing presentations.** Comparable homes laid out as cards: photo, sold price, days on market, square footage, and price per square foot.
+- **Market reviews.** A clean stats panel for a neighbourhood or price range, with short plain language takeaways.
+
+Example: a builder spec-home proposal I built this way, live at https://jonathanwallacerealestate-sys.github.io/scarlet-estates-tony-oct29/
+
+It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations. Always check every number against your MLS before a client sees it.
+
+---
+
+## 9. Starter prompt
 
 Copy and paste this into your AI assistant to begin.
 
