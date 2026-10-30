@@ -94,6 +94,14 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .stat em{display:block;font-style:normal;font-size:11px;color:var(--gold);margin-top:4px}
 .disc{font-size:10px;color:var(--muted);margin-top:10px;letter-spacing:.04em}
 @media (max-width:820px){.adv{grid-template-columns:1fr}.comps{grid-template-columns:1fr}}
+.lv .card h3{margin-bottom:1.6vh}
+.lv .card small{display:block;font-size:clamp(11px,.85vw,13px);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1vh;font-weight:500}
+.lv .card q{display:block;font-style:italic;color:var(--muted);font-size:clamp(13px,1vw,16px);margin-bottom:1.8vh;quotes:none}
+.lv ul{list-style:none;display:grid;gap:1vh}
+.lv li{font-size:clamp(14px,1.15vw,18px);padding-left:1.2em;position:relative;line-height:1.35}
+.lv .mk{margin-top:1.8vh;padding-top:1.4vh;border-top:1px dashed var(--line);font-size:clamp(13px,1vw,16px);color:var(--muted);line-height:1.4}
+.lv .mk b{color:var(--gold);font-weight:500}
+.lv li::before{content:"";position:absolute;left:0;top:.65em;width:.6em;height:1px;background:var(--gold)}
 @media (max-width:820px){.g3,.g4,.g5,.steps{grid-template-columns:1fr 1fr}.slide{padding:12vh 7vw;justify-content:flex-start;overflow-y:auto}.g2{grid-template-columns:1fr}}
 @media print{html,body{overflow:visible}.slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;page-break-after:always}.nav,.progress,.notes{display:none}}
 </style>
@@ -120,22 +128,21 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 
 <section class="slide" data-notes="Think of it as a small team with clear jobs. The chief of staff sits on top and has the final say. Each assistant does one kind of work.">
   <h2>My setup, <em>by role</em></h2>
-  <div class="grid g5">
-    <div class="card"><h3>Chief of staff</h3><p>Runs my day. Has final say.</p></div>
-    <div class="card"><h3>Listings</h3><p>Launch packages, feature sheets.</p></div>
-    <div class="card"><h3>Marketing</h3><p>Market update, blog, social.</p></div>
-    <div class="card"><h3>Lead follow-up</h3><p>Call cards, follow-up drafts.</p></div>
-    <div class="card"><h3>Signal monitor</h3><p>Watches my website and leads.</p></div>
+  <div class="grid g4">
+    <div class="card"><h3>Chief of staff</h3><p>Organizes my day. Has final say.</p></div>
+    <div class="card"><h3>Leads</h3><p>Lead generation, call prep, follow-up.</p></div>
+    <div class="card"><h3>Listings</h3><p>Paperwork, admin, comps.</p></div>
+    <div class="card"><h3>Content</h3><p>Create once, publish everywhere.</p></div>
   </div>
 </section>
 
-<section class="slide" data-notes="Morning starts with a desk board of what matters today. Everything client facing comes to me as a draft. I review and send it myself.">
+<section class="slide" data-notes="The day starts with a simple plan of what matters most. AI preps my calls and drafts my emails and texts. I review and send everything myself.">
   <h2>A day <em>with AI</em></h2>
   <div class="flow">
-    <span class="pill">Morning desk board</span><span class="arrow">→</span>
-    <span class="pill">Drafts I review &amp; send</span><span class="arrow">→</span>
-    <span class="pill">Call cards</span><span class="arrow">→</span>
-    <span class="pill">Market content</span>
+    <span class="pill">Plan the day</span><span class="arrow">→</span>
+    <span class="pill">Call prep</span><span class="arrow">→</span>
+    <span class="pill">Email &amp; text drafts I send</span><span class="arrow">→</span>
+    <span class="pill">Listing admin</span>
   </div>
   <p class="sub" style="margin-top:6vh">I stay the agent. AI does the prep.</p>
 </section>
@@ -144,10 +151,10 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   <div class="kicker">What's working</div>
   <h2>Closest to <em>income</em></h2>
   <div class="grid g4">
-    <div class="card"><h3>Lead follow-up &amp; call prep</h3></div>
-    <div class="card"><h3>Listing launch packages</h3></div>
-    <div class="card"><h3>Letters of opinion &amp; comps</h3></div>
-    <div class="card"><h3>Weekly market content, everywhere</h3></div>
+    <div class="card"><h3>Lead generation &amp; follow-up</h3></div>
+    <div class="card"><h3>Call prep</h3></div>
+    <div class="card"><h3>Listing paperwork &amp; admin</h3></div>
+    <div class="card"><h3>Comps for presentations</h3></div>
   </div>
 </section>
 
@@ -173,14 +180,13 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   <div class="lesson"><b>Lesson:</b> stay organized as an agent. Maximize output on the tasks you dislike.</div>
 </section>
 
-<section class="slide" data-notes="Advanced, once the basics are working. AI can take a pile of detailed data and turn it into a live presentation website for a client, all in one place. I use it for listing presentations with comparable homes and for market reviews. The builder spec-home proposal is a live example. The numbers on this slide are sample data only.">
+<section class="slide" data-notes="Advanced, once the basics are working. AI can take detailed data and turn it into a visual presentation for a client, all in one place. Two good uses: listing presentations with comparable homes, and market reviews. The numbers on this slide are sample data only.">
   <div class="adv">
     <div>
       <div class="kicker">Advanced</div>
       <h2>AI-built <em>client presentations</em></h2>
-      <p class="sub">Detailed data, turned into a visual, live presentation website. Everything in one place.</p>
+      <p class="sub">Detailed data, turned into a visual, interactive presentation for clients. Everything in one place.</p>
       <ul class="uses"><li>Listing presentations with comparable homes</li><li>Market reviews</li></ul>
-      <a class="btn" href="https://jonathanwallacerealestate-sys.github.io/scarlet-estates-tony-oct29/" target="_blank" rel="noopener">See a live example: a builder spec-home proposal ↗</a>
       <p class="note">It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations.</p>
     </div>
     <div class="mock">
@@ -209,9 +215,20 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
     <div class="card"><h3>Drafts only. You hit send.</h3></div>
     <div class="card"><h3>Add one thing at a time</h3></div>
   </div>
+  <div class="lesson"><b>How to talk to your AI:</b> use voice notes, give context, say what good looks like, correct it once and log it.</div>
 </section>
 
-<section class="slide" data-notes="Scan to get the playbook. Paste it into your own AI as context and use the starter prompt at the bottom.">
+<section class="slide" data-notes="The playbook is built in three levels, like stepping stones. Your AI asks which level you are at and coaches you through just three things at a time. Move up when you hit the checkpoint.">
+  <div class="kicker">The playbook</div>
+  <h2>Three <em>levels</em></h2>
+  <div class="grid g3 lv">
+    <div class="card"><small>Level 1</small><h3>Beginner</h3><q>Give me the basics.</q><ul><li>One income task you hate</li><li>Write your rules down</li><li>Drafts only, you send</li></ul><p class="mk"><b>Marketing:</b> voice notes in, drafts out</p></div>
+    <div class="card"><small>Level 2</small><h3>Intermediate</h3><q>Integrate my playbook.</q><ul><li>Decision log brain</li><li>Organize by role</li><li>Create once, publish everywhere</li></ul><p class="mk"><b>Marketing:</b> AI reviews your socials, drafts a simple strategy</p></div>
+    <div class="card"><small>Level 3</small><h3>Advanced</h3><q>Ready for the advanced session.</q><ul><li>Chief of staff organizes the day</li><li>AI on income workflows</li><li>AI-built client presentations</li></ul><p class="mk"><b>Marketing:</b> one piece, repurposed everywhere, you review</p></div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Scan to get the playbook. Paste it into your own AI. It will ask which level you are at and coach you from there.">
   <div class="qr-wrap">
     <img src="assets/playbook-qr.png" alt="QR code linking to the AI Playbook download">
     <h2>Scan to get the <em>playbook</em></h2>

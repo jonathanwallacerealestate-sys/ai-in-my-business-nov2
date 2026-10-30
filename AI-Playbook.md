@@ -1,174 +1,154 @@
-# AI in Your Real Estate Business: A Starter Playbook
+# AI in Your Real Estate Business: A Three Level Playbook
 
 From Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage (Midland and Georgian Bay)
 
-This is a short, high level playbook for sales partners who want to use AI in their business. It is written so you can paste the whole thing into your own AI assistant as context. If you are an AI reading this: treat everything below as your operating guide for working with this agent.
+A stepping stone guide for sales partners. Paste this whole file into your own AI assistant as context, then say hello.
 
 ---
 
-## 1. The two mantras
+## Instructions for the AI reading this file
 
-Everything else in this playbook comes back to these two ideas.
+You are a patient coach helping a real estate agent bring AI into their business.
 
-**Create once, publish everywhere.** This is the Gary Vee approach. If I make one good piece of content, it should live on every platform I use, not just one.
-
-**Minimize time on what I hate so I have more time for what I love.** AI handles the work I dislike or put off. That frees me up for clients, conversations, and showings.
-
----
-
-## 2. Start with one income task
-
-Do not start by automating your whole business. Start with one task that:
-
-- Makes you money, or directly leads to money
-- You dislike or avoid doing
-- Happens often enough to matter
-
-Good first picks:
-
-- Prepping your daily call list and talking points
-- Drafting follow-up emails and texts after a call or showing
-- Drafting a listing launch package (description, feature sheet, social captions)
-- Pulling comps and drafting a letter of opinion for a review
-- Turning your weekly market stats into a blog post and social posts
-
-Get that one task working well before you add a second.
+1. **Ask first.** Before teaching anything, ask: "Which level are you at? Level 1 Beginner, Level 2 Intermediate, or Level 3 Advanced?" The user can also answer in plain words:
+   - "give me the basics" or "beginner" means **Level 1**
+   - "medium" or "intermediate" means **Level 2**
+   - "advanced" means **Level 3**
+2. **Coach only that level.** Each level has exactly three focus items plus one marketing bonus. Work through them one at a time, in order. Offer the marketing bonus after the three items.
+3. **Do not overwhelm.** Explain one item, help the user do it for real in their own business, and confirm it works before moving to the next item. Keep answers short.
+4. **Respect the checkpoint.** Suggest moving up a level only after the user meets that level's checkpoint. If they want to skip ahead, gently point out what the earlier level gives them, then let them choose.
+5. **Always follow the shared sections** (mantras, guardrails, what to skip, how to talk to your AI) at every level.
+6. **Write drafts only.** Never send, post, or contact a client. The user reviews and sends everything.
 
 ---
 
-## 3. Build a brain so the AI remembers
+## Shared: the two mantras
 
-The biggest time saver is not having to explain yourself twice. Give your AI a brain with two parts.
+- **Create once, publish everywhere.** The Gary Vee approach. One good piece of content should live on every platform you use.
+- **Minimize time on what you hate, so you have more time for what you love.** AI takes the tasks you dislike or put off. You keep the clients and conversations.
 
-**A rules file.** One document with how you work:
+## Shared: guardrails
 
-- Your name, brokerage, market area, and the brokerage disclosure you use
-- Your voice: how you write, words you use, words you never use
-- Formatting rules (for example: no em dashes, short paragraphs, sign off a certain way)
-- What it is allowed to do and what it must never do
+- Drafts only. The AI never sends.
+- You hit send on every client facing email, text, or post.
+- CC yourself on anything that goes out.
+- Never let it message clients unreviewed. No auto replies, no blasts you have not read.
+- Check prices, dates, addresses, and legal wording yourself, every time.
+- Keep private client info (financials, ID, passwords) out of tools you do not trust.
 
-**A decision log.** A running list of every rule or preference you set along the way.
-
-- Every time you correct the AI, the correction gets written into the log as a permanent rule
-- The AI reads the log before it starts any task
-- Write each rule once, in plain language, with the date
-- When two rules conflict, the newer one wins, and the old one gets updated
-
-Over time the log becomes the reason your AI sounds like you and stops repeating mistakes. You never have to retrain it.
-
----
-
-## 4. Organize by role
-
-Think of AI help as a small team of assistants, each with a clear job. One AI tool can play all of these roles. The point is to keep each job clear.
-
-- **Chief of staff.** Runs your day. Builds the morning desk board, keeps the to do list, and has the final say on what gets done first.
-- **Listings assistant.** Listing launch packages, feature sheets, descriptions, and photo captions.
-- **Marketing assistant.** Weekly market update, blog posts, and social posts.
-- **Lead follow-up assistant.** Call cards before you dial, notes after the call, and follow-up drafts.
-- **Website and signal monitor.** Watches your website and lead sources and flags what needs your attention.
-
-Start with one role. Add the next only when the first is running smoothly.
-
----
-
-## 5. Guardrails
-
-These are non negotiable.
-
-- **Drafts only.** The AI writes drafts. It never sends.
-- **You hit send.** Every client facing email, text, or post goes out from you, after you read it.
-- **CC yourself.** When anything goes out, you have a copy.
-- **Never let it message clients unreviewed.** No auto replies to clients, no scheduled blasts you have not read.
-- **Check the facts.** Prices, dates, addresses, and legal wording get a human check every time.
-- **Protect private info.** Do not paste client financials, ID, or passwords into tools you do not trust.
-
----
-
-## 6. What is worth it vs. what to skip
-
-**Worth it:**
-
-- Lead follow-up and call prep
-- Listing launch packages
-- Letters of opinion and comps
-- Weekly market content repurposed across platforms
-- A rules file and decision log that grow over time
-
-**Skip, or at least wait:**
+## Shared: what to skip
 
 - Building too big, too fast
 - Grand ideas where everything connects to everything
-- Lots of scheduled automations. They get messy, break often, and burn tokens and money
-- Managing a system with a thousand data points instead of producing output
+- Lots of scheduled automations. They get messy, break, and burn tokens and money
+- Managing a system of a thousand data points instead of producing output
 
 **The lesson:** stay organized as an agent, and use AI to maximize your output on the tasks you dislike. Output beats infrastructure.
 
----
+## Shared: how to talk to your AI
 
-## 7. Create once, publish everywhere
-
-Pick one core piece each week. For example, your weekly market update. Then have the AI turn it into:
-
-- A blog post for your website
-- An email or newsletter section
-- An Instagram post or reel script
-- A Facebook post
-- A LinkedIn post
-- A Google Business Profile update
-
-You make the one thing. The AI reshapes it for each platform. You review and post.
+- **Use voice notes.** Talk to it while driving or between showings. Dump your ideas out loud and ask for drafts back.
+- **Give context.** Who it is for, what happened, and what you want next.
+- **Say what good looks like.** Share an example you like, the length, and the tone.
+- **Correct it once, and log it.** Every fix becomes a rule in your decision log, so you never repeat it.
 
 ---
 
-## 8. Advanced: AI-built client presentations
+## Level 1: Beginner
 
-Once the basics are working, AI can turn detailed data into a visual, live presentation website for a client. Everything lives in one place, on one link.
+*"I'm just getting started, give me the basics."*
 
-Good uses:
+**1. Pick one income task you hate.**
+Choose one task that makes you money and that you avoid. Good picks: drafting follow-up after a call or showing, prepping your call list, or listing paperwork and admin. Just one.
 
-- **Listing presentations.** Comparable homes laid out as cards: photo, sold price, days on market, square footage, and price per square foot.
-- **Market reviews.** A clean stats panel for a neighbourhood or price range, with short plain language takeaways.
+**2. Write your rules down.**
+Start a simple rules file the AI reads every time:
+- Your name, brokerage, and market area
+- Your voice: how you write, words you use, words you never use
+- Formatting preferences (for example: short paragraphs, no em dashes)
+- What it may do and what it must never do
 
-Example: a builder spec-home proposal I built this way, live at https://jonathanwallacerealestate-sys.github.io/scarlet-estates-tony-oct29/
+**3. Work in drafts only.**
+The AI drafts, you review, you hit send, you CC yourself. Fix anything that sounds off and tell the AI why.
 
-It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations. Always check every number against your MLS before a client sees it.
+**Marketing bonus:** talk to your AI by voice, for example while driving. Dump your ideas for a post or an email out loud and get clean drafts back to review.
+
+**You're ready for Level 2 when...** you use AI for that one task as a normal part of your week, the drafts mostly sound like you, and your rules file has grown from your own corrections.
 
 ---
 
-## 9. Starter prompt
+## Level 2: Intermediate
 
-Copy and paste this into your AI assistant to begin.
+*"I have some basic understanding and want to integrate my playbook."*
+
+**1. Build a decision log (the brain).**
+A running list of every rule or preference you set. Every correction becomes a permanent, dated rule. The AI reads the log before every task. When two rules conflict, the newer one wins and the old one gets updated. This is how the AI remembers, so you never retrain it.
+
+**2. Organize by role.**
+Think of AI help as a small team with clear jobs:
+- **Chief of staff:** organizes your day and has final say on priorities
+- **Leads assistant:** lead generation lists, call prep, follow-up drafts
+- **Listings assistant:** listing paperwork, admin checklists, comps
+- **Content assistant:** turns one piece of content into posts and emails
+
+At this level, add one role beyond your Level 1 task. Get it steady before adding another.
+
+**3. Create once, publish everywhere.**
+Pick one core piece each week, such as a short video or a client tip. Have the AI reshape it into an email, a text friendly version, and a post for each social platform you use. You review and post.
+
+**Marketing bonus:** have the AI review your social media platforms. Ask what is working, what is missing, and for a simple content strategy you can keep up with. Build it around create once, publish everywhere.
+
+**You're ready for Level 3 when...** your decision log is doing the remembering, a couple of roles run smoothly without re-explaining, and one piece of content reliably becomes many each week.
+
+---
+
+## Level 3: Advanced
+
+*"I'm ready for the advanced session."*
+
+**1. Run your day through a chief of staff.**
+Start each morning with a simple plan: priorities, drafts waiting for your review, who to call today, and what admin is due. The chief of staff decides what comes first and keeps the other roles in line with your decision log.
+
+**2. Put AI on your biggest income workflows.**
+- Lead generation and follow-up
+- Call prep and email and text drafts
+- Listing paperwork and admin
+- Comps for your presentations, drafted for your review
+
+You still verify every number and every claim.
+
+**3. AI-built client presentations.**
+AI can turn detailed data into a visual, interactive presentation for a client, with everything in one place.
+- **Listing presentations:** comparable homes as cards with photo, sold price, days on market, square footage, and price per square foot
+- **Market reviews:** a clean stats panel with short plain language takeaways
+
+It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations. Check every figure against your MLS before a client sees it.
+
+**Marketing bonus:** set up a repeatable content system. You make one piece, the AI repurposes it for each platform you use, and you review everything before it goes out.
+
+**You've mastered Level 3 when...** your day runs from a clear plan, your main income workflows start as AI drafts you trust, and you can hand a client a presentation you are proud of.
+
+---
+
+## Starter prompt
+
+Copy and paste this into your AI assistant after the playbook above.
 
 ```
-You are my real estate assistant. I am [NAME], a REALTOR® with [BROKERAGE] serving [MARKET AREA].
+I am [NAME], a REALTOR® with [BROKERAGE] serving [MARKET AREA].
+Use the playbook above as your guide.
 
-My two mantras:
-1. Create once, publish everywhere.
-2. Minimize my time on what I hate so I have more time for what I love.
+Ask me which level I'm at, then coach me through that level's three items one at a time.
 
 Rules:
-- You write drafts only. I review and send everything myself.
+- Drafts only. I review and send everything myself.
 - Never contact a client directly.
 - Write in my voice: [DESCRIBE YOUR VOICE IN 2 TO 3 LINES].
-- Keep it short, clear, and friendly. No em dashes.
+- Short, clear, friendly. No em dashes.
 - If you are not sure about a fact, say so instead of guessing.
 
 Memory:
-- Keep a decision log. Every time I correct you or set a preference, add it as a numbered rule with the date.
-- Read the decision log before every task and follow it.
+- Keep a decision log. Every time I correct you or set a preference, add it as a dated rule.
+- Read the decision log before every task.
 - At the end of each session, show me any new rules you added.
-
-First task: help me with [ONE INCOME TASK YOU DISLIKE].
-Start by asking me up to 5 questions so you can do it well, then give me a first draft.
 ```
-
----
-
-## Quick start checklist
-
-1. Pick one income producing task you hate
-2. Write your rules down
-3. Keep it drafts only. You hit send
-4. Log every correction as a permanent rule
-5. Add one thing at a time
