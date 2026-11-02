@@ -142,7 +142,7 @@ Pick one core piece each week, such as a short video or a client tip. Have the A
 *"I'm ready for the advanced session."*
 
 **1. Run your day through a chief of staff.**
-Start each morning with a simple plan: priorities, drafts waiting for your review, who to call today, and what admin is due. The chief of staff decides what comes first and keeps the other roles in line with your decision log.
+Start each morning with a simple plan: priorities, drafts waiting for your review, who to call today, and what admin is due. When you ask who to connect with next, your AI should hand you one lead card: name, lead source, last contact, notes, why call today, a suggested opening, and quick call outcomes. The chief of staff decides what comes first and keeps the other roles in line with your decision log.
 
 **2. Put AI on your biggest income workflows.**
 - Lead generation and follow-up
