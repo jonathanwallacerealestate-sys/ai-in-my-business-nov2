@@ -85,13 +85,18 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .comps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .comp{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
 .gal{background:#EFE6D4}
-.gal-main{display:block;width:100%;height:clamp(52px,8.2vh,88px);padding:0;border:0;cursor:pointer;background:#E2D3B5;overflow:hidden}
-.gal-main img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-main{display:flex;align-items:center;justify-content:center;width:100%;height:clamp(72px,12vh,118px);padding:0;border:0;cursor:pointer;background:#E2D3B5;overflow:hidden}
+.gal-main img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;object-position:center;display:block;background:#EFE6D4}
 .gal-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;padding:2px;background:#fff}
-.gal-thumbs button{border:1px solid transparent;padding:0;height:clamp(16px,2.4vh,26px);cursor:pointer;background:#EFE6D4;overflow:hidden;border-radius:2px}
+.gal-thumbs button{border:1px solid transparent;padding:0;width:100%;aspect-ratio:3 / 2;height:auto;cursor:pointer;background:#EFE6D4;overflow:hidden;border-radius:2px}
 .gal-thumbs button.on{border-color:var(--gold)}
-.gal-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
-.comp .m{padding:5px 7px 6px;font-size:clamp(9px,.68vw,11px);color:var(--muted);line-height:1.35}
+.gal-thumbs img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.fs-stage > .mock.fs-item .gal-main{height:min(46vh,480px);max-height:min(46vh,480px);width:100%;background:#E2D3B5}
+.fs-stage > .mock.fs-item .gal-main img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain}
+.fs-stage > .mock.fs-item .gal-thumbs button{aspect-ratio:3 / 2;height:auto}
+.fs-stage > .mock.fs-item .comps{gap:10px}
+.fs-stage > .mock.fs-item .panel{overflow:auto}
+.comp .m{padding:4px 6px 5px;font-size:clamp(8px,.62vw,10px);color:var(--muted);line-height:1.3}
 .comp .m b{display:block;font-family:"Playfair Display",serif;font-weight:500;color:var(--ink);font-size:clamp(10px,.85vw,13px);line-height:1.2;margin-bottom:1px}
 .comp .m .pr{color:var(--gold);font-weight:500}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
