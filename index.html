@@ -231,9 +231,9 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 @media print{html,body{overflow:visible}.slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;page-break-after:always}.nav,.progress,.notes{display:none}}
 
 .expandable{position:relative;cursor:zoom-in}
-.shot.expandable .expand-hint{top:36px}
-.expandable .expand-hint{position:absolute;top:8px;right:8px;z-index:5;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#5c5346;background:rgba(255,252,245,.92);border:1px solid rgba(120,95,50,.25);border-radius:999px;padding:3px 8px;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-.expandable.fs-item .expand-hint{display:none}
+.shot.expandable .expand-hint,.shot.expandable .expand-btn{top:36px}
+.expandable .expand-hint,.expandable .expand-btn{position:absolute;top:8px;right:8px;z-index:6;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#5c5346;background:rgba(255,252,245,.96);border:1px solid rgba(120,95,50,.35);border-radius:999px;padding:4px 10px;pointer-events:auto;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.1);font-family:inherit}
+.expandable.fs-item .expand-hint,.expandable.fs-item .expand-btn{display:none}
 .fs-ph{visibility:hidden;pointer-events:none}
 .fs-layer{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:3vh 3vw;background:rgba(28,24,18,.72);backdrop-filter:blur(4px)}
 .fs-layer.on{display:flex}
@@ -264,7 +264,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .lv li{font-size:clamp(12px,.95vw,15px)}
 .lv .mk{margin-top:.8vh;padding-top:.8vh;font-size:clamp(11px,.85vw,13px)}
 .prompt-box{margin-top:auto;padding-top:.8vh;border-top:1px dashed var(--line);position:relative;cursor:zoom-in;background:var(--ivory2);border-radius:8px;padding:.7vh .7vw .8vh;border:1px solid var(--line)}
-.prompt-box .expand-hint{top:6px;right:8px;font-size:9px}
+.prompt-box .expand-hint,.prompt-box .expand-btn{top:6px;right:8px;font-size:9px}
 .prompt-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:.4vh;padding-right:72px}
 .prompt-bar span{font-size:clamp(10px,.7vw,11px);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
 .copy-btn{border:1px solid var(--gold);background:#fff;color:var(--ink);border-radius:999px;padding:3px 10px;font-size:clamp(10px,.7vw,12px);cursor:pointer;font-weight:500}
@@ -330,7 +330,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       </div>
       <p class="sub">I stay the agent. AI does the prep, including who to connect with next.</p>
     </div>
-    <div class="dial expandable" aria-label="Sample who to connect with next card"><span class="expand-hint">Click to expand</span>
+    <div class="dial expandable" aria-label="Sample who to connect with next card"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
       <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
       <div class="dial-body">
         <h3>Jordan Hale</h3>
@@ -389,13 +389,13 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <span class="tag" style="margin:0">Sample</span>
     </div>
     <div class="loo-shots">
-      <div class="shot expandable" aria-label="Sample letter of opinion document"><span class="expand-hint">Click to expand</span>
+      <div class="shot expandable" aria-label="Sample letter of opinion document"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="shot-chrome"><i></i><i></i><i></i><span>Letter of Opinion - 123 Banana Street.pdf</span></div>
         <div class="shot-stage">
           <img class="pdf-shot" src="assets/loo/loo-ambition.png" alt="Sample letter of opinion for Ambition Seller at 123 Banana Street, Midland">
         </div>
       </div>
-      <div class="shot expandable" aria-label="Sample covering email draft in Outlook"><span class="expand-hint">Click to expand</span>
+      <div class="shot expandable" aria-label="Sample covering email draft in Outlook"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="ol-win">
           <div class="ol-titlebar"><span class="tag">Sample</span> Untitled - Message (HTML)</div>
           <div class="ol-ribbon"><b>Send</b><b>Attach</b><b>Insert</b><b>Options</b></div>
@@ -455,7 +455,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <p class="sub dec-cap">Keep it in Google Drive as a spreadsheet. Your AI reads it before every task and adds new rules as you decide them, so you never retrain it.</p>
       <div class="dec-tip"><span class="dec-tip-label">Tip</span><p>At the end of every session, ask your AI to write today's decisions to the decision log.</p></div>
     </div>
-    <div class="sheet-shot expandable" aria-label="Sample decision log spreadsheet"><span class="expand-hint">Click to expand</span>
+    <div class="sheet-shot expandable" aria-label="Sample decision log spreadsheet"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
       <div class="sheet-chrome"><i></i><i></i><i></i><span>Decision Log · SAMPLE</span><span class="tag" style="margin:0 0 0 auto">Sample</span></div>
       <div class="sheet-bar"><b>Decision Log</b><em>File</em><em>Edit</em><em>View</em><em>Share</em></div>
       <div class="sheet-tabs"><span class="on">Rules</span><span>Archive</span></div>
@@ -498,7 +498,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <p class="note">It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations.</p>
     </div>
     <div class="mock expandable">
-      <span class="expand-hint">Click to expand</span>
+      <button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
       <div class="mock-bar"><i></i><i></i><i></i><span>Client presentation · mock</span></div>
       <div class="tabs"><button class="on" data-tab="p-comps">Comparable Homes</button><button data-tab="p-market">Market Review</button></div>
       <div class="panel on" id="p-comps"><span class="tag">Sample · example data</span>
@@ -535,7 +535,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <small>Level 1</small><h3>Beginner</h3><q>Give me the basics.</q>
       <ul><li>One low income task you hate</li><li>Write your rules down</li><li>Drafts only, you send</li></ul>
       <p class="mk"><b>Marketing:</b> voice notes in, drafts out</p>
-      <div class="prompt-box expandable" data-prompt-level="Beginner" aria-label="Beginner starter prompt"><span class="expand-hint">Click to expand</span>
+      <div class="prompt-box expandable" data-prompt-level="Beginner" aria-label="Beginner starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Beginner">Copy</button></div>
         <pre class="prompt-text">I&#x27;m a real estate agent at Beginner level. Coach me one step at a time on these three focuses only: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Start a decision log for me as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First ask for my market, my brokerage, and the one low income task I hate. Then guide me through the first step only.</pre>
       </div>
@@ -544,7 +544,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <small>Level 2</small><h3>Intermediate</h3><q>Integrate my playbook.</q>
       <ul><li>Decision log brain</li><li>Organize by role</li><li>Create once, publish everywhere</li></ul>
       <p class="mk"><b>Marketing:</b> AI reviews your socials, drafts a simple strategy</p>
-      <div class="prompt-box expandable" data-prompt-level="Intermediate" aria-label="Intermediate starter prompt"><span class="expand-hint">Click to expand</span>
+      <div class="prompt-box expandable" data-prompt-level="Intermediate" aria-label="Intermediate starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Intermediate">Copy</button></div>
         <pre class="prompt-text">I&#x27;m a real estate agent at Intermediate level. I already run Beginner: one low income task I hate, rules written down, and drafts only that I send. Coach me one step at a time on these three focuses only: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Intermediate step only.</pre>
       </div>
@@ -553,7 +553,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <small>Level 3</small><h3>Advanced</h3><q>Ready for the advanced session.</q>
       <ul><li>Chief of staff organizes the day</li><li>AI on income workflows</li><li>AI-built client presentations</li></ul>
       <p class="mk"><b>Marketing:</b> create one piece, repurpose it across every platform</p>
-      <div class="prompt-box expandable" data-prompt-level="Advanced" aria-label="Advanced starter prompt"><span class="expand-hint">Click to expand</span>
+      <div class="prompt-box expandable" data-prompt-level="Advanced" aria-label="Advanced starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Advanced">Copy</button></div>
         <pre class="prompt-text">I&#x27;m a real estate agent at Advanced level. I already run Intermediate on top of Beginner: decision log brain, organize by role, and create once, publish everywhere. Coach me one step at a time on these three focuses only: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Advanced step only.</pre>
       </div>
@@ -631,11 +631,16 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
   }
   document.querySelectorAll('.expandable').forEach(function(el){
     el.addEventListener('click',function(e){
+      if(e.target.closest('.expand-btn')){
+        e.preventDefault(); e.stopPropagation();
+        openFs(el); return;
+      }
       if(fsEl===el){
-        /* inside expanded: let tabs/galleries/links work; only backdrop closes */
+        /* inside expanded: let tabs/galleries/links/copy work; only backdrop closes */
         return;
       }
-      if(e.target.closest('a[href],button,.gal-thumbs,input,textarea,select'))return;
+      /* collapsed: tabs + thumbnail strip keep working; everything else expands */
+      if(e.target.closest('.tabs button,.gal-thumbs,.gal-thumbs button,.copy-btn,a[href],input,textarea,select'))return;
       e.preventDefault();
       e.stopPropagation();
       openFs(el);
