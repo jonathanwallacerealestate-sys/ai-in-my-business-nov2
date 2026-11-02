@@ -89,8 +89,8 @@ Always check every figure against your MLS before a client sees it.
 
 *"I'm just getting started, give me the basics."*
 
-**1. Pick one income task you hate.**
-Choose one task that makes you money and that you avoid. Good picks: drafting follow-up after a call or showing, prepping your call list, or listing paperwork and admin. Just one.
+**1. Pick one low income task you hate.**
+Pick one low income task you hate, and start training AI to do that one task for you.
 
 **2. Write your rules down.**
 Start a simple rules file the AI reads every time:
