@@ -268,16 +268,26 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .lv ul{gap:.45vh}
 .lv li{font-size:clamp(12px,.95vw,15px)}
 .lv .mk{margin-top:.8vh;padding-top:.8vh;font-size:clamp(11px,.85vw,13px)}
-.prompt-box{margin-top:auto;padding-top:.8vh;border-top:1px dashed var(--line);position:relative;cursor:zoom-in;background:var(--ivory2);border-radius:8px;padding:.7vh .7vw .8vh;border:1px solid var(--line)}
-.prompt-box .expand-hint,.prompt-box .expand-btn{top:6px;right:8px;font-size:9px}
-.prompt-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:.4vh;padding-right:72px}
-.prompt-bar span{font-size:clamp(10px,.7vw,11px);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.lv-slide{justify-content:flex-start;padding-top:calc(5vh + 44px);padding-bottom:5vh}
+.lv-slide h2{margin-bottom:1.2vh;font-size:clamp(26px,2.8vw,42px)}
+.lv-slide .kicker{margin-bottom:.6vh}
+.lv-slide .lv{gap:1vw;align-items:stretch;height:auto;max-height:none}
+.lv-slide .lv .card{padding:1vh .9vw 1.1vh;gap:0}
+.lv-slide .lv .card h3{margin-bottom:.35vh;font-size:clamp(18px,1.5vw,24px)}
+.lv-slide .lv .card small{margin-bottom:.2vh;font-size:clamp(10px,.7vw,11px)}
+.lv-slide .lv .card q{margin-bottom:.45vh;font-size:clamp(11px,.8vw,13px)}
+.lv-slide .lv ul{gap:.25vh;margin:0 0 .5vh}
+.lv-slide .lv li{font-size:clamp(11px,.85vw,13px);line-height:1.25}
+.prompt-box{margin-top:.4vh;position:relative;cursor:zoom-in;background:var(--ivory2);border-radius:8px;padding:.55vh .65vw .65vh;border:1px solid var(--line);flex:1;display:flex;flex-direction:column;min-height:0}
+.prompt-box .expand-hint,.prompt-box .expand-btn{top:4px;right:6px;font-size:8px;padding:2px 7px}
+.prompt-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:.35vh;padding-right:68px}
+.prompt-bar span{font-size:clamp(9px,.65vw,11px);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
 .copy-btn{border:1px solid var(--gold);background:#fff;color:var(--ink);border-radius:999px;padding:3px 10px;font-size:clamp(10px,.7vw,12px);cursor:pointer;font-weight:500}
 .copy-btn:hover,.copy-btn.copied{background:var(--gold);color:#fff}
-.prompt-text{margin:0;white-space:pre-wrap;word-break:break-word;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:clamp(9px,.62vw,11px);line-height:1.35;color:var(--muted);max-height:7.5vh;overflow:hidden}
+.prompt-text{margin:0;white-space:pre-wrap;word-break:break-word;overflow:visible;max-height:none;font-family:Inter,system-ui,sans-serif;font-size:clamp(13px,1.05vw,16px);line-height:1.35;color:var(--ink);font-weight:400}
 .prompt-box.fs-item{cursor:default;background:#fff;max-height:none;height:100%;display:flex;flex-direction:column;padding:2vh 2vw}
-.prompt-box.fs-item .prompt-text{max-height:none;flex:1;overflow:auto;font-size:clamp(14px,1.1vw,18px);color:var(--ink)}
-.prompt-box.fs-item .expand-hint{display:none}
+.prompt-box.fs-item .prompt-text{max-height:none;flex:1;overflow:auto;font-size:clamp(15px,1.2vw,19px);color:var(--ink)}
+.prompt-box.fs-item .expand-hint,.prompt-box.fs-item .expand-btn{display:none}
 .fs-stage > .prompt-box.fs-item{width:min(900px,92vw)!important;height:auto!important;max-height:85vh}
 
 </style>
@@ -532,14 +542,13 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
   <div class="lesson"><b>How to talk to your AI:</b> use voice notes, give context, say what good looks like, correct it once and log it.</div>
 </section>
 
-<section class="slide" data-notes="The playbook is built in three levels, like stepping stones. Each level has a starter prompt to copy. Your AI coaches you through just three things at a time. Move up when you hit the checkpoint.">
+<section class="slide lv-slide" data-notes="The playbook is built in three levels, like stepping stones. Each level has a starter prompt to copy. Your AI coaches you through just three things at a time. Move up when you hit the checkpoint.">
   <div class="kicker">The playbook</div>
   <h2>Three <em>levels</em></h2>
   <div class="grid g3 lv">
     <div class="card">
       <small>Level 1</small><h3>Beginner</h3><q>Give me the basics.</q>
       <ul><li>One low income task you hate</li><li>Write your rules down</li><li>Drafts only, you send</li></ul>
-      <p class="mk"><b>Marketing:</b> voice notes in, drafts out</p>
       <div class="prompt-box expandable" data-prompt-level="Beginner" aria-label="Beginner starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Beginner">Copy</button></div>
         <pre class="prompt-text">I&#x27;m a real estate agent at Beginner level. Coach me one step at a time on these three focuses only: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Start a decision log for me as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First ask for my market, my brokerage, and the one low income task I hate. Then guide me through the first step only.</pre>
@@ -548,7 +557,6 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
     <div class="card">
       <small>Level 2</small><h3>Intermediate</h3><q>Integrate my playbook.</q>
       <ul><li>Decision log brain</li><li>Organize by role</li><li>Create once, publish everywhere</li></ul>
-      <p class="mk"><b>Marketing:</b> AI reviews your socials, drafts a simple strategy</p>
       <div class="prompt-box expandable" data-prompt-level="Intermediate" aria-label="Intermediate starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Intermediate">Copy</button></div>
         <pre class="prompt-text">I&#x27;m a real estate agent at Intermediate level. I already run Beginner: one low income task I hate, rules written down, and drafts only that I send. Coach me one step at a time on these three focuses only: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Intermediate step only.</pre>
@@ -557,7 +565,6 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
     <div class="card">
       <small>Level 3</small><h3>Advanced</h3><q>Ready for the advanced session.</q>
       <ul><li>Chief of staff organizes the day</li><li>AI on income workflows</li><li>AI-built client presentations</li></ul>
-      <p class="mk"><b>Marketing:</b> create one piece, repurpose it across every platform</p>
       <div class="prompt-box expandable" data-prompt-level="Advanced" aria-label="Advanced starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
         <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Advanced">Copy</button></div>
         <pre class="prompt-text">I&#x27;m a real estate agent at Advanced level. I already run Intermediate on top of Beginner: decision log brain, organize by role, and create once, publish everywhere. Coach me one step at a time on these three focuses only: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Advanced step only.</pre>
