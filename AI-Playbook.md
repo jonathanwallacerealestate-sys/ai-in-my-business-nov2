@@ -89,6 +89,12 @@ Always check every figure against your MLS before a client sees it.
 
 *"I'm just getting started, give me the basics."*
 
+### Your starter prompt
+
+```
+I'm a real estate agent at Beginner level. Coach me one step at a time on these three focuses only: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Start a decision log for me as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First ask for my market, my brokerage, and the one low income task I hate. Then guide me through the first step only.
+```
+
 **1. Pick one low income task you hate.**
 Pick one low income task you hate, and start training AI to do that one task for you.
 
@@ -113,6 +119,12 @@ The AI drafts, you review, you hit send, you CC yourself. Fix anything that soun
 ## Level 2: Intermediate
 
 *"I have some basic understanding and want to integrate my playbook."*
+
+### Your starter prompt
+
+```
+I'm a real estate agent at Intermediate level. I already run Beginner: one low income task I hate, rules written down, and drafts only that I send. Coach me one step at a time on these three focuses only: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Intermediate step only.
+```
 
 **1. Build a decision log (the brain).**
 A running list of every rule or preference you set. Keep it in Google Drive as a spreadsheet. Every correction becomes a permanent, dated rule. The AI reads the log before every task and adds new rules as you decide them. When two rules conflict, the newer one wins and the old one gets updated. This is how the AI remembers, so you never retrain it.
@@ -142,6 +154,12 @@ Pick one core piece each week, such as a short video or a client tip. Have the A
 ## Level 3: Advanced
 
 *"I'm ready for the advanced session."*
+
+### Your starter prompt
+
+```
+I'm a real estate agent at Advanced level. I already run Intermediate on top of Beginner: decision log brain, organize by role, and create once, publish everywhere. Coach me one step at a time on these three focuses only: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Advanced step only.
+```
 
 **1. Run your day through a chief of staff.**
 Start each morning with a simple plan: priorities, drafts waiting for your review, who to call today, and what admin is due. When you ask who to connect with next, your AI should hand you one lead card: name, lead source, last contact, notes, why call today, a suggested opening, and quick call outcomes. The chief of staff decides what comes first and keeps the other roles in line with your decision log.
