@@ -15,8 +15,8 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;background:var(--ivory);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-weight:300;overflow:hidden}
 .deck{position:relative;width:100vw;height:100vh}
-.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:calc(6vh + 50px) 9vw 7vh;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease,visibility .6s}
-.slide.on{opacity:1;visibility:visible;transform:none}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:calc(6vh + 50px) 9vw 7vh;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease;pointer-events:none;z-index:0}
+.slide.on{opacity:1;visibility:visible;transform:none;pointer-events:auto;z-index:1}
 .slide::before{content:"";position:absolute;top:6vh;left:9vw;right:9vw;height:1px;background:var(--line)}
 .num{position:absolute;top:calc(6vh + 18px);left:9vw;font-family:"Playfair Display",serif;font-size:clamp(15px,1.4vw,20px);color:var(--gold);letter-spacing:.12em}
 .foot{position:absolute;bottom:5vh;left:9vw;right:9vw;display:flex;justify-content:space-between;font-size:clamp(11px,.9vw,13px);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
@@ -330,6 +330,14 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .fs-stage > .prompt-box.fs-item{width:min(1100px,94vw)!important;height:auto!important;max-height:92vh;overflow:auto}
 
 .expand-hint{display:none!important}
+
+.slide:not(.on){visibility:hidden!important;opacity:0!important;pointer-events:none!important;z-index:0}
+.slide.on{z-index:1}
+.lv-slide{padding-top:calc(6vh + 58px)!important}
+.lv-slide .kicker{margin-top:0}
+.pro-line{margin:-1.2vh 0 2vh;font-size:clamp(13px,1.05vw,16px)}
+.pro-line .pro{margin-left:0}
+
 </style>
 </head>
 <body>
@@ -418,7 +426,8 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 
 <section class="slide demo" data-notes="This is my main demo. I record the client conversation with Plaud. Grok turns it into notes and a breakdown, drafts the letter of opinion, pulls in market stats, and lists next steps. I review everything and send it myself. It looks more professional. You can start at any level: a beginner just leaves a voice note with the address and price range.">
   <div class="kicker">Main demo</div>
-  <h2>Plaud + Grok for <em>CMAs</em> <span class="pro">Looks more professional.</span></h2>
+  <h2>Plaud + Grok for <em>CMAs</em></h2>
+  <p class="pro-line"><span class="pro">Looks more professional.</span></p>
   <div class="loop">
     <div class="card"><h3><span>01</span>Capture</h3><p>Record the client conversation.</p></div>
     <div class="card"><h3><span>02</span>Analyze</h3><p>Notes and a clear breakdown.</p></div>
@@ -737,6 +746,77 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
   document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){var m=b.closest('.mock');m.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});m.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id===b.dataset.tab)})})});
 
   
+
+  
+  /* single-listing fullscreen viewer */
+  var LISTINGS = [{"address": "874 Cedar Point Rd, Tiny", "price": "Listed $474,990", "lines": ["5 bed \u00b7 2 bath", "0 days on market", "1,500-2,000 sq ft", "Detached 2-storey"], "photos": ["assets/comps/874-cedar-point-1.jpg", "assets/comps/874-cedar-point-2.jpg", "assets/comps/874-cedar-point-3.jpg", "assets/comps/874-cedar-point-4.jpg", "assets/comps/874-cedar-point-5.jpg"]}, {"address": "754 Lafontaine Rd W, Tiny", "price": "Listed $559,900", "lines": ["4 bed \u00b7 3 bath", "1 day on market", "1,500-2,000 sq ft", "Detached 2-storey"], "photos": ["assets/comps/754-lafontaine-1.jpg", "assets/comps/754-lafontaine-2.jpg", "assets/comps/754-lafontaine-3.jpg", "assets/comps/754-lafontaine-4.jpg", "assets/comps/754-lafontaine-5.jpg"]}, {"address": "9 Delbrooke Crt, Tiny", "price": "Listed $599,900", "lines": ["2 bed \u00b7 1 bath", "0 days on market", "700-1,100 sq ft", "Raised bungalow"], "photos": ["assets/comps/9-delbrooke-1.jpg", "assets/comps/9-delbrooke-2.jpg", "assets/comps/9-delbrooke-3.jpg", "assets/comps/9-delbrooke-4.jpg", "assets/comps/9-delbrooke-5.jpg"]}, {"address": "20 Navigator Rd, Penetanguishene", "price": "Listed $675,000", "lines": ["Vacant land", "1 day on market", "Waterfront"], "photos": ["assets/comps/20-navigator-1.jpg", "assets/comps/20-navigator-2.jpg", "assets/comps/20-navigator-3.jpg", "assets/comps/20-navigator-4.jpg", "assets/comps/20-navigator-5.jpg"]}, {"address": "1935 Snow Valley Rd, Springwater", "price": "Listed $839,900", "lines": ["2 bed \u00b7 3 bath", "0 days on market", "1,100-1,500 sq ft", "Detached bungalow"], "photos": ["assets/comps/1935-snow-valley-1.jpg", "assets/comps/1935-snow-valley-2.jpg", "assets/comps/1935-snow-valley-3.jpg", "assets/comps/1935-snow-valley-4.jpg", "assets/comps/1935-snow-valley-5.jpg"]}, {"address": "1842 Meadowview Crt, Severn", "price": "Listed $1,249,000", "lines": ["3 bed \u00b7 3 bath", "1 day on market", "2,000-2,500 sq ft", "Detached bungalow"], "photos": ["assets/comps/1842-meadowview-1.jpg", "assets/comps/1842-meadowview-2.jpg", "assets/comps/1842-meadowview-3.jpg", "assets/comps/1842-meadowview-4.jpg", "assets/comps/1842-meadowview-5.jpg"]}];
+  var listingLayer=document.getElementById('listing-layer');
+  var listingPhoto=document.getElementById('listing-photo');
+  var listingThumbs=document.getElementById('listing-thumbs');
+  var listingCount=document.getElementById('listing-photo-count');
+  var listingAddr=document.getElementById('listing-addr');
+  var listingPrice=document.getElementById('listing-price');
+  var listingFacts=document.getElementById('listing-facts');
+  var listingIdx=0, photoIdx=0, listingTouchX=null;
+  function listingOpen(){return listingLayer && listingLayer.classList.contains('on')}
+  function renderListing(){
+    var L=LISTINGS[listingIdx]; if(!L)return;
+    var photos=L.photos||[];
+    if(photoIdx<0)photoIdx=photos.length-1;
+    if(photoIdx>=photos.length)photoIdx=0;
+    listingPhoto.src=photos[photoIdx]||'';
+    listingPhoto.alt=L.address||'';
+    listingCount.textContent=(photoIdx+1)+' / '+photos.length;
+    listingAddr.textContent=L.address||'';
+    listingPrice.textContent=L.price||'';
+    listingFacts.innerHTML='';
+    (L.lines||[]).forEach(function(line){ var s=document.createElement('span'); s.textContent=line; listingFacts.appendChild(s); });
+    var st=document.createElement('span'); st.textContent='Active'; listingFacts.appendChild(st);
+    listingThumbs.innerHTML='';
+    photos.forEach(function(src,n){
+      var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Photo '+(n+1));
+      if(n===photoIdx)b.className='on';
+      var im=document.createElement('img'); im.src=src; im.alt='';
+      b.appendChild(im);
+      b.addEventListener('click',function(e){e.stopPropagation(); photoIdx=n; renderListing();});
+      listingThumbs.appendChild(b);
+    });
+  }
+  function openListing(i){
+    listingIdx=Math.max(0,Math.min(LISTINGS.length-1,i));
+    photoIdx=0;
+    renderListing();
+    listingLayer.classList.add('on');
+    listingLayer.setAttribute('aria-hidden','false');
+  }
+  function closeListing(){
+    listingLayer.classList.remove('on');
+    listingLayer.setAttribute('aria-hidden','true');
+  }
+  document.querySelectorAll('.comp[data-listing]').forEach(function(card){
+    card.addEventListener('click',function(e){
+      if(e.target.closest('.gal-main,.gal-thumbs'))return;
+      e.preventDefault(); e.stopPropagation();
+      openListing(+card.getAttribute('data-listing'));
+    });
+    card.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault(); openListing(+card.getAttribute('data-listing'));}
+    });
+  });
+  if(listingLayer){
+    listingLayer.querySelector('.listing-close').addEventListener('click',function(e){e.stopPropagation();closeListing()});
+    listingLayer.addEventListener('click',function(e){if(e.target===listingLayer)closeListing()});
+    listingLayer.querySelector('.listing-prev-listing').addEventListener('click',function(e){e.stopPropagation(); listingIdx=(listingIdx+LISTINGS.length-1)%LISTINGS.length; photoIdx=0; renderListing();});
+    listingLayer.querySelector('.listing-next-listing').addEventListener('click',function(e){e.stopPropagation(); listingIdx=(listingIdx+1)%LISTINGS.length; photoIdx=0; renderListing();});
+    listingLayer.querySelector('.listing-photo-prev').addEventListener('click',function(e){e.stopPropagation(); photoIdx--; renderListing();});
+    listingLayer.querySelector('.listing-photo-next').addEventListener('click',function(e){e.stopPropagation(); photoIdx++; renderListing();});
+    var stage=listingLayer.querySelector('.listing-photo-stage');
+    if(stage){
+      stage.addEventListener('touchstart',function(e){listingTouchX=e.changedTouches[0].clientX},{passive:true});
+      stage.addEventListener('touchend',function(e){ if(listingTouchX===null)return; var d=e.changedTouches[0].clientX-listingTouchX; if(Math.abs(d)>40){ if(d<0) photoIdx++; else photoIdx--; renderListing(); } listingTouchX=null; });
+    }
+  }
+
 
   document.querySelectorAll('.gal').forEach(function(g){
     var photos=JSON.parse(g.getAttribute('data-photos')||'[]');
