@@ -671,7 +671,12 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
     var thumbs=[].slice.call(g.querySelectorAll('.gal-thumbs button'));
     var i=0;
     function show(n){if(!photos.length)return;i=(n+photos.length)%photos.length;main.src=photos[i];thumbs.forEach(function(t,k){t.classList.toggle('on',k===i)})}
-    g.querySelector('.gal-main').addEventListener('click',function(e){e.stopPropagation();show(i+1)});
+    g.querySelector('.gal-main').addEventListener('click',function(e){
+      e.stopPropagation();
+      var exp=g.closest('.expandable');
+      if(exp && !exp.classList.contains('fs-item')){ openFs(exp); return; }
+      show(i+1);
+    });
     thumbs.forEach(function(t){t.addEventListener('click',function(e){e.stopPropagation();show(+t.dataset.n)})});
   });
 
