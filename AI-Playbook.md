@@ -195,6 +195,9 @@ It takes time. An advanced skill once you've mastered the basics, and it elevate
 
 **Marketing bonus:** create one piece and repurpose it across every platform. The AI reshapes it for each one in a repeatable system, and you review everything before it goes out.
 
+**Tech to think about adding to your workflow**
+- **Wispr Flow:** a voice dictation app that turns speech into clean typed text in any app (email, CRM, AI chats), so you can talk instead of type.
+
 **You've mastered Level 3 when...** your day runs from a clear plan, your main income workflows start as AI drafts you trust, and you can hand a client a presentation you are proud of.
 
 ---
