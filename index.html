@@ -131,6 +131,10 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .shot-chrome i:nth-child(1){background:#e6a07a}.shot-chrome i:nth-child(2){background:#e0c46a}.shot-chrome i:nth-child(3){background:#8fbf8a}
 .shot-chrome span{margin-left:6px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#6e685e}
 .shot-stage{flex:1;min-height:0;padding:8px 10px 10px;overflow:hidden;display:flex;justify-content:center;align-items:stretch;background:#bdb3a1}
+.pdf-shot{display:block;width:100%;height:100%;overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.pdf-shot img,img.pdf-shot{width:100%;height:100%;object-fit:contain;object-position:top center;display:block;background:#fff}
+.ol-chip{text-decoration:none}
+
 .pdf-page{background:#fff;width:100%;max-width:100%;box-shadow:0 2px 10px rgba(0,0,0,.18);padding:clamp(8px,1.1vh,14px) clamp(10px,1.2vw,16px);overflow:hidden;font-family:"Times New Roman",Times,serif;color:#1a1a1a;font-size:clamp(7.5px,.58vw,10px);line-height:1.28;display:flex;flex-direction:column}
 .pdf-lh{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #B8975A;padding-bottom:4px;margin-bottom:6px;font-family:Inter,system-ui,sans-serif}
 .pdf-lh .brand{font-family:"Playfair Display",serif;font-size:clamp(11px,.9vw,14px);color:#B8975A;font-weight:500;letter-spacing:.04em}
@@ -168,6 +172,31 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .ol-send{background:#0078d4;color:#fff;border:0;border-radius:3px;padding:5px 14px;font-size:clamp(10px,.75vw,12px);font-weight:500}
 .ol-foot span{color:#605e5c;font-size:clamp(8px,.6vw,10px)}
 @media (max-width:820px){.loo-shots{grid-template-columns:1fr}}
+
+.dec{display:grid;grid-template-columns:1fr 1.25fr;gap:2.4vw;align-items:center;height:100%;max-height:82vh}
+.dec h2{margin-bottom:2.4vh}
+.dec .flow{margin-bottom:2vh}
+.dec-cap{font-size:clamp(14px,1.15vw,18px);max-width:36ch}
+.sheet-shot{background:#fff;border:1px solid #dadce0;border-radius:8px;overflow:hidden;box-shadow:0 14px 40px rgba(60,64,67,.18);display:flex;flex-direction:column;min-height:0;max-height:70vh}
+.sheet-chrome{display:flex;align-items:center;gap:6px;padding:6px 10px;background:#f1f3f4;border-bottom:1px solid #dadce0}
+.sheet-chrome i{width:8px;height:8px;border-radius:50%;background:#dadce0;display:block}
+.sheet-chrome i:nth-child(1){background:#ea4335}.sheet-chrome i:nth-child(2){background:#fbbc04}.sheet-chrome i:nth-child(3){background:#34a853}
+.sheet-chrome span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#5f6368}
+.sheet-bar{display:flex;align-items:center;gap:10px;padding:6px 10px;background:#fff;border-bottom:1px solid #e8eaed;font-size:clamp(10px,.75vw,12px);color:#5f6368}
+.sheet-bar b{color:#188038;font-weight:600;font-size:clamp(12px,.95vw,15px);margin-right:6px}
+.sheet-bar em{font-style:normal}
+.sheet-tabs{display:flex;gap:0;padding:0 8px;background:#f8f9fa;border-bottom:1px solid #dadce0}
+.sheet-tabs span{padding:6px 12px;font-size:clamp(10px,.75vw,12px);color:#5f6368;border-top:2px solid transparent}
+.sheet-tabs span.on{background:#fff;color:#188038;border-top-color:#188038;border-left:1px solid #dadce0;border-right:1px solid #dadce0;margin-bottom:-1px}
+.sheet-grid{overflow:auto;flex:1;min-height:0;background:#fff}
+.sheet-grid table{width:100%;border-collapse:collapse;font-size:clamp(9px,.68vw,11px);font-family:Arial,Helvetica,sans-serif;color:#202124}
+.sheet-grid th,.sheet-grid td{border:1px solid #e0e0e0;padding:5px 7px;text-align:left;vertical-align:top}
+.sheet-grid thead th{background:#f8f9fa;color:#5f6368;font-weight:500;text-align:center;width:28px}
+.sheet-grid thead td,.sheet-grid .hdr td{background:#188038;color:#fff;font-weight:600;border-color:#137333}
+.sheet-grid tbody th{background:#f8f9fa;color:#5f6368;font-weight:500;text-align:center}
+.sheet-grid tbody tr:nth-child(even) td{background:#fafafa}
+@media (max-width:820px){.dec{grid-template-columns:1fr}}
+
 @media (max-width:820px){.day{grid-template-columns:1fr}}
 @media (max-width:820px){.adv{grid-template-columns:1fr}.comps{grid-template-columns:1fr}}
 .lv .card h3{margin-bottom:1.6vh}
@@ -190,6 +219,24 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .pro{font-family:"Playfair Display",serif;font-style:italic;color:var(--gold);font-size:clamp(18px,1.6vw,26px);margin-left:1vw}
 @media (max-width:820px){.g3,.g4,.g5,.steps{grid-template-columns:1fr 1fr}.slide{padding:12vh 7vw;justify-content:flex-start;overflow-y:auto}.g2{grid-template-columns:1fr}}
 @media print{html,body{overflow:visible}.slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;page-break-after:always}.nav,.progress,.notes{display:none}}
+
+.expandable{position:relative;cursor:zoom-in}
+.shot.expandable .expand-hint{top:36px}
+.expandable .expand-hint{position:absolute;top:8px;right:8px;z-index:5;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:#5c5346;background:rgba(255,252,245,.92);border:1px solid rgba(120,95,50,.25);border-radius:999px;padding:3px 8px;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.expandable.fs-item .expand-hint{display:none}
+.fs-ph{visibility:hidden;pointer-events:none}
+.fs-layer{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:3vh 3vw;background:rgba(28,24,18,.72);backdrop-filter:blur(4px)}
+.fs-layer.on{display:flex}
+.fs-stage{position:relative;width:min(1240px,96vw);height:min(90vh,920px);max-height:90vh;display:flex;align-items:stretch;justify-content:center}
+.fs-stage > .fs-item{width:100%!important;height:100%!important;max-height:90vh;margin:0;cursor:default;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+.fs-stage > .mock.fs-item,.fs-stage > .sheet-shot.fs-item,.fs-stage > .dial.fs-item,.fs-stage > .shot.fs-item{display:flex;flex-direction:column}
+.fs-stage > .mock.fs-item .panel,.fs-stage > .sheet-shot.fs-item .sheet-grid{flex:1;min-height:0;overflow:auto}
+.fs-stage > .shot.fs-item .shot-stage{flex:1;min-height:0}
+.fs-stage > .dial.fs-item{font-size:clamp(14px,1.1vw,18px)}
+.fs-close{position:fixed;top:14px;right:18px;z-index:2001;width:40px;height:40px;border:0;border-radius:50%;background:#fff;color:#1c1812;font-size:24px;line-height:1;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.fs-close:hover{background:#f5efe3}
+.fs-caption{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:2001;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,252,245,.85);pointer-events:none}
+
 </style>
 </head>
 <body>
@@ -245,7 +292,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
       </div>
       <p class="sub">I stay the agent. AI does the prep, including who to connect with next.</p>
     </div>
-    <div class="dial" aria-label="Sample who to connect with next card">
+    <div class="dial expandable" aria-label="Sample who to connect with next card"><span class="expand-hint">Click to expand</span>
       <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
       <div class="dial-body">
         <h3>Jordan Hale</h3>
@@ -304,43 +351,13 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
       <span class="tag" style="margin:0">Sample</span>
     </div>
     <div class="loo-shots">
-      <div class="shot" aria-label="Sample letter of opinion document">
+      <div class="shot expandable" aria-label="Sample letter of opinion document"><span class="expand-hint">Click to expand</span>
         <div class="shot-chrome"><i></i><i></i><i></i><span>Letter of Opinion - 123 Banana Street.pdf</span></div>
         <div class="shot-stage">
-          <div class="pdf-page">
-            <div class="pdf-lh"><div class="brand">FARIS TEAM<small>Real Estate Brokerage</small></div></div>
-            <p class="pdf-date">November 2, 2026</p>
-            <p class="pdf-name">Ambition Seller</p>
-            <p class="pdf-addr">123 Banana Street, Midland, ON</p>
-            <p class="pdf-re">RE: EVALUATION OF 123 BANANA STREET, MIDLAND</p>
-            <p>In accordance with your request, I have made an evaluation of the current market value of the above-described property as of November 2, 2026.</p>
-            <p>"Market Value" as defined by the Appraisal Institute of Canada is the most probable price, as of a specified date, in cash, or in terms equivalent to cash, or in other precisely revealed terms, for which the specified property rights should sell after reasonable exposure in a competitive market under all conditions requisite to a fair sale, with the buyer and seller each acting prudently, knowledgeably, and for self-interest, and assuming that neither is under undue duress.</p>
-            <p>In submitting this report, I certify that:</p>
-            <ol>
-              <li>I have no interest, present or contemplated in the above property</li>
-              <li>My employment for making this evaluation is in no way contingent upon the market value reported.</li>
-            </ol>
-            <p>As a result of the evaluation and analysis of 123 Banana Street, Midland, it is my opinion that the market value is between $600,000 and $650,000. This value is based on properties that are both active and have sold in the neighbourhood.</p>
-            <p>This evaluation is subject to the following limiting conditions:</p>
-            <ol>
-              <li>The facts and data used in support of my opinion are the best of my knowledge true and correct.</li>
-              <li>I am not responsible for matters legal in character.</li>
-              <li>The title is assumed to be good.</li>
-              <li>I am not required to give court testimony by reason of this report.</li>
-            </ol>
-            <div class="pdf-sign">
-              <p>Sincerely,</p>
-              <div class="sig">Jonathan Wallace</div>
-              <b>Jonathan Wallace</b>
-              <span>REALTOR®, Faris Team Real Estate, Brokerage</span>
-              <span>531 King Street, Midland, ON L4R 3N6</span>
-              <span>705-433-2525</span>
-              <span>jonathan@faristeam.ca</span>
-            </div>
-          </div>
+          <img class="pdf-shot" src="assets/loo/loo-ambition.png" alt="Sample letter of opinion for Ambition Seller at 123 Banana Street, Midland">
         </div>
       </div>
-      <div class="shot" aria-label="Sample covering email draft in Outlook">
+      <div class="shot expandable" aria-label="Sample covering email draft in Outlook"><span class="expand-hint">Click to expand</span>
         <div class="ol-win">
           <div class="ol-titlebar"><span class="tag">Sample</span> Untitled - Message (HTML)</div>
           <div class="ol-ribbon"><b>Send</b><b>Attach</b><b>Insert</b><b>Options</b></div>
@@ -349,7 +366,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
             <div class="ol-row"><label>Cc</label><div class="v">jonathan@faristeam.ca</div></div>
             <div class="ol-row"><label>Subject</label><div class="v">Letter of Opinion - 123 Banana Street, Midland</div></div>
           </div>
-          <div class="ol-attach"><span class="ol-chip"><i></i>Letter of Opinion - 123 Banana Street.pdf</span></div>
+          <div class="ol-attach"><a class="ol-chip" href="assets/loo/Letter-of-Opinion-123-Banana-Street.pdf" target="_blank" rel="noopener"><i></i>Letter of Opinion - 123 Banana Street.pdf</a></div>
           <div class="ol-body">
             <p>Hi Ambition,</p>
             <p>Thank you for walking me through 123 Banana Street, Midland. I am providing the attached Letter of Opinion to formalize the valuation, so you can use it as a resource.</p>
@@ -379,15 +396,38 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 </section>
 
 
-<section class="slide" data-notes="This is the most important piece. Every rule or preference goes into one master log the AI reads first. When I correct it, the correction becomes a permanent rule. I never retrain it.">
-  <div class="kicker">Memory</div>
-  <h2>The <em>decision log</em></h2>
-  <div class="flow">
-    <span class="pill">I set a rule</span><span class="arrow">→</span>
-    <span class="pill">Written once</span><span class="arrow">→</span>
-    <span class="pill">AI reads it every time</span>
+<section class="slide" data-notes="This is the most important piece. Every rule or preference goes into one master log the AI reads first. Keep it as a Google Sheets file in Drive. When I correct it, the correction becomes a permanent rule. I never retrain it.">
+  <div class="dec">
+    <div>
+      <div class="kicker">Memory</div>
+      <h2>The <em>decision log</em></h2>
+      <div class="flow">
+        <span class="pill">I set a rule</span><span class="arrow">→</span>
+        <span class="pill">Written once</span><span class="arrow">→</span>
+        <span class="pill">AI reads it every time</span>
+      </div>
+      <p class="sub dec-cap">Keep it in Google Drive as a spreadsheet. Your AI reads it before every task and adds new rules as you decide them, so you never retrain it.</p>
+    </div>
+    <div class="sheet-shot expandable" aria-label="Sample decision log spreadsheet"><span class="expand-hint">Click to expand</span>
+      <div class="sheet-chrome"><i></i><i></i><i></i><span>Decision Log · SAMPLE</span><span class="tag" style="margin:0 0 0 auto">Sample</span></div>
+      <div class="sheet-bar"><b>Decision Log</b><em>File</em><em>Edit</em><em>View</em><em>Share</em></div>
+      <div class="sheet-tabs"><span class="on">Rules</span><span>Archive</span></div>
+      <div class="sheet-grid">
+        <table>
+          <thead><tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr>
+          <tr class="hdr"><th>1</th><td>Date</td><td>Decision</td><td>Area</td><td>Applies to</td><td>Status</td></tr></thead>
+          <tbody>
+            <tr><th>2</th><td>2026-09-12</td><td>Emails use short paragraphs, never one big block</td><td>Writing</td><td>All client email</td><td>Active</td></tr>
+            <tr><th>3</th><td>2026-09-18</td><td>Always CC me on client drafts</td><td>Email</td><td>Client drafts</td><td>Active</td></tr>
+            <tr><th>4</th><td>2026-10-02</td><td>Instagram captions max 5 hashtags</td><td>Social</td><td>Instagram</td><td>Active</td></tr>
+            <tr><th>5</th><td>2026-10-15</td><td>Letters of opinion: one page, lists go in the email</td><td>Letters</td><td>Letter of opinion</td><td>Active</td></tr>
+            <tr><th>6</th><td>2026-10-28</td><td>Market stats link to the always-current page</td><td>Market</td><td>Client emails</td><td>Active</td></tr>
+            <tr><th>7</th><td>2026-11-02</td><td>Who to call next: one lead card with opening line and outcomes</td><td>Calls</td><td>Daily plan</td><td>Active</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
-  <div class="lesson"><b>Corrections become permanent rules.</b> It remembers, so I never retrain it.</div>
 </section>
 
 <section class="slide" data-notes="I wasted time building too much too soon. Scheduled automations got messy, broke, and cost tokens and money. I was managing a system instead of producing output.">
@@ -410,7 +450,8 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
       <ul class="uses"><li>Listing presentations with comparable homes</li><li>Market reviews</li></ul>
       <p class="note">It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations.</p>
     </div>
-    <div class="mock">
+    <div class="mock expandable">
+      <span class="expand-hint">Click to expand</span>
       <div class="mock-bar"><i></i><i></i><i></i><span>Client presentation · mock</span></div>
       <div class="tabs"><button class="on" data-tab="p-comps">Comparable Homes</button><button data-tab="p-market">Market Review</button></div>
       <div class="panel on" id="p-comps"><span class="tag">Sample · example data</span>
@@ -460,6 +501,11 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 </main>
 <nav class="nav" aria-label="Slides"></nav>
 <div class="notes"><b>Presenter notes · N to hide</b><span class="t"></span></div>
+<div id="fs-layer" class="fs-layer" aria-hidden="true">
+  <button type="button" class="fs-close" aria-label="Close expanded view">×</button>
+  <div class="fs-stage" id="fs-stage"></div>
+  <div class="fs-caption">Esc or click outside to close</div>
+</div>
 <script>
 (function(){
   var s=[].slice.call(document.querySelectorAll('.slide')),n=s.length,i=0,nav=document.querySelector('.nav'),pr=document.querySelector('.progress'),no=document.querySelector('.notes'),nt=no.querySelector('.t');
@@ -470,8 +516,10 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
     var b=document.createElement('button');b.setAttribute('aria-label','Slide '+pad(k+1));b.onclick=function(){go(k)};nav.appendChild(b);
   });
   var dots=[].slice.call(nav.children);
-  function go(k){i=Math.max(0,Math.min(n-1,k));s.forEach(function(e,j){e.classList.toggle('on',j===i)});dots.forEach(function(e,j){e.classList.toggle('on',j===i)});pr.style.width=((i+1)/n*100)+'%';nt.textContent=s[i].dataset.notes||'';history.replaceState(null,'','#'+pad(i+1))}
+  function go(k){if(typeof fsOpen==='function'&&fsOpen())closeFs();i=Math.max(0,Math.min(n-1,k));s.forEach(function(e,j){e.classList.toggle('on',j===i)});dots.forEach(function(e,j){e.classList.toggle('on',j===i)});pr.style.width=((i+1)/n*100)+'%';nt.textContent=s[i].dataset.notes||'';history.replaceState(null,'','#'+pad(i+1))}
   document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && fsOpen()){e.preventDefault();closeFs();return}
+    if(fsOpen())return;
     if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
     else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();go(i-1)}
     else if(e.key==='Home')go(0);else if(e.key==='End')go(n-1);
@@ -480,7 +528,51 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   });
   var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
   document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
-  document.addEventListener('click',function(e){if(e.target.closest('a,button,.mock,.dial,.loo-wrap,.shot,.ol-win'))return;go(i+(e.clientX>innerWidth/3?1:-1))});
+  document.addEventListener('click',function(e){if(fsOpen())return;if(e.target.closest('a,button,.mock,.dial,.loo-wrap,.shot,.ol-win,.sheet-shot,.expandable,a.pdf-shot'))return;go(i+(e.clientX>innerWidth/3?1:-1))});
+  
+  /* click-to-expand mockups */
+  var fsLayer=document.getElementById('fs-layer');
+  var fsStage=document.getElementById('fs-stage');
+  var fsClose=fsLayer.querySelector('.fs-close');
+  var fsPh=null, fsEl=null;
+  function fsOpen(){return !!fsEl}
+  function closeFs(){
+    if(!fsEl)return;
+    fsEl.classList.remove('fs-item');
+    if(fsPh && fsPh.parentNode){fsPh.parentNode.insertBefore(fsEl, fsPh); fsPh.remove();}
+    fsPh=null; fsEl=null;
+    fsLayer.classList.remove('on');
+    fsLayer.setAttribute('aria-hidden','true');
+  }
+  function openFs(el){
+    if(fsEl===el){closeFs();return;}
+    if(fsEl) closeFs();
+    fsPh=document.createElement('div');
+    fsPh.className='fs-ph';
+    fsPh.style.width=el.offsetWidth+'px';
+    fsPh.style.height=el.offsetHeight+'px';
+    el.parentNode.insertBefore(fsPh, el);
+    fsStage.appendChild(el);
+    el.classList.add('fs-item');
+    fsEl=el;
+    fsLayer.classList.add('on');
+    fsLayer.setAttribute('aria-hidden','false');
+  }
+  document.querySelectorAll('.expandable').forEach(function(el){
+    el.addEventListener('click',function(e){
+      if(fsEl===el){
+        /* inside expanded: let tabs/galleries/links work; only backdrop closes */
+        return;
+      }
+      if(e.target.closest('a[href],button,.gal-thumbs,input,textarea,select'))return;
+      e.preventDefault();
+      e.stopPropagation();
+      openFs(el);
+    });
+  });
+  fsClose.addEventListener('click',function(e){e.stopPropagation();closeFs()});
+  fsLayer.addEventListener('click',function(e){if(e.target===fsLayer)closeFs()});
+
   document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){var m=b.closest('.mock');m.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});m.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id===b.dataset.tab)})})});
 
   document.querySelectorAll('.gal').forEach(function(g){
