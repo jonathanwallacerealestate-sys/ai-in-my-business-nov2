@@ -282,8 +282,6 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .prompt-box .expand-hint,.prompt-box .expand-btn{top:4px;right:6px;font-size:8px;padding:2px 7px}
 .prompt-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:.35vh;padding-right:68px}
 .prompt-bar span{font-size:clamp(9px,.65vw,11px);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600}
-.copy-btn{border:1px solid var(--gold);background:#fff;color:var(--ink);border-radius:999px;padding:3px 10px;font-size:clamp(10px,.7vw,12px);cursor:pointer;font-weight:500}
-.copy-btn:hover,.copy-btn.copied{background:var(--gold);color:#fff}
 .prompt-text{margin:0;white-space:pre-wrap;word-break:break-word;overflow:visible;max-height:none;font-family:Inter,system-ui,sans-serif;font-size:clamp(13px,1.05vw,16px);line-height:1.35;color:var(--ink);font-weight:400}
 .prompt-box.fs-item{cursor:default;background:#fff;max-height:none;height:100%;display:flex;flex-direction:column;padding:2vh 2vw}
 .prompt-box.fs-item .prompt-text{max-height:none;flex:1;overflow:auto;font-size:clamp(15px,1.2vw,19px);color:var(--ink)}
@@ -327,7 +325,6 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .prompt-box.fs-item{background:#fffef9 !important;padding:4vh 4vw !important;justify-content:center}
 .prompt-box.fs-item .prompt-bar{margin-bottom:2vh;padding-right:0;justify-content:space-between}
 .prompt-box.fs-item .prompt-bar span{font-size:clamp(14px,1.1vw,18px);color:var(--gold)}
-.prompt-box.fs-item .copy-btn{font-size:clamp(14px,1.1vw,18px);padding:8px 18px}
 .prompt-box.fs-item .prompt-text{overflow:visible !important;max-height:none !important;flex:0 1 auto;font-size:clamp(22px,1.7vw,32px) !important;line-height:1.4;color:#1c1812 !important;font-weight:500;letter-spacing:.01em}
 .prompt-box.fs-item::before{content:attr(data-prompt-level);display:block;font-family:"Playfair Display",serif;font-size:clamp(28px,2.4vw,44px);color:var(--ink);margin-bottom:1.2vh;font-weight:500}
 .fs-stage > .prompt-box.fs-item{width:min(1100px,94vw)!important;height:auto!important;max-height:92vh;overflow:auto}
@@ -592,24 +589,24 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <small>Level 1</small><h3>Beginner</h3><q>Give me the basics.</q>
       <ul><li>One low income task you hate</li><li>Write your rules down</li><li>Drafts only, you send</li></ul>
       <div class="prompt-box expandable" data-prompt-level="Beginner" aria-label="Beginner starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
-        <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Beginner">Copy</button></div>
-        <pre class="prompt-text">I&#x27;m a real estate agent at Beginner level. Coach me one step at a time on these three focuses only: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Start a decision log for me as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First ask for my market, my brokerage, and the one low income task I hate. Then guide me through the first step only.</pre>
+        <div class="prompt-bar"><span>Starter prompt</span></div>
+        <pre class="prompt-text">I&#x27;ve attached Jonathan Wallace&#x27;s AI Playbook (AI-Playbook.md). I&#x27;m at the Beginner level. Please read the playbook and focus only on Beginner&#x27;s three items: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Ask me about my market, brokerage, current tools and experience, and the one low income task I hate. Then build a simple step-by-step plan to implement Beginner in my real estate business, focused on income-producing results: lead generation, follow-up, and admin. Start a decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. Coach me one step at a time.</pre>
       </div>
     </div>
     <div class="card">
       <small>Level 2</small><h3>Intermediate</h3><q>Integrate my playbook.</q>
       <ul><li>Decision log brain</li><li>Organize by role</li><li>Create once, publish everywhere</li></ul>
       <div class="prompt-box expandable" data-prompt-level="Intermediate" aria-label="Intermediate starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
-        <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Intermediate">Copy</button></div>
-        <pre class="prompt-text">I&#x27;m a real estate agent at Intermediate level. I already run Beginner: one low income task I hate, rules written down, and drafts only that I send. Coach me one step at a time on these three focuses only: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Intermediate step only.</pre>
+        <div class="prompt-bar"><span>Starter prompt</span></div>
+        <pre class="prompt-text">I&#x27;ve attached Jonathan Wallace&#x27;s AI Playbook (AI-Playbook.md). I&#x27;m at the Intermediate level. I already run Beginner. Please read the playbook and focus only on Intermediate&#x27;s three items: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Ask me about my market, brokerage, current tools and experience, and the one low income task I hate. Then build a simple step-by-step plan to implement Intermediate on top of Beginner, focused on income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. Coach me one step at a time.</pre>
       </div>
     </div>
     <div class="card">
       <small>Level 3</small><h3>Advanced</h3><q>Ready for the advanced session.</q>
       <ul><li>Chief of staff organizes the day</li><li>AI on income workflows</li><li>AI-built client presentations</li></ul>
       <div class="prompt-box expandable" data-prompt-level="Advanced" aria-label="Advanced starter prompt"><button type="button" class="expand-btn expand-hint" aria-label="Click to expand">Click to expand</button>
-        <div class="prompt-bar"><span>Starter prompt</span><button type="button" class="copy-btn" data-copy="Advanced">Copy</button></div>
-        <pre class="prompt-text">I&#x27;m a real estate agent at Advanced level. I already run Intermediate on top of Beginner: decision log brain, organize by role, and create once, publish everywhere. Coach me one step at a time on these three focuses only: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Advanced step only.</pre>
+        <div class="prompt-bar"><span>Starter prompt</span></div>
+        <pre class="prompt-text">I&#x27;ve attached Jonathan Wallace&#x27;s AI Playbook (AI-Playbook.md). I&#x27;m at the Advanced level. I already run Intermediate on top of Beginner. Please read the playbook and focus only on Advanced&#x27;s three items: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Ask me about my market, brokerage, current tools and experience, and the one low income task I hate. Then build a simple step-by-step plan to implement Advanced on top of Intermediate, focused on income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today&#x27;s decisions into it. Coach me one step at a time.</pre>
       </div>
     </div>
   </div>
@@ -727,7 +724,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
         return;
       }
       /* collapsed: tabs + thumbnail strip keep working; everything else expands */
-      if(e.target.closest('.tabs button,.gal-thumbs,.gal-thumbs button,.copy-btn,a[href],input,textarea,select'))return;
+      if(e.target.closest('.tabs button,.gal-thumbs,.gal-thumbs button,a[href],input,textarea,select'))return;
       e.preventDefault();
       e.stopPropagation();
       openFs(el);
@@ -739,93 +736,6 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
   document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){var m=b.closest('.mock');m.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});m.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id===b.dataset.tab)})})});
 
   
-  var starterPrompts = {"Beginner": "I'm a real estate agent at Beginner level. Coach me one step at a time on these three focuses only: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Start a decision log for me as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First ask for my market, my brokerage, and the one low income task I hate. Then guide me through the first step only.", "Intermediate": "I'm a real estate agent at Intermediate level. I already run Beginner: one low income task I hate, rules written down, and drafts only that I send. Coach me one step at a time on these three focuses only: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Intermediate step only.", "Advanced": "I'm a real estate agent at Advanced level. I already run Intermediate on top of Beginner: decision log brain, organize by role, and create once, publish everywhere. Coach me one step at a time on these three focuses only: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Advanced step only."};
-  document.querySelectorAll('.copy-btn').forEach(function(btn){
-    btn.addEventListener('click', function(e){
-      e.preventDefault(); e.stopPropagation();
-      var key = btn.getAttribute('data-copy');
-      var text = starterPrompts[key] || '';
-      function ok(){ btn.textContent='Copied'; btn.classList.add('copied'); setTimeout(function(){ btn.textContent='Copy'; btn.classList.remove('copied'); }, 1400); }
-      if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(ok).catch(function(){ fallback(); }); }
-      else { fallback(); }
-      function fallback(){ var ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); }catch(err){} document.body.removeChild(ta); ok(); }
-    });
-  });
-
-
-  /* single-listing fullscreen viewer */
-  var LISTINGS = [{"address": "874 Cedar Point Rd, Tiny", "price": "Listed $474,990", "lines": ["5 bed \u00b7 2 bath", "0 days on market", "1,500-2,000 sq ft", "Detached 2-storey"], "photos": ["assets/comps/874-cedar-point-1.jpg", "assets/comps/874-cedar-point-2.jpg", "assets/comps/874-cedar-point-3.jpg", "assets/comps/874-cedar-point-4.jpg", "assets/comps/874-cedar-point-5.jpg"]}, {"address": "754 Lafontaine Rd W, Tiny", "price": "Listed $559,900", "lines": ["4 bed \u00b7 3 bath", "1 day on market", "1,500-2,000 sq ft", "Detached 2-storey"], "photos": ["assets/comps/754-lafontaine-1.jpg", "assets/comps/754-lafontaine-2.jpg", "assets/comps/754-lafontaine-3.jpg", "assets/comps/754-lafontaine-4.jpg", "assets/comps/754-lafontaine-5.jpg"]}, {"address": "9 Delbrooke Crt, Tiny", "price": "Listed $599,900", "lines": ["2 bed \u00b7 1 bath", "0 days on market", "700-1,100 sq ft", "Raised bungalow"], "photos": ["assets/comps/9-delbrooke-1.jpg", "assets/comps/9-delbrooke-2.jpg", "assets/comps/9-delbrooke-3.jpg", "assets/comps/9-delbrooke-4.jpg", "assets/comps/9-delbrooke-5.jpg"]}, {"address": "20 Navigator Rd, Penetanguishene", "price": "Listed $675,000", "lines": ["Vacant land", "1 day on market", "Waterfront"], "photos": ["assets/comps/20-navigator-1.jpg", "assets/comps/20-navigator-2.jpg", "assets/comps/20-navigator-3.jpg", "assets/comps/20-navigator-4.jpg", "assets/comps/20-navigator-5.jpg"]}, {"address": "1935 Snow Valley Rd, Springwater", "price": "Listed $839,900", "lines": ["2 bed \u00b7 3 bath", "0 days on market", "1,100-1,500 sq ft", "Detached bungalow"], "photos": ["assets/comps/1935-snow-valley-1.jpg", "assets/comps/1935-snow-valley-2.jpg", "assets/comps/1935-snow-valley-3.jpg", "assets/comps/1935-snow-valley-4.jpg", "assets/comps/1935-snow-valley-5.jpg"]}, {"address": "1842 Meadowview Crt, Severn", "price": "Listed $1,249,000", "lines": ["3 bed \u00b7 3 bath", "1 day on market", "2,000-2,500 sq ft", "Detached bungalow"], "photos": ["assets/comps/1842-meadowview-1.jpg", "assets/comps/1842-meadowview-2.jpg", "assets/comps/1842-meadowview-3.jpg", "assets/comps/1842-meadowview-4.jpg", "assets/comps/1842-meadowview-5.jpg"]}];
-  var listingLayer=document.getElementById('listing-layer');
-  var listingPhoto=document.getElementById('listing-photo');
-  var listingThumbs=document.getElementById('listing-thumbs');
-  var listingCount=document.getElementById('listing-photo-count');
-  var listingAddr=document.getElementById('listing-addr');
-  var listingPrice=document.getElementById('listing-price');
-  var listingFacts=document.getElementById('listing-facts');
-  var listingIdx=0, photoIdx=0, listingTouchX=null;
-  function listingOpen(){return listingLayer.classList.contains('on')}
-  function renderListing(){
-    var L=LISTINGS[listingIdx]; if(!L)return;
-    var photos=L.photos||[];
-    if(photoIdx<0)photoIdx=photos.length-1;
-    if(photoIdx>=photos.length)photoIdx=0;
-    listingPhoto.src=photos[photoIdx]||'';
-    listingPhoto.alt=L.address||'';
-    listingCount.textContent=(photoIdx+1)+' / '+photos.length;
-    listingAddr.textContent=L.address||'';
-    listingPrice.textContent=L.price||'';
-    listingFacts.innerHTML='';
-    (L.lines||[]).forEach(function(line){
-      var s=document.createElement('span'); s.textContent=line; listingFacts.appendChild(s);
-    });
-    // status from email facts: Active for listed comps
-    var st=document.createElement('span'); st.textContent='Active'; listingFacts.appendChild(st);
-    listingThumbs.innerHTML='';
-    photos.forEach(function(src,n){
-      var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Photo '+(n+1));
-      if(n===photoIdx)b.className='on';
-      var im=document.createElement('img'); im.src=src; im.alt='';
-      b.appendChild(im);
-      b.addEventListener('click',function(e){e.stopPropagation(); photoIdx=n; renderListing();});
-      listingThumbs.appendChild(b);
-    });
-  }
-  function openListing(i){
-    if(typeof fsOpen==='function' && fsOpen()){ /* keep mock open underneath ok */ }
-    listingIdx=Math.max(0,Math.min(LISTINGS.length-1,i));
-    photoIdx=0;
-    renderListing();
-    listingLayer.classList.add('on');
-    listingLayer.setAttribute('aria-hidden','false');
-  }
-  function closeListing(){
-    listingLayer.classList.remove('on');
-    listingLayer.setAttribute('aria-hidden','true');
-  }
-  document.querySelectorAll('.comp[data-listing]').forEach(function(card){
-    card.addEventListener('click',function(e){
-      // thumbs/main already stopPropagation and call openListing; this catches address/price/details
-      if(e.target.closest('.gal-main,.gal-thumbs'))return;
-      e.preventDefault(); e.stopPropagation();
-      openListing(+card.getAttribute('data-listing'));
-    });
-    card.addEventListener('keydown',function(e){
-      if(e.key==='Enter'||e.key===' '){e.preventDefault(); openListing(+card.getAttribute('data-listing'));}
-    });
-  });
-  listingLayer.querySelector('.listing-close').addEventListener('click',function(e){e.stopPropagation();closeListing()});
-  listingLayer.addEventListener('click',function(e){if(e.target===listingLayer)closeListing()});
-  listingLayer.querySelector('.listing-prev-listing').addEventListener('click',function(e){e.stopPropagation(); listingIdx=(listingIdx+LISTINGS.length-1)%LISTINGS.length; photoIdx=0; renderListing();});
-  listingLayer.querySelector('.listing-next-listing').addEventListener('click',function(e){e.stopPropagation(); listingIdx=(listingIdx+1)%LISTINGS.length; photoIdx=0; renderListing();});
-  listingLayer.querySelector('.listing-photo-prev').addEventListener('click',function(e){e.stopPropagation(); photoIdx--; renderListing();});
-  listingLayer.querySelector('.listing-photo-next').addEventListener('click',function(e){e.stopPropagation(); photoIdx++; renderListing();});
-  listingLayer.querySelector('.listing-photo-stage').addEventListener('touchstart',function(e){listingTouchX=e.changedTouches[0].clientX},{passive:true});
-  listingLayer.querySelector('.listing-photo-stage').addEventListener('touchend',function(e){
-    if(listingTouchX===null)return;
-    var d=e.changedTouches[0].clientX-listingTouchX;
-    if(Math.abs(d)>40){ if(d<0) photoIdx++; else photoIdx--; renderListing(); }
-    listingTouchX=null;
-  });
 
   document.querySelectorAll('.gal').forEach(function(g){
     var photos=JSON.parse(g.getAttribute('data-photos')||'[]');

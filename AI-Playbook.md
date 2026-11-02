@@ -95,7 +95,7 @@ Always check every figure against your MLS before a client sees it.
 ### Your starter prompt
 
 ```
-I'm a real estate agent at Beginner level. Coach me one step at a time on these three focuses only: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Start a decision log for me as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First ask for my market, my brokerage, and the one low income task I hate. Then guide me through the first step only.
+I've attached Jonathan Wallace's AI Playbook (AI-Playbook.md). I'm at the Beginner level. Please read the playbook and focus only on Beginner's three items: (1) one low income task I hate, (2) write my rules down, (3) drafts only, I send. Ask me about my market, brokerage, current tools and experience, and the one low income task I hate. Then build a simple step-by-step plan to implement Beginner in my real estate business, focused on income-producing results: lead generation, follow-up, and admin. Start a decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. Coach me one step at a time.
 ```
 
 **1. Pick one low income task you hate.**
@@ -126,7 +126,7 @@ The AI drafts, you review, you hit send, you CC yourself. Fix anything that soun
 ### Your starter prompt
 
 ```
-I'm a real estate agent at Intermediate level. I already run Beginner: one low income task I hate, rules written down, and drafts only that I send. Coach me one step at a time on these three focuses only: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Intermediate step only.
+I've attached Jonathan Wallace's AI Playbook (AI-Playbook.md). I'm at the Intermediate level. I already run Beginner. Please read the playbook and focus only on Intermediate's three items: (1) decision log brain, (2) organize by role, (3) create once, publish everywhere. Ask me about my market, brokerage, current tools and experience, and the one low income task I hate. Then build a simple step-by-step plan to implement Intermediate on top of Beginner, focused on income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. Coach me one step at a time.
 ```
 
 **1. Build a decision log (the brain).**
@@ -161,7 +161,7 @@ Pick one core piece each week, such as a short video or a client tip. Have the A
 ### Your starter prompt
 
 ```
-I'm a real estate agent at Advanced level. I already run Intermediate on top of Beginner: decision log brain, organize by role, and create once, publish everywhere. Coach me one step at a time on these three focuses only: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Keep every step aimed at income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. First confirm my market, brokerage, and the one low income task I hate. Then guide me through the first Advanced step only.
+I've attached Jonathan Wallace's AI Playbook (AI-Playbook.md). I'm at the Advanced level. I already run Intermediate on top of Beginner. Please read the playbook and focus only on Advanced's three items: (1) chief of staff organizes the day, (2) AI on income workflows, (3) AI-built client presentations. Ask me about my market, brokerage, current tools and experience, and the one low income task I hate. Then build a simple step-by-step plan to implement Advanced on top of Intermediate, focused on income-producing results: lead generation, follow-up, and admin. Keep my decision log as a Google Sheet in Drive, and at the end of every session write today's decisions into it. Coach me one step at a time.
 ```
 
 **1. Run your day through a chief of staff.**
