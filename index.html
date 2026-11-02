@@ -131,9 +131,9 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .shot-chrome i{width:8px;height:8px;border-radius:50%;background:#c4b59a;display:block}
 .shot-chrome i:nth-child(1){background:#e6a07a}.shot-chrome i:nth-child(2){background:#e0c46a}.shot-chrome i:nth-child(3){background:#8fbf8a}
 .shot-chrome span{margin-left:6px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#6e685e}
-.shot-stage{flex:1;min-height:0;padding:8px 10px 10px;overflow:hidden;display:flex;justify-content:center;align-items:stretch;background:#bdb3a1}
-.pdf-shot{display:block;width:100%;height:100%;overflow:hidden;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
-.pdf-shot img,img.pdf-shot{width:100%;height:100%;object-fit:contain;object-position:top center;display:block;background:#fff}
+.shot-stage{flex:1;min-height:0;padding:8px 10px 10px;overflow:hidden;display:flex;justify-content:center;align-items:center;background:#bdb3a1}
+.pdf-shot,.pdf-shot img,img.pdf-shot{display:block;width:auto;height:auto;max-width:100%;max-height:100%;aspect-ratio:612 / 792;object-fit:contain;object-position:top center;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .ol-chip{text-decoration:none}
 
 .pdf-page{background:#fff;width:100%;max-width:100%;box-shadow:0 2px 10px rgba(0,0,0,.18);padding:clamp(8px,1.1vh,14px) clamp(10px,1.2vw,16px);overflow:hidden;font-family:"Times New Roman",Times,serif;color:#1a1a1a;font-size:clamp(7.5px,.58vw,10px);line-height:1.28;display:flex;flex-direction:column}
@@ -163,7 +163,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .ol-attach{padding:5px 10px;background:#fff;border-bottom:1px solid #e1dfdd;flex-shrink:0}
 .ol-chip{display:inline-flex;align-items:center;gap:5px;background:#f3f2f1;border:1px solid #e1dfdd;border-radius:4px;padding:3px 8px;font-size:clamp(8px,.6vw,10px);color:#242424;max-width:100%}
 .ol-chip i{width:10px;height:12px;background:#d13438;border-radius:1px;display:inline-block;flex-shrink:0}
-.ol-body{flex:1;min-height:0;overflow:hidden;background:#fff;padding:8px 10px;line-height:1.35;color:#242424}
+.ol-body{flex:1;min-height:0;overflow:auto;background:#fff;padding:8px 10px;line-height:1.35;color:#242424}
 .ol-body p{margin:0 0 6px}
 .ol-body b{font-weight:600}
 .ol-body ul{margin:2px 0 6px 1.1em;padding:0}
@@ -242,6 +242,12 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .fs-stage > .mock.fs-item,.fs-stage > .sheet-shot.fs-item,.fs-stage > .dial.fs-item,.fs-stage > .shot.fs-item{display:flex;flex-direction:column}
 .fs-stage > .mock.fs-item .panel,.fs-stage > .sheet-shot.fs-item .sheet-grid{flex:1;min-height:0;overflow:auto}
 .fs-stage > .shot.fs-item .shot-stage{flex:1;min-height:0}
+
+.fs-stage > .shot.fs-item{width:auto!important;height:100%!important;max-width:min(96vw, calc(90vh * 612 / 792));aspect-ratio:auto}
+.fs-stage > .shot.fs-item .shot-stage{align-items:center;justify-content:center;background:#bdb3a1}
+.fs-stage > .shot.fs-item img.pdf-shot{max-height:calc(90vh - 48px);max-width:100%;width:auto;height:auto;aspect-ratio:612 / 792}
+.loo-shots .shot:first-child .shot-stage{align-items:center}
+
 .fs-stage > .dial.fs-item{font-size:clamp(14px,1.1vw,18px)}
 .fs-close{position:fixed;top:14px;right:18px;z-index:2001;width:40px;height:40px;border:0;border-radius:50%;background:#fff;color:#1c1812;font-size:24px;line-height:1;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .fs-close:hover{background:#f5efe3}
@@ -374,29 +380,37 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
           <div class="ol-fields">
             <div class="ol-row"><label>To</label><div class="v">Ambition Seller &lt;ambition.seller@example.com&gt;</div></div>
             <div class="ol-row"><label>Cc</label><div class="v">jonathan@faristeam.ca</div></div>
-            <div class="ol-row"><label>Subject</label><div class="v">Letter of Opinion - 123 Banana Street, Midland</div></div>
+            <div class="ol-row"><label>Subject</label><div class="v">123 Banana Street, Midland - Letter of Opinion</div></div>
           </div>
-          <div class="ol-attach"><a class="ol-chip" href="assets/loo/Letter-of-Opinion-123-Banana-Street.pdf" target="_blank" rel="noopener"><i></i>Letter of Opinion - 123 Banana Street.pdf</a></div>
+          <div class="ol-attach"><a class="ol-chip" href="assets/loo/Letter-of-Opinion-123-Banana-Street.pdf" target="_blank" rel="noopener"><i></i>Letter of Opinion - 123 Banana Street Midland - Ambition Seller.pdf</a></div>
           <div class="ol-body">
             <p>Hi Ambition,</p>
-            <p>Thank you for walking me through 123 Banana Street, Midland. I am providing the attached Letter of Opinion to formalize the valuation, so you can use it as a resource.</p>
+            <p>Thank you for sharing the photos of 123 Banana Street, Midland. I am providing the attached Letter of Opinion for 123 Banana Street, Midland to formalize the valuation, so you can use it as a resource. I felt it would be helpful for you to see everything in writing, as I like to provide folks with the maximum value.</p>
             <p><b>Opinion of value, as of November 2, 2026</b></p>
             <ul>
-              <li>Current market value range: $600,000 to $650,000</li>
+              <li>Market value range: $600,000 to $650,000</li>
             </ul>
-            <p><b>Sample findings (example figures only)</b></p>
+            <p><b>Findings from the comparable sales</b></p>
             <ul>
-              <li>Example Comp A, Midland: sold $615,000 · 18 days on market · 3 bed · 2 bath</li>
-              <li>Example Comp B, Midland: sold $628,000 · 12 days on market · 3 bed · 2 bath</li>
+              <li>Sample: two recent solds in Midland closed at $615,000 and $628,000. Those sales sit inside the opinion range above.</li>
+              <li>Sample Comp A, Midland: detached, 3 beds, 2 baths, sold for $615,000 (18 days on market).</li>
+              <li>Sample Comp B, Midland: detached, 3 beds, 2 baths, sold for $628,000 (12 days on market).</li>
             </ul>
-            <p><b>Sample weekly stats (example figures only)</b></p>
+            <p><b>Simcoe County market, week of October 19 to 25, 2026 (sample stats)</b></p>
+            <p>I also wanted you to have the most up-to-date market stats from last week for our area. Here is the link to the blog post I wrote: <a href="https://jonathanwallace.ca/market-update-latest" target="_blank" rel="noopener">Simcoe County market update, October 19 to 25, 2026</a>. It gives you a sense of not only what is happening in the marketplace, but what the actual numbers were for October 19 to 25:</p>
             <ul>
-              <li>Median sale price: $598,000</li>
-              <li>Average days on market: 28</li>
-              <li>New listings: 14</li>
+              <li>Sales: 137 (sample)</li>
+              <li>Average sale price: $795,240 (sample)</li>
+              <li>New listings: 446 (sample)</li>
+              <li>Active listings: 5,171 (sample)</li>
+              <li>Sales to new listing ratio: 31% (sample)</li>
+              <li>Months of inventory: 9.4 (sample)</li>
+              <li>Days on market: 41 (sample)</li>
+              <li>List to sale price ratio: 96% (sample)</li>
             </ul>
-            <p>Here is this week's market update when you want the wider picture: <a href="#">market-update-link</a></p>
-            <p>If you would like to talk through what this means for a spring listing plan, I am happy to meet in person next week.</p>
+            <p>It remains a buyer's market. The homes that are priced to recent sales and presented well are the ones selling closer to asking.</p>
+            <p>I also personally send out a weekly article specifically on sales and properties in Midland and across Georgian Bay, so you stay current between valuations. You can unsubscribe anytime.</p>
+            <p>Should anything come up as you review the package, please reach out at any time and if I get the opportunity to interview for the job in the future, keep my contact info!</p>
           </div>
           <div class="ol-foot"><button type="button" class="ol-send">Send</button><span>Draft · not sent</span></div>
         </div>
