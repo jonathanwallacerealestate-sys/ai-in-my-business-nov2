@@ -117,6 +117,8 @@ The AI drafts, you review, you hit send, you CC yourself. Fix anything that soun
 **1. Build a decision log (the brain).**
 A running list of every rule or preference you set. Keep it in Google Drive as a spreadsheet. Every correction becomes a permanent, dated rule. The AI reads the log before every task and adds new rules as you decide them. When two rules conflict, the newer one wins and the old one gets updated. This is how the AI remembers, so you never retrain it.
 
+**Tip:** At the end of every session, ask your AI to write today's decisions to the decision log.
+
 **2. Organize by role.**
 Think of AI help as a small team with clear jobs:
 - **Chief of staff:** organizes your day and has final say on priorities

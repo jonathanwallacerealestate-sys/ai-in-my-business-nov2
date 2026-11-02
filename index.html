@@ -175,6 +175,15 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 @media (max-width:820px){.loo-shots{grid-template-columns:1fr}}
 
 .dec{display:grid;grid-template-columns:1fr 1.25fr;gap:2.4vw;align-items:center;height:100%;max-height:82vh}
+
+.dec-tip{margin-top:2vh;padding:1.4vh 1.2vw;background:linear-gradient(135deg,#fff8e8,#f5efe3);border:1px solid rgba(184,148,74,.45);border-left:4px solid var(--gold);border-radius:8px;box-shadow:0 8px 22px rgba(120,95,50,.1);max-width:38ch}
+.dec-tip-label{display:inline-block;font-size:clamp(10px,.7vw,11px);letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--gold);padding:2px 8px;border-radius:999px;margin-bottom:.55vh;font-weight:600}
+.dec-tip p{margin:0;font-size:clamp(13px,1.05vw,16px);line-height:1.4;color:var(--ink);font-weight:500}
+.dec{max-height:84vh}
+.dec h2{margin-bottom:1.6vh}
+.dec .flow{margin-bottom:1.4vh}
+.dec-cap{margin-bottom:0}
+
 .dec h2{margin-bottom:2.4vh}
 .dec .flow{margin-bottom:2vh}
 .dec-cap{font-size:clamp(14px,1.15vw,18px);max-width:36ch}
@@ -397,7 +406,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 </section>
 
 
-<section class="slide" data-notes="This is the most important piece. Every rule or preference goes into one master log the AI reads first. Keep it as a Google Sheets file in Drive. When I correct it, the correction becomes a permanent rule. I never retrain it.">
+<section class="slide" data-notes="This is the most important piece. Every rule or preference goes into one master log the AI reads first. Keep it as a Google Sheets file in Drive. When I correct it, the correction becomes a permanent rule. At the end of every session, ask your AI to write today's decisions to the decision log. I never retrain it.">
   <div class="dec">
     <div>
       <div class="kicker">Memory</div>
@@ -408,6 +417,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
         <span class="pill">AI reads it every time</span>
       </div>
       <p class="sub dec-cap">Keep it in Google Drive as a spreadsheet. Your AI reads it before every task and adds new rules as you decide them, so you never retrain it.</p>
+      <div class="dec-tip"><span class="dec-tip-label">Tip</span><p>At the end of every session, ask your AI to write today's decisions to the decision log.</p></div>
     </div>
     <div class="sheet-shot expandable" aria-label="Sample decision log spreadsheet"><span class="expand-hint">Click to expand</span>
       <div class="sheet-chrome"><i></i><i></i><i></i><span>Decision Log · SAMPLE</span><span class="tag" style="margin:0 0 0 auto">Sample</span></div>
