@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Playbook Download</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f8f5ef;font-family:Inter,system-ui,sans-serif;color:#1f1b16;text-align:center;padding:24px;box-sizing:border-box}
+.c{max-width:420px}h1{font-family:"Playfair Display",serif;font-weight:500;font-size:34px;margin:0 0 8px}
+p{color:#6b6255;line-height:1.5;font-size:16px}
+button,a.b{display:block;width:100%;margin:14px 0;padding:16px;border-radius:12px;border:0;font-size:17px;font-weight:600;cursor:pointer;text-decoration:none;box-sizing:border-box}
+.p{background:#b08d57;color:#fff}.s{background:#fff;color:#1f1b16;border:1px solid #d9cdb8!important}
+small{color:#8a8070;font-size:13px}#m{color:#2e7d32;min-height:20px;font-size:14px}
+</style></head><body><div class="c">
+<h1>AI Playbook</h1>
+<p>Jonathan Wallace, REALTOR®<br>Faris Team Real Estate Brokerage</p>
+<button class="p" id="save">Download the playbook</button>
+<button class="s" id="copy">Copy all the text</button>
+<a class="b s" href="AI-Playbook.md" download="AI-Playbook.md">Open as a plain file</a>
+<div id="m"></div>
+<small>On iPhone, tap Download, then choose Save to Files, or share it straight into your AI app. Then attach it with the starter prompt for your level.</small>
+</div>
+<script>
+var URL_MD='AI-Playbook.md',NAME='AI-Playbook.md',m=document.getElementById('m');
+function getText(){return fetch(URL_MD,{cache:'no-store'}).then(function(r){return r.text()})}
+document.getElementById('save').onclick=function(){getText().then(function(t){
+ var f=new File([t],NAME,{type:'text/markdown'});
+ if(navigator.canShare&&navigator.canShare({files:[f]})){return navigator.share({files:[f],title:'AI Playbook'}).catch(function(){})}
+ var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'application/octet-stream'}));a.download=NAME;document.body.appendChild(a);a.click();a.remove();m.textContent='Downloaded.';
+})};
+document.getElementById('copy').onclick=function(){getText().then(function(t){return navigator.clipboard.writeText(t)}).then(function(){m.textContent='Copied. Paste it into your AI app.'}).catch(function(){m.textContent='Copy failed. Use Download instead.'})};
+</script></body></html>
