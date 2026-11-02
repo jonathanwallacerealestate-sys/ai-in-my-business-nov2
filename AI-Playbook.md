@@ -69,8 +69,11 @@ What worked for me. This is not an endorsement. Try them and pick what fits you.
 - You can structure it like a team of employees
 - It has its own web browser, so you log in with your own credentials instead of needing API keys or connectors
 - You can speak to it by voice
+- Learns from videos: record your screen doing a task once, and it watches and learns to repeat it
 
 Example: I trained it to put documents into my transaction system (Sisu), so I don't have to.
+
+**Screen learning:** Claude does not match video learning as well yet, because it lacks its own built-in web interface and relies on a browser extension.
 
 ## Shared: main example, Plaud + Grok for CMAs
 
