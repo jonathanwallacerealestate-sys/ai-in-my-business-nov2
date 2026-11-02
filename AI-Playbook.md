@@ -154,7 +154,7 @@ You still verify every number and every claim.
 
 **3. AI-built client presentations.**
 AI can turn detailed data into a visual, interactive presentation for a client, with everything in one place.
-- **Listing presentations:** comparable homes as cards with photo, sold price, days on market, square footage, and price per square foot
+- **Listing presentations:** comparable homes as cards with photo, list or sold price, days on market, beds and baths, and square footage when known
 - **Market reviews:** a clean stats panel with short plain language takeaways
 
 It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations. Check every figure against your MLS before a client sees it.

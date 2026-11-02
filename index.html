@@ -81,12 +81,12 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .tabs button.on{color:var(--ink);border-bottom-color:var(--gold)}
 .panel{display:none;padding:16px}.panel.on{display:block}
 .tag{display:inline-block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;background:var(--gold);color:#fff;padding:3px 8px;border-radius:3px;font-weight:500;margin-bottom:10px}
-.comps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.comps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .comp{border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.ph{height:clamp(60px,10vh,110px);background:linear-gradient(135deg,#EFE6D4,#E2D3B5);display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;letter-spacing:.16em;text-transform:uppercase;position:relative}
-.ph svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.5}
-.comp .m{padding:8px 10px;font-size:clamp(11px,.85vw,13px);color:var(--muted);line-height:1.6}
-.comp .m b{display:block;font-family:"Playfair Display",serif;font-weight:500;color:var(--ink);font-size:clamp(13px,1.05vw,16px)}
+.ph{height:clamp(36px,5.5vh,64px);background:linear-gradient(135deg,#EFE6D4,#E2D3B5);display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;letter-spacing:.16em;text-transform:uppercase;position:relative}
+.ph svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:1.5}
+.comp .m{padding:6px 8px;font-size:clamp(10px,.72vw,12px);color:var(--muted);line-height:1.45}
+.comp .m b{display:block;font-family:"Playfair Display",serif;font-weight:500;color:var(--ink);font-size:clamp(11px,.9vw,14px);line-height:1.25;margin-bottom:2px}
 .comp .m .pr{color:var(--gold);font-weight:500}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .stat{border:1px solid var(--line);border-radius:8px;padding:14px}
@@ -232,8 +232,8 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
       <div class="mock-bar"><i></i><i></i><i></i><span>Client presentation · mock</span></div>
       <div class="tabs"><button class="on" data-tab="p-comps">Comparable Homes</button><button data-tab="p-market">Market Review</button></div>
       <div class="panel on" id="p-comps"><span class="tag">Sample · example data</span>
-        <div class="comps"><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>Example Home A</b><span class="pr">Sold $649,900</span><br>18 days on market<br>1,850 sq ft<br>$351 / sq ft</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>Example Home B</b><span class="pr">Sold $585,000</span><br>24 days on market<br>1,620 sq ft<br>$361 / sq ft</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>Example Home C</b><span class="pr">Sold $712,500</span><br>11 days on market<br>2,100 sq ft<br>$339 / sq ft</div></div></div>
-        <p class="disc">Sample cards for illustration only. Not real listings.</p></div>
+        <div class="comps"><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>874 Cedar Point Rd, Tiny</b><span class="pr">Listed $474,990</span><br>5 bed · 2 bath<br>0 days on market<br>1,500-2,000 sq ft<br>Detached 2-storey</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>754 Lafontaine Rd W, Tiny</b><span class="pr">Listed $559,900</span><br>4 bed · 3 bath<br>1 day on market<br>1,500-2,000 sq ft<br>Detached 2-storey</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>9 Delbrooke Crt, Tiny</b><span class="pr">Listed $599,900</span><br>2 bed · 1 bath<br>0 days on market<br>700-1,100 sq ft<br>Raised bungalow</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>20 Navigator Rd, Penetanguishene</b><span class="pr">Listed $675,000</span><br>Vacant land<br>1 day on market<br>Waterfront</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>1935 Snow Valley Rd, Springwater</b><span class="pr">Listed $839,900</span><br>2 bed · 3 bath<br>0 days on market<br>1,100-1,500 sq ft<br>Detached bungalow</div></div><div class="comp"><div class="ph"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></div><div class="m"><b>1842 Meadowview Crt, Severn</b><span class="pr">Listed $1,249,000</span><br>3 bed · 3 bath<br>1 day on market<br>2,000-2,500 sq ft<br>Detached bungalow</div></div></div>
+        <p class="disc">Sample cards for illustration only. Verify every figure on MLS before a client sees them.</p></div>
       <div class="panel" id="p-market"><span class="tag">Sample · example data</span>
         <div class="stats">
           <div class="stat"><small>Median sale price</small><b>$625,000</b><em>Example data</em></div>
