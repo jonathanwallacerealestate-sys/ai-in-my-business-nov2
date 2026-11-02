@@ -159,6 +159,15 @@ AI can turn detailed data into a visual, interactive presentation for a client, 
 
 It takes time. An advanced skill once you've mastered the basics, and it elevates your presentations. Check every figure against your MLS before a client sees it.
 
+
+**How to take a REALM email and make it into a presentation for clients**
+
+1. In your MLS (REALM), select the comparable listings and email them to yourself.
+2. Tell your AI to read that email, pull each listing's facts (price, beds, baths, size range, status, days on market) and its first 5 photos.
+3. Have it build a client presentation page with comps and market review tabs, a photo click-through for each home, and no invented figures.
+4. Review it, check every number against MLS, then share the link with your client.
+
+
 **Letter of opinion thread:** record the whole client conversation. The AI condenses it into bullets, then drafts the letter of opinion with the latest stats, so the whole chain runs from one recording.
 
 **Marketing bonus:** create one piece and repurpose it across every platform. The AI reshapes it for each one in a repeatable system, and you review everything before it goes out.
