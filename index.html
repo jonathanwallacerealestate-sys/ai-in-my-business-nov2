@@ -290,6 +290,48 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .prompt-box.fs-item .expand-hint,.prompt-box.fs-item .expand-btn{display:none}
 .fs-stage > .prompt-box.fs-item{width:min(900px,92vw)!important;height:auto!important;max-height:85vh}
 
+
+.comp{cursor:pointer}
+.comp:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.listing-layer{position:fixed;inset:0;z-index:2100;display:none;align-items:center;justify-content:center;padding:1.5vh 1.5vw;background:rgba(20,18,14,.82);backdrop-filter:blur(5px)}
+.listing-layer.on{display:flex}
+.listing-panel{width:min(1280px,98vw);height:min(96vh,980px);background:#fffaf2;border-radius:14px;box-shadow:0 24px 80px rgba(0,0,0,.4);display:grid;grid-template-rows:1fr auto auto;overflow:hidden;position:relative}
+.listing-close{position:fixed;top:12px;right:16px;z-index:2110;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#1c1812;font-size:28px;line-height:1;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.listing-nav{position:fixed;top:50%;transform:translateY(-50%);z-index:2110;width:48px;height:72px;border:0;border-radius:10px;background:rgba(255,255,255,.92);color:#1c1812;font-size:42px;line-height:1;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.listing-prev-listing{left:10px}
+.listing-next-listing{right:10px}
+.listing-hero{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;height:78vh;max-height:78vh;background:#1c1812;padding:0 56px}
+.listing-photo-stage{flex:1;min-width:0;height:100%;display:flex;align-items:center;justify-content:center;padding:1.2vh 0}
+.listing-photo-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;background:#1c1812}
+.listing-photo-nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:56px;height:56px;border:0;border-radius:50%;background:rgba(255,252,245,.95);color:#1c1812;font-size:34px;line-height:1;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.listing-photo-prev{left:12px}
+.listing-photo-next{right:12px}
+.listing-photo-count{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.55);color:#fff;font-size:clamp(12px,.9vw,15px);letter-spacing:.08em;padding:4px 12px;border-radius:999px}
+.listing-thumbs{display:flex;gap:6px;justify-content:center;padding:8px 12px;background:#f5efe3;border-top:1px solid var(--line)}
+.listing-thumbs button{width:72px;aspect-ratio:3 / 2;padding:0;border:2px solid transparent;border-radius:4px;overflow:hidden;cursor:pointer;background:#E2D3B5}
+.listing-thumbs button.on{border-color:var(--gold)}
+.listing-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.listing-meta{display:grid;grid-template-columns:1.4fr auto;gap:8px 18px;align-items:end;padding:10px 18px 12px;background:#fff;border-top:1px solid var(--line)}
+.listing-addr{font-family:"Playfair Display",serif;font-size:clamp(18px,1.5vw,26px);color:var(--ink);line-height:1.2}
+.listing-price{font-size:clamp(16px,1.3vw,22px);color:var(--gold);font-weight:600;text-align:right}
+.listing-facts{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:clamp(12px,.95vw,15px);color:var(--muted)}
+.listing-facts span{border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:var(--ivory2)}
+.listing-hint{grid-column:1 / -1;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9a9080}
+@media (max-width:900px){
+  .listing-hero{height:70vh;max-height:70vh;padding:0 44px}
+  .listing-meta{grid-template-columns:1fr}
+  .listing-price{text-align:left}
+  .listing-nav{display:none}
+}
+/* photo-friendly prompt fullscreen */
+.prompt-box.fs-item{background:#fffef9 !important;padding:4vh 4vw !important;justify-content:center}
+.prompt-box.fs-item .prompt-bar{margin-bottom:2vh;padding-right:0;justify-content:space-between}
+.prompt-box.fs-item .prompt-bar span{font-size:clamp(14px,1.1vw,18px);color:var(--gold)}
+.prompt-box.fs-item .copy-btn{font-size:clamp(14px,1.1vw,18px);padding:8px 18px}
+.prompt-box.fs-item .prompt-text{overflow:visible !important;max-height:none !important;flex:0 1 auto;font-size:clamp(22px,1.7vw,32px) !important;line-height:1.4;color:#1c1812 !important;font-weight:500;letter-spacing:.01em}
+.prompt-box.fs-item::before{content:attr(data-prompt-level);display:block;font-family:"Playfair Display",serif;font-size:clamp(28px,2.4vw,44px);color:var(--ink);margin-bottom:1.2vh;font-weight:500}
+.fs-stage > .prompt-box.fs-item{width:min(1100px,94vw)!important;height:auto!important;max-height:92vh;overflow:auto}
+
 </style>
 </head>
 <body>
@@ -517,7 +559,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
       <div class="mock-bar"><i></i><i></i><i></i><span>Client presentation · mock</span></div>
       <div class="tabs"><button class="on" data-tab="p-comps">Comparable Homes</button><button data-tab="p-market">Market Review</button></div>
       <div class="panel on" id="p-comps"><span class="tag">Sample · example data</span>
-        <div class="comps"><div class="comp"><div class="gal" data-photos='["assets/comps/874-cedar-point-1.jpg", "assets/comps/874-cedar-point-2.jpg", "assets/comps/874-cedar-point-3.jpg", "assets/comps/874-cedar-point-4.jpg", "assets/comps/874-cedar-point-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 874 Cedar Point Rd, Tiny"><img src="assets/comps/874-cedar-point-1.jpg" alt="874 Cedar Point Rd, Tiny"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/874-cedar-point-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/874-cedar-point-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/874-cedar-point-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/874-cedar-point-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/874-cedar-point-5.jpg" alt=""></button></div></div><div class="m"><b>874 Cedar Point Rd, Tiny</b><span class="pr">Listed $474,990</span><br>5 bed · 2 bath<br>0 days on market<br>1,500-2,000 sq ft<br>Detached 2-storey</div></div><div class="comp"><div class="gal" data-photos='["assets/comps/754-lafontaine-1.jpg", "assets/comps/754-lafontaine-2.jpg", "assets/comps/754-lafontaine-3.jpg", "assets/comps/754-lafontaine-4.jpg", "assets/comps/754-lafontaine-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 754 Lafontaine Rd W, Tiny"><img src="assets/comps/754-lafontaine-1.jpg" alt="754 Lafontaine Rd W, Tiny"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/754-lafontaine-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/754-lafontaine-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/754-lafontaine-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/754-lafontaine-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/754-lafontaine-5.jpg" alt=""></button></div></div><div class="m"><b>754 Lafontaine Rd W, Tiny</b><span class="pr">Listed $559,900</span><br>4 bed · 3 bath<br>1 day on market<br>1,500-2,000 sq ft<br>Detached 2-storey</div></div><div class="comp"><div class="gal" data-photos='["assets/comps/9-delbrooke-1.jpg", "assets/comps/9-delbrooke-2.jpg", "assets/comps/9-delbrooke-3.jpg", "assets/comps/9-delbrooke-4.jpg", "assets/comps/9-delbrooke-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 9 Delbrooke Crt, Tiny"><img src="assets/comps/9-delbrooke-1.jpg" alt="9 Delbrooke Crt, Tiny"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/9-delbrooke-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/9-delbrooke-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/9-delbrooke-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/9-delbrooke-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/9-delbrooke-5.jpg" alt=""></button></div></div><div class="m"><b>9 Delbrooke Crt, Tiny</b><span class="pr">Listed $599,900</span><br>2 bed · 1 bath<br>0 days on market<br>700-1,100 sq ft<br>Raised bungalow</div></div><div class="comp"><div class="gal" data-photos='["assets/comps/20-navigator-1.jpg", "assets/comps/20-navigator-2.jpg", "assets/comps/20-navigator-3.jpg", "assets/comps/20-navigator-4.jpg", "assets/comps/20-navigator-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 20 Navigator Rd, Penetanguishene"><img src="assets/comps/20-navigator-1.jpg" alt="20 Navigator Rd, Penetanguishene"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/20-navigator-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/20-navigator-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/20-navigator-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/20-navigator-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/20-navigator-5.jpg" alt=""></button></div></div><div class="m"><b>20 Navigator Rd, Penetanguishene</b><span class="pr">Listed $675,000</span><br>Vacant land<br>1 day on market<br>Waterfront</div></div><div class="comp"><div class="gal" data-photos='["assets/comps/1935-snow-valley-1.jpg", "assets/comps/1935-snow-valley-2.jpg", "assets/comps/1935-snow-valley-3.jpg", "assets/comps/1935-snow-valley-4.jpg", "assets/comps/1935-snow-valley-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 1935 Snow Valley Rd, Springwater"><img src="assets/comps/1935-snow-valley-1.jpg" alt="1935 Snow Valley Rd, Springwater"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/1935-snow-valley-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/1935-snow-valley-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/1935-snow-valley-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/1935-snow-valley-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/1935-snow-valley-5.jpg" alt=""></button></div></div><div class="m"><b>1935 Snow Valley Rd, Springwater</b><span class="pr">Listed $839,900</span><br>2 bed · 3 bath<br>0 days on market<br>1,100-1,500 sq ft<br>Detached bungalow</div></div><div class="comp"><div class="gal" data-photos='["assets/comps/1842-meadowview-1.jpg", "assets/comps/1842-meadowview-2.jpg", "assets/comps/1842-meadowview-3.jpg", "assets/comps/1842-meadowview-4.jpg", "assets/comps/1842-meadowview-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 1842 Meadowview Crt, Severn"><img src="assets/comps/1842-meadowview-1.jpg" alt="1842 Meadowview Crt, Severn"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/1842-meadowview-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/1842-meadowview-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/1842-meadowview-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/1842-meadowview-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/1842-meadowview-5.jpg" alt=""></button></div></div><div class="m"><b>1842 Meadowview Crt, Severn</b><span class="pr">Listed $1,249,000</span><br>3 bed · 3 bath<br>1 day on market<br>2,000-2,500 sq ft<br>Detached bungalow</div></div></div>
+        <div class="comps"><div class="comp" data-listing="0" role="button" tabindex="0" aria-label="Open full listing"><div class="gal" data-photos='["assets/comps/874-cedar-point-1.jpg", "assets/comps/874-cedar-point-2.jpg", "assets/comps/874-cedar-point-3.jpg", "assets/comps/874-cedar-point-4.jpg", "assets/comps/874-cedar-point-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 874 Cedar Point Rd, Tiny"><img src="assets/comps/874-cedar-point-1.jpg" alt="874 Cedar Point Rd, Tiny"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/874-cedar-point-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/874-cedar-point-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/874-cedar-point-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/874-cedar-point-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/874-cedar-point-5.jpg" alt=""></button></div></div><div class="m"><b>874 Cedar Point Rd, Tiny</b><span class="pr">Listed $474,990</span><br>5 bed · 2 bath<br>0 days on market<br>1,500-2,000 sq ft<br>Detached 2-storey</div></div><div class="comp" data-listing="1" role="button" tabindex="0" aria-label="Open full listing"><div class="gal" data-photos='["assets/comps/754-lafontaine-1.jpg", "assets/comps/754-lafontaine-2.jpg", "assets/comps/754-lafontaine-3.jpg", "assets/comps/754-lafontaine-4.jpg", "assets/comps/754-lafontaine-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 754 Lafontaine Rd W, Tiny"><img src="assets/comps/754-lafontaine-1.jpg" alt="754 Lafontaine Rd W, Tiny"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/754-lafontaine-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/754-lafontaine-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/754-lafontaine-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/754-lafontaine-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/754-lafontaine-5.jpg" alt=""></button></div></div><div class="m"><b>754 Lafontaine Rd W, Tiny</b><span class="pr">Listed $559,900</span><br>4 bed · 3 bath<br>1 day on market<br>1,500-2,000 sq ft<br>Detached 2-storey</div></div><div class="comp" data-listing="2" role="button" tabindex="0" aria-label="Open full listing"><div class="gal" data-photos='["assets/comps/9-delbrooke-1.jpg", "assets/comps/9-delbrooke-2.jpg", "assets/comps/9-delbrooke-3.jpg", "assets/comps/9-delbrooke-4.jpg", "assets/comps/9-delbrooke-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 9 Delbrooke Crt, Tiny"><img src="assets/comps/9-delbrooke-1.jpg" alt="9 Delbrooke Crt, Tiny"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/9-delbrooke-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/9-delbrooke-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/9-delbrooke-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/9-delbrooke-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/9-delbrooke-5.jpg" alt=""></button></div></div><div class="m"><b>9 Delbrooke Crt, Tiny</b><span class="pr">Listed $599,900</span><br>2 bed · 1 bath<br>0 days on market<br>700-1,100 sq ft<br>Raised bungalow</div></div><div class="comp" data-listing="3" role="button" tabindex="0" aria-label="Open full listing"><div class="gal" data-photos='["assets/comps/20-navigator-1.jpg", "assets/comps/20-navigator-2.jpg", "assets/comps/20-navigator-3.jpg", "assets/comps/20-navigator-4.jpg", "assets/comps/20-navigator-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 20 Navigator Rd, Penetanguishene"><img src="assets/comps/20-navigator-1.jpg" alt="20 Navigator Rd, Penetanguishene"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/20-navigator-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/20-navigator-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/20-navigator-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/20-navigator-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/20-navigator-5.jpg" alt=""></button></div></div><div class="m"><b>20 Navigator Rd, Penetanguishene</b><span class="pr">Listed $675,000</span><br>Vacant land<br>1 day on market<br>Waterfront</div></div><div class="comp" data-listing="4" role="button" tabindex="0" aria-label="Open full listing"><div class="gal" data-photos='["assets/comps/1935-snow-valley-1.jpg", "assets/comps/1935-snow-valley-2.jpg", "assets/comps/1935-snow-valley-3.jpg", "assets/comps/1935-snow-valley-4.jpg", "assets/comps/1935-snow-valley-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 1935 Snow Valley Rd, Springwater"><img src="assets/comps/1935-snow-valley-1.jpg" alt="1935 Snow Valley Rd, Springwater"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/1935-snow-valley-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/1935-snow-valley-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/1935-snow-valley-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/1935-snow-valley-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/1935-snow-valley-5.jpg" alt=""></button></div></div><div class="m"><b>1935 Snow Valley Rd, Springwater</b><span class="pr">Listed $839,900</span><br>2 bed · 3 bath<br>0 days on market<br>1,100-1,500 sq ft<br>Detached bungalow</div></div><div class="comp" data-listing="5" role="button" tabindex="0" aria-label="Open full listing"><div class="gal" data-photos='["assets/comps/1842-meadowview-1.jpg", "assets/comps/1842-meadowview-2.jpg", "assets/comps/1842-meadowview-3.jpg", "assets/comps/1842-meadowview-4.jpg", "assets/comps/1842-meadowview-5.jpg"]'><button type="button" class="gal-main" aria-label="Cycle photos for 1842 Meadowview Crt, Severn"><img src="assets/comps/1842-meadowview-1.jpg" alt="1842 Meadowview Crt, Severn"></button><div class="gal-thumbs"><button type="button" data-n="0" class="on" aria-label="Photo 1"><img src="assets/comps/1842-meadowview-1.jpg" alt=""></button><button type="button" data-n="1" class="" aria-label="Photo 2"><img src="assets/comps/1842-meadowview-2.jpg" alt=""></button><button type="button" data-n="2" class="" aria-label="Photo 3"><img src="assets/comps/1842-meadowview-3.jpg" alt=""></button><button type="button" data-n="3" class="" aria-label="Photo 4"><img src="assets/comps/1842-meadowview-4.jpg" alt=""></button><button type="button" data-n="4" class="" aria-label="Photo 5"><img src="assets/comps/1842-meadowview-5.jpg" alt=""></button></div></div><div class="m"><b>1842 Meadowview Crt, Severn</b><span class="pr">Listed $1,249,000</span><br>3 bed · 3 bath<br>1 day on market<br>2,000-2,500 sq ft<br>Detached bungalow</div></div></div>
         <p class="disc">Sample cards for illustration only. Verify every figure on MLS before a client sees them.</p></div>
       <div class="panel" id="p-market"><span class="tag">Sample · example data</span>
         <div class="stats">
@@ -584,6 +626,30 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
 </main>
 <nav class="nav" aria-label="Slides"></nav>
 <div class="notes"><b>Presenter notes · N to hide</b><span class="t"></span></div>
+
+<div id="listing-layer" class="listing-layer" aria-hidden="true">
+  <button type="button" class="listing-close" aria-label="Close listing">×</button>
+  <button type="button" class="listing-nav listing-prev-listing" aria-label="Previous listing">‹</button>
+  <button type="button" class="listing-nav listing-next-listing" aria-label="Next listing">›</button>
+  <div class="listing-panel" role="dialog" aria-modal="true">
+    <div class="listing-hero">
+      <button type="button" class="listing-photo-nav listing-photo-prev" aria-label="Previous photo">‹</button>
+      <div class="listing-photo-stage">
+        <img id="listing-photo" alt="">
+      </div>
+      <button type="button" class="listing-photo-nav listing-photo-next" aria-label="Next photo">›</button>
+      <div class="listing-photo-count" id="listing-photo-count">1 / 5</div>
+    </div>
+    <div class="listing-thumbs" id="listing-thumbs"></div>
+    <div class="listing-meta">
+      <div class="listing-addr" id="listing-addr"></div>
+      <div class="listing-price" id="listing-price"></div>
+      <div class="listing-facts" id="listing-facts"></div>
+      <div class="listing-hint">← → photos · side arrows change listing · Esc to close</div>
+    </div>
+  </div>
+</div>
+
 <div id="fs-layer" class="fs-layer" aria-hidden="true">
   <button type="button" class="fs-close" aria-label="Close expanded view">×</button>
   <div class="fs-stage" id="fs-stage"></div>
@@ -599,8 +665,17 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
     var b=document.createElement('button');b.setAttribute('aria-label','Slide '+pad(k+1));b.onclick=function(){go(k)};nav.appendChild(b);
   });
   var dots=[].slice.call(nav.children);
-  function go(k){if(typeof fsOpen==='function'&&fsOpen())closeFs();i=Math.max(0,Math.min(n-1,k));s.forEach(function(e,j){e.classList.toggle('on',j===i)});dots.forEach(function(e,j){e.classList.toggle('on',j===i)});pr.style.width=((i+1)/n*100)+'%';nt.textContent=s[i].dataset.notes||'';history.replaceState(null,'','#'+pad(i+1))}
+  function go(k){if(typeof listingOpen==='function'&&listingOpen())closeListing();if(typeof fsOpen==='function'&&fsOpen())closeFs();i=Math.max(0,Math.min(n-1,k));s.forEach(function(e,j){e.classList.toggle('on',j===i)});dots.forEach(function(e,j){e.classList.toggle('on',j===i)});pr.style.width=((i+1)/n*100)+'%';nt.textContent=s[i].dataset.notes||'';history.replaceState(null,'','#'+pad(i+1))}
   document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && typeof listingOpen==='function' && listingOpen()){e.preventDefault();closeListing();return}
+    if(typeof listingOpen==='function' && listingOpen()){
+      e.preventDefault();
+      if(e.key==='ArrowRight' || e.key===']'){ if(e.key===']'||e.shiftKey){listingIdx=(listingIdx+1)%LISTINGS.length; photoIdx=0;} else {photoIdx++;} renderListing(); }
+      else if(e.key==='ArrowLeft' || e.key==='['){ if(e.key==='['||e.shiftKey){listingIdx=(listingIdx+LISTINGS.length-1)%LISTINGS.length; photoIdx=0;} else {photoIdx--;} renderListing(); }
+      else if(e.key==='ArrowDown'){listingIdx=(listingIdx+1)%LISTINGS.length; photoIdx=0; renderListing();}
+      else if(e.key==='ArrowUp'){listingIdx=(listingIdx+LISTINGS.length-1)%LISTINGS.length; photoIdx=0; renderListing();}
+      return;
+    }
     if(e.key==='Escape' && fsOpen()){e.preventDefault();closeFs();return}
     if(fsOpen())return;
     if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
@@ -611,7 +686,7 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
   });
   var x0=null;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
   document.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
-  document.addEventListener('click',function(e){if(fsOpen())return;if(e.target.closest('a,button,.mock,.dial,.loo-wrap,.shot,.ol-win,.sheet-shot,.expandable,a.pdf-shot'))return;go(i+(e.clientX>innerWidth/3?1:-1))});
+  document.addEventListener('click',function(e){if(typeof listingOpen==='function'&&listingOpen())return;if(fsOpen())return;if(e.target.closest('a,button,.mock,.dial,.loo-wrap,.shot,.ol-win,.sheet-shot,.expandable,.comp,a.pdf-shot'))return;go(i+(e.clientX>innerWidth/3?1:-1))});
   
   /* click-to-expand mockups */
   var fsLayer=document.getElementById('fs-layer');
@@ -677,6 +752,81 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
     });
   });
 
+
+  /* single-listing fullscreen viewer */
+  var LISTINGS = [{"address": "874 Cedar Point Rd, Tiny", "price": "Listed $474,990", "lines": ["5 bed \u00b7 2 bath", "0 days on market", "1,500-2,000 sq ft", "Detached 2-storey"], "photos": ["assets/comps/874-cedar-point-1.jpg", "assets/comps/874-cedar-point-2.jpg", "assets/comps/874-cedar-point-3.jpg", "assets/comps/874-cedar-point-4.jpg", "assets/comps/874-cedar-point-5.jpg"]}, {"address": "754 Lafontaine Rd W, Tiny", "price": "Listed $559,900", "lines": ["4 bed \u00b7 3 bath", "1 day on market", "1,500-2,000 sq ft", "Detached 2-storey"], "photos": ["assets/comps/754-lafontaine-1.jpg", "assets/comps/754-lafontaine-2.jpg", "assets/comps/754-lafontaine-3.jpg", "assets/comps/754-lafontaine-4.jpg", "assets/comps/754-lafontaine-5.jpg"]}, {"address": "9 Delbrooke Crt, Tiny", "price": "Listed $599,900", "lines": ["2 bed \u00b7 1 bath", "0 days on market", "700-1,100 sq ft", "Raised bungalow"], "photos": ["assets/comps/9-delbrooke-1.jpg", "assets/comps/9-delbrooke-2.jpg", "assets/comps/9-delbrooke-3.jpg", "assets/comps/9-delbrooke-4.jpg", "assets/comps/9-delbrooke-5.jpg"]}, {"address": "20 Navigator Rd, Penetanguishene", "price": "Listed $675,000", "lines": ["Vacant land", "1 day on market", "Waterfront"], "photos": ["assets/comps/20-navigator-1.jpg", "assets/comps/20-navigator-2.jpg", "assets/comps/20-navigator-3.jpg", "assets/comps/20-navigator-4.jpg", "assets/comps/20-navigator-5.jpg"]}, {"address": "1935 Snow Valley Rd, Springwater", "price": "Listed $839,900", "lines": ["2 bed \u00b7 3 bath", "0 days on market", "1,100-1,500 sq ft", "Detached bungalow"], "photos": ["assets/comps/1935-snow-valley-1.jpg", "assets/comps/1935-snow-valley-2.jpg", "assets/comps/1935-snow-valley-3.jpg", "assets/comps/1935-snow-valley-4.jpg", "assets/comps/1935-snow-valley-5.jpg"]}, {"address": "1842 Meadowview Crt, Severn", "price": "Listed $1,249,000", "lines": ["3 bed \u00b7 3 bath", "1 day on market", "2,000-2,500 sq ft", "Detached bungalow"], "photos": ["assets/comps/1842-meadowview-1.jpg", "assets/comps/1842-meadowview-2.jpg", "assets/comps/1842-meadowview-3.jpg", "assets/comps/1842-meadowview-4.jpg", "assets/comps/1842-meadowview-5.jpg"]}];
+  var listingLayer=document.getElementById('listing-layer');
+  var listingPhoto=document.getElementById('listing-photo');
+  var listingThumbs=document.getElementById('listing-thumbs');
+  var listingCount=document.getElementById('listing-photo-count');
+  var listingAddr=document.getElementById('listing-addr');
+  var listingPrice=document.getElementById('listing-price');
+  var listingFacts=document.getElementById('listing-facts');
+  var listingIdx=0, photoIdx=0, listingTouchX=null;
+  function listingOpen(){return listingLayer.classList.contains('on')}
+  function renderListing(){
+    var L=LISTINGS[listingIdx]; if(!L)return;
+    var photos=L.photos||[];
+    if(photoIdx<0)photoIdx=photos.length-1;
+    if(photoIdx>=photos.length)photoIdx=0;
+    listingPhoto.src=photos[photoIdx]||'';
+    listingPhoto.alt=L.address||'';
+    listingCount.textContent=(photoIdx+1)+' / '+photos.length;
+    listingAddr.textContent=L.address||'';
+    listingPrice.textContent=L.price||'';
+    listingFacts.innerHTML='';
+    (L.lines||[]).forEach(function(line){
+      var s=document.createElement('span'); s.textContent=line; listingFacts.appendChild(s);
+    });
+    // status from email facts: Active for listed comps
+    var st=document.createElement('span'); st.textContent='Active'; listingFacts.appendChild(st);
+    listingThumbs.innerHTML='';
+    photos.forEach(function(src,n){
+      var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Photo '+(n+1));
+      if(n===photoIdx)b.className='on';
+      var im=document.createElement('img'); im.src=src; im.alt='';
+      b.appendChild(im);
+      b.addEventListener('click',function(e){e.stopPropagation(); photoIdx=n; renderListing();});
+      listingThumbs.appendChild(b);
+    });
+  }
+  function openListing(i){
+    if(typeof fsOpen==='function' && fsOpen()){ /* keep mock open underneath ok */ }
+    listingIdx=Math.max(0,Math.min(LISTINGS.length-1,i));
+    photoIdx=0;
+    renderListing();
+    listingLayer.classList.add('on');
+    listingLayer.setAttribute('aria-hidden','false');
+  }
+  function closeListing(){
+    listingLayer.classList.remove('on');
+    listingLayer.setAttribute('aria-hidden','true');
+  }
+  document.querySelectorAll('.comp[data-listing]').forEach(function(card){
+    card.addEventListener('click',function(e){
+      // thumbs/main already stopPropagation and call openListing; this catches address/price/details
+      if(e.target.closest('.gal-main,.gal-thumbs'))return;
+      e.preventDefault(); e.stopPropagation();
+      openListing(+card.getAttribute('data-listing'));
+    });
+    card.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault(); openListing(+card.getAttribute('data-listing'));}
+    });
+  });
+  listingLayer.querySelector('.listing-close').addEventListener('click',function(e){e.stopPropagation();closeListing()});
+  listingLayer.addEventListener('click',function(e){if(e.target===listingLayer)closeListing()});
+  listingLayer.querySelector('.listing-prev-listing').addEventListener('click',function(e){e.stopPropagation(); listingIdx=(listingIdx+LISTINGS.length-1)%LISTINGS.length; photoIdx=0; renderListing();});
+  listingLayer.querySelector('.listing-next-listing').addEventListener('click',function(e){e.stopPropagation(); listingIdx=(listingIdx+1)%LISTINGS.length; photoIdx=0; renderListing();});
+  listingLayer.querySelector('.listing-photo-prev').addEventListener('click',function(e){e.stopPropagation(); photoIdx--; renderListing();});
+  listingLayer.querySelector('.listing-photo-next').addEventListener('click',function(e){e.stopPropagation(); photoIdx++; renderListing();});
+  listingLayer.querySelector('.listing-photo-stage').addEventListener('touchstart',function(e){listingTouchX=e.changedTouches[0].clientX},{passive:true});
+  listingLayer.querySelector('.listing-photo-stage').addEventListener('touchend',function(e){
+    if(listingTouchX===null)return;
+    var d=e.changedTouches[0].clientX-listingTouchX;
+    if(Math.abs(d)>40){ if(d<0) photoIdx++; else photoIdx--; renderListing(); }
+    listingTouchX=null;
+  });
+
   document.querySelectorAll('.gal').forEach(function(g){
     var photos=JSON.parse(g.getAttribute('data-photos')||'[]');
     var main=g.querySelector('.gal-main img');
@@ -684,12 +834,15 @@ img.pdf-shot{box-shadow:0 2px 10px rgba(0,0,0,.18)}
     var i=0;
     function show(n){if(!photos.length)return;i=(n+photos.length)%photos.length;main.src=photos[i];thumbs.forEach(function(t,k){t.classList.toggle('on',k===i)})}
     g.querySelector('.gal-main').addEventListener('click',function(e){
+      e.preventDefault();
       e.stopPropagation();
+      var card=g.closest('.comp[data-listing]');
+      if(card && typeof openListing==='function'){ openListing(+card.getAttribute('data-listing')); return; }
       var exp=g.closest('.expandable');
       if(exp && !exp.classList.contains('fs-item')){ openFs(exp); return; }
       show(i+1);
     });
-    thumbs.forEach(function(t){t.addEventListener('click',function(e){e.stopPropagation();show(+t.dataset.n)})});
+    thumbs.forEach(function(t){t.addEventListener('click',function(e){e.stopPropagation(); /* thumbs only select photo when mock expanded; card click opens listing */ if(g.closest('.mock.fs-item')){show(+t.dataset.n)} else { var card=g.closest('.comp[data-listing]'); if(card) openListing(+card.getAttribute('data-listing')); else show(+t.dataset.n);} })});
   });
 
   var h=parseInt(location.hash.slice(1),10);go(h?h-1:0);
