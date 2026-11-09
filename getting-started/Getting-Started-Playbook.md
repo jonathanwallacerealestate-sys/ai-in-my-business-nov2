@@ -4,7 +4,7 @@ From Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage.
 
 For the team talk on Tuesday, November 10, 2026. This file is Step 1 only: one assistant, used every day, by chat.
 
-It leaves out marketing. It does not cover ads, social posts, newsletters, websites, blogs, video, or home-value pages. It does not cover connecting accounts, saved processes, or a team of assistants. Those are later steps, named below and not taught here.
+It covers the everyday jobs, a Letter of Opinion, a deal card, a one-page brand guide, and local posts you write yourself. It does not cover ads or a full nurture campaign. It does not cover connecting accounts or a team of assistants. Those are later steps, named below and not taught here.
 
 Ground rule: AI drafts. You decide. You send.
 
@@ -126,9 +126,44 @@ Copy the finished draft into the tool you already use. You hit send.
 
 One worked example is the Faris Team Letter of Opinion. In Jonathan's experience, about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. The steps and the instruction file are in the [Letter of Opinion kit](loo-kit.html). Download the Word template from the shared folder named in that kit, add your own signature photo, and give your AI the template, the photo, and the kit.
 
-Call notes, the same way. A Plaud recorder can clip to the phone and record the call or the meeting. The Plaud app turns that into a transcript and a summary. AI drafts a CRM note, the tasks and dates, and a follow-up email or text. You read it and you send it. Let people know you are recording. No Plaud? Record a voice memo, or talk through how the appointment went right after. Ask for the same three things. A sample of that request is in the talk.
+What's possible on a call: a recorder such as Plaud can clip to the phone. The app makes a transcript and a summary, and your AI can turn that into a CRM note, the tasks, and a follow-up email. That is advanced. You do not need one to start, and it is not in the 30-day plan.
 
-Your next call can be one card at a time, read from the Follow Up Boss website. You sign in yourself. The steps are in the [Deal Card kit](deal-card-kit.html).
+The version to do this month is free. After an appointment, record a voice memo, or talk through how it went. Let people know you are recording. Ask for the same three things:
+
+```
+Here is my voice memo, or my spoken recap, from a call with [client].
+
+Give me:
+1. A 3-line CRM note
+2. A follow-up task list with dates
+3. A short follow-up email recapping what they told me and the next step
+
+No em dashes. Flag anything I need to verify. Do not invent details.
+```
+
+Your next call can be one card at a time, read from the Follow Up Boss website. You sign in yourself. The AI never needs your password. The steps are in the [Deal Card kit](deal-card-kit.html).
+
+A one-page brand guide comes from taste you share first: 10 social posts you like the style of, fonts, colour palettes, designs, your logo, and your brokerage rules. Screenshots are fine. Then upload photos, headshots, and listing photos to one Drive folder only: Headshots, Listing Photos, Local Spots, and Logo. Do not share your whole Drive. Edit the guide until it sounds like you, save one file, and say "follow my brand guide" each time you ask for a post.
+
+```
+Here are fonts, colour palettes, 10 social posts I like the style of, and designs I like, plus my logo. My photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder.
+
+Build me a one-page brand guide: colours with hex codes, a heading and body font, photo style, voice, dos and don'ts, max 5 hashtags, my sign-off line. Ask me questions if anything is unclear.
+```
+
+Before you close a chat, save what you decided:
+
+```
+Before we finish, list any new step-by-step processes and decisions from this chat in short bullet points so I can save them to my rules file.
+```
+
+On day 1, ask it to help you pick the work:
+
+```
+I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with over the next 30 days. For each, tell me how we'd start and how much time it could save.
+```
+
+A sample answer, not yours: paperwork follow-up, CMA prep, writing listing descriptions.
 
 ---
 
@@ -238,38 +273,40 @@ Connecting accounts, saving a standing process, and adding more assistants are l
 
 ## Your next 30 days
 
-Sample schedule for Step 1. Move the dates to match the team calendar.
+Week 1 is 30 minutes every day. Days 8 to 30 are 30 minutes every other day, about 12 sessions. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
 
-### Week 1, starting November 16
+No recorder to buy. The call notes in week 1 use a voice memo.
 
-Set up and pick one task.
+### Week 1, 30 minutes a day
 
-- Create a free account (Grok, ChatGPT, Claude, Gemini, or Copilot) and install the phone app.
-- Write your rules note and paste it at the start of the chat.
-- Use the chat on the one task you avoid, on 3 or more days. Drafts only. You send.
+Day 1. Pick one AI and install it on your phone and computer. Answer one real email with it. Ask it to help you pick three tasks you hate doing that it could help with over the next 30 days.
 
-### Week 2, starting November 23
+Day 2. Write your house rules: tone, sign-off, short paragraphs, never send without your review. Write an about-me note: your market, brokerage, who you serve, sign-off, and contact details. Set your approval line: anything client-facing gets your review first.
 
-Follow-up writing.
+Day 3. Save 3 prompts you will reuse: an email reply, a text reply, and an appointment summary. For the texts, write short ones you can reuse for showing follow-ups, offer updates, and check-ins. Save one or two finished pieces you loved for each kind of task. Examples beat instructions.
 
-- Use the chat for every post-showing or post-call follow-up this week.
-- Log each correction as a one-line rule. That is the start of a decision log.
-- Track minutes saved per day, roughly.
+Day 4. Talk instead of type. After an appointment, record a voice memo and turn it into a CRM note, tasks, and a follow-up email. Notice how much faster it is.
 
-### Week 3, starting November 30
+Day 5. Put your Word template and signature photo in Drive and load the Letter of Opinion kit.
 
-Summaries and appointment prep.
+Day 6. Practice the Letter of Opinion on a past deal. Fix what is off.
 
-- Before each appointment, ask for a one-page prep sheet. Use sample details or non-sensitive notes.
-- Summarize one long document or email chain, then check it against the original.
-- If you are hitting free-tier limits, pick one paid plan.
+Day 7. Set up the deal card. Run it on 10 leads. Make the calls.
 
-### Week 4, starting December 7
+At the end of each chat, save any new step-by-step and the decisions you made.
 
-Organize your day and share results.
+### Days 8 to 30, 30 minutes every other day
 
-- Each morning, dictate your to-do list and ask for a prioritized plan, with income tasks first. Do this while parked.
-- Bring one before-and-after example, with private details removed, and your minutes-saved estimate to the team huddle.
+- Use the Letter of Opinion on a real request and time it against your old way.
+- Run the deal card three times a week and paste the notes back in.
+- Share 10 social posts you like the style of, plus fonts, colour palettes, designs, and your logo. Have your AI draft a one-page brand guide.
+- Upload your photos, headshots, and listing photos to one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Only share that folder.
+- Edit the guide until it sounds like you. Save it as one file.
+- Make your first local food or community post with the guide. Batch two more posts and schedule them.
+- Paste in your 5 oldest unanswered emails and have your AI draft replies. You review them and you send them.
+- Day 30: review what saved time, update your rules, and pick what is next for Step 2.
+
+By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide and three posts out.
 
 ### What the team could set up together
 
@@ -286,7 +323,7 @@ Organize your day and share results.
 - **Step 3, Teach It Your Way.** Your standards, voice and processes, kept so you are not pasting them from scratch every time.
 - **Step 4, Build Your AI Team.** Specialized assistants working alongside you.
 
-Marketing, visual brand, and nurture content are a separate session.
+Ads and a full nurture campaign are a separate session. A one-page brand guide and your first local posts are in the 30-day plan above.
 
 ---
 
