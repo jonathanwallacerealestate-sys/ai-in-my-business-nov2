@@ -1,49 +1,42 @@
-# Getting Started with AI in Real Estate
+# Step 1 of 4: Getting Started
 
 From Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage.
 
-For the team talk on Tuesday, November 10, 2026. A beginner guide: where AI saves an agent time and energy, how to set it up, and what it costs.
+For the team talk on Tuesday, November 10, 2026. This file is Step 1 only: one assistant, used every day, by chat.
 
-This file leaves out marketing. It does not cover ads, social posts, newsletters, websites, blogs, video, or home-value pages. It also leaves out any private setup. Where a later step is mentioned, it is described only by role.
+It leaves out marketing. It does not cover ads, social posts, newsletters, websites, blogs, video, or home-value pages. It does not cover connecting accounts, saved processes, or a team of assistants. Those are later steps, named below and not taught here.
 
-Ground rule for everything below: AI drafts. You decide. You send.
+Ground rule: AI drafts. You decide. You send.
 
-How to use this file: paste it into the assistant you chose, then ask it to coach you through the 15-minute setup and your one task. Keep every client message as a draft until you have read it.
+How to use this file: paste it into the one assistant you chose, then ask it to coach you through the first week below. Keep every client message as a draft until you have read it.
 
----
+## The four steps
 
-## Where AI saves time
-
-Six everyday jobs. None of them replace you with a client. They take away the blank page and the busywork.
-
-1. Everyday admin
-2. Emails, texts, and follow-up writing
-3. Summarizing documents and calls
-4. Prep for appointments
-5. Research
-6. Organizing your day
-
-Pick the one that drains you most. That is your starting task.
-
-For most agents, the early win is serving the leads and clients you already have. Follow-up actually goes out. Property search stays in MLS. AI can prepare questions and summaries. It does not replace your search.
-
-Dictate between appointments while you are parked. Never while driving.
-
-AI can state a wrong fact with confidence. Verify prices, dates, addresses, school details, and anything legal. Check a summary against the original. Mark legal items as "confirm with the brokerage."
+1. **Getting Started.** One assistant, used every day. This file.
+2. **Connect Your Tools.** Email, calendar, CRM and Drive. Not in this file.
+3. **Teach It Your Way.** Your standards, voice and processes. Not in this file.
+4. **Build Your AI Team.** Specialized assistants working alongside you. Not in this file.
 
 ---
 
-## Set up in 15 minutes
+## 1. How to start
 
-Three things. That is the whole setup.
+Pick one assistant and open it every day. Grok is the one Jonathan uses most, day to day, by voice. ChatGPT, Claude, Gemini, and Copilot can do this beginner work too. Pick the one you will actually open.
 
-1. Create a free account in the assistant you will actually open, and install the phone app so you can use voice.
-2. Write the half-page rules note below. Paste it at the start of a chat, or save it if your plan has a place for standing instructions (often called custom instructions, projects, or memory). Features vary by plan.
-3. Pick one task you avoid. Post-showing follow-up, call prep, or the weekly admin list. Do that one task with AI every day this week.
+Three moves, from the beginner level:
 
-If you later want to go further, keep a decision log: each time you correct a draft, write the correction down as a one-line rule. Then add one role at a time, for example a follow-up assistant or a listing-paperwork assistant. That is not week one.
+1. **One task you hate.** Pick one low-value task you put off, and use the chat for that one thing.
+2. **Write your rules down.** A short note: your name, brokerage, and area; how you write; words you never use; and "drafts only, I send." Paste it at the start of the chat.
+3. **Drafts only.** It drafts. You review. You send. When you correct it, keep that correction as a one-line rule.
 
-### Rules note (copy and personalize)
+### This week
+
+- Create a free account and install the phone app, so you can use voice.
+- Write the rules note.
+- Use the chat for that one task on 3 or more days.
+- Dictate between appointments while you are parked. Never while driving.
+
+### Rules note (copy, then personalize)
 
 ```
 I'm a REALTOR® with Faris Team Real Estate Brokerage. I work in [your area].
@@ -58,13 +51,11 @@ If something should be confirmed with the brokerage, say so.
 This is not legal advice.
 ```
 
----
+### First prompts to try
 
-## Starter prompt library
+Copy one prompt into a new chat. Paste your rules note first. These are samples. Do not paste client ID, banking, or mortgage numbers.
 
-Copy one prompt into a new chat. Add your rules note first. Everything here is sample data. Replace the samples with your own non-sensitive notes. Do not paste client ID, banking, or mortgage numbers.
-
-### 1. Time-blocked day plan
+**Time-blocked day plan**
 
 ```
 I'm a REALTOR®. Here is my messy list for today. SAMPLE DATA ONLY.
@@ -74,13 +65,13 @@ I'm a REALTOR®. Here is my messy list for today. SAMPLE DATA ONLY.
 Give me a time-blocked plan with the income tasks first. Flag anything I should confirm with my brokerage. Do not invent client names or appointment times.
 ```
 
-### 2. Closing-week checklist
+**Closing-week checklist**
 
 ```
 Give me a closing-week checklist for a sample freehold purchase. Mark anything legal as confirm with the brokerage. This is sample data, not a real file. Do not invent dates, names, or figures.
 ```
 
-### 3. Post-showing follow-up
+**Post-showing follow-up**
 
 ```
 I'm a REALTOR® in Midland, Ontario. Here are my messy notes from a showing today. SAMPLE DATA ONLY.
@@ -96,7 +87,7 @@ Do not invent sale prices or school facts. Say "verify" where I need to check.
 
 123 Maple Sample St is not a real listing. Alex and Jordan Sample are fictional.
 
-### 4. Buyer consultation prep
+**Buyer consultation prep**
 
 ```
 Build me a one-page prep sheet for a first buyer consultation with a sample couple relocating to Midland. SAMPLE DATA ONLY.
@@ -104,7 +95,7 @@ Build me a one-page prep sheet for a first buyer consultation with a sample coup
 Include questions I should ask, a showing-day checklist, and what I must verify myself. Do not invent neighbourhood facts, school facts, or prices.
 ```
 
-### 5. Summarize a long note
+**Summarize a long note**
 
 ```
 Summarize the notes below. SAMPLE DATA ONLY. Give me key points, risks, and questions to ask. Tell me what to verify against the original. Do not add facts that are not in the notes.
@@ -112,45 +103,30 @@ Summarize the notes below. SAMPLE DATA ONLY. Give me key points, risks, and ques
 [Paste the notes here. Remove private client identifiers first.]
 ```
 
-### 6. Plain-language explainer
+**Plain-language explainer**
 
 ```
 Explain, in plain language a buyer can follow, what a home inspection condition means. I am a REALTOR® in Ontario. Keep it short. Flag anything I should confirm. This is general education, not legal advice. Do not invent rules.
 ```
 
-### The shape of a good prompt
-
-Give it a job, not a question.
-
-- Role: "I'm a REALTOR® in..."
-- Context: what happened
-- Deliverable: "Give me an email under 120 words plus 3 questions"
-- Rules: what to avoid, and what to flag for you to verify
-
-"Write me a follow-up" gets you an average draft. The four-part job gets you something you can edit and send.
-
-Correct it once. Then add that correction to your rules note so you do not repeat it.
+Talk to it like an assistant. Give it who it is for, what happened, and what you want back. Correct it once. Do not spend the week polishing the wording of the prompt.
 
 ---
 
-## Connecting accounts safely
+## 2. Where to focus your efforts
 
-You do not need to connect anything to start. Copy the draft into Outlook, Follow Up Boss, or your texts yourself. That covers most of the value in week one.
+Stay in the chat. These are the jobs worth your first month. None of them replace you with a client.
 
-Later, many assistants offer connectors to email, calendar, or files. Depending on what you approve, the tool may read, draft, or sometimes act. Read the permission screen before you click Allow.
+1. **Everyday admin and organizing your day.** Hand it the messy list. Ask for a time-blocked plan with the income tasks first.
+2. **Emails, texts, and follow-up.** Post-showing thank-you, a check-in with a past client, a "still looking?" text. For most agents, this is how you serve the people you already have.
+3. **Summaries.** A long email, condo status certificate notes, or call notes. Ask for key points, risks, and questions, then check the original.
+4. **Appointment prep and buyer research.** A one-page prep sheet. Neighbourhood questions, a showing-day checklist, and a plain-language explainer. Verify every fact. Property search stays in MLS.
 
-- Start with read-only or drafts-only access.
-- Never turn on auto-send to clients.
-- Keep MLS, TRREB, and client financial data out unless the brokerage approves it.
-- Check with brokerage leadership before connecting any AI tool to Follow Up Boss, MLS, company email, or a transaction system.
-
-Build one connection at a time. A role such as a listing-paperwork assistant is a later step.
-
-This guide does not describe what Follow Up Boss's own AI features do. Confirm those with the brokerage before you rely on them.
+Copy the finished draft into the tool you already use. You hit send.
 
 ---
 
-## What it costs
+## 3. The cost
 
 You can start for $0. Every tool below has a free tier that is enough to learn the habit.
 
@@ -235,23 +211,42 @@ Track your own minutes for two weeks. Decide with your own number.
 
 ---
 
+
+---
+
+## 4. What not to waste time with
+
+Advice for the first month. Not a study.
+
+- Don't subscribe to every tool. Pick one and learn it.
+- Don't chase every new app or announcement.
+- Don't spend hours perfecting prompts. Talk to it like an assistant, then correct it.
+- Don't build complex automations or custom bots on day one. The beginner playbook says to skip building too big, too fast, and lots of scheduled automations. They get messy. Output beats infrastructure.
+- Don't let it send anything to a client before you have read it. No auto replies. No blasts you have not read.
+- Don't trust it for MLS facts, prices, or legal and contract wording without checking. Check prices, dates, addresses, and legal wording yourself, every time.
+- Don't paste private client information (financials, ID, passwords) into a tool you have not set up with your rules.
+
+Connecting accounts, saving a standing process, and adding more assistants are later steps. They are not this month's work.
+
+---
+
 ## Your next 30 days
 
-Sample schedule. Move the dates to match the team calendar.
+Sample schedule for Step 1. Move the dates to match the team calendar.
 
 ### Week 1, starting November 16
 
 Set up and pick one task.
 
 - Create a free account (Grok, ChatGPT, Claude, Gemini, or Copilot) and install the phone app.
-- Write your half-page rules note.
-- Use AI on the one task you avoid, on 3 or more days. Drafts only. You send.
+- Write your rules note and paste it at the start of the chat.
+- Use the chat on the one task you avoid, on 3 or more days. Drafts only. You send.
 
 ### Week 2, starting November 23
 
 Follow-up writing.
 
-- Use AI for every post-showing or post-call follow-up this week.
+- Use the chat for every post-showing or post-call follow-up this week.
 - Log each correction as a one-line rule. That is the start of a decision log.
 - Track minutes saved per day, roughly.
 
@@ -270,44 +265,47 @@ Organize your day and share results.
 - Each morning, dictate your to-do list and ask for a prioritized plan, with income tasks first. Do this while parked.
 - Bring one before-and-after example, with private details removed, and your minutes-saved estimate to the team huddle.
 
----
+### What the team could set up together
 
-## What the team could set up together
-
-- An AI champion: one partner, or a volunteer pair, who collects questions, shares wins, and keeps the prompt library current. It does not have to be the same person who gave the talk.
-- A shared prompt library: a team document of prompts that someone has actually tested (post-showing follow-up, appointment prep, summaries, closing checklists). Put the owner's name and the date tested on each one.
-- A monthly 30-minute AI huddle: two people show one anonymized before-and-after, plus one question for the room.
-- A one-page team guideline from leadership. It should cover: drafts only, a human sends everything; no client identifiers, financial data, or passwords in AI tools; which tools are approved; and getting approval before connecting AI to Follow Up Boss, MLS, company email, or transaction systems.
-- A shared starter for the rules note, which each agent personalizes.
-- A later session on brand, visual identity, content, and Follow Up Boss nurturing, using the team's official brand pack. That was out of scope for this talk.
+- An AI champion: one partner, or a volunteer pair, who collects questions and shares wins. It does not have to be the person who gave the talk.
+- A shared prompt library: tested prompts for post-showing follow-up, appointment prep, summaries, and closing checklists. Put the owner's name and the date tested on each one.
+- A monthly 30-minute huddle: two people show one anonymized before-and-after, plus one question for the room.
+- Leadership writes the rule for client data: drafts only, a human sends everything, and no client identifiers, financial data, or passwords in the chat.
 
 ---
 
-## Short answers to likely questions
+## Later steps, not this file
 
-**Is my client information safe in these tools?**
-Keep it out. Use a first name or the word Sample. Never paste ID, banking, or mortgage numbers. Business plans often advertise stronger privacy defaults. Check the privacy settings in the tool you pick, and follow brokerage policy.
+- **Step 2, Connect Your Tools.** Email, calendar, CRM and Drive. This week you copy the draft across yourself.
+- **Step 3, Teach It Your Way.** Your standards, voice and processes, kept so you are not pasting them from scratch every time.
+- **Step 4, Build Your AI Team.** Specialized assistants working alongside you.
+
+Marketing, visual brand, and nurture content are a separate session.
+
+---
+
+## Short answers
 
 **Which one should I pick?**
-The one you will open every day. All of the major assistants handle drafting, summaries, and checklists. Try two free tiers for a week and keep one.
+The one you will open every day.
 
 **Do I need to pay?**
 Not to start. If you hit free limits on most days, one paid plan is enough for most agents. See the price table.
 
 **Will it make mistakes?**
-Yes. Verify prices, dates, addresses, schools, and legal details. Never send without reading.
+Yes. Verify prices, dates, addresses, schools, and legal wording. Never send without reading.
 
-**Can it send emails or texts for me?**
-Some tools can, once connected. Do not allow that. Drafts only. You hit send.
+**Can it send for me?**
+Not in Step 1. Drafts only. You hit send.
 
-**Can it connect to Follow Up Boss or MLS?**
-Some assistants offer connectors, and support varies. Ask leadership before you connect anything that holds client data. Copy and paste is enough to start.
+**Is my client information safe?**
+Keep it out. Use a first name or the word Sample. Never paste ID, banking, or mortgage numbers.
 
-**How long until it saves me time?**
-Often within the first week, on one task, once your rules note is in place. Track it for two weeks and use your own numbers.
+**Can it connect to my other tools?**
+That is Step 2. Copy and paste is enough to start. Ask leadership before any tool that holds client data.
 
 **Can it do my marketing?**
-That is a separate session. This guide is about time back on admin, prep, and follow-up.
+That is a separate session. This guide is time back on admin, prep, and follow-up.
 
 **Is this allowed under RECO or brokerage policy?**
 You remain responsible for everything you send, including accuracy. Ask brokerage leadership for the team's policy. This is not legal advice, and it is not a reading of RECO guidance.
