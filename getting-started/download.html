@@ -62,7 +62,8 @@ pre{white-space:pre-wrap;background:#fff;border:1px solid #e6dcc8;border-radius:
 
 <h2>Prompts to copy</h2>
 <p class="lead">Three tasks you hate</p>
-<pre>I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with over the next 30 days. For each, tell me how we'd start and how much time it could save.</pre>
+<pre id="hate-prompt">I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with over the next 30 days. For each, tell me how we'd start and how much time it could save.</pre>
+<button class="s" id="copyhate" type="button">Copy that prompt</button>
 <p class="lead">Brand guide</p>
 <pre>Here are 10 social media posts I like the style of, so you understand my taste, plus fonts, colour palettes, and designs I like, and my logo. My photos, headshots, and listing photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder, not my whole Drive.
 
@@ -113,6 +114,15 @@ document.getElementById('copy').onclick=function(){
   }).catch(function(){
     m.textContent='Copy failed. Use Download instead.';
   });
+};
+document.getElementById('copyhate').onclick=function(){
+  var text=document.getElementById('hate-prompt').innerText;
+  var done=function(){m.textContent='Prompt copied. Paste it into your AI app.'};
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(function(){m.textContent='Select the prompt and copy it.';});
+  } else {
+    m.textContent='Select the prompt and copy it.';
+  }
 };
 
 var GROUPS=[
