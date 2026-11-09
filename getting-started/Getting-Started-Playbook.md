@@ -143,10 +143,10 @@ No em dashes. Flag anything I need to verify. Do not invent details.
 
 Your next call can be one card at a time, read from the Follow Up Boss website. You sign in yourself. The AI never needs your password. The steps are in the [Deal Card kit](deal-card-kit.html).
 
-A one-page brand guide starts with Share with your AI. Share 10 social media posts you like the style of, so it understands your taste, alongside fonts, colour palettes, designs, and your logo. Screenshots are fine. Then it builds the guide. Upload photos, headshots, and listing photos to one Drive folder only: Headshots, Listing Photos, Local Spots, and Logo. Do not share your whole Drive. Edit the guide until it sounds like you, save one file, and say "follow my brand guide" each time you ask for a post.
+A one-page brand guide starts with Share with your AI. Share 10 social media posts you like the style of, so it understands your taste, alongside fonts, colour palettes, designs, and your logo. Screenshots are fine. Then upload your photos, headshots, and listing photos to one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Only share that one folder with your AI, not your whole Drive. Then it builds the guide. Edit the guide until it sounds like you, save one file, and say "follow my brand guide" each time you ask for a post.
 
 ```
-Here are 10 social media posts I like the style of, so you understand my taste, plus fonts, colour palettes, and designs I like, and my logo. My photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder.
+Here are 10 social media posts I like the style of, so you understand my taste, plus fonts, colour palettes, and designs I like, and my logo. My photos, headshots, and listing photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder, not my whole Drive.
 
 Build me a one-page brand guide: colours with hex codes, a heading and body font, photo style, voice, dos and don'ts, max 5 hashtags, my sign-off line. Ask me questions if anything is unclear.
 ```
@@ -299,9 +299,9 @@ At the end of each chat, save any new step-by-step and the decisions you made.
 
 - Use the Letter of Opinion on a real request and time it against your old way.
 - Run the deal card three times a week and paste the notes back in.
-- Share 10 social media posts you like the style of, so it understands your taste, alongside fonts, colour palettes, designs, and your logo. Have your AI draft a one-page brand guide.
-- Upload your photos, headshots, and listing photos to one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Only share that folder.
-- Edit the guide until it sounds like you. Save it as one file.
+- Share 10 social media posts you like the style of, so it understands your taste, alongside fonts, colour palettes, designs, and your logo.
+- Upload your photos, headshots, and listing photos to one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Only share that one folder with your AI, not your whole Drive.
+- Have your AI draft a one-page brand guide. Edit it until it sounds like you. Save it as one file.
 - Make your first local food or community post with the guide. Batch two more posts and schedule them.
 - Paste in your 5 oldest unanswered emails and have your AI draft replies. You review them and you send them.
 - Day 30: review what saved time, update your rules, and pick what is next for Step 2.
