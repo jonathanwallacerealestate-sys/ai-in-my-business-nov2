@@ -156,6 +156,34 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .dial-next small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .dial-next div{display:flex;gap:8px;flex-wrap:wrap}
 .dial-next span{border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:clamp(11px,.8vw,13px);color:var(--muted)}
+.brand{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(120,95,50,.12);overflow:hidden;color:#243028}
+.brand-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;padding:14px 16px 10px;background:#F4EDE4}
+.brand-mark{width:46px;height:46px;border:1.5px solid #2F4A3C;border-radius:8px;display:grid;place-items:center;font-family:"Playfair Display",serif;color:#2F4A3C;font-size:18px}
+.brand h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(18px,1.5vw,26px);margin:0;color:#2F4A3C}
+.brand .who{font-size:12px;color:#5c685f;margin-top:2px}
+.brand-body{padding:12px 16px 14px;display:grid;gap:8px;font-size:clamp(12px,.95vw,14px);line-height:1.35}
+.swatches{display:flex;gap:10px}
+.swatch b{display:block;width:42px;height:28px;border-radius:6px;border:1px solid rgba(0,0,0,.06)}
+.swatch span{display:block;font-size:10px;letter-spacing:.04em;color:#5c685f;margin-top:3px}
+.brand dt{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#C4654A;font-weight:500}
+.brand dd{margin:0 0 4px}
+.mini-posts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 10px 24px rgba(120,95,50,.1)}
+.mini img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.mini p{margin:0;padding:8px 10px 10px;font-size:clamp(11px,.85vw,13px);line-height:1.35;color:#3a342c}
+.mini .bad{background:#ece7f4;color:#3d3558}
+.phones{display:flex;gap:12px;justify-content:center;align-items:stretch}
+.phone{width:min(230px,24vw);background:#1c1b19;border-radius:26px;padding:12px 8px 14px;color:#fff;box-shadow:0 16px 36px rgba(40,32,20,.2)}
+.phone .screen{background:#fff;color:var(--ink);border-radius:14px;overflow:hidden;min-height:0}
+.phone .ph{aspect-ratio:4/5;background:linear-gradient(160deg,#E7D3C4,#F6F1E8 55%,#D9C7B2);display:flex;align-items:flex-end;padding:10px;color:#6a5b4a;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.phone p{margin:0;padding:8px 10px 10px;font-size:clamp(11px,.82vw,13px);line-height:1.35}
+.rules{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(120,95,50,.12);padding:14px 16px}
+.rules h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(18px,1.5vw,24px);margin:0 0 8px}
+.rules li{font-family:Inter,system-ui,sans-serif;font-size:clamp(12px,.9vw,14px);color:var(--muted);margin:.35em 0 .35em 1em}
+.trust{display:grid;gap:8px}
+.trust div{background:#fff;border-top:2px solid var(--gold);padding:8px 10px 10px}
+.trust b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(15px,1.2vw,18px)}
+.trust span{display:block;color:var(--muted);font-size:clamp(12px,.9vw,14px);margin-top:2px}
 .closing{display:flex;flex-direction:column;justify-content:center;gap:1.4vh;min-height:0}
 .qr-row{display:flex;justify-content:center;align-items:flex-start;gap:2vw}
 .qr-row .qr-wrap img{width:min(156px,20vh)}
@@ -558,6 +586,165 @@ Use my Letter of Opinion template, my signature photo, and the kit. One page. Dr
     <li>You make the call, tell it the outcome, and it gives you the next card.<span>It drafts a one-line note for you to paste. Nobody is offered twice today.</span></li>
   </ol>
   <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b> It never texts or emails anyone. You log the note in Follow Up Boss, or you paste the draft it wrote.</div>
+</section>
+
+<section class="slide" data-notes="Example only. Sample Realty and Alex Sample are fictional. This is not the Faris brand file. Do not show colours, fonts, or prompts from your own brand file. Walk the one-page guide: logo mark, three colours, a heading font and a body font, photo style, voice, the do and don't list, and the sign-off. Say they will build their own the same way on the next slide.">
+  <div class="kicker">Example only · not a real brand file</div>
+  <h2>Build your own <em>brand guidelines</em></h2>
+  <div class="pair">
+    <div>
+      <p class="sub">One page your AI can follow. This sample is Sample Realty, Alex Sample, REALTOR®. Yours will use your posts, your logo, and your brokerage rules.</p>
+      <div class="lesson"><b>One file.</b> Attach it every time you ask for a post, and say: follow my brand guide.</div>
+    </div>
+    <div class="brand" aria-label="Example one-page brand guide for Sample Realty">
+      <div class="brand-top">
+        <div>
+          <h3>Sample Realty</h3>
+          <div class="who">Alex Sample, REALTOR®</div>
+        </div>
+        <div class="brand-mark" aria-hidden="true">S</div>
+      </div>
+      <div class="brand-body">
+        <div class="swatches">
+          <div class="swatch"><b style="background:#2F4A3C"></b><span>#2F4A3C</span></div>
+          <div class="swatch"><b style="background:#C4654A"></b><span>#C4654A</span></div>
+          <div class="swatch"><b style="background:#F4EDE4"></b><span>#F4EDE4</span></div>
+        </div>
+        <div><dt>Type</dt><dd>Headings: a serif. Body: a plain sans. Short paragraphs.</dd></div>
+        <div><dt>Photos</dt><dd>Bright, natural light, real local places. No stock-photo look.</dd></div>
+        <div><dt>Voice</dt><dd>Warm, local, plain words.</dd></div>
+        <div><dt>Do</dt><dd>Max 5 hashtags. Always the sign-off line.</dd></div>
+        <div><dt>Don't</dt><dd>No all caps. No copied captions.</dd></div>
+        <div><dt>Sign-off</dt><dd>Alex Sample, REALTOR® · Sample Realty</dd></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="How they make their own guide. Five steps. Gather favourite past posts, logo, and brokerage rules. The prompt is generic. They edit until it feels like them, save one file, and attach it with the words follow my brand guide. When it drifts, fix the guide, not only the post. The before and after uses a sample cafe photo, labelled Example. Without the guide it is generic and over-hashtagged. With the guide it is short, local, and signed off.">
+  <div class="kicker">Example · make the page yours</div>
+  <h2>Five steps, then <em>follow the guide</em></h2>
+  <div class="pair">
+    <div>
+      <ol class="nlist">
+        <li>Gather 5 to 10 favourite past posts, your logo, and your brokerage rules.</li>
+        <li>Ask for a one-page brand guide. Edit it until it feels like you.</li>
+        <li>Save that one file. Attach it, and say: follow my brand guide.</li>
+        <li>When it drifts, fix the guide, not just the post.</li>
+      </ol>
+      <div class="copybox" style="margin-top:1vh">
+        <div class="copyhead"><span class="tag">Generic prompt</span><button class="copybtn" type="button" data-copy="brand-prompt">Copy</button></div>
+        <pre id="brand-prompt">Here are posts I like, plus my logo notes and my brokerage rules. Draft a one-page brand guide: colours, type, photo style, voice, a short do and don't list, and my sign-off. Keep it specific. I will edit it. Do not copy anyone else's sentences.</pre>
+      </div>
+    </div>
+    <div class="mini-posts">
+      <div class="mini">
+        <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
+          <img src="assets/sample-cafe.jpg" alt="Example cafe photo, used on a generic off-brand post.">
+        </button>
+        <p class="bad">AMAZING COFFEE IN TOWN!!! You will not believe this hidden gem. #coffee #cafe #foodie #yummy #instagood #love #best #local #eat #tasty #musttry #vibes</p>
+        <p style="padding-top:0;color:#8a8070">Example · without a guide</p>
+      </div>
+      <div class="mini">
+        <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
+          <img src="assets/sample-cafe.jpg" alt="The same example cafe photo, used on an on-brand post.">
+        </button>
+        <p>Stopped in for a latte and a plain pastry. Bright window, good crust. Worth the walk.</p>
+        <p style="padding-top:0">Alex Sample, REALTOR® · Sample Realty<br>#Midland #LocalCafe</p>
+        <p style="padding-top:0;color:#8a8070">Example · with the guide</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Social captions, generic method. No brand file, no personal prompts, no tool chain. Two published local food posts will sit in the phones when the pictures are in. For now the frames hold the caption shape. Steps: photo of your spot, paste two or three posts you like, ask for a new caption in that style, original wording, never copied, max 5 hashtags, then review and post yourself. They may park a draft in a tool like Buffer, then review and post. Line: AI drafts, you post. No web addresses. No engagement numbers.">
+  <div class="kicker">Give your AI samples. It molds them to your style.</div>
+  <h2>A caption in <em>your style</em></h2>
+  <div class="pair">
+    <div>
+      <ol class="nlist">
+        <li>Take a photo of your local spot.</li>
+        <li>Paste 2 or 3 posts you like, or your own best past posts.</li>
+        <li>Ask for a new caption in that style.<span>Original wording. Never copied. Max 5 hashtags.</span></li>
+        <li>Review, tweak, and post it yourself.<span>A draft in a tool like Buffer is fine. You still post it.</span></li>
+      </ol>
+      <div class="copybox" style="margin-top:1vh">
+        <div class="copyhead"><span class="tag">Generic prompt</span><button class="copybtn" type="button" data-copy="social-prompt">Copy</button></div>
+        <pre id="social-prompt">Here are 2 or 3 posts I like, and a photo of my local spot.
+
+Write a new caption in that style.
+Original wording. Do not copy their sentences.
+Short paragraphs. Max 5 hashtags.
+Flag anything I should verify. Do not invent details.
+
+I will review it and post it myself.</pre>
+      </div>
+      <div class="lesson"><b>AI drafts, you post.</b></div>
+    </div>
+    <div class="phones" aria-label="Two example post frames. Photos to be added.">
+      <div class="phone">
+        <div class="screen">
+          <div class="ph">Example photo</div>
+          <p>We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich: &#128076;</p>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="screen">
+          <div class="ph">Example photo</div>
+          <p>Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Best practices. It does not remember unless you give it a place to keep things. Each correction gets saved, not only said once. The card is a sample house rules file: spelling, tone, sign-off, never send without approval, copy yourself, short paragraphs. Keep it short and specific. Date each rule. Newest rule wins. Canadian spelling.">
+  <div class="kicker">Best practices · keep your AI on track</div>
+  <h2>It learns only what <em>you save</em></h2>
+  <div class="pair">
+    <div>
+      <ol class="nlist">
+        <li>It does not remember on its own. Give it a place to keep things.</li>
+        <li>A correction you only say once is gone. Save it.</li>
+        <li>One written rules file.<span>House rules, or the AI's memory, custom instructions, or project instructions.</span></li>
+        <li>Keep it short and specific. Date each rule. The newest rule wins.</li>
+      </ol>
+      <div class="lesson"><b>Correct once, save it forever.</b></div>
+    </div>
+    <div class="rules" aria-label="Example house rules">
+      <h3>House rules · example</h3>
+      <ul>
+        <li>Canadian spelling. Short paragraphs. 12 Nov 2026.</li>
+        <li>Warm, plain words. My sign-off, every time. 12 Nov 2026.</li>
+        <li>Never send without my approval. Copy me on the draft. 12 Nov 2026.</li>
+        <li>If a fact is missing, say so. Do not guess. 12 Nov 2026.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Sources in order of trust: their own templates and past approved work, brokerage forms and rules, official sources such as RECO and the board, then the open web. Tell it which sources it may use, and to say when something is missing. Reducing drift: point at the rules file and the template at the start of each task, reuse kits, show a good example, correct it and update the rules file, one source of truth, review a sample before anything goes out, start a fresh chat when a thread gets muddled, and ask it to read the rules back. Takeaway: correct once, save it forever.">
+  <div class="kicker">Best practices · sources, then drift</div>
+  <h2>Point it at the <em>right source</em></h2>
+  <div class="pair">
+    <div class="trust">
+      <div><b>1. Your own work</b><span>Templates and posts you have already approved.</span></div>
+      <div><b>2. Brokerage</b><span>Your forms and your brokerage rules.</span></div>
+      <div><b>3. Official sources</b><span>RECO, and your board.</span></div>
+      <div><b>4. The open web</b><span>Last. Tell it to say when something is missing.</span></div>
+    </div>
+    <div>
+      <ol class="nlist">
+        <li>Start each task by pointing at the rules file and the template.</li>
+        <li>Reuse a saved kit. Show an example of a good result.</li>
+        <li>When it drifts, correct it and update the rules file.</li>
+        <li>One source of truth. No second copy that disagrees.</li>
+        <li>Review a sample before anything goes out.</li>
+        <li>When a chat gets long and muddled, start a fresh one. Ask it to read your rules back.</li>
+      </ol>
+      <div class="lesson"><b>Correct once, save it forever.</b></div>
+    </div>
+  </div>
 </section>
 
 <section class="slide" data-notes="Question 2, published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway in your words: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Claude amounts had no currency label. The Grok US page lists Plus 8, Premium 30, Super 100, Ultra 200, and Teams from 30 dollars, and it recommends Premium for new AI users. Copilot free-chat limits were not confirmed. Prices are before tax, as of November 9, 2026.">
