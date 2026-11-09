@@ -39,6 +39,9 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .mark{font-family:"Playfair Display",serif;font-size:clamp(13px,1vw,16px);color:var(--gold);display:block;margin-bottom:.4vh}
 .list{list-style:none;display:grid;gap:1.15vh;max-width:1100px}
 .list li{font-size:clamp(16px,1.45vw,24px);font-family:"Playfair Display",serif;padding-left:1.35em;position:relative;line-height:1.28}
+.list.compact{gap:.85vh}
+.list.compact li{font-size:clamp(15px,1.22vw,21px)}
+.g4{grid-template-columns:repeat(4,1fr)}
 .list li::before{content:"";position:absolute;left:0;top:.55em;width:.7em;height:1px;background:var(--gold)}
 .lesson{margin-top:1.6vh;padding:1.15vh 1.1vw;background:var(--ivory2);border-left:3px solid var(--gold);font-size:clamp(15px,1.25vw,20px);line-height:1.4}
 .lesson b{font-weight:500;color:var(--gold)}
@@ -52,11 +55,14 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .ladder{list-style:none;display:flex;flex-direction:column;gap:12px}
 .ladder-pill{position:relative;display:flex;align-items:center;min-height:78px;padding:8px 86px 8px 22px;border-radius:999px;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(100deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
 .ladder-copy{display:flex;flex-direction:column;gap:1px;min-width:0}
-.ladder-step{font-size:clamp(18px,1.55vw,26px);letter-spacing:.18em;text-transform:uppercase;color:#fff;font-weight:500;line-height:1}
-.ladder-item.is-now .ladder-step{font-size:12px;letter-spacing:.22em;color:#F0D7A4}
-.ladder-name{font-family:"Playfair Display",serif;font-size:clamp(22px,1.9vw,30px);color:#fff;font-weight:500;line-height:1.1}
-.ladder-soon{font-size:clamp(13px,1.1vw,16px);color:#ddd4c6;line-height:1.15}
-.ladder-num{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:28px;font-weight:500;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(140deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
+.ladder-step{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#E8D7B0;font-weight:500;line-height:1}
+.ladder-item.is-now .ladder-step{color:#F0D7A4}
+.ladder-name{font-family:"Playfair Display",serif;font-size:clamp(16px,1.35vw,22px);color:#fff;font-weight:500;line-height:1.12}
+.ladder-item.is-now .ladder-name{font-size:clamp(20px,1.7vw,28px)}
+.ladder-sub{display:block;margin-top:3px;font-size:clamp(11px,.85vw,13.5px);line-height:1.25;color:#d9d0c4;font-weight:400;letter-spacing:0}
+.ladder-item.is-now .ladder-sub{color:#F6E6CC}
+.ladder-pill{min-height:92px;padding:10px 96px 10px 22px}
+.ladder-num{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:28px;font-weight:500;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(140deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
 .ladder-item:not(.is-now){opacity:.62}
 .ladder-item.is-now{opacity:1}
 .ladder-item.is-now .ladder-pill{animation:stepglow 3.2s ease-in-out infinite}
@@ -112,8 +118,12 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   .num{top:32px}
   h2{margin-bottom:10px}
   .ladder{gap:8px}
-  .ladder-pill{min-height:70px;padding-right:78px}
-  .ladder-num{width:60px;height:60px;font-size:24px}
+  .ladder-pill{min-height:78px;padding:8px 82px 8px 16px}
+  .ladder-num{width:58px;height:58px;font-size:22px;right:5px}
+  .ladder-item.is-now .ladder-name{font-size:18px}
+  .ladder-name{font-size:15px}
+  .ladder-sub{font-size:11px}
+  .list.compact li{font-size:15px}
   .prices th,.prices td{padding-top:5px;padding-bottom:6px}
   .copybox pre{font-size:12.5px;line-height:1.34;padding:8px 10px 10px}
   .qr-wrap img{width:min(240px,30vh)}
@@ -129,7 +139,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 <div class="progress"></div>
 <main class="deck">
 
-<section class="slide cover" data-notes="Thank Bailey Albert and Thomas Faris for collecting the team's questions. Every slide today answers one of those questions. Ground rule for the whole talk: AI drafts, you decide, and you send. Plan on 20 to 30 minutes, then open the floor.">
+<section class="slide cover" data-notes="Thank Bailey Albert and Thomas Faris for collecting the team's questions. Today is Step 1 of 4, Getting Started: one assistant, used every day, by chat. Steps 2, 3, and 4 are named and dimmed. Do not teach them. Ground rule: AI drafts, you decide, and you send. Plan 20 to 30 minutes, then questions.">
   <div class="opener">
     <div>
       <div class="kicker">Faris Team · November 10, 2026</div>
@@ -137,19 +147,20 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
       <p class="thanks">Thank you, Bailey and Thomas, for the team's questions.</p>
       <div class="rule"></div>
       <ul class="list">
-        <li>Where AI gives you time back, and what it costs</li>
-        <li>Every slide answers one of your questions</li>
+        <li>Today is Step 1 of 4: Getting Started</li>
+        <li>One assistant, used every day, by chat</li>
         <li>AI drafts. You decide. You send.</li>
       </ul>
     </div>
     <div class="ladder-card">
       <p class="ladder-kicker">Step 1 of 4</p>
-      <ol class="ladder" aria-label="Four steps. This talk is step 1, Getting Started. Steps 2, 3, and 4 are coming soon and are not named.">
+      <ol class="ladder" aria-label="Step 1, Getting Started, one assistant used every day. Step 2, Connect Your Tools. Step 3, Teach It Your Way. Step 4, Build Your AI Team.">
         <li class="ladder-item is-now">
           <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
             <div class="ladder-copy">
               <span class="ladder-step">Step</span>
               <span class="ladder-name">Getting Started</span>
+              <span class="ladder-sub">One assistant, used every day</span>
             </div>
             <span class="ladder-num">1</span>
           </div>
@@ -158,7 +169,8 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
           <div class="ladder-pill" style="--a:#C9B6F0;--b:#9BB6F0">
             <div class="ladder-copy">
               <span class="ladder-step">Step</span>
-              <span class="ladder-soon">Coming soon</span>
+              <span class="ladder-name">Connect Your Tools</span>
+              <span class="ladder-sub">Email, calendar, CRM and Drive</span>
             </div>
             <span class="ladder-num">2</span>
           </div>
@@ -167,7 +179,8 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
           <div class="ladder-pill" style="--a:#9ED9C8;--b:#8EC9DE">
             <div class="ladder-copy">
               <span class="ladder-step">Step</span>
-              <span class="ladder-soon">Coming soon</span>
+              <span class="ladder-name">Teach It Your Way</span>
+              <span class="ladder-sub">Your standards, voice and processes</span>
             </div>
             <span class="ladder-num">3</span>
           </div>
@@ -176,7 +189,8 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
           <div class="ladder-pill" style="--a:#F0C2AE;--b:#E3B4C8">
             <div class="ladder-copy">
               <span class="ladder-step">Step</span>
-              <span class="ladder-soon">Coming soon</span>
+              <span class="ladder-name">Build Your AI Team</span>
+              <span class="ladder-sub">Specialized assistants working alongside you</span>
             </div>
             <span class="ladder-num">4</span>
           </div>
@@ -186,110 +200,40 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Last time you showed what you do. Today is how they start. One line from November 2: Less time on what I hate, more time for what I love. Use AI on the low-value tasks you put off. Their 14 questions come down to two. Marketing, branding, and content are a later session. Do not open that topic today.">
-  <div class="kicker">November 2, then your questions</div>
-  <h2>Last time, and <em>what you asked</em></h2>
-  <ul class="list">
-    <li>Last time I showed what I do. Today is how you start.</li>
-    <li>November 2, in one line: less time on what I hate, more time for what I love. Use AI on the low-value tasks you put off.</li>
-    <li>Your questions come down to two: How do I start? What does it cost?</li>
-  </ul>
-  <div class="lesson"><b>Not today:</b> marketing, branding, and content. That deserves its own session.</div>
+<section class="slide" data-notes="Brief opener, then the map. Last time, November 2: less time on what you hate, more time for what you love. Their questions come down to how to start and what it costs. Today is only Step 1. Marketing, branding, and content are a later session. Do not open that topic. Walk the four parts: how to start, where to focus, the cost, and what not to waste time with.">
+  <div class="kicker">Step 1 of 4 · Getting Started</div>
+  <h2>Today, in <em>four parts</em></h2>
+  <div class="grid g4">
+    <div class="card"><span class="mark">01</span><h3>How to start</h3><p>One assistant. Your first week, by chat.</p></div>
+    <div class="card"><span class="mark">02</span><h3>Where to focus</h3><p>The few jobs that give time back.</p></div>
+    <div class="card"><span class="mark">03</span><h3>The cost</h3><p>Start free. One plan if you need it.</p></div>
+    <div class="card"><span class="mark">04</span><h3>What not to waste time with</h3><p>What to leave alone while you learn.</p></div>
+  </div>
+  <div class="lesson"><b>Last time</b> I showed what I do. Today is how you start. Less time on what you hate, more time for what you love.</div>
 </section>
 
-<section class="slide" data-notes="Question 1. Grok is the tool you use most, because you can talk to it and dump messy notes. The role-based setup is later, not week one. Say the roles only: a chief-of-staff assistant, a follow-up assistant, a listing-paperwork assistant. Do not name any internal tool. ChatGPT, Claude, Gemini, and Copilot all do the beginner tasks. The habit beats the tool.">
-  <div class="kicker">Why Grok · and why the habit matters more</div>
-  <h2>Why I picked Grok <em>(and why the habit matters more than the tool)</em></h2>
-  <div class="grid g3">
+<section class="slide" data-notes="How to start, from the beginner level. Pick one assistant you will open every day. Grok is the one you use most, by voice, with messy notes. ChatGPT, Claude, Gemini, and Copilot can do this beginner work too. Do not compare features. Three moves: one low-value task you hate, a rules note you paste (name, brokerage, area, voice, drafts only), and drafts only, you send. This week: free account, phone app, and that one task on 3 or more days. Do not teach saved instructions, connections, or a team of assistants.">
+  <div class="kicker">01 · How to start</div>
+  <h2>How to start: <em>one assistant, every day</em></h2>
+  <div class="steps">
     <div class="card">
-      <h3>Grok, day to day</h3>
-      <p>I can talk to it by voice, dump messy notes, and get a draft back.</p>
+      <h3>One task you hate</h3>
+      <p>Pick one low-value task you put off. Use the chat for that one thing.</p>
     </div>
     <div class="card">
-      <h3>Any of these can start you</h3>
-      <p>ChatGPT, Claude, Gemini, and Copilot all draft, summarize, and build checklists.</p>
+      <h3>Write your rules down</h3>
+      <p>Name, brokerage, area, and how you write. Paste that note at the start of the chat.</p>
     </div>
     <div class="card">
-      <h3>Later, not week one</h3>
-      <p>A chief-of-staff assistant, a follow-up assistant, and a listing-paperwork assistant. Roles only.</p>
+      <h3>Drafts only</h3>
+      <p>It drafts. You review. You send. Correct it once, and keep that line.</p>
     </div>
   </div>
-  <div class="lesson"><b>The habit beats the tool.</b> One task. Your rules written down. Drafts only. Pick the one you will actually open every day.</div>
+  <div class="lesson"><b>This week:</b> a free account and the phone app. Grok is the one I open most. ChatGPT, Claude, Gemini, or Copilot will do. Use your one task on 3 or more days.</div>
 </section>
 
-<section class="slide" data-notes="Question 7. Six everyday jobs. None of them replace the agent with a client. They remove the blank page. Ask which one drains them most. That job is the starting task.">
-  <div class="kicker">Where the time comes back</div>
-  <h2>Where AI gives an agent <em>time back</em></h2>
-  <div class="grid g3">
-    <div class="card"><span class="mark">01</span><h3>Everyday admin</h3><p>The list you keep avoiding.</p></div>
-    <div class="card"><span class="mark">02</span><h3>Emails, texts, follow-up</h3><p>The note you meant to send.</p></div>
-    <div class="card"><span class="mark">03</span><h3>Summaries</h3><p>Long notes, then you check them.</p></div>
-    <div class="card"><span class="mark">04</span><h3>Appointment prep</h3><p>Walk in ready for the conversation.</p></div>
-    <div class="card"><span class="mark">05</span><h3>Research</h3><p>Questions to ask. Facts you still verify.</p></div>
-    <div class="card"><span class="mark">06</span><h3>Organizing your day</h3><p>Income tasks first.</p></div>
-  </div>
-  <div class="lesson"><b>Start here:</b> pick the one that drains you most. None of these replace you with a client.</div>
-</section>
-
-<section class="slide" data-notes="Questions 6 and 7. The showing list is a generic sample, not a real day. Ask for a time-blocked plan with income tasks first. On a closing checklist, anything legal is confirm with the brokerage. Dictate between appointments while parked. Never while driving.">
-  <div class="kicker">Admin and the shape of a day</div>
-  <h2>Everyday admin and <em>organizing your day</em></h2>
-  <div class="grid g3">
-    <div class="card">
-      <span class="mark">Sample</span>
-      <h3>Hand it the messy list</h3>
-      <p>3 showings, 2 callbacks, an offer to review, and a client gift to order. Ask for a time-blocked plan, income tasks first.</p>
-    </div>
-    <div class="card">
-      <span class="mark">Checklist</span>
-      <h3>Closing week, sample file</h3>
-      <p>Ask for a closing-week checklist for a sample freehold purchase. Mark anything legal as confirm with the brokerage.</p>
-    </div>
-    <div class="card">
-      <span class="mark">Voice</span>
-      <h3>Between appointments</h3>
-      <p>Dictate while you are parked. Never while driving.</p>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-notes="Questions 6, 14, and part of 11. The fastest win is the follow-up they postpone. For most agents, AI helps service people they already have. Your follow-up assistant can suggest who is next and draft an opener. You make the call. Do not claim what Follow Up Boss's built-in AI does. Today is copy and paste. Offer a later session for nurture content.">
-  <div class="kicker">The fastest win</div>
-  <h2>Emails, texts and <em>follow-up writing</em></h2>
-  <ul class="list">
-    <li>Post-showing thank-you. A check-in with a past client. A "still looking?" text.</li>
-    <li>The first draft takes seconds. You edit it, and you send it.</li>
-    <li>For most agents, this serves the people you already have. Follow-up is where that business comes from.</li>
-    <li>A follow-up assistant can suggest who to reach next and draft an opener. You make the call.</li>
-  </ul>
-  <div class="lesson"><b>Today:</b> copy the draft into the tool you already use. I will not guess at what Follow Up Boss's built-in AI can do.</div>
-</section>
-
-<section class="slide" data-notes="Question 13 and question 7. Summaries of long emails, condo status certificate notes, or call notes. No private client identifiers. Always check the original. Sample prep: a first buyer consultation for a couple relocating to Midland. Buyers: neighbourhood questions, a showing-day checklist, post-showing follow-up, and plain-language explainers such as what a home inspection condition means. Verify every fact. Property search stays in MLS.">
-  <div class="kicker">Read the long stuff. Walk in ready.</div>
-  <h2>Summaries, appointment prep and research <em>(including buyers)</em></h2>
-  <div class="grid g2">
-    <div class="card">
-      <h3>Summaries</h3>
-      <p>Paste a long email, condo status certificate notes, or call notes. No private client identifiers. Ask for key points, risks, and questions. Then check the original.</p>
-    </div>
-    <div class="card">
-      <h3>Appointment prep</h3>
-      <p>Ask for a one-page sheet for a first buyer consultation. Sample: a couple relocating to Midland.</p>
-    </div>
-    <div class="card">
-      <h3>Buyers</h3>
-      <p>Neighbourhood questions, a showing-day checklist, the follow-up after, and a plain-language explainer. Example: what a home inspection condition means. Verify every fact.</p>
-    </div>
-    <div class="card">
-      <h3>Search stays in MLS</h3>
-      <p>AI helps you prepare questions and summarize. It does not replace your search.</p>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-notes="Live demo for question 6, and it helps with buyers too. If Wi-Fi works, open Grok in a new chat and paste the sample prompt. Show the answer, then make one correction out loud: shorter, warmer, no exclamation marks. Close with: I would still read it, fix one line, and hit send myself. If Wi-Fi fails, use the backup example on the right. Alex and Jordan Sample are fictional. 123 Maple Sample St is not a real listing. Do not invent a sale price or a school fact.">
-  <div class="kicker">Sample data only · Alex and Jordan Sample</div>
+<section class="slide" data-notes="Live demo. If Wi-Fi works, open a new chat in the assistant you use and paste the sample prompt. Show the answer, then one correction: shorter, warmer, no exclamation marks. Close with: I would still read it, fix one line, and hit send myself. If Wi-Fi fails, use the backup on the right. Alex and Jordan Sample are fictional. 123 Maple Sample St is not a real listing. Do not invent a sale price or a school fact. This is chat only. You copy the draft across yourself.">
+  <div class="kicker">01 · How to start · sample data only</div>
   <h2>Live demo: from messy notes to a <em>ready-to-send draft</em></h2>
   <div class="demo-grid">
     <div class="copybox">
@@ -339,64 +283,62 @@ Jonathan Wallace, REALTOR®
   </div>
 </section>
 
-<section class="slide" data-notes="Question 6. Give it a job, not a question. Role, what happened, the deliverable, and your rules. Write me a follow-up gets an average draft. The recipe gets something they can send. Correct it once, then save that correction as a rule. That is the decision-log habit from November 2, kept in their own notes.">
-  <div class="kicker">A job, not a question</div>
-  <h2>Getting it to do the task, <em>not just answer</em></h2>
-  <div class="flow" aria-label="Role, what happened, what you want back, and your rules">
-    <span class="pill">Role</span><span class="arrow">→</span>
-    <span class="pill">What happened</span><span class="arrow">→</span>
-    <span class="pill">What you want back</span><span class="arrow">→</span>
-    <span class="pill">Your rules</span>
-  </div>
-  <ul class="list" style="margin-top:2vh">
-    <li>I'm a REALTOR® in... Here is what happened. Give me an email under 120 words, plus 3 questions. Flag anything I must verify.</li>
-    <li>"Write me a follow-up" gets you average. The recipe gets you something you can send.</li>
-  </ul>
-  <div class="lesson"><b>Correct it once.</b> Save that correction as a rule for next time.</div>
-</section>
-
-<section class="slide" data-notes="Questions 8, 9, and 10, voice and tone only. A half-page rules note: greeting, length, words they never use, sign-off, and drafts only. Many tools let you save standing instructions. The names differ: custom instructions, projects, or memory. Do not teach logos, fonts, or colour codes. Offer a later session and use the team's official brand pack when you do. Consistency comes from corrections, not from one perfect prompt.">
-  <div class="kicker">Voice and tone only</div>
-  <h2>Make it sound like you, <em>every time</em></h2>
+<section class="slide" data-notes="Where to focus, first of three. Everyday admin and the shape of the day, by chat. The list is a sample, not a real day. Ask for a time-blocked plan with income tasks first. A closing checklist is for a sample freehold purchase, and anything legal is confirm with the brokerage. Dictate while parked. Never while driving.">
+  <div class="kicker">02 · Where to focus your efforts</div>
+  <h2>Admin, and <em>organizing your day</em></h2>
   <div class="grid g3">
     <div class="card">
-      <h3>A half-page rules note</h3>
-      <p>How you greet people, how long you write, words you never use, your sign-off, and "drafts only, I send."</p>
+      <span class="mark">Sample</span>
+      <h3>The messy list</h3>
+      <p>3 showings, 2 callbacks, an offer to review, and a client gift to order. Ask for a time-blocked plan, income tasks first.</p>
     </div>
     <div class="card">
-      <h3>Save it if you can</h3>
-      <p>Many assistants keep standing instructions, often called custom instructions, projects, or memory. Features vary by plan.</p>
+      <span class="mark">Checklist</span>
+      <h3>Closing week, sample file</h3>
+      <p>A closing-week checklist for a sample freehold purchase. Anything legal: confirm with the brokerage.</p>
     </div>
     <div class="card">
-      <h3>Correct it, then keep the fix</h3>
-      <p>Consistency comes from the correction you write down, not from one perfect prompt.</p>
+      <span class="mark">Voice</span>
+      <h3>Between appointments</h3>
+      <p>Dictate while you are parked. Never while driving. The draft is waiting when you sit down.</p>
     </div>
   </div>
-  <div class="lesson"><b>A later session:</b> logos, colours, and visual brand, using the team's official brand pack.</div>
 </section>
 
-<section class="slide" data-notes="Questions 4 and 5. Week one: connect nothing. Copy the draft into Outlook, Follow Up Boss, or texts. Later, connectors can read, draft, or sometimes act. Read the permission screen. Start read-only or drafts only. Never auto-send. Keep MLS, TRREB, and client financial data out unless the brokerage approves. Ask leadership before connecting AI to Follow Up Boss, MLS, company email, or a transaction system. One connection at a time. A listing-paperwork assistant is a later role.">
-  <div class="kicker">Access, in plain language</div>
-  <h2>Connecting your accounts: <em>what it can do and what you're allowing</em></h2>
+<section class="slide" data-notes="Where to focus, second. The fastest win is the follow-up they put off: post-showing thank-you, a past-client check-in, a still-looking text. For most agents this serves people they already have. You edit and you send. Copy the draft into the tool you already use. Do not describe a follow-up assistant. That is Step 4. Do not claim what Follow Up Boss's built-in AI does.">
+  <div class="kicker">02 · Where to focus your efforts</div>
+  <h2>Emails, texts and <em>follow-up</em></h2>
+  <ul class="list">
+    <li>Post-showing thank-you. A check-in with a past client. A "still looking?" text.</li>
+    <li>The first draft takes seconds. You edit it, and you send it.</li>
+    <li>For most agents, this serves the people you already have.</li>
+  </ul>
+  <div class="lesson"><b>This week:</b> copy the draft into the tool you already use. You hit send.</div>
+</section>
+
+<section class="slide" data-notes="Where to focus, third. Summaries of a long email, condo status certificate notes, or call notes. No private client identifiers. Check the original. Prep: a one-page sheet for a sample couple relocating to Midland. Buyers: neighbourhood questions, a showing-day checklist, the follow-up, and a plain-language explainer such as what a home inspection condition means. Verify every fact. Property search stays in MLS. Chat only.">
+  <div class="kicker">02 · Where to focus your efforts</div>
+  <h2>Summaries, prep, and <em>buyer research</em></h2>
   <div class="grid g2">
     <div class="card">
-      <h3>Week one: connect nothing</h3>
-      <p>Copy the draft into Outlook, Follow Up Boss, or your texts. That covers most of the value.</p>
+      <h3>Summaries</h3>
+      <p>A long email, condo status certificate notes, or call notes. No private client identifiers. Key points, risks, and questions. Then check the original.</p>
     </div>
     <div class="card">
-      <h3>If you connect later</h3>
-      <p>A connector to email, calendar, or files may read, draft, or sometimes act. Read the permission screen before you allow it. Start with read-only or drafts only.</p>
+      <h3>Appointment prep</h3>
+      <p>A one-page sheet for a first buyer consultation. Sample: a couple relocating to Midland.</p>
     </div>
     <div class="card">
-      <h3>Never auto-send</h3>
-      <p>You hit send. Keep MLS, TRREB, and client financial data out unless the brokerage approves.</p>
+      <h3>Buyers</h3>
+      <p>Neighbourhood questions, a showing-day checklist, the follow-up, and a plain-language explainer. Example: what a home inspection condition means. Verify every fact.</p>
     </div>
     <div class="card">
-      <h3>Ask leadership first</h3>
-      <p>Before any connection to Follow Up Boss, MLS, company email, or a transaction system. Add one connection at a time. A listing-paperwork assistant is a later role.</p>
+      <h3>Search stays in MLS</h3>
+      <p>The chat prepares questions and summaries. It does not replace your search.</p>
     </div>
   </div>
 </section>
+
 
 <section class="slide" data-notes="Question 2, published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway in your words: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Claude amounts had no currency label. The Grok US page lists Plus 8, Premium 30, Super 100, Ultra 200, and Teams from 30 dollars, and it recommends Premium for new AI users. Copilot free-chat limits were not confirmed. Prices are before tax, as of November 9, 2026.">
   <div class="kicker">You can start for $0</div>
@@ -497,35 +439,53 @@ Jonathan Wallace, REALTOR®
   </div>
 </section>
 
-<section class="slide" data-notes="Questions 3 and 12. The whole setup is three things: a free account plus the phone app, a half-page rules note, and one avoided task every day this week. For someone who later wants to be a heavy user: those same three, then a decision log of corrections from week two, then one role at a time.">
-  <div class="kicker">Account, rules, one task</div>
-  <h2>Set up in 15 minutes: <em>your first three things</em></h2>
-  <div class="steps">
-    <div class="card">
-      <h3>Free account</h3>
-      <p>Create it in the assistant you will open, and install the phone app for voice.</p>
-    </div>
-    <div class="card">
-      <h3>Rules note</h3>
-      <p>Name, brokerage, area, tone. Drafts only. You send. Flag anything you must verify.</p>
-    </div>
-    <div class="card">
-      <h3>One task you avoid</h3>
-      <p>Post-showing follow-up, call prep, or the weekly admin list. Do it with AI every day this week.</p>
-    </div>
-  </div>
-  <div class="lesson"><b>If you want to go further later:</b> log each correction, then add one role at a time.</div>
+
+<section class="slide" data-notes="Advice, not a study. Do not quote a personal bill. Pick one tool and learn it. Do not chase every new app. Do not spend hours perfecting a prompt: talk to it like an assistant and correct it once. Do not build automations or custom bots on day one. The Nov 2 playbook says scheduled automations get messy, break, and burn tokens and money. Do not let it send before you read. Do not trust MLS facts, prices, or legal and contract wording without checking. Do not paste private client information into a tool before your rules note is in place. Connections, saved processes, and a team of assistants are later steps.">
+  <div class="kicker">04 · What not to waste time with</div>
+  <h2>What not to <em>waste time with</em></h2>
+  <ul class="list compact">
+    <li>Don't subscribe to every tool. Pick one and learn it.</li>
+    <li>Don't chase every new app or announcement.</li>
+    <li>Don't spend hours perfecting prompts. Talk to it like an assistant, then correct it.</li>
+    <li>Don't build complex automations or custom bots on day one.</li>
+    <li>Don't let it send anything to a client before you have read it.</li>
+    <li>Don't trust it for MLS facts, prices, or legal and contract wording without checking.</li>
+    <li>Don't paste private client information into a tool you have not set up with your rules.</li>
+  </ul>
 </section>
 
-<section class="slide" data-notes="One task a week for four weeks. Week 1 starts November 16: setup and one task. Week 2, November 23: follow-up writing and a correction log. Week 3, November 30: summaries, prep, and a decision on one paid plan if they are hitting limits. Week 4, December 7: a morning plan, then one before-and-after at the huddle. Point at the code and say only: scan to download the playbook. Do not read a web address. The huddle date is not set. Ask Thomas rather than naming one. Offer a later session on brand, content, and Follow Up Boss.">
+<section class="slide" data-notes="Preview only. Do not teach connectors, permission screens, standing instructions, routines, or a team of assistants. This week is chat. They copy the draft into Outlook, their CRM, or their texts. Step 2, later, is Connect Your Tools: email, calendar, CRM and Drive. Step 3 is Teach It Your Way. Step 4 is Build Your AI Team. Giving it a full job with a standing setup waits until those steps. Say the names and move on.">
+  <div class="kicker">After Step 1</div>
+  <h2>What's next: <em>Step 2, Connect Your Tools</em></h2>
+  <div class="grid g3">
+    <div class="card">
+      <span class="mark">This week</span>
+      <h3>Chat only</h3>
+      <p>You copy the draft into the tool you already use. You read it. You send it.</p>
+    </div>
+    <div class="card">
+      <span class="mark">Step 2</span>
+      <h3>Connect Your Tools</h3>
+      <p>Email, calendar, CRM and Drive. A later session, not today.</p>
+    </div>
+    <div class="card">
+      <span class="mark">Then</span>
+      <h3>Steps 3 and 4</h3>
+      <p>Teach It Your Way. Then Build Your AI Team.</p>
+    </div>
+  </div>
+  <div class="lesson"><b>Not today:</b> connecting accounts, saved processes, and more than one assistant.</div>
+</section>
+
+<section class="slide" data-notes="One task a week for four weeks, still Step 1. Week 1 starts November 16: free account, rules note, one task on 3 or more days. Week 2, November 23: follow-up writing and a one-line correction log. Week 3, November 30: summaries, prep, and one paid plan only if they are hitting free limits. Week 4, December 7: a morning plan while parked, then one example at the huddle. Point at the code and say only: scan to download the playbook. Do not read a web address. The huddle date is not set. Ask Thomas rather than naming one.">
   <div class="close-grid">
     <div>
-      <div class="kicker">One task a week</div>
+      <div class="kicker">One task a week · still Step 1</div>
       <h2>Your next <em>30 days</em></h2>
       <div class="weeks">
-        <div class="week"><b>Week 1 · Nov 16</b><span>Set up, write the rules note, and use one task on 3 or more days.</span></div>
+        <div class="week"><b>Week 1 · Nov 16</b><span>Free account, rules note, and one task on 3 or more days.</span></div>
         <div class="week"><b>Week 2 · Nov 23</b><span>Every post-showing or post-call follow-up. Log each correction. Track minutes.</span></div>
-        <div class="week"><b>Week 3 · Nov 30</b><span>Prep sheets and one summary you check. If you are hitting free limits, pick one paid plan.</span></div>
+        <div class="week"><b>Week 3 · Nov 30</b><span>Prep sheets and one summary you check. One paid plan only if you are hitting free limits.</span></div>
         <div class="week"><b>Week 4 · Dec 7</b><span>A morning plan, income tasks first. Bring one example to the team huddle.</span></div>
       </div>
     </div>
@@ -536,7 +496,7 @@ Jonathan Wallace, REALTOR®
   </div>
 </section>
 
-<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Which tool: the one they will open every day. Try two free tiers. Paying: not to start. Mistakes: yes, so verify prices, dates, addresses, schools, and legal details. Sending: drafts only. Follow Up Boss or MLS: copy and paste, and ask leadership before any connection. Time saved: often the first week on one task. Track two weeks. Marketing and visual brand: a later session. RECO or brokerage policy: they remain responsible for what they send. Ask leadership. This is not legal advice. Do not discuss personal spend.">
+<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Which tool: the one they will open every day. Pay: not to start. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting accounts is Step 2, not today. Copy and paste. Marketing and visual brand: a later session. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. Do not discuss personal spend.">
   <div class="kicker">10 to 15 minutes</div>
   <h2><em>Q&amp;A</em></h2>
   <div class="qa">
@@ -546,17 +506,18 @@ Jonathan Wallace, REALTOR®
     </div>
     <div class="card">
       <h3>Mistakes, and sending</h3>
-      <p>It can be wrong with confidence. You verify, you read, and you send. Never auto-send.</p>
+      <p>Check MLS facts, prices, and legal wording. You read it. You send it.</p>
     </div>
     <div class="card">
       <h3>Client information</h3>
-      <p>Keep it out. Use Sample. No ID, banking, or mortgage numbers. Ask leadership before any connection.</p>
+      <p>Keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting tools is Step 2.</p>
     </div>
   </div>
-  <div class="lesson"><b>Parking lot:</b> marketing, visual brand, and Follow Up Boss nurture. Great question. That is a session of its own, so let's book it. You remain responsible for what you send. Ask leadership for brokerage policy. Not legal advice.</div>
+  <div class="lesson"><b>Parking lot:</b> marketing, visual brand, and nurture content. That is a session of its own. You remain responsible for what you send. Ask leadership for brokerage policy. Not legal advice.</div>
 </section>
 
 </main>
+
 <nav class="nav" aria-label="Slides"></nav>
 <div class="notes"><b>Presenter notes · N to hide</b><span class="t"></span></div>
 <script>
