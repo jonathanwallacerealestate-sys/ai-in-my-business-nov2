@@ -283,9 +283,9 @@ Day 1. Pick one AI and install it on your phone and computer. Answer one real em
 
 Day 2. Write your house rules: tone, sign-off, short paragraphs, never send without your review. Write an about-me note: your market, brokerage, who you serve, sign-off, and contact details. Set your approval line: anything client-facing gets your review first.
 
-Day 3. Save 3 prompts you will reuse: an email reply, a text reply, and an appointment summary. For the texts, write short ones you can reuse for showing follow-ups, offer updates, and check-ins. Save one or two finished pieces you loved for each kind of task. Examples beat instructions.
+Day 3. Save 3 prompts you will reuse: an email reply, a text reply, and an appointment summary. Create short reusable texts for showing follow-ups, offer updates, and check-ins. Save one or two finished pieces you loved for each kind of task. Examples beat instructions.
 
-Day 4. Talk instead of type. After an appointment, record a voice memo and turn it into a CRM note, tasks, and a follow-up email. Notice how much faster it is.
+Day 4. Talk instead of type: use voice dictation for one full task and notice how much faster it is. After an appointment, record a voice memo and turn it into a CRM note, tasks, and a follow-up email.
 
 Day 5. Put your Word template and signature photo in Drive and load the Letter of Opinion kit.
 
@@ -303,7 +303,7 @@ At the end of each chat, save your SOPs and the decisions you made. An SOP is a 
 - Upload your photos, headshots, and listing photos to one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Only share that one folder with your AI, not your whole Drive.
 - Have your AI draft a one-page brand guide. Edit it until it sounds like you. Save it as one file.
 - Make your first local food or community post with the guide. Batch two more posts and schedule them.
-- Paste in your 5 oldest unanswered emails and have your AI draft replies. You review them and you send them.
+- Inbox cleanup: paste in your 5 oldest unanswered emails and have your AI draft replies for you to review and send yourself.
 - Day 30: review what saved time, update your rules, and pick what is next for Step 2.
 
 By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide and three posts out.
