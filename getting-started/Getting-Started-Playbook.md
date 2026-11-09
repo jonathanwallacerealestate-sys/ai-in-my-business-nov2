@@ -126,6 +126,10 @@ Copy the finished draft into the tool you already use. You hit send.
 
 One worked example is the Faris Team Letter of Opinion. In Jonathan's experience, about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. The steps and the instruction file are in the [Letter of Opinion kit](loo-kit.html). Download the Word template from the shared folder named in that kit, add your own signature photo, and give your AI the template, the photo, and the kit.
 
+Call notes, the same way. A Plaud recorder can clip to the phone and record the call or the meeting. The Plaud app turns that into a transcript and a summary. AI drafts a CRM note, the tasks and dates, and a follow-up email or text. You read it and you send it. Let people know you are recording. No Plaud? Record a voice memo, or talk through how the appointment went right after. Ask for the same three things. A sample of that request is in the talk.
+
+Your next call can be one card at a time, read from the Follow Up Boss website. You sign in yourself. The steps are in the [Deal Card kit](deal-card-kit.html).
+
 ---
 
 ## 3. The cost
