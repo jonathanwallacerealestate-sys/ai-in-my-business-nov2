@@ -281,9 +281,9 @@ No recorder to buy. The call notes in week 1 use a voice memo.
 
 Day 1. Pick one AI and install it on your phone and computer. Answer one real email with it. Ask it to help you pick three tasks you hate doing that it could help with over the next 30 days.
 
-Day 2. Write your house rules: tone, sign-off, short paragraphs, never send without your review. Write an about-me note: your market, brokerage, who you serve, sign-off, and contact details. Set your approval line: anything client-facing gets your review first.
+Day 2. Write your house rules: tone, sign-off, short paragraphs, never send without your review. Write an about-me note: your market, brokerage, who you serve, sign-off, and contact details, so your AI always has the basics. Set your approval line: decide what AI can do on its own and what always needs your eyes. Anything client-facing gets your review first.
 
-Day 3. Save 3 prompts you will reuse: an email reply, a text reply, and an appointment summary. Create short reusable texts for showing follow-ups, offer updates, and check-ins. Save one or two finished pieces you loved for each kind of task. Examples beat instructions.
+Day 3. Save 3 prompts you will reuse: an email reply, a text reply, and an appointment summary. Create short reusable texts for showing follow-ups, offer updates, and check-ins. Save examples of good: one or two finished pieces you loved for each repeat task. Examples beat instructions.
 
 Day 4. Talk instead of type: use voice dictation for one full task and notice how much faster it is. After an appointment, record a voice memo and turn it into a CRM note, tasks, and a follow-up email.
 
