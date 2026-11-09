@@ -184,6 +184,13 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .trust div{background:#fff;border-top:2px solid var(--gold);padding:8px 10px 10px}
 .trust b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(15px,1.2vw,18px)}
 .trust span{display:block;color:var(--muted);font-size:clamp(12px,.9vw,14px);margin-top:2px}
+.browser{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(120,95,50,.12);overflow:hidden}
+.browser-bar{display:flex;align-items:center;gap:6px;padding:8px 10px;background:var(--ivory2);border-bottom:1px solid var(--line)}
+.browser-bar i{width:8px;height:8px;border-radius:50%;background:var(--gold2);display:block}
+.browser-bar span{margin-left:6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.browser-body{padding:14px 16px 16px}
+.browser-body p{margin:0 0 8px;font-size:clamp(13px,1vw,16px);line-height:1.4}
+.pass{border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:var(--muted);font-size:13px;background:#faf7f2}
 .closing{display:flex;flex-direction:column;justify-content:center;gap:1.4vh;min-height:0}
 .qr-row{display:flex;justify-content:center;align-items:flex-start;gap:2vw}
 .qr-row .qr-wrap img{width:min(156px,20vh)}
@@ -577,14 +584,24 @@ Use my Letter of Opinion template, my signature photo, and the kit. One page. Dr
 <section class="slide" data-notes="How to build the card without a connector. Team members will not have their own Follow Up Boss API keys. Use the Follow Up Boss website. One: an assistant with its own browser, often called agent mode or computer use. Check the plan. Do not name a vendor feature you have not confirmed. Two: give it the Deal Card kit. Three: at the sign-in page they take over. The AI never gets the password. Four: it reads the screen, read only. Five: cadence. Hot leads every 7 to 10 days, warm about every 2 months, past clients and sphere quarterly. Newsletters do not count. Prefer overdue cadence over a generic task. Skip unsubscribed or parked contacts. Six: they call, say the outcome, it drafts a one-line note to paste, then the next card. A running list so nobody is offered twice. It never sends a message. Say: you do not have to recreate this, but this is the power of AI.">
   <div class="kicker">02 · No connector through the brokerage</div>
   <h2>How to build it <em>without a connector</em></h2>
-  <ol class="nlist">
-    <li>Open an assistant that has its own browser.<span>Often called agent mode or computer use. Check your plan.</span></li>
-    <li>Give it the Deal Card kit. The QR is at the end.</li>
-    <li>At the Follow Up Boss sign-in page, you sign in yourself.<span>The AI never needs your password.</span></li>
-    <li>It reads contacts, stages, last contact, and tasks from the screen. Read only.</li>
-    <li>It picks who is due, and builds one card.<span>Hot leads every 7 to 10 days. Warm about every 2 months. Past clients and your sphere quarterly. A newsletter does not count.</span></li>
-    <li>You make the call, tell it the outcome, and it gives you the next card.<span>It drafts a one-line note for you to paste. Nobody is offered twice today.</span></li>
-  </ol>
+  <div class="pair">
+    <ol class="nlist">
+      <li>Open an assistant that has its own browser.<span>Often called agent mode or computer use. Check your plan.</span></li>
+      <li>Give it the Deal Card kit. The QR is at the end.</li>
+      <li>At the Follow Up Boss sign-in page, you sign in yourself.<span>The AI never needs your password.</span></li>
+      <li>It reads contacts, stages, last contact, and tasks from the screen. Read only.</li>
+      <li>It picks who is due, and builds one card.<span>Hot leads every 7 to 10 days. Warm about every 2 months. Past clients and your sphere quarterly. A newsletter does not count.</span></li>
+      <li>You make the call, tell it the outcome, and it gives you the next card.<span>It drafts a one-line note for you to paste. Nobody is offered twice today.</span></li>
+    </ol>
+    <div class="browser" aria-label="Example of the sign-in handoff">
+      <div class="browser-bar"><i></i><i></i><i></i><span>Example · you sign in</span></div>
+      <div class="browser-body">
+        <p>The assistant stops on the sign-in page.</p>
+        <div class="pass">Password: you type it. The assistant does not see it.</div>
+        <p style="margin-top:12px">Then one card comes back. You make the call.</p>
+      </div>
+    </div>
+  </div>
   <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b> It never texts or emails anyone. You log the note in Follow Up Boss, or you paste the draft it wrote.</div>
 </section>
 
@@ -628,8 +645,9 @@ Use my Letter of Opinion template, my signature photo, and the kit. One page. Dr
     <div>
       <ol class="nlist">
         <li>Gather 5 to 10 favourite past posts, your logo, and your brokerage rules.</li>
-        <li>Ask for a one-page brand guide. Edit it until it feels like you.</li>
-        <li>Save that one file. Attach it, and say: follow my brand guide.</li>
+        <li>Ask your AI to draft a one-page brand guide from them.</li>
+        <li>Edit it until it feels like you. Save one file in your Drive or AI project.</li>
+        <li>Every time you create something, attach the guide and say: follow my brand guide.</li>
         <li>When it drifts, fix the guide, not just the post.</li>
       </ol>
       <div class="copybox" style="margin-top:1vh">
@@ -714,10 +732,10 @@ I will review it and post it myself.</pre>
     <div class="rules" aria-label="Example house rules">
       <h3>House rules · example</h3>
       <ul>
-        <li>Canadian spelling. Short paragraphs. 12 Nov 2026.</li>
-        <li>Warm, plain words. My sign-off, every time. 12 Nov 2026.</li>
-        <li>Never send without my approval. Copy me on the draft. 12 Nov 2026.</li>
-        <li>If a fact is missing, say so. Do not guess. 12 Nov 2026.</li>
+        <li>Canadian spelling. Short paragraphs. 10 Nov 2026.</li>
+        <li>Warm, plain words. My sign-off, every time. 10 Nov 2026.</li>
+        <li>Never send without my approval. Copy me on the draft. 10 Nov 2026.</li>
+        <li>If a fact is missing, say so. Do not guess. 10 Nov 2026.</li>
       </ul>
     </div>
   </div>
@@ -742,6 +760,10 @@ I will review it and post it myself.</pre>
         <li>Review a sample before anything goes out.</li>
         <li>When a chat gets long and muddled, start a fresh one. Ask it to read your rules back.</li>
       </ol>
+      <div class="mini-posts" style="margin-top:1vh">
+        <div class="mini"><p class="bad">Example · drifted<br>AMAZING HOME IN TOWN. You will not believe this.</p></div>
+        <div class="mini"><p>Example · saved in the rules file<br>Warm, plain words. No all caps. 10 Nov 2026.</p></div>
+      </div>
       <div class="lesson"><b>Correct once, save it forever.</b></div>
     </div>
   </div>
@@ -930,7 +952,7 @@ I will review it and post it myself.</pre>
       <p>Keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting tools is Step 2.</p>
     </div>
   </div>
-  <div class="lesson"><b>Parking lot:</b> marketing, visual brand, and nurture content. That is a session of its own. You remain responsible for what you send. Ask leadership for brokerage policy. Not legal advice.</div>
+  <div class="lesson"><b>Parking lot:</b> ads and full nurture campaigns are a later session. The one-page guide earlier is the starter. You remain responsible for what you send. Ask leadership for brokerage policy. Not legal advice.</div>
 </section>
 
 </main>
