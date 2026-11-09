@@ -124,6 +124,8 @@ Stay in the chat. These are the jobs worth your first month. None of them replac
 
 Copy the finished draft into the tool you already use. You hit send.
 
+One worked example is the Faris Team Letter of Opinion. In Jonathan's experience, about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. The steps and the instruction file are in the [Letter of Opinion kit](loo-kit.html). Download the Word template from the shared folder named in that kit, add your own signature photo, and give your AI the template, the photo, and the kit.
+
 ---
 
 ## 3. The cost

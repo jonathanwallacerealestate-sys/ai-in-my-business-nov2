@@ -84,6 +84,18 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .qr-wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
 .qr-wrap img{width:min(320px,34vh);height:auto;background:#fff;padding:8px;border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 50px rgba(120,95,50,.15)}
 .qr-cap{margin-top:1.4vh;font-family:"Playfair Display",serif;font-size:clamp(20px,1.8vw,30px);line-height:1.2}
+.qr-stack{display:flex;flex-direction:column;align-items:center;gap:1.4vh}
+.qr-stack .qr-wrap img{width:min(200px,22vh)}
+.qr-stack .qr-cap{font-size:clamp(15px,1.2vw,22px);margin-top:.5vh}
+.loo-card{margin-top:.4vh}
+.loo-card .ladder{gap:8px}
+.loo-card .ladder-pill{min-height:0;padding:8px 72px 8px 16px}
+.loo-card .ladder-num{width:46px;height:46px;font-size:18px;right:8px}
+.loo-card .ladder-name{font-size:clamp(15px,1.25vw,20px)}
+.loo-card .ladder-item.is-now .ladder-name{font-size:clamp(16px,1.35vw,22px)}
+.loo-card .ladder-sub{font-size:clamp(12px,.95vw,15px);color:#efe6d8}
+.loo-card .ladder-item{opacity:1}
+.loo-card .ladder-item.is-now .ladder-pill{animation:none;box-shadow:none}
 .nav{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:5}
 .nav button{width:8px;height:8px;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0}
 .nav button.on{background:var(--gold);width:22px;border-radius:4px}
@@ -127,6 +139,11 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   .prices th,.prices td{padding-top:5px;padding-bottom:6px}
   .copybox pre{font-size:12.5px;line-height:1.34;padding:8px 10px 10px}
   .qr-wrap img{width:min(240px,30vh)}
+  .qr-stack .qr-wrap img{width:min(132px,16vh)}
+  .qr-stack{gap:.6vh}
+  .qr-stack .qr-cap{font-size:14px}
+  .loo-card .ladder-pill{padding:6px 64px 6px 14px}
+  .loo-card .ladder-num{width:40px;height:40px;font-size:16px}
 }
 @media print{
   html,body{overflow:visible}
@@ -205,7 +222,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   <h2>Today, in <em>four parts</em></h2>
   <div class="grid g4">
     <div class="card"><span class="mark">01</span><h3>How to start</h3><p>One assistant. Your first week, by chat.</p></div>
-    <div class="card"><span class="mark">02</span><h3>Where to focus</h3><p>The few jobs that give time back.</p></div>
+    <div class="card"><span class="mark">02</span><h3>Where to focus</h3><p>The daily jobs, then a Letter of Opinion.</p></div>
     <div class="card"><span class="mark">03</span><h3>The cost</h3><p>Start free. One plan if you need it.</p></div>
     <div class="card"><span class="mark">04</span><h3>What not to waste time with</h3><p>What to leave alone while you learn.</p></div>
   </div>
@@ -339,6 +356,156 @@ Jonathan Wallace, REALTOR®
   </div>
 </section>
 
+<section class="slide" data-notes="Worked example inside where to focus. In your experience a Letter of Opinion takes about 30 minutes by hand. About 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say the line: you do not have to recreate this, but this is the power of AI. Walk the four setup steps. The shared folder is named inside the kit. Do not read out a web address. Step 1 is download the Faris Team Word template into their own Drive. Step 2 is a photo of their own signature on white paper, saved to Drive. Step 3 is this kit, from the QR at the end. The folder also holds the email template and the kit. Step 4 is give the AI the template, the signature photo, and the kit once, in a project, in saved instructions, or attached at the start. No training. The kit already has the format and the rules.">
+  <div class="kicker">02 · Where to focus · do this tomorrow</div>
+  <h2>Your Letter of Opinion, <em>in minutes</em></h2>
+  <p class="sub">In my experience: about 30 minutes by hand. About 30 minutes to set up once, then about 30 minutes back on each letter.</p>
+  <div class="ladder-card loo-card">
+    <ol class="ladder" aria-label="One-time setup. Four steps.">
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
+          <div class="ladder-copy">
+            <span class="ladder-step">Step</span>
+            <span class="ladder-name">Template in your Drive</span>
+            <span class="ladder-sub">Download the Faris Team Word template from the shared folder.</span>
+          </div>
+          <span class="ladder-num">1</span>
+        </div>
+      </li>
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#C9B6F0;--b:#9BB6F0">
+          <div class="ladder-copy">
+            <span class="ladder-step">Step</span>
+            <span class="ladder-name">Your signature</span>
+            <span class="ladder-sub">Photograph it on white paper. Save the photo to Drive.</span>
+          </div>
+          <span class="ladder-num">2</span>
+        </div>
+      </li>
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#9ED9C8;--b:#8EC9DE">
+          <div class="ladder-copy">
+            <span class="ladder-step">Step</span>
+            <span class="ladder-name">The kit</span>
+            <span class="ladder-sub">Scan the QR at the end. The folder also holds the email template and the kit.</span>
+          </div>
+          <span class="ladder-num">3</span>
+        </div>
+      </li>
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#F0C2AE;--b:#E3B4C8">
+          <div class="ladder-copy">
+            <span class="ladder-step">Step</span>
+            <span class="ladder-name">Three files, once</span>
+            <span class="ladder-sub">Template, signature, kit. A project, saved instructions, or the start of the chat. No training.</span>
+          </div>
+          <span class="ladder-num">4</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
+</section>
+
+<section class="slide" data-notes="Every letter after the setup. They give names on title, the address, their own value range, a max list price only if they have one, and their comps. The AI sorts those comps, fills the letter, places their signature, makes a one-page PDF and a Word copy, and drafts the client email. They read it, check every figure and every name, and they send it. The opinion is theirs. Do not walk the legal wording. Say again, if you need it: you do not have to recreate this, but this is the power of AI.">
+  <div class="kicker">02 · Where to focus · every letter after</div>
+  <h2>Every letter <em>after that</em></h2>
+  <div class="ladder-card loo-card">
+    <ol class="ladder" aria-label="Each time: the facts, the package, then you.">
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
+          <div class="ladder-copy">
+            <span class="ladder-step">You give it</span>
+            <span class="ladder-name">The facts</span>
+            <span class="ladder-sub">Names on title. Address. Your value range, and a max list price if you have one. Your comps.</span>
+          </div>
+          <span class="ladder-num">1</span>
+        </div>
+      </li>
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#C9B6F0;--b:#9BB6F0">
+          <div class="ladder-copy">
+            <span class="ladder-step">It returns</span>
+            <span class="ladder-name">The package</span>
+            <span class="ladder-sub">Comps sorted. Letter filled. Your signature placed. One-page PDF, a Word copy, and the client email.</span>
+          </div>
+          <span class="ladder-num">2</span>
+        </div>
+      </li>
+      <li class="ladder-item is-now">
+        <div class="ladder-pill" style="--a:#9ED9C8;--b:#8EC9DE">
+          <div class="ladder-copy">
+            <span class="ladder-step">Then you</span>
+            <span class="ladder-name">Read, check, send</span>
+            <span class="ladder-sub">The opinion is yours. Check every name and every figure. You send it.</span>
+          </div>
+          <span class="ladder-num">3</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
+</section>
+
+<section class="slide" data-notes="Sample only. Clients Alex and Jordan Sample. Address 123 Sample Street, Midland, which is not a real listing. The dollar figures are fictional. If Wi-Fi works, paste the sample request into a chat that already has the template, the signature photo, and the kit. If Wi-Fi fails, show the backup on the right. Close with: I would still read every figure and send it myself. Do not invent a comp that is not on the slide.">
+  <div class="kicker">02 · Sample data only · Alex and Jordan Sample</div>
+  <h2>A Letter of Opinion, <em>from one request</em></h2>
+  <div class="demo-grid">
+    <div class="copybox">
+      <div class="copyhead">
+        <span class="tag">Sample request</span>
+        <button class="copybtn" type="button" data-copy="loo-prompt">Copy</button>
+      </div>
+      <pre id="loo-prompt">I'm a REALTOR® with Faris Team Real Estate Brokerage. Draft a Letter of Opinion and the client email. SAMPLE DATA ONLY. Do not invent a comp, a price, or a postal code.
+
+People on title: Alex Sample and Jordan Sample.
+Person who asked: Alex Sample.
+Address: 123 Sample Street, Midland, ON. No postal code. Do not invent one.
+My opinion: market value between $480,000 and $510,000. Maximum recommended list price $525,000.
+Purpose: for their accountant.
+
+Comps I am giving you. All fictional:
+- 10 Sample Crescent, Midland. Sold $495,000.
+- 18 Sample Crescent, Midland. Active, listed $529,000.
+- 7 Sample Court, Midland. Sold $502,000.
+
+Use my Letter of Opinion template, my signature photo, and the kit. One page. Draft only. I will check every figure and send it myself.</pre>
+    </div>
+    <div class="copybox">
+      <div class="copyhead">
+        <span class="tag">Backup example · if Wi-Fi fails</span>
+        <button class="copybtn" type="button" data-copy="loo-backup">Copy</button>
+      </div>
+      <pre id="loo-backup">BACKUP EXAMPLE. Not a live answer.
+Fictional clients and fictional figures. 123 Sample Street is not a real home.
+
+Letter excerpt
+RE: EVALUATION OF 123 SAMPLE STREET, MIDLAND
+
+As a result of the evaluation and analysis of 123 Sample Street, Midland, it is my opinion that the market value is between $480,000 and $510,000, supporting a maximum recommended list price of $525,000. This value is based on properties that are both active and have sold in the neighbourhood.
+
+Email
+Hi Alex,
+
+The Letter of Opinion for 123 Sample Street, Midland, is attached.
+
+Opinion of value, as of November 10, 2026
+- Current market value range: $480,000 to $510,000
+- Maximum recommended list price: $525,000
+
+Of the comparables you provided, two have sold: 10 Sample Crescent at $495,000 and 7 Sample Court at $502,000. One is active: 18 Sample Crescent, listed at $529,000. I did not add any.
+
+The attached letter is the current document and is suitable to pass along to the accountant.
+
+If you would like to talk through what this means for your options, I am happy to walk you through it.
+
+Kindly,
+[Your Name]
+REALTOR®, Faris Team Real Estate, Brokerage</pre>
+    </div>
+  </div>
+</section>
+
 
 <section class="slide" data-notes="Question 2, published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway in your words: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Claude amounts had no currency label. The Grok US page lists Plus 8, Premium 30, Super 100, Ultra 200, and Teams from 30 dollars, and it recommends Premium for new AI users. Copilot free-chat limits were not confirmed. Prices are before tax, as of November 9, 2026.">
   <div class="kicker">You can start for $0</div>
@@ -466,7 +633,7 @@ Jonathan Wallace, REALTOR®
     <div class="card">
       <span class="mark">Step 2</span>
       <h3>Connect Your Tools</h3>
-      <p>Email, calendar, CRM and Drive. A later session, not today.</p>
+      <p>Email, calendar, CRM and Drive. Once Drive is connected, it can pull your letter template and signature. Not today.</p>
     </div>
     <div class="card">
       <span class="mark">Then</span>
@@ -477,7 +644,7 @@ Jonathan Wallace, REALTOR®
   <div class="lesson"><b>Not today:</b> connecting accounts, saved processes, and more than one assistant.</div>
 </section>
 
-<section class="slide" data-notes="One task a week for four weeks, still Step 1. Week 1 starts November 16: free account, rules note, one task on 3 or more days. Week 2, November 23: follow-up writing and a one-line correction log. Week 3, November 30: summaries, prep, and one paid plan only if they are hitting free limits. Week 4, December 7: a morning plan while parked, then one example at the huddle. Point at the code and say only: scan to download the playbook. Do not read a web address. The huddle date is not set. Ask Thomas rather than naming one.">
+<section class="slide" data-notes="One task a week for four weeks, still Step 1. Week 1 starts November 16: free account, rules note, one task on 3 or more days. Week 2, November 23: follow-up writing and a one-line correction log. Week 3, November 30: summaries, prep, and one paid plan only if they are hitting free limits. Week 4, December 7: a morning plan while parked, then one example at the huddle. Two codes. The top one: scan to download the playbook. The lower one: scan to download the Letter of Opinion kit. Do not read a web address. Do not read the shared folder address. The huddle date is not set. Ask Thomas rather than naming one.">
   <div class="close-grid">
     <div>
       <div class="kicker">One task a week · still Step 1</div>
@@ -489,9 +656,15 @@ Jonathan Wallace, REALTOR®
         <div class="week"><b>Week 4 · Dec 7</b><span>A morning plan, income tasks first. Bring one example to the team huddle.</span></div>
       </div>
     </div>
-    <div class="qr-wrap">
-      <img src="assets/playbook-qr.png" alt="QR code. Scan to download the playbook." width="798" height="798">
-      <p class="qr-cap">Scan to download the playbook</p>
+    <div class="qr-stack">
+      <div class="qr-wrap">
+        <img src="assets/playbook-qr.png" alt="QR code. Scan to download the playbook." width="798" height="798">
+        <p class="qr-cap">Scan to download the playbook</p>
+      </div>
+      <div class="qr-wrap">
+        <img src="assets/loo-kit-qr.png" alt="QR code. Scan to download the Letter of Opinion kit." width="798" height="798">
+        <p class="qr-cap">Scan to download the Letter of Opinion kit</p>
+      </div>
     </div>
   </div>
 </section>
