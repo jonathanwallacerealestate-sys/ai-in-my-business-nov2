@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting Started with AI | Jonathan Wallace, REALTOR®</title>
+<meta name="description" content="Team meeting talk by Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage. November 10, 2026.">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FAF7F0;--ivory2:#F3EDE1;--gold:#B8975A;--gold2:#D9C08E;--ink:#1F1E1C;--muted:#6E685E;--line:#E6DCC8}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--ivory);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-weight:400;overflow:hidden}
+.deck{position:relative;width:100vw;height:100vh}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:72px 6.2vw 58px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease;pointer-events:none;z-index:0}
+.slide.on{opacity:1;visibility:visible;transform:none;pointer-events:auto;z-index:1}
+.slide::before{content:"";position:absolute;top:28px;left:6.2vw;right:6.2vw;height:1px;background:var(--line)}
+.num{position:absolute;top:40px;left:6.2vw;font-family:"Playfair Display",serif;font-size:16px;color:var(--gold);letter-spacing:.12em}
+.foot{position:absolute;bottom:18px;left:6.2vw;right:6.2vw;display:flex;justify-content:space-between;gap:24px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);pointer-events:none}
+h1,h2{font-family:"Playfair Display",serif;font-weight:500;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(34px,3.5vw,58px)}
+h2{font-size:clamp(28px,2.7vw,46px);margin-bottom:1.6vh}
+h1 em,h2 em{font-style:italic;color:var(--gold)}
+.rule{width:72px;height:2px;background:var(--gold);margin:1.6vh 0}
+.kicker{font-size:clamp(12px,.95vw,14px);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2vh;font-weight:500}
+.sub{font-size:clamp(16px,1.35vw,20px);color:var(--muted);line-height:1.45}
+.thanks{margin-top:1.2vh;font-size:clamp(15px,1.25vw,18px);color:var(--muted)}
+.grid{display:grid;gap:1.6vw}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{border-top:2px solid var(--gold);padding-top:1.2vh}
+.card h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(18px,1.55vw,26px);margin-bottom:.6vh;line-height:1.2}
+.card p,.card li{font-size:clamp(14px,1.12vw,17px);color:var(--muted);line-height:1.4}
+.card ol,.card ul{margin:0;padding-left:1.1em}
+.card li+li{margin-top:.35em}
+.mark{font-family:"Playfair Display",serif;font-size:clamp(13px,1vw,16px);color:var(--gold);display:block;margin-bottom:.4vh}
+.list{list-style:none;display:grid;gap:1.15vh;max-width:1100px}
+.list li{font-size:clamp(16px,1.45vw,24px);font-family:"Playfair Display",serif;padding-left:1.35em;position:relative;line-height:1.28}
+.list li::before{content:"";position:absolute;left:0;top:.55em;width:.7em;height:1px;background:var(--gold)}
+.lesson{margin-top:1.6vh;padding:1.15vh 1.1vw;background:var(--ivory2);border-left:3px solid var(--gold);font-size:clamp(15px,1.25vw,20px);line-height:1.4}
+.lesson b{font-weight:500;color:var(--gold)}
+.flow{display:flex;align-items:center;gap:1vw;flex-wrap:wrap}
+.pill{border:1px solid var(--gold2);border-radius:999px;padding:.7vh 1.1vw;font-family:"Playfair Display",serif;font-size:clamp(15px,1.3vw,22px);background:#fff}
+.arrow{color:var(--gold);font-size:clamp(16px,1.4vw,22px)}
+.cover{background:radial-gradient(900px 520px at 8% 0%,#F1E6CF 0%,transparent 58%),var(--ivory)}
+.opener{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:clamp(22px,3vw,48px);align-items:center;width:100%}
+.ladder-card{background:radial-gradient(120% 80% at 50% 0%,rgba(232,196,140,.2),transparent 62%),#141311;border-radius:28px;padding:clamp(16px,2vh,26px) clamp(16px,1.5vw,24px) clamp(18px,2.2vh,28px);box-shadow:0 22px 50px rgba(40,32,20,.16)}
+.ladder-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#E6C98A;font-weight:500;margin-bottom:12px}
+.ladder{list-style:none;display:flex;flex-direction:column;gap:12px}
+.ladder-pill{position:relative;display:flex;align-items:center;min-height:78px;padding:8px 86px 8px 22px;border-radius:999px;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(100deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
+.ladder-copy{display:flex;flex-direction:column;gap:1px;min-width:0}
+.ladder-step{font-size:clamp(18px,1.55vw,26px);letter-spacing:.18em;text-transform:uppercase;color:#fff;font-weight:500;line-height:1}
+.ladder-item.is-now .ladder-step{font-size:12px;letter-spacing:.22em;color:#F0D7A4}
+.ladder-name{font-family:"Playfair Display",serif;font-size:clamp(22px,1.9vw,30px);color:#fff;font-weight:500;line-height:1.1}
+.ladder-soon{font-size:clamp(13px,1.1vw,16px);color:#ddd4c6;line-height:1.15}
+.ladder-num{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:28px;font-weight:500;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(140deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
+.ladder-item:not(.is-now){opacity:.62}
+.ladder-item.is-now{opacity:1}
+.ladder-item.is-now .ladder-pill{animation:stepglow 3.2s ease-in-out infinite}
+@keyframes stepglow{
+  0%,100%{box-shadow:0 0 0 1px rgba(230,201,138,.28),0 0 16px rgba(227,155,134,.28)}
+  50%{box-shadow:0 0 0 1px rgba(230,201,138,.7),0 0 28px rgba(227,155,134,.62)}
+}
+@media (prefers-reduced-motion:reduce){
+  .ladder-item.is-now .ladder-pill{animation:none;box-shadow:0 0 0 1px rgba(230,201,138,.55),0 0 22px rgba(227,155,134,.45)}
+}
+.stack{display:grid;gap:1.15vh;align-content:center}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:1.6vw}
+.steps .card h3::before{counter-increment:s;content:counter(s,decimal-leading-zero);display:block;font-size:.62em;color:var(--gold);margin-bottom:.6vh;letter-spacing:.08em}
+.weeks{display:grid;gap:1.1vh}
+.week{border-top:2px solid var(--gold);padding-top:.7vh}
+.week b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(16px,1.4vw,22px);margin-bottom:.2vh}
+.week span{display:block;color:var(--muted);font-size:clamp(13px,1.05vw,16px);line-height:1.35}
+.close-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3vw;align-items:center}
+.qr-wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.qr-wrap img{width:min(320px,34vh);height:auto;background:#fff;padding:8px;border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 50px rgba(120,95,50,.15)}
+.qr-cap{margin-top:1.4vh;font-family:"Playfair Display",serif;font-size:clamp(20px,1.8vw,30px);line-height:1.2}
+.nav{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:5}
+.nav button{width:8px;height:8px;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0}
+.nav button.on{background:var(--gold);width:22px;border-radius:4px}
+.progress{position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0;z-index:5}
+.notes{position:fixed;right:2vw;bottom:48px;max-width:min(420px,36vw);max-height:46vh;overflow:auto;background:var(--ink);color:var(--ivory);padding:16px 18px;border-radius:8px;font-size:14px;line-height:1.45;display:none;z-index:6}
+.notes.show{display:block}
+.notes b{color:var(--gold2);font-weight:500;display:block;margin-bottom:6px;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.takeaway{font-family:"Playfair Display",serif;font-size:clamp(20px,1.9vw,30px);line-height:1.25;background:var(--ivory2);border-left:3px solid var(--gold);padding:10px 14px;margin-bottom:12px}
+.prices{width:100%;border-collapse:collapse}
+.prices th,.prices td{text-align:left;vertical-align:top;padding:7px 10px 8px 0;border-bottom:1px solid var(--line)}
+.prices thead th{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;padding-bottom:6px}
+.prices tbody th{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(16px,1.35vw,22px);width:16%}
+.prices td.free{font-family:"Playfair Display",serif;color:var(--gold);font-size:clamp(16px,1.3vw,20px);width:11%;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:clamp(12px,.92vw,14.5px);line-height:1.35}
+.chip b{font-weight:500}
+.minor{margin-top:5px;color:var(--muted);font-size:clamp(11px,.82vw,13px);line-height:1.35}
+.footnote{margin-top:8px;color:var(--muted);font-size:clamp(11px,.82vw,13px)}
+.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;min-height:0}
+.copybox{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(120,95,50,.1);display:flex;flex-direction:column;min-width:0;min-height:0}
+.copyhead{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;background:var(--ivory2);border-bottom:1px solid var(--line);border-radius:12px 12px 0 0}
+.tag{display:inline-block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;background:var(--gold);color:#fff;padding:3px 8px;border-radius:3px;font-weight:500}
+.copybtn{border:1px solid var(--gold);background:#fff;color:var(--ink);border-radius:999px;padding:5px 12px;font-family:Inter,system-ui,sans-serif;font-size:13px;font-weight:500;cursor:pointer}
+.copybtn:hover,.copybtn:focus-visible{background:var(--gold);color:#fff;outline:none}
+.copybox pre{margin:0;padding:10px 12px 12px;white-space:pre-wrap;word-wrap:break-word;font-family:Inter,system-ui,sans-serif;font-size:clamp(12px,1.02vw,15px);line-height:1.38;font-weight:400;color:var(--ink)}
+.example{background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:0 0 12px 12px;padding:12px 14px 14px;box-shadow:0 14px 36px rgba(120,95,50,.08)}
+.example .tag{margin-bottom:8px}
+.qa{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4vw}
+@media (max-height:820px){
+  .slide{padding:64px 5.4vw 50px}
+  .slide::before{top:22px}
+  .num{top:32px}
+  h2{margin-bottom:10px}
+  .ladder{gap:8px}
+  .ladder-pill{min-height:70px;padding-right:78px}
+  .ladder-num{width:60px;height:60px;font-size:24px}
+  .prices th,.prices td{padding-top:5px;padding-bottom:6px}
+  .copybox pre{font-size:12.5px;line-height:1.34;padding:8px 10px 10px}
+  .qr-wrap img{width:min(240px,30vh)}
+}
+@media print{
+  html,body{overflow:visible}
+  .slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;page-break-after:always}
+  .nav,.progress,.notes{display:none}
+}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<main class="deck">
+
+<section class="slide cover" data-notes="Thank Bailey Albert and Thomas Faris for collecting the team's questions. Every slide today answers one of those questions. Ground rule for the whole talk: AI drafts, you decide, and you send. Plan on 20 to 30 minutes, then open the floor.">
+  <div class="opener">
+    <div>
+      <div class="kicker">Faris Team · November 10, 2026</div>
+      <h1>AI leverage for the team:<br><em>how to get started</em></h1>
+      <p class="thanks">Thank you, Bailey and Thomas, for the team's questions.</p>
+      <div class="rule"></div>
+      <ul class="list">
+        <li>Where AI gives you time back, and what it costs</li>
+        <li>Every slide answers one of your questions</li>
+        <li>AI drafts. You decide. You send.</li>
+      </ul>
+    </div>
+    <div class="ladder-card">
+      <p class="ladder-kicker">Step 1 of 4</p>
+      <ol class="ladder" aria-label="Four steps. This talk is step 1, Getting Started. Steps 2, 3, and 4 are coming soon and are not named.">
+        <li class="ladder-item is-now">
+          <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
+            <div class="ladder-copy">
+              <span class="ladder-step">Step</span>
+              <span class="ladder-name">Getting Started</span>
+            </div>
+            <span class="ladder-num">1</span>
+          </div>
+        </li>
+        <li class="ladder-item">
+          <div class="ladder-pill" style="--a:#C9B6F0;--b:#9BB6F0">
+            <div class="ladder-copy">
+              <span class="ladder-step">Step</span>
+              <span class="ladder-soon">Coming soon</span>
+            </div>
+            <span class="ladder-num">2</span>
+          </div>
+        </li>
+        <li class="ladder-item">
+          <div class="ladder-pill" style="--a:#9ED9C8;--b:#8EC9DE">
+            <div class="ladder-copy">
+              <span class="ladder-step">Step</span>
+              <span class="ladder-soon">Coming soon</span>
+            </div>
+            <span class="ladder-num">3</span>
+          </div>
+        </li>
+        <li class="ladder-item">
+          <div class="ladder-pill" style="--a:#F0C2AE;--b:#E3B4C8">
+            <div class="ladder-copy">
+              <span class="ladder-step">Step</span>
+              <span class="ladder-soon">Coming soon</span>
+            </div>
+            <span class="ladder-num">4</span>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Last time you showed what you do. Today is how they start. One line from November 2: Less time on what I hate, more time for what I love. Use AI on the low-value tasks you put off. Their 14 questions come down to two. Marketing, branding, and content are a later session. Do not open that topic today.">
+  <div class="kicker">November 2, then your questions</div>
+  <h2>Last time, and <em>what you asked</em></h2>
+  <ul class="list">
+    <li>Last time I showed what I do. Today is how you start.</li>
+    <li>November 2, in one line: less time on what I hate, more time for what I love. Use AI on the low-value tasks you put off.</li>
+    <li>Your questions come down to two: How do I start? What does it cost?</li>
+  </ul>
+  <div class="lesson"><b>Not today:</b> marketing, branding, and content. That deserves its own session.</div>
+</section>
+
+<section class="slide" data-notes="Question 1. Grok is the tool you use most, because you can talk to it and dump messy notes. The role-based setup is later, not week one. Say the roles only: a chief-of-staff assistant, a follow-up assistant, a listing-paperwork assistant. Do not name any internal tool. ChatGPT, Claude, Gemini, and Copilot all do the beginner tasks. The habit beats the tool.">
+  <div class="kicker">Why Grok · and why the habit matters more</div>
+  <h2>Why I picked Grok <em>(and why the habit matters more than the tool)</em></h2>
+  <div class="grid g3">
+    <div class="card">
+      <h3>Grok, day to day</h3>
+      <p>I can talk to it by voice, dump messy notes, and get a draft back.</p>
+    </div>
+    <div class="card">
+      <h3>Any of these can start you</h3>
+      <p>ChatGPT, Claude, Gemini, and Copilot all draft, summarize, and build checklists.</p>
+    </div>
+    <div class="card">
+      <h3>Later, not week one</h3>
+      <p>A chief-of-staff assistant, a follow-up assistant, and a listing-paperwork assistant. Roles only.</p>
+    </div>
+  </div>
+  <div class="lesson"><b>The habit beats the tool.</b> One task. Your rules written down. Drafts only. Pick the one you will actually open every day.</div>
+</section>
+
+<section class="slide" data-notes="Question 7. Six everyday jobs. None of them replace the agent with a client. They remove the blank page. Ask which one drains them most. That job is the starting task.">
+  <div class="kicker">Where the time comes back</div>
+  <h2>Where AI gives an agent <em>time back</em></h2>
+  <div class="grid g3">
+    <div class="card"><span class="mark">01</span><h3>Everyday admin</h3><p>The list you keep avoiding.</p></div>
+    <div class="card"><span class="mark">02</span><h3>Emails, texts, follow-up</h3><p>The note you meant to send.</p></div>
+    <div class="card"><span class="mark">03</span><h3>Summaries</h3><p>Long notes, then you check them.</p></div>
+    <div class="card"><span class="mark">04</span><h3>Appointment prep</h3><p>Walk in ready for the conversation.</p></div>
+    <div class="card"><span class="mark">05</span><h3>Research</h3><p>Questions to ask. Facts you still verify.</p></div>
+    <div class="card"><span class="mark">06</span><h3>Organizing your day</h3><p>Income tasks first.</p></div>
+  </div>
+  <div class="lesson"><b>Start here:</b> pick the one that drains you most. None of these replace you with a client.</div>
+</section>
+
+<section class="slide" data-notes="Questions 6 and 7. The showing list is a generic sample, not a real day. Ask for a time-blocked plan with income tasks first. On a closing checklist, anything legal is confirm with the brokerage. Dictate between appointments while parked. Never while driving.">
+  <div class="kicker">Admin and the shape of a day</div>
+  <h2>Everyday admin and <em>organizing your day</em></h2>
+  <div class="grid g3">
+    <div class="card">
+      <span class="mark">Sample</span>
+      <h3>Hand it the messy list</h3>
+      <p>3 showings, 2 callbacks, an offer to review, and a client gift to order. Ask for a time-blocked plan, income tasks first.</p>
+    </div>
+    <div class="card">
+      <span class="mark">Checklist</span>
+      <h3>Closing week, sample file</h3>
+      <p>Ask for a closing-week checklist for a sample freehold purchase. Mark anything legal as confirm with the brokerage.</p>
+    </div>
+    <div class="card">
+      <span class="mark">Voice</span>
+      <h3>Between appointments</h3>
+      <p>Dictate while you are parked. Never while driving.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Questions 6, 14, and part of 11. The fastest win is the follow-up they postpone. For most agents, AI helps service people they already have. Your follow-up assistant can suggest who is next and draft an opener. You make the call. Do not claim what Follow Up Boss's built-in AI does. Today is copy and paste. Offer a later session for nurture content.">
+  <div class="kicker">The fastest win</div>
+  <h2>Emails, texts and <em>follow-up writing</em></h2>
+  <ul class="list">
+    <li>Post-showing thank-you. A check-in with a past client. A "still looking?" text.</li>
+    <li>The first draft takes seconds. You edit it, and you send it.</li>
+    <li>For most agents, this serves the people you already have. Follow-up is where that business comes from.</li>
+    <li>A follow-up assistant can suggest who to reach next and draft an opener. You make the call.</li>
+  </ul>
+  <div class="lesson"><b>Today:</b> copy the draft into the tool you already use. I will not guess at what Follow Up Boss's built-in AI can do.</div>
+</section>
+
+<section class="slide" data-notes="Question 13 and question 7. Summaries of long emails, condo status certificate notes, or call notes. No private client identifiers. Always check the original. Sample prep: a first buyer consultation for a couple relocating to Midland. Buyers: neighbourhood questions, a showing-day checklist, post-showing follow-up, and plain-language explainers such as what a home inspection condition means. Verify every fact. Property search stays in MLS.">
+  <div class="kicker">Read the long stuff. Walk in ready.</div>
+  <h2>Summaries, appointment prep and research <em>(including buyers)</em></h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Summaries</h3>
+      <p>Paste a long email, condo status certificate notes, or call notes. No private client identifiers. Ask for key points, risks, and questions. Then check the original.</p>
+    </div>
+    <div class="card">
+      <h3>Appointment prep</h3>
+      <p>Ask for a one-page sheet for a first buyer consultation. Sample: a couple relocating to Midland.</p>
+    </div>
+    <div class="card">
+      <h3>Buyers</h3>
+      <p>Neighbourhood questions, a showing-day checklist, the follow-up after, and a plain-language explainer. Example: what a home inspection condition means. Verify every fact.</p>
+    </div>
+    <div class="card">
+      <h3>Search stays in MLS</h3>
+      <p>AI helps you prepare questions and summarize. It does not replace your search.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Live demo for question 6, and it helps with buyers too. If Wi-Fi works, open Grok in a new chat and paste the sample prompt. Show the answer, then make one correction out loud: shorter, warmer, no exclamation marks. Close with: I would still read it, fix one line, and hit send myself. If Wi-Fi fails, use the backup example on the right. Alex and Jordan Sample are fictional. 123 Maple Sample St is not a real listing. Do not invent a sale price or a school fact.">
+  <div class="kicker">Sample data only · Alex and Jordan Sample</div>
+  <h2>Live demo: from messy notes to a <em>ready-to-send draft</em></h2>
+  <div class="demo-grid">
+    <div class="copybox">
+      <div class="copyhead">
+        <span class="tag">Sample prompt</span>
+        <button class="copybtn" type="button" data-copy="prompt">Copy</button>
+      </div>
+      <pre id="prompt">I'm a REALTOR® in Midland, Ontario. Here are my messy notes from a showing today. SAMPLE DATA ONLY.
+
+Buyers: Alex and Jordan Sample. Saw 123 Maple Sample St. Loved the kitchen and the walk to the waterfront trail. Worried the yard is small for their dog. Asked about school bus routes and what similar homes sold for. They're pre-approved, want to decide in 2 weeks.
+
+Please give me:
+1. A short, friendly follow-up email I can send tonight (under 120 words, no em dashes, no exclamation marks).
+2. Three questions to ask them on our next call.
+3. A to-do list for me before that call, marking anything I need to verify myself.
+Do not invent sale prices or school facts. Say "verify" where I need to check.</pre>
+    </div>
+    <div class="copybox">
+      <div class="copyhead">
+        <span class="tag">Backup example · if Wi-Fi fails</span>
+        <button class="copybtn" type="button" data-copy="backup">Copy</button>
+      </div>
+      <pre id="backup">BACKUP EXAMPLE. Not a live answer.
+Fictional clients: Alex and Jordan Sample.
+123 Maple Sample St is sample data, not a real home.
+
+1. Email
+Hi Alex and Jordan,
+
+Thank you for walking through 123 Maple Sample St with me today. You loved the kitchen and the walk to the waterfront trail. You are also worried the yard is small for your dog.
+
+You are pre-approved and want to decide in two weeks. I will verify school bus routes and what similar homes sold for before our next call. I will not guess at either.
+
+Jonathan Wallace, REALTOR®
+
+2. Questions
+- What would the yard need for your dog to be comfortable?
+- Which school bus details should I verify before we talk?
+- Once similar sales are verified, what else do you need in order to decide?
+
+3. To-do before the call
+- Verify school bus routes for this address. Do not guess.
+- Verify what similar homes sold for. Do not invent prices.
+- Confirm the yard size from the listing or a second look.
+- Read the draft, fix one line if needed, and send it yourself.</pre>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Question 6. Give it a job, not a question. Role, what happened, the deliverable, and your rules. Write me a follow-up gets an average draft. The recipe gets something they can send. Correct it once, then save that correction as a rule. That is the decision-log habit from November 2, kept in their own notes.">
+  <div class="kicker">A job, not a question</div>
+  <h2>Getting it to do the task, <em>not just answer</em></h2>
+  <div class="flow" aria-label="Role, what happened, what you want back, and your rules">
+    <span class="pill">Role</span><span class="arrow">→</span>
+    <span class="pill">What happened</span><span class="arrow">→</span>
+    <span class="pill">What you want back</span><span class="arrow">→</span>
+    <span class="pill">Your rules</span>
+  </div>
+  <ul class="list" style="margin-top:2vh">
+    <li>I'm a REALTOR® in... Here is what happened. Give me an email under 120 words, plus 3 questions. Flag anything I must verify.</li>
+    <li>"Write me a follow-up" gets you average. The recipe gets you something you can send.</li>
+  </ul>
+  <div class="lesson"><b>Correct it once.</b> Save that correction as a rule for next time.</div>
+</section>
+
+<section class="slide" data-notes="Questions 8, 9, and 10, voice and tone only. A half-page rules note: greeting, length, words they never use, sign-off, and drafts only. Many tools let you save standing instructions. The names differ: custom instructions, projects, or memory. Do not teach logos, fonts, or colour codes. Offer a later session and use the team's official brand pack when you do. Consistency comes from corrections, not from one perfect prompt.">
+  <div class="kicker">Voice and tone only</div>
+  <h2>Make it sound like you, <em>every time</em></h2>
+  <div class="grid g3">
+    <div class="card">
+      <h3>A half-page rules note</h3>
+      <p>How you greet people, how long you write, words you never use, your sign-off, and "drafts only, I send."</p>
+    </div>
+    <div class="card">
+      <h3>Save it if you can</h3>
+      <p>Many assistants keep standing instructions, often called custom instructions, projects, or memory. Features vary by plan.</p>
+    </div>
+    <div class="card">
+      <h3>Correct it, then keep the fix</h3>
+      <p>Consistency comes from the correction you write down, not from one perfect prompt.</p>
+    </div>
+  </div>
+  <div class="lesson"><b>A later session:</b> logos, colours, and visual brand, using the team's official brand pack.</div>
+</section>
+
+<section class="slide" data-notes="Questions 4 and 5. Week one: connect nothing. Copy the draft into Outlook, Follow Up Boss, or texts. Later, connectors can read, draft, or sometimes act. Read the permission screen. Start read-only or drafts only. Never auto-send. Keep MLS, TRREB, and client financial data out unless the brokerage approves. Ask leadership before connecting AI to Follow Up Boss, MLS, company email, or a transaction system. One connection at a time. A listing-paperwork assistant is a later role.">
+  <div class="kicker">Access, in plain language</div>
+  <h2>Connecting your accounts: <em>what it can do and what you're allowing</em></h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Week one: connect nothing</h3>
+      <p>Copy the draft into Outlook, Follow Up Boss, or your texts. That covers most of the value.</p>
+    </div>
+    <div class="card">
+      <h3>If you connect later</h3>
+      <p>A connector to email, calendar, or files may read, draft, or sometimes act. Read the permission screen before you allow it. Start with read-only or drafts only.</p>
+    </div>
+    <div class="card">
+      <h3>Never auto-send</h3>
+      <p>You hit send. Keep MLS, TRREB, and client financial data out unless the brokerage approves.</p>
+    </div>
+    <div class="card">
+      <h3>Ask leadership first</h3>
+      <p>Before any connection to Follow Up Boss, MLS, company email, or a transaction system. Add one connection at a time. A listing-paperwork assistant is a later role.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Question 2, published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway in your words: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Claude amounts had no currency label. The Grok US page lists Plus 8, Premium 30, Super 100, Ultra 200, and Teams from 30 dollars, and it recommends Premium for new AI users. Copilot free-chat limits were not confirmed. Prices are before tax, as of November 9, 2026.">
+  <div class="kicker">You can start for $0</div>
+  <h2>What it costs: <em>current published prices</em></h2>
+  <p class="takeaway">For about $50 to $100 a month you will have all the tools you need.</p>
+  <table class="prices">
+    <thead>
+      <tr><th>Tool</th><th>Free</th><th>Published plans</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Grok</th>
+        <td class="free">$0</td>
+        <td>
+          <div class="chips">
+            <span class="chip"><b>Plus</b> CA$9.99</span>
+            <span class="chip"><b>Premium</b> CA$41.99</span>
+            <span class="chip"><b>Super</b> CA$139.99</span>
+            <span class="chip"><b>Ultra</b> CA$279.99</span>
+            <span class="chip"><b>Teams</b> from US$30 / user</span>
+          </div>
+          <p class="minor">Premium first month CA$21. Super and Ultra are half off the first month. US page: Plus $8, Premium $30, Super $100, Ultra $200.</p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">ChatGPT</th>
+        <td class="free">CA$0</td>
+        <td>
+          <div class="chips">
+            <span class="chip"><b>Go</b> CA$11</span>
+            <span class="chip"><b>Plus</b> CA$25</span>
+            <span class="chip"><b>Pro</b> from CA$136</span>
+            <span class="chip"><b>Business</b> CA$34 / seat</span>
+          </div>
+          <p class="minor">Go may include ads. Business is CA$27 / seat if billed annually.</p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Claude</th>
+        <td class="free">$0</td>
+        <td>
+          <div class="chips">
+            <span class="chip"><b>Pro</b> $28</span>
+            <span class="chip"><b>Max</b> $140</span>
+            <span class="chip"><b>Ultra</b> $280</span>
+            <span class="chip"><b>Team</b> $35 / seat</span>
+          </div>
+          <p class="minor">Pro is $23 / month on an annual plan ($280 up front). Team is $28 / seat annually. The page showed no currency label.</p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Google Gemini</th>
+        <td class="free">CA$0</td>
+        <td>
+          <div class="chips">
+            <span class="chip"><b>AI Plus</b> CA$6.99</span>
+            <span class="chip"><b>AI Pro</b> CA$26.99</span>
+            <span class="chip"><b>AI Ultra</b> from CA$139.99</span>
+            <span class="chip"><b>Business</b> from US$21 / seat</span>
+          </div>
+          <p class="minor">Ultra also lists CA$279.99. Business had no Canadian dollar price.</p>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Microsoft Copilot</th>
+        <td class="free">Free</td>
+        <td>
+          <div class="chips">
+            <span class="chip"><b>365 Personal</b> CAD $11.50</span>
+            <span class="chip"><b>365 Premium</b> CAD $27</span>
+            <span class="chip"><b>Copilot Business</b> CAD $34.20 / user</span>
+          </div>
+          <p class="minor">Personal is CAD $115 / year, and a 1-month trial was offered. Premium is CAD $270 / year. Business add-on is CAD $28.50 / year (promo from CAD $24.43). Free chat limits were not confirmed.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="footnote">Published prices as of Nov 9, 2026, before tax</p>
+</section>
+
+<section class="slide" data-notes="Still question 2. Path: two weeks free, then one plan only if they are already hitting limits, then review at 30 days. The math is an example, not a measured result. 20 minutes times 20 days is 400 minutes, about 7 hours. At a sample 50 dollars an hour, about 350 dollars of time. About 25 to 42 dollars is the published range for one everyday plan, such as ChatGPT Plus, Google AI Pro, Claude Pro, or Grok Premium. The 50 to 100 dollar line is the takeaway for having the tools you need. It is not your bill. Ask them to track minutes for two weeks.">
+  <div class="kicker">One plan, only if it is already earning its keep</div>
+  <h2>Start free, then pay for one plan: <em>the time math</em></h2>
+  <div class="grid g2">
+    <div class="stack">
+      <div class="card"><span class="mark">01</span><h3>Weeks 1 and 2</h3><p>Stay on a free tier. Learn one task.</p></div>
+      <div class="card"><span class="mark">02</span><h3>Week 3</h3><p>If you use it every day and hit the limits, pay for one plan.</p></div>
+      <div class="card"><span class="mark">03</span><h3>Day 30</h3><p>Look at your own minutes. Keep it, or stop.</p></div>
+    </div>
+    <div class="example">
+      <span class="tag">Example only · not a measured result</span>
+      <h3>About 7 hours, beside one plan</h3>
+      <p style="margin-top:8px">20 minutes a workday, across 20 days, is 400 minutes. That is about 7 hours a month.</p>
+      <p style="margin-top:8px">At a sample value of $50 an hour, about 7 hours is about $350 of time.</p>
+      <p style="margin-top:8px">One everyday plan on the previous slide is often about $25 to $42 a month.</p>
+      <p class="minor">Your number: track minutes saved for two weeks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Questions 3 and 12. The whole setup is three things: a free account plus the phone app, a half-page rules note, and one avoided task every day this week. For someone who later wants to be a heavy user: those same three, then a decision log of corrections from week two, then one role at a time.">
+  <div class="kicker">Account, rules, one task</div>
+  <h2>Set up in 15 minutes: <em>your first three things</em></h2>
+  <div class="steps">
+    <div class="card">
+      <h3>Free account</h3>
+      <p>Create it in the assistant you will open, and install the phone app for voice.</p>
+    </div>
+    <div class="card">
+      <h3>Rules note</h3>
+      <p>Name, brokerage, area, tone. Drafts only. You send. Flag anything you must verify.</p>
+    </div>
+    <div class="card">
+      <h3>One task you avoid</h3>
+      <p>Post-showing follow-up, call prep, or the weekly admin list. Do it with AI every day this week.</p>
+    </div>
+  </div>
+  <div class="lesson"><b>If you want to go further later:</b> log each correction, then add one role at a time.</div>
+</section>
+
+<section class="slide" data-notes="One task a week for four weeks. Week 1 starts November 16: setup and one task. Week 2, November 23: follow-up writing and a correction log. Week 3, November 30: summaries, prep, and a decision on one paid plan if they are hitting limits. Week 4, December 7: a morning plan, then one before-and-after at the huddle. Point at the code and say only: scan to download the playbook. Do not read a web address. The huddle date is not set. Ask Thomas rather than naming one. Offer a later session on brand, content, and Follow Up Boss.">
+  <div class="close-grid">
+    <div>
+      <div class="kicker">One task a week</div>
+      <h2>Your next <em>30 days</em></h2>
+      <div class="weeks">
+        <div class="week"><b>Week 1 · Nov 16</b><span>Set up, write the rules note, and use one task on 3 or more days.</span></div>
+        <div class="week"><b>Week 2 · Nov 23</b><span>Every post-showing or post-call follow-up. Log each correction. Track minutes.</span></div>
+        <div class="week"><b>Week 3 · Nov 30</b><span>Prep sheets and one summary you check. If you are hitting free limits, pick one paid plan.</span></div>
+        <div class="week"><b>Week 4 · Dec 7</b><span>A morning plan, income tasks first. Bring one example to the team huddle.</span></div>
+      </div>
+    </div>
+    <div class="qr-wrap">
+      <img src="assets/playbook-qr.png" alt="QR code. Scan to download the playbook." width="798" height="798">
+      <p class="qr-cap">Scan to download the playbook</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Which tool: the one they will open every day. Try two free tiers. Paying: not to start. Mistakes: yes, so verify prices, dates, addresses, schools, and legal details. Sending: drafts only. Follow Up Boss or MLS: copy and paste, and ask leadership before any connection. Time saved: often the first week on one task. Track two weeks. Marketing and visual brand: a later session. RECO or brokerage policy: they remain responsible for what they send. Ask leadership. This is not legal advice. Do not discuss personal spend.">
+  <div class="kicker">10 to 15 minutes</div>
+  <h2><em>Q&amp;A</em></h2>
+  <div class="qa">
+    <div class="card">
+      <h3>Which tool, and do I pay?</h3>
+      <p>The one you will open every day. Free is enough to start. One plan later, if you are hitting limits.</p>
+    </div>
+    <div class="card">
+      <h3>Mistakes, and sending</h3>
+      <p>It can be wrong with confidence. You verify, you read, and you send. Never auto-send.</p>
+    </div>
+    <div class="card">
+      <h3>Client information</h3>
+      <p>Keep it out. Use Sample. No ID, banking, or mortgage numbers. Ask leadership before any connection.</p>
+    </div>
+  </div>
+  <div class="lesson"><b>Parking lot:</b> marketing, visual brand, and Follow Up Boss nurture. Great question. That is a session of its own, so let's book it. You remain responsible for what you send. Ask leadership for brokerage policy. Not legal advice.</div>
+</section>
+
+</main>
+<nav class="nav" aria-label="Slides"></nav>
+<div class="notes"><b>Presenter notes · N to hide</b><span class="t"></span></div>
+<script>
+(function(){
+  var s=[].slice.call(document.querySelectorAll('.slide')),n=s.length,i=0;
+  var nav=document.querySelector('.nav'),pr=document.querySelector('.progress');
+  var no=document.querySelector('.notes'),nt=no.querySelector('.t');
+  function pad(x){return (x<10?'0':'')+x}
+  s.forEach(function(el,k){
+    var a=document.createElement('div');a.className='num';a.textContent=pad(k+1);el.appendChild(a);
+    var f=document.createElement('div');f.className='foot';
+    f.innerHTML='<span>Jonathan Wallace, REALTOR\u00AE \u00b7 Faris Team</span><span>'+pad(k+1)+' / '+pad(n)+'</span>';
+    el.appendChild(f);
+    var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Slide '+(k+1));
+    b.addEventListener('click',function(e){e.stopPropagation();go(k)});
+    nav.appendChild(b);
+  });
+  var dots=[].slice.call(nav.children);
+  function go(k){
+    i=Math.max(0,Math.min(n-1,k));
+    s.forEach(function(e,j){e.classList.toggle('on',j===i)});
+    dots.forEach(function(e,j){e.classList.toggle('on',j===i)});
+    pr.style.width=((i+1)/n*100)+'%';
+    nt.textContent=s[i].getAttribute('data-notes')||'';
+    if(location.protocol!=='about:') history.replaceState(null,'','#'+pad(i+1));
+  }
+  document.addEventListener('keydown',function(e){
+    if(e.target.closest('input,textarea')) return;
+    if(e.target.closest('button,a') && (e.key===' '||e.key==='Enter')) return;
+    if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
+    else if(['ArrowLeft','PageUp','Backspace'].indexOf(e.key)>-1){e.preventDefault();go(i-1)}
+    else if(e.key==='Home') go(0);
+    else if(e.key==='End') go(n-1);
+    else if(e.key==='n'||e.key==='N') no.classList.toggle('show');
+    else if(e.key==='f'||e.key==='F'){
+      if(document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen();
+    }
+  });
+  var x0=null;
+  document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  document.addEventListener('touchend',function(e){
+    if(x0===null) return;
+    var d=e.changedTouches[0].clientX-x0;
+    if(Math.abs(d)>50) go(i+(d<0?1:-1));
+    x0=null;
+  });
+  document.addEventListener('click',function(e){
+    if(e.target.closest('a,button,.copybox,.notes,.nav')) return;
+    go(i+(e.clientX>innerWidth/3?1:-1));
+  });
+  document.querySelectorAll('.copybtn').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      var pre=document.getElementById(btn.getAttribute('data-copy'));
+      if(!pre) return;
+      var text=pre.innerText.replace(/\u00a0/g,' ');
+      var old=btn.textContent;
+      function ok(){btn.textContent='Copied'; setTimeout(function(){btn.textContent=old},1400)}
+      function fallback(){
+        var ta=document.createElement('textarea');
+        ta.value=text; ta.setAttribute('readonly','');
+        ta.style.position='fixed'; ta.style.left='-9999px';
+        document.body.appendChild(ta); ta.select();
+        try{document.execCommand('copy'); ok();}catch(err){btn.textContent='Select the text'}
+        ta.remove();
+      }
+      if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(ok).catch(fallback);
+      else fallback();
+    });
+  });
+  var h=parseInt((location.hash||'').replace('#',''),10);
+  go(isNaN(h)?0:h-1);
+})();
+</script>
+</body>
+</html>
