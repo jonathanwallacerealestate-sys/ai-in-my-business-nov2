@@ -151,10 +151,10 @@ Here are 10 social media posts I like the style of, so you understand my taste, 
 Build me a one-page brand guide: colours with hex codes, a heading and body font, photo style, voice, dos and don'ts, max 5 hashtags, my sign-off line. Ask me questions if anything is unclear.
 ```
 
-Before you close a chat, save what you decided:
+At the end of each chat, save your SOPs and the decisions you made. Before you close, ask your AI to write up any new step-by-step (an SOP) and any decisions or rules you agreed on. Save them to your house rules file, or to an SOP doc in your one Drive folder, so the next chat starts smarter.
 
 ```
-Before we finish, list any new step-by-step processes and decisions from this chat in short bullet points so I can save them to my rules file.
+Before we finish, list any new SOPs and decisions from this chat in short bullet points so I can save them to my rules file.
 ```
 
 On day 1, ask it to help you pick the work:
@@ -293,7 +293,7 @@ Day 6. Practice the Letter of Opinion on a past deal. Fix what is off.
 
 Day 7. Set up the deal card. Run it on 10 leads. Make the calls.
 
-At the end of each chat, save any new step-by-step and the decisions you made.
+At the end of each chat, save your SOPs and the decisions you made. An SOP is a step-by-step. Save it to your house rules file, or to an SOP doc in the one Drive folder you share, so the next chat starts smarter.
 
 ### Days 8 to 30, 30 minutes every other day
 
