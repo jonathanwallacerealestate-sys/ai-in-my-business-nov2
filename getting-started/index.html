@@ -124,6 +124,42 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .example{background:#fff;border:1px solid var(--line);border-top:2px solid var(--gold);border-radius:0 0 12px 12px;padding:12px 14px 14px;box-shadow:0 14px 36px rgba(120,95,50,.08)}
 .example .tag{margin-bottom:8px}
 .qa{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4vw}
+.pair{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(280px,.92fr);gap:1.5vw;align-items:center;width:100%;min-height:0}
+.nlist{list-style:none;display:grid;gap:.85vh;counter-reset:n;margin-top:.4vh}
+.nlist li{counter-increment:n;position:relative;padding-left:2.15em;font-family:"Playfair Display",serif;font-size:clamp(15px,1.22vw,21px);line-height:1.28}
+.nlist li::before{content:counter(n);position:absolute;left:0;top:.05em;width:1.55em;height:1.55em;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-family:Inter,system-ui,sans-serif;font-size:.68em;font-weight:500}
+.nlist li span{display:block;font-family:Inter,system-ui,sans-serif;font-weight:400;font-size:.78em;color:var(--muted);margin-top:.12em;line-height:1.35}
+.shot{display:block;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 36px rgba(120,95,50,.12);padding:8px;cursor:zoom-in;text-align:center}
+.shot img{width:100%;height:auto;max-height:58vh;object-fit:contain;display:block;background:#f6f3ec}
+.shot.tall img{max-height:62vh}
+.shot small{display:block;margin-top:6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.shot-stack{display:grid;gap:8px}
+.shot-stack .shot img{max-height:27vh}
+.pdf-link{display:inline-block;margin-top:.7vh;color:var(--ink);font-weight:500;font-size:clamp(13px,1vw,16px);border-bottom:1px solid var(--gold2);text-decoration:none}
+.lb{position:fixed;inset:0;background:rgba(22,20,16,.88);z-index:30;display:none;align-items:center;justify-content:center;padding:3vh 3vw}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:92vh;object-fit:contain;background:#fff}
+.lb .x{position:absolute;top:14px;right:16px;width:40px;height:40px;border:0;border-radius:50%;background:#fff;font-size:24px;cursor:pointer;color:var(--ink)}
+.dial{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 50px rgba(120,95,50,.12);overflow:hidden;font-size:clamp(12px,.9vw,14px)}
+.dial-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--ivory2);border-bottom:1px solid var(--line)}
+.dial-bar span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.dial-body{padding:12px 14px 10px}
+.dial h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(20px,1.7vw,28px);margin:4px 0 2px;line-height:1.15}
+.dial .meta{color:var(--muted);font-size:clamp(12px,.85vw,14px);line-height:1.45;margin-bottom:8px}
+.dial .meta b{color:var(--ink);font-weight:500}
+.dial .why,.dial .open{border-left:2px solid var(--gold);padding-left:10px;margin:8px 0;line-height:1.4}
+.dial .why small,.dial .open small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:3px;font-weight:500}
+.dial .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.dial .actions .call{background:var(--gold);color:#fff;border:0;border-radius:999px;padding:7px 14px;font-size:clamp(12px,.85vw,14px);font-weight:500}
+.dial .actions .out{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:clamp(11px,.78vw,13px);color:var(--muted)}
+.dial-next{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
+.dial-next small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.dial-next div{display:flex;gap:8px;flex-wrap:wrap}
+.dial-next span{border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:clamp(11px,.8vw,13px);color:var(--muted)}
+.closing{display:flex;flex-direction:column;justify-content:center;gap:1.4vh;min-height:0}
+.qr-row{display:flex;justify-content:center;align-items:flex-start;gap:2vw}
+.qr-row .qr-wrap img{width:min(156px,20vh)}
+.qr-row .qr-cap{font-size:clamp(14px,1.15vw,20px);max-width:24ch;margin-top:.6vh}
 @media (max-height:820px){
   .slide{padding:64px 5.4vw 50px}
   .slide::before{top:22px}
@@ -142,6 +178,13 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   .qr-stack .qr-wrap img{width:min(132px,16vh)}
   .qr-stack{gap:.6vh}
   .qr-stack .qr-cap{font-size:14px}
+  .qr-row .qr-wrap img{width:min(112px,15vh)}
+  .qr-row{gap:1.2vw}
+  .qr-row .qr-cap{font-size:13px}
+  .shot img,.shot.tall img{max-height:48vh}
+  .shot-stack .shot img{max-height:22vh}
+  .nlist{gap:.55vh}
+  .nlist li{font-size:15px}
   .loo-card .ladder-pill{padding:6px 64px 6px 14px}
   .loo-card .ladder-num{width:40px;height:40px;font-size:16px}
 }
@@ -222,7 +265,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   <h2>Today, in <em>four parts</em></h2>
   <div class="grid g4">
     <div class="card"><span class="mark">01</span><h3>How to start</h3><p>One assistant. Your first week, by chat.</p></div>
-    <div class="card"><span class="mark">02</span><h3>Where to focus</h3><p>The daily jobs, then a Letter of Opinion.</p></div>
+    <div class="card"><span class="mark">02</span><h3>Where to focus</h3><p>Notes, a letter, and your next call.</p></div>
     <div class="card"><span class="mark">03</span><h3>The cost</h3><p>Start free. One plan if you need it.</p></div>
     <div class="card"><span class="mark">04</span><h3>What not to waste time with</h3><p>What to leave alone while you learn.</p></div>
   </div>
@@ -249,10 +292,10 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   <div class="lesson"><b>This week:</b> a free account and the phone app. Grok is the one I open most. ChatGPT, Claude, Gemini, or Copilot will do. Use your one task on 3 or more days.</div>
 </section>
 
-<section class="slide" data-notes="Live demo. If Wi-Fi works, open a new chat in the assistant you use and paste the sample prompt. Show the answer, then one correction: shorter, warmer, no exclamation marks. Close with: I would still read it, fix one line, and hit send myself. If Wi-Fi fails, use the backup on the right. Alex and Jordan Sample are fictional. 123 Maple Sample St is not a real listing. Do not invent a sale price or a school fact. This is chat only. You copy the draft across yourself.">
+<section class="slide" data-notes="Live demo. If Wi-Fi works, paste the sample prompt. Then one correction: shorter, warmer, no exclamation marks. Close with: I would still read it, fix one line, and send it myself. If Wi-Fi fails, the screenshot on the right is the backup draft. The sign-off is Your Name. Alex and Jordan Sample are fictional. 123 Maple Sample St is not a real listing. Click the picture to enlarge it.">
   <div class="kicker">01 · How to start · sample data only</div>
   <h2>Live demo: from messy notes to a <em>ready-to-send draft</em></h2>
-  <div class="demo-grid">
+  <div class="pair">
     <div class="copybox">
       <div class="copyhead">
         <span class="tag">Sample prompt</span>
@@ -268,35 +311,10 @@ Please give me:
 3. A to-do list for me before that call, marking anything I need to verify myself.
 Do not invent sale prices or school facts. Say "verify" where I need to check.</pre>
     </div>
-    <div class="copybox">
-      <div class="copyhead">
-        <span class="tag">Backup example · if Wi-Fi fails</span>
-        <button class="copybtn" type="button" data-copy="backup">Copy</button>
-      </div>
-      <pre id="backup">BACKUP EXAMPLE. Not a live answer.
-Fictional clients: Alex and Jordan Sample.
-123 Maple Sample St is sample data, not a real home.
-
-1. Email
-Hi Alex and Jordan,
-
-Thank you for walking through 123 Maple Sample St with me today. You loved the kitchen and the walk to the waterfront trail. You are also worried the yard is small for your dog.
-
-You are pre-approved and want to decide in two weeks. I will verify school bus routes and what similar homes sold for before our next call. I will not guess at either.
-
-Jonathan Wallace, REALTOR®
-
-2. Questions
-- What would the yard need for your dog to be comfortable?
-- Which school bus details should I verify before we talk?
-- Once similar sales are verified, what else do you need in order to decide?
-
-3. To-do before the call
-- Verify school bus routes for this address. Do not guess.
-- Verify what similar homes sold for. Do not invent prices.
-- Confirm the yard size from the listing or a second look.
-- Read the draft, fix one line if needed, and send it yourself.</pre>
-    </div>
+    <button type="button" class="shot" data-full="assets/outlook-followup.png">
+      <img src="assets/outlook-followup.png" alt="Sample Outlook draft. Post-showing follow-up for Alex and Jordan Sample. Sign-off is Your Name.">
+      <small>Sample draft · click to enlarge</small>
+    </button>
   </div>
 </section>
 
@@ -322,15 +340,23 @@ Jonathan Wallace, REALTOR®
   </div>
 </section>
 
-<section class="slide" data-notes="Where to focus, second. The fastest win is the follow-up they put off: post-showing thank-you, a past-client check-in, a still-looking text. For most agents this serves people they already have. You edit and you send. Copy the draft into the tool you already use. Do not describe a follow-up assistant. That is Step 4. Do not claim what Follow Up Boss's built-in AI does.">
+<section class="slide" data-notes="The fastest win is the follow-up they put off. Post-showing thank-you, a past-client check-in, a still-looking text. For most agents this serves people they already have. You edit and you send. The picture is a sample Drafts folder. Fictional names. Click it to enlarge. Do not describe a follow-up assistant. That is Step 4.">
   <div class="kicker">02 · Where to focus your efforts</div>
   <h2>Emails, texts and <em>follow-up</em></h2>
-  <ul class="list">
-    <li>Post-showing thank-you. A check-in with a past client. A "still looking?" text.</li>
-    <li>The first draft takes seconds. You edit it, and you send it.</li>
-    <li>For most agents, this serves the people you already have.</li>
-  </ul>
-  <div class="lesson"><b>This week:</b> copy the draft into the tool you already use. You hit send.</div>
+  <div class="pair">
+    <div>
+      <ul class="nlist">
+        <li>Post-showing thank-you. A check-in with a past client. A "still looking?" text.</li>
+        <li>The first draft takes seconds. You edit it, and you send it.</li>
+        <li>For most agents, this serves the people you already have.</li>
+      </ul>
+      <div class="lesson"><b>This week:</b> copy the draft into the tool you already use. You hit send.</div>
+    </div>
+    <button type="button" class="shot" data-full="assets/outlook-drafts.png">
+      <img src="assets/outlook-drafts.png" alt="Sample Outlook Drafts folder of fictional follow-up emails.">
+      <small>Sample drafts · click to enlarge</small>
+    </button>
+  </div>
 </section>
 
 <section class="slide" data-notes="Where to focus, third. Summaries of a long email, condo status certificate notes, or call notes. No private client identifiers. Check the original. Prep: a one-page sheet for a sample couple relocating to Midland. Buyers: neighbourhood questions, a showing-day checklist, the follow-up, and a plain-language explainer such as what a home inspection condition means. Verify every fact. Property search stays in MLS. Chat only.">
@@ -356,101 +382,104 @@ Jonathan Wallace, REALTOR®
   </div>
 </section>
 
-<section class="slide" data-notes="Worked example inside where to focus. In your experience a Letter of Opinion takes about 30 minutes by hand. About 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say the line: you do not have to recreate this, but this is the power of AI. Walk the four setup steps. The shared folder is named inside the kit. Do not read out a web address. Step 1 is download the Faris Team Word template into their own Drive. Step 2 is a photo of their own signature on white paper, saved to Drive. Step 3 is this kit, from the QR at the end. The folder also holds the email template and the kit. Step 4 is give the AI the template, the signature photo, and the kit once, in a project, in saved instructions, or attached at the start. No training. The kit already has the format and the rules.">
+<section class="slide" data-notes="Plaud, which you are happy to name. It clips to the back of the phone and records the call or the meeting. The app makes a transcript and a summary. AI turns that into a CRM note, follow-up tasks with dates, and a draft email or text in the client's words. You read it, fix it, and you send it. Why: you stay present. The dog, the school bus route, and the closing date do not get lost. The recap can go the same day. The next call picks up where this one stopped. Say: let people know you are recording. That is advice, not a legal ruling. Do not quote a Plaud price or a feature beyond record, transcript, and summary.">
+  <div class="kicker">02 · Where to focus · calls and meetings</div>
+  <h2>Record the call. <em>Let AI do the notes.</em></h2>
+  <div class="pair">
+    <div>
+      <ol class="nlist">
+        <li>A Plaud recorder clips to the back of the phone and records the call or the meeting.</li>
+        <li>The Plaud app turns the recording into a transcript and a summary.</li>
+        <li>AI reads that summary and drafts a CRM note, the tasks and dates, and a follow-up email or text.<span>It recaps what the client said, and what happens next.</span></li>
+        <li>You read it, fix anything, and you send it.</li>
+      </ol>
+      <div class="lesson"><b>Let people know you are recording.</b> You stay present, and the next call picks up where this one stopped.</div>
+    </div>
+    <button type="button" class="shot tall" data-full="assets/plaud-phone.jpg">
+      <img src="assets/plaud-phone.jpg" alt="A Plaud note-taker clipped to the back of a phone.">
+      <small>Plaud on the phone · click to enlarge</small>
+    </button>
+  </div>
+</section>
+
+<section class="slide" data-notes="No-cost path. A voice memo on the phone, during or after the meeting, brought into the AI the same way. Or, right after the appointment, talk through how it went. Same three outputs: CRM note, tasks, follow-up draft. The picture is a sample of what comes out, the post-showing draft, sign-off Your Name. Copy the prompt. It works for a Plaud summary, a voice memo, or a spoken recap. Still say: let people know you are recording.">
+  <div class="kicker">02 · No Plaud? Same result, free</div>
+  <h2>No Plaud? <em>Same result, free.</em></h2>
+  <div class="pair">
+    <div>
+      <ul class="nlist">
+        <li>Record a voice memo on your phone during or after the meeting, and bring that recording into your AI.</li>
+        <li>Or, right after the appointment, talk through how it went. Same CRM note, tasks, and follow-up draft.</li>
+      </ul>
+      <div class="copybox" style="margin-top:1vh">
+        <div class="copyhead">
+          <span class="tag">Works for Plaud, a memo, or a recap</span>
+          <button class="copybtn" type="button" data-copy="plaud-prompt">Copy</button>
+        </div>
+        <pre id="plaud-prompt">Here is my Plaud summary, or a voice memo, or my spoken recap, from a call with [client].
+
+Give me:
+1. A 3-line CRM note
+2. A follow-up task list with dates
+3. A short follow-up email recapping what they told me and the next step
+
+No em dashes. Flag anything I need to verify. Do not invent details.</pre>
+      </div>
+    </div>
+    <button type="button" class="shot" data-full="assets/outlook-followup.png">
+      <img src="assets/outlook-followup.png" alt="Sample follow-up email draft. What the notes turn into.">
+      <small>What comes out · sample · click to enlarge</small>
+    </button>
+  </div>
+</section>
+
+<section class="slide" data-notes="Worked example. In your experience a letter takes about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say: you do not have to recreate this, but this is the power of AI. Four setup steps, read them. The picture is a sample letter for Alex and Jordan Sample. Click it to enlarge. The link opens the sample PDF. Do not read a web address or the shared folder address.">
   <div class="kicker">02 · Where to focus · do this tomorrow</div>
   <h2>Your Letter of Opinion, <em>in minutes</em></h2>
-  <p class="sub">In my experience: about 30 minutes by hand. About 30 minutes to set up once, then about 30 minutes back on each letter.</p>
-  <div class="ladder-card loo-card">
-    <ol class="ladder" aria-label="One-time setup. Four steps.">
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
-          <div class="ladder-copy">
-            <span class="ladder-step">Step</span>
-            <span class="ladder-name">Template in your Drive</span>
-            <span class="ladder-sub">Download the Faris Team Word template from the shared folder.</span>
-          </div>
-          <span class="ladder-num">1</span>
-        </div>
-      </li>
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#C9B6F0;--b:#9BB6F0">
-          <div class="ladder-copy">
-            <span class="ladder-step">Step</span>
-            <span class="ladder-name">Your signature</span>
-            <span class="ladder-sub">Photograph it on white paper. Save the photo to Drive.</span>
-          </div>
-          <span class="ladder-num">2</span>
-        </div>
-      </li>
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#9ED9C8;--b:#8EC9DE">
-          <div class="ladder-copy">
-            <span class="ladder-step">Step</span>
-            <span class="ladder-name">The kit</span>
-            <span class="ladder-sub">Scan the QR at the end. The folder also holds the email template and the kit.</span>
-          </div>
-          <span class="ladder-num">3</span>
-        </div>
-      </li>
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#F0C2AE;--b:#E3B4C8">
-          <div class="ladder-copy">
-            <span class="ladder-step">Step</span>
-            <span class="ladder-name">Three files, once</span>
-            <span class="ladder-sub">Template, signature, kit. A project, saved instructions, or the start of the chat. No training.</span>
-          </div>
-          <span class="ladder-num">4</span>
-        </div>
-      </li>
-    </ol>
+  <div class="pair">
+    <div>
+      <p class="sub">In my experience: about 30 minutes by hand. About 30 minutes to set up once, then about 30 minutes back on each letter.</p>
+      <ol class="nlist">
+        <li>Download the Faris Team Word template from the shared folder into your own Drive.</li>
+        <li>Photograph your signature on white paper. Save the photo to Drive.</li>
+        <li>Get the kit from the QR at the end. The folder also holds the email template and the kit.</li>
+        <li>Give your AI the template, the signature, and the kit once.<span>A project, saved instructions, or the start of the chat. No training.</span></li>
+      </ol>
+      <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
+    </div>
+    <div>
+      <button type="button" class="shot tall" data-full="assets/loo-sample-page1.png">
+        <img src="assets/loo-sample-page1.png" alt="Sample Faris Team Letter of Opinion for Alex and Jordan Sample. Fictional.">
+        <small>Sample letter · click to enlarge</small>
+      </button>
+      <a class="pdf-link" href="assets/Letter-of-Opinion-123-Sample-Street-SAMPLE.pdf" target="_blank" rel="noopener">Open the sample letter (PDF)</a>
+    </div>
   </div>
-  <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
 </section>
 
-<section class="slide" data-notes="Every letter after the setup. They give names on title, the address, their own value range, a max list price only if they have one, and their comps. The AI sorts those comps, fills the letter, places their signature, makes a one-page PDF and a Word copy, and drafts the client email. They read it, check every figure and every name, and they send it. The opinion is theirs. Do not walk the legal wording. Say again, if you need it: you do not have to recreate this, but this is the power of AI.">
+<section class="slide" data-notes="Every letter after setup. Names on title, address, their value range, a max list price only if they have one, and their comps. It sorts the comps, fills the letter, places the signature, makes a one-page PDF and a Word copy, and drafts the email. The picture is that email, with the PDF attached. Sample only. They read it, check every figure and every name, and they send it. The opinion is theirs.">
   <div class="kicker">02 · Where to focus · every letter after</div>
   <h2>Every letter <em>after that</em></h2>
-  <div class="ladder-card loo-card">
-    <ol class="ladder" aria-label="Each time: the facts, the package, then you.">
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
-          <div class="ladder-copy">
-            <span class="ladder-step">You give it</span>
-            <span class="ladder-name">The facts</span>
-            <span class="ladder-sub">Names on title. Address. Your value range, and a max list price if you have one. Your comps.</span>
-          </div>
-          <span class="ladder-num">1</span>
-        </div>
-      </li>
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#C9B6F0;--b:#9BB6F0">
-          <div class="ladder-copy">
-            <span class="ladder-step">It returns</span>
-            <span class="ladder-name">The package</span>
-            <span class="ladder-sub">Comps sorted. Letter filled. Your signature placed. One-page PDF, a Word copy, and the client email.</span>
-          </div>
-          <span class="ladder-num">2</span>
-        </div>
-      </li>
-      <li class="ladder-item is-now">
-        <div class="ladder-pill" style="--a:#9ED9C8;--b:#8EC9DE">
-          <div class="ladder-copy">
-            <span class="ladder-step">Then you</span>
-            <span class="ladder-name">Read, check, send</span>
-            <span class="ladder-sub">The opinion is yours. Check every name and every figure. You send it.</span>
-          </div>
-          <span class="ladder-num">3</span>
-        </div>
-      </li>
-    </ol>
+  <div class="pair">
+    <div>
+      <ol class="nlist">
+        <li>Names on title. The address. Your value range, and a max list price if you have one. Your comps.</li>
+        <li>It sorts the comps, fills the letter, places your signature, and makes a one-page PDF and a Word copy.</li>
+        <li>It writes the client email with the breakdown. You read it, check it, and you send it.<span>The opinion is yours.</span></li>
+      </ol>
+      <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
+    </div>
+    <button type="button" class="shot" data-full="assets/outlook-loo-email.png">
+      <img src="assets/outlook-loo-email.png" alt="Sample Outlook draft of the Letter of Opinion email, with the PDF attached.">
+      <small>Sample email draft · click to enlarge</small>
+    </button>
   </div>
-  <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
 </section>
 
-<section class="slide" data-notes="Sample only. Clients Alex and Jordan Sample. Address 123 Sample Street, Midland, which is not a real listing. The dollar figures are fictional. If Wi-Fi works, paste the sample request into a chat that already has the template, the signature photo, and the kit. If Wi-Fi fails, show the backup on the right. Close with: I would still read every figure and send it myself. Do not invent a comp that is not on the slide.">
+<section class="slide" data-notes="Sample request only. Alex and Jordan Sample. 123 Sample Street, Midland, is not a real home. The figures on the pictures are the sample letter, not a live result. Paste the prompt if you are demonstrating. Click either picture to enlarge it. You would still check every figure and send it yourself.">
   <div class="kicker">02 · Sample data only · Alex and Jordan Sample</div>
   <h2>A Letter of Opinion, <em>from one request</em></h2>
-  <div class="demo-grid">
+  <div class="pair">
     <div class="copybox">
       <div class="copyhead">
         <span class="tag">Sample request</span>
@@ -471,41 +500,65 @@ Comps I am giving you. All fictional:
 
 Use my Letter of Opinion template, my signature photo, and the kit. One page. Draft only. I will check every figure and send it myself.</pre>
     </div>
-    <div class="copybox">
-      <div class="copyhead">
-        <span class="tag">Backup example · if Wi-Fi fails</span>
-        <button class="copybtn" type="button" data-copy="loo-backup">Copy</button>
-      </div>
-      <pre id="loo-backup">BACKUP EXAMPLE. Not a live answer.
-Fictional clients and fictional figures. 123 Sample Street is not a real home.
-
-Letter excerpt
-RE: EVALUATION OF 123 SAMPLE STREET, MIDLAND
-
-As a result of the evaluation and analysis of 123 Sample Street, Midland, it is my opinion that the market value is between $480,000 and $510,000, supporting a maximum recommended list price of $525,000. This value is based on properties that are both active and have sold in the neighbourhood.
-
-Email
-Hi Alex,
-
-The Letter of Opinion for 123 Sample Street, Midland, is attached.
-
-Opinion of value, as of November 10, 2026
-- Current market value range: $480,000 to $510,000
-- Maximum recommended list price: $525,000
-
-Of the comparables you provided, two have sold: 10 Sample Crescent at $495,000 and 7 Sample Court at $502,000. One is active: 18 Sample Crescent, listed at $529,000. I did not add any.
-
-The attached letter is the current document and is suitable to pass along to the accountant.
-
-If you would like to talk through what this means for your options, I am happy to walk you through it.
-
-Kindly,
-[Your Name]
-REALTOR®, Faris Team Real Estate, Brokerage</pre>
+    <div class="shot-stack">
+      <button type="button" class="shot" data-full="assets/loo-sample-page1.png">
+        <img src="assets/loo-sample-page1.png" alt="Sample one-page Letter of Opinion.">
+        <small>Sample letter</small>
+      </button>
+      <button type="button" class="shot" data-full="assets/outlook-loo-email.png">
+        <img src="assets/outlook-loo-email.png" alt="Sample email draft with the letter attached.">
+        <small>Sample email · click to enlarge</small>
+      </button>
     </div>
   </div>
 </section>
 
+<section class="slide" data-notes="Deal card. Sample only. Sam Sample is fictional. The phone is a 555 number. The email is example.com. This is the who-to-connect-with-next card. One person at a time. Someone already handled today is not offered again. You make the call. It does not text or email anyone. Do not name internal tools.">
+  <div class="kicker">02 · Where to focus · your next call</div>
+  <h2>Your next call, <em>on one card</em></h2>
+  <div class="pair">
+    <div>
+      <p class="sub">Ask who to connect with next. You get one card. You make the call.</p>
+      <ul class="nlist">
+        <li>One person at a time.</li>
+        <li>Someone already handled today is not offered again.</li>
+        <li>You choose the outcome. It never texts or emails the client.</li>
+      </ul>
+      <div class="lesson"><b>Sample only.</b> Sam Sample is not a real client.</div>
+    </div>
+    <div class="dial" aria-label="Sample who to connect with next card">
+      <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
+      <div class="dial-body">
+        <h3>Sam Sample</h3>
+        <div class="meta"><b>Phone:</b> (555) 010-0142<br><b>Email:</b> sam.sample@example.com<br><b>Stage:</b> Warm<br><b>Last contact:</b> September 8 · Sample only</div>
+        <div class="why"><small>Why now</small>About two months since the last conversation. A newsletter does not count as contact.</div>
+        <div class="open"><small>Suggested opening</small>Hi Sam, it's [Your Name]. I am checking in since we last spoke. Do you have two minutes?</div>
+        <div class="actions">
+          <button type="button" class="call">Call</button>
+          <button type="button" class="out">Voicemail</button>
+          <button type="button" class="out">Connected</button>
+          <button type="button" class="out">Skip</button>
+          <button type="button" class="out">Defer</button>
+        </div>
+        <div class="dial-next"><small>One at a time</small><div><span>Already handled today: not offered again</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="How to build the card without a connector. Team members will not have their own Follow Up Boss API keys. Use the Follow Up Boss website. One: an assistant with its own browser, often called agent mode or computer use. Check the plan. Do not name a vendor feature you have not confirmed. Two: give it the Deal Card kit. Three: at the sign-in page they take over. The AI never gets the password. Four: it reads the screen, read only. Five: cadence. Hot leads every 7 to 10 days, warm about every 2 months, past clients and sphere quarterly. Newsletters do not count. Prefer overdue cadence over a generic task. Skip unsubscribed or parked contacts. Six: they call, say the outcome, it drafts a one-line note to paste, then the next card. A running list so nobody is offered twice. It never sends a message. Say: you do not have to recreate this, but this is the power of AI.">
+  <div class="kicker">02 · No connector through the brokerage</div>
+  <h2>How to build it <em>without a connector</em></h2>
+  <ol class="nlist">
+    <li>Open an assistant that has its own browser.<span>Often called agent mode or computer use. Check your plan.</span></li>
+    <li>Give it the Deal Card kit. The QR is at the end.</li>
+    <li>At the Follow Up Boss sign-in page, you sign in yourself.<span>The AI never needs your password.</span></li>
+    <li>It reads contacts, stages, last contact, and tasks from the screen. Read only.</li>
+    <li>It picks who is due, and builds one card.<span>Hot leads every 7 to 10 days. Warm about every 2 months. Past clients and your sphere quarterly. A newsletter does not count.</span></li>
+    <li>You make the call, tell it the outcome, and it gives you the next card.<span>It drafts a one-line note for you to paste. Nobody is offered twice today.</span></li>
+  </ol>
+  <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b> It never texts or emails anyone. You log the note in Follow Up Boss, or you paste the draft it wrote.</div>
+</section>
 
 <section class="slide" data-notes="Question 2, published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway in your words: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Claude amounts had no currency label. The Grok US page lists Plus 8, Premium 30, Super 100, Ultra 200, and Teams from 30 dollars, and it recommends Premium for new AI users. Copilot free-chat limits were not confirmed. Prices are before tax, as of November 9, 2026.">
   <div class="kicker">You can start for $0</div>
@@ -644,8 +697,8 @@ REALTOR®, Faris Team Real Estate, Brokerage</pre>
   <div class="lesson"><b>Not today:</b> connecting accounts, saved processes, and more than one assistant.</div>
 </section>
 
-<section class="slide" data-notes="One task a week for four weeks, still Step 1. Week 1 starts November 16: free account, rules note, one task on 3 or more days. Week 2, November 23: follow-up writing and a one-line correction log. Week 3, November 30: summaries, prep, and one paid plan only if they are hitting free limits. Week 4, December 7: a morning plan while parked, then one example at the huddle. Two codes. The top one: scan to download the playbook. The lower one: scan to download the Letter of Opinion kit. Do not read a web address. Do not read the shared folder address. The huddle date is not set. Ask Thomas rather than naming one.">
-  <div class="close-grid">
+<section class="slide" data-notes="One task a week for four weeks, still Step 1. Then three codes. Do not read a web address. First: scan to download the playbook. Second: scan to download the Letter of Opinion kit. Third: scan to download the Deal Card kit. The huddle date is not set. Ask Thomas rather than naming one.">
+  <div class="closing">
     <div>
       <div class="kicker">One task a week · still Step 1</div>
       <h2>Your next <em>30 days</em></h2>
@@ -656,7 +709,7 @@ REALTOR®, Faris Team Real Estate, Brokerage</pre>
         <div class="week"><b>Week 4 · Dec 7</b><span>A morning plan, income tasks first. Bring one example to the team huddle.</span></div>
       </div>
     </div>
-    <div class="qr-stack">
+    <div class="qr-row">
       <div class="qr-wrap">
         <img src="assets/playbook-qr.png" alt="QR code. Scan to download the playbook." width="798" height="798">
         <p class="qr-cap">Scan to download the playbook</p>
@@ -664,6 +717,10 @@ REALTOR®, Faris Team Real Estate, Brokerage</pre>
       <div class="qr-wrap">
         <img src="assets/loo-kit-qr.png" alt="QR code. Scan to download the Letter of Opinion kit." width="798" height="798">
         <p class="qr-cap">Scan to download the Letter of Opinion kit</p>
+      </div>
+      <div class="qr-wrap">
+        <img src="assets/deal-card-qr.png" alt="QR code. Scan to download the Deal Card kit." width="798" height="798">
+        <p class="qr-cap">Scan to download the Deal Card kit</p>
       </div>
     </div>
   </div>
@@ -691,6 +748,10 @@ REALTOR®, Faris Team Real Estate, Brokerage</pre>
 
 </main>
 
+<div class="lb" id="lb" aria-hidden="true">
+  <button type="button" class="x" aria-label="Close">×</button>
+  <img alt="">
+</div>
 <nav class="nav" aria-label="Slides"></nav>
 <div class="notes"><b>Presenter notes · N to hide</b><span class="t"></span></div>
 <script>
@@ -717,7 +778,19 @@ REALTOR®, Faris Team Real Estate, Brokerage</pre>
     nt.textContent=s[i].getAttribute('data-notes')||'';
     if(location.protocol!=='about:') history.replaceState(null,'','#'+pad(i+1));
   }
+  var lb=document.getElementById('lb'), lbImg=lb.querySelector('img');
+  function closeLb(){lb.classList.remove('on'); lb.setAttribute('aria-hidden','true'); lbImg.removeAttribute('src');}
+  document.querySelectorAll('.shot').forEach(function(btn){
+    btn.addEventListener('click',function(e){
+      e.preventDefault(); e.stopPropagation();
+      lbImg.src=btn.getAttribute('data-full');
+      lbImg.alt=(btn.querySelector('img')||{}).alt||'';
+      lb.classList.add('on'); lb.setAttribute('aria-hidden','false');
+    });
+  });
+  lb.addEventListener('click',function(e){ if(e.target===lb||e.target.classList.contains('x')) closeLb(); });
   document.addEventListener('keydown',function(e){
+    if(e.key==='Escape' && lb.classList.contains('on')){ e.preventDefault(); closeLb(); return; }
     if(e.target.closest('input,textarea')) return;
     if(e.target.closest('button,a') && (e.key===' '||e.key==='Enter')) return;
     if(['ArrowRight','PageDown',' ','Enter'].indexOf(e.key)>-1){e.preventDefault();go(i+1)}
@@ -739,7 +812,8 @@ REALTOR®, Faris Team Real Estate, Brokerage</pre>
     x0=null;
   });
   document.addEventListener('click',function(e){
-    if(e.target.closest('a,button,.copybox,.notes,.nav')) return;
+    if(lb.classList.contains('on')) return;
+    if(e.target.closest('a,button,.copybox,.notes,.nav,.shot,.dial,.lb')) return;
     go(i+(e.clientX>innerWidth/3?1:-1));
   });
   document.querySelectorAll('.copybtn').forEach(function(btn){

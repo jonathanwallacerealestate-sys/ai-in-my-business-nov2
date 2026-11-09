@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Download the Deal Card kit from Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage.">
+<title>Deal Card kit | Jonathan Wallace, REALTOR®</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f8f5ef;font-family:Inter,system-ui,sans-serif;color:#1f1b16;text-align:center;padding:24px;box-sizing:border-box}
+.c{max-width:440px;width:100%}
+h1{font-family:"Playfair Display",serif;font-weight:500;font-size:34px;margin:0 0 8px;line-height:1.15}
+p{color:#6b6255;line-height:1.5;font-size:16px;margin:0}
+button,a.b{display:block;width:100%;margin:14px 0;padding:18px 16px;border-radius:12px;border:0;font-size:18px;font-weight:600;cursor:pointer;text-decoration:none;box-sizing:border-box;font-family:Inter,system-ui,sans-serif}
+.p{background:#b08d57;color:#fff}
+.p:active{background:#96753f}
+.s{background:#fff;color:#1f1b16;border:1px solid #d9cdb8!important;font-size:16px;padding:14px}
+small{color:#8a8070;font-size:13px;display:block;line-height:1.45}
+#m{color:#2e7d32;min-height:22px;font-size:15px;margin:4px 0 8px}
+</style>
+</head>
+<body>
+<div class="c">
+<h1>Deal Card kit</h1>
+<p>Jonathan Wallace, REALTOR®<br>Faris Team Real Estate Brokerage</p>
+<button class="p" id="save" type="button">Download the kit</button>
+<button class="s" id="copy" type="button">Copy all the text</button>
+<a class="b s" href="Deal-Card-Kit.md" download="Deal-Card-Kit.md">Open as a plain file</a>
+<div id="m" role="status"></div>
+<small>On iPhone, tap Download, then choose Save to Files, or share it straight into your AI app. You sign in to Follow Up Boss yourself. The kit never asks for your password.</small>
+</div>
+<script>
+var URL_MD='Deal-Card-Kit.md',NAME='Deal-Card-Kit.md',m=document.getElementById('m');
+function getText(){
+  return fetch(URL_MD,{cache:'no-store'}).then(function(r){
+    if(!r.ok) throw new Error('missing');
+    return r.text();
+  });
+}
+document.getElementById('save').onclick=function(){
+  m.textContent='Preparing the file...';
+  getText().then(function(t){
+    var f=new File([t],NAME,{type:'text/markdown'});
+    if(navigator.canShare&&navigator.canShare({files:[f]})){
+      return navigator.share({files:[f],title:'Deal Card kit'}).then(function(){
+        m.textContent='Choose Save to Files, or share it into your AI app.';
+      }).catch(function(){ m.textContent=''; });
+    }
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([t],{type:'application/octet-stream'}));
+    a.download=NAME;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    m.textContent='Downloaded.';
+  }).catch(function(){
+    m.textContent='Download failed. Use Open as a plain file.';
+  });
+};
+document.getElementById('copy').onclick=function(){
+  getText().then(function(t){return navigator.clipboard.writeText(t)}).then(function(){
+    m.textContent='Copied. Paste it into your AI app.';
+  }).catch(function(){
+    m.textContent='Copy failed. Use Download instead.';
+  });
+};
+</script>
+</body>
+</html>
