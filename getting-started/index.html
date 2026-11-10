@@ -297,6 +297,68 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   .spec span{padding:6px}
   .pal i{height:18px}
 }
+.talk{display:grid;grid-template-columns:minmax(220px,.58fr) minmax(0,1.42fr);gap:2.4vw;align-items:center;width:100%;min-height:0}
+.talk h2{font-size:clamp(40px,3.6vw,64px);margin:0 0 2.4vh;line-height:1.02}
+.points{list-style:none;display:grid;gap:1.5vh}
+.points li{font-family:"Playfair Display",serif;font-size:clamp(24px,2.15vw,36px);line-height:1.12;padding-left:.95em;position:relative}
+.points li::before{content:"";position:absolute;left:0;top:.52em;width:.55em;height:2px;background:var(--gold)}
+.visual{min-width:0}
+.talk .shot img,.talk .shot.tall img{max-height:66vh}
+.talk .shot.half img{max-height:58vh}
+.talk .covers .shot img{max-height:60vh}
+.talk .phone{width:min(300px,20vw)}
+.talk .phone p{font-size:clamp(14px,1.05vw,18px)}
+.talk .sop{padding:22px 24px}
+.talk .sop h3{font-size:clamp(26px,2.1vw,36px)}
+.talk .sop p{font-size:clamp(18px,1.4vw,24px);line-height:1.3;margin-bottom:10px}
+.talk .browser-body p,.talk .pass{font-size:clamp(18px,1.4vw,24px)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw}
+.ba .mini p{font-size:clamp(16px,1.25vw,22px);padding:14px 16px 16px;line-height:1.3}
+.ba .mini img{aspect-ratio:4/5;max-height:48vh;object-fit:cover}
+.path{list-style:none;display:flex;flex-direction:column;gap:.2vh}
+.path li{display:grid;grid-template-columns:64px 1fr;align-items:center;gap:14px;background:#fff;border-left:3px solid var(--gold);padding:.7vh 1.1vw}
+.path span{font-family:"Playfair Display",serif;font-size:clamp(26px,2.2vw,38px);color:var(--gold);text-align:center}
+.path b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(26px,2.3vw,40px)}
+.bigprice{background:#fff;border:1px solid var(--line);border-radius:18px;padding:8vh 3vw;text-align:center;box-shadow:0 18px 44px rgba(120,95,50,.12)}
+.bigprice b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(64px,6.4vw,108px);line-height:.95}
+.bigprice span{display:block;margin-top:1.6vh;font-size:clamp(16px,1.3vw,22px);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.skipvis{display:grid;gap:2vh;padding:2vh 1vw}
+.skipvis div{font-family:"Playfair Display",serif;font-size:clamp(32px,3vw,52px);color:#b7ad9e;text-decoration:line-through;text-decoration-thickness:3px;line-height:1.1}
+.bigq{font-family:"Playfair Display",serif;font-size:clamp(200px,24vw,340px);line-height:.75;color:var(--gold);text-align:center}
+.talk .qr-wrap img{width:min(460px,56vh)}
+.talk .qr-cap{font-family:"Playfair Display",serif;font-size:clamp(22px,1.8vw,32px);margin-top:1.2vh;max-width:16ch;color:#1c1b19}
+.reelcard{background:#141311;color:#f6f1e8;border-radius:16px;min-height:48vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:32px 28px;box-shadow:0 16px 40px rgba(40,32,20,.18)}
+.reelcard b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(28px,2.6vw,46px);line-height:1.12}
+.reelcard span{font-size:clamp(18px,1.45vw,26px);color:#E6C98A;line-height:1.3}
+.talk .dial{font-size:clamp(15px,1.15vw,18px)}
+.talk .dial h3{font-size:clamp(32px,2.8vw,48px)}
+.talk .dial .meta,.talk .dial .why,.talk .dial .open{font-size:clamp(15px,1.15vw,19px)}
+.talk .phone{width:min(360px,23vw)}
+.talk .pair{width:100%;grid-template-columns:1fr 1fr;align-items:stretch}
+.talk .tele{min-height:48vh;display:flex;flex-direction:column;justify-content:center}
+.talk .tele p{font-size:clamp(20px,1.7vw,30px)}
+.talk .covers{align-items:stretch}
+.talk .covers .reelcard{min-height:52vh;width:100%}
+.path span{color:#8a6840}
+.path b{color:#1c1b19}
+.bigprice b{color:#1c1b19}
+.talk .browser-body{padding:28px 28px 32px}
+.talk .share-row{align-items:stretch}
+.steps2{display:grid;gap:1.2vh}
+.steps2 div{display:flex;align-items:center;gap:16px;background:#fff;border-top:2px solid var(--gold);padding:1.4vh 1.2vw}
+.steps2 b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(22px,1.9vw,32px)}
+.steps2 span{font-family:"Playfair Display",serif;color:var(--gold);font-size:clamp(22px,1.9vw,32px);min-width:1.4em}
+.steps2 .now{background:#1c1b19;color:#fff}
+.steps2 .now span{color:#E6C98A}
+@media (max-height:820px){
+  .talk h2{font-size:clamp(32px,3vw,46px);margin-bottom:1.4vh}
+  .talk .points li{font-size:clamp(20px,1.8vw,28px)}
+  .talk .shot img,.talk .shot.tall img{max-height:56vh}
+  .path b,.path span{font-size:clamp(20px,1.8vw,28px)}
+  .talk .qr-wrap img{width:min(340px,46vh)}
+  .bigprice{padding:5vh 2vw}
+  .bigprice b{font-size:clamp(52px,5.4vw,84px)}
+}
 @media print{
   html,body{overflow:visible}
   .slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;page-break-after:always}
@@ -307,21 +369,19 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 <body>
 <div class="progress"></div>
 <main class="deck">
-<section class="slide cover" data-notes="Thank Bailey Albert and Thomas Faris for collecting the team's questions. Today is Step 1 of 4, Getting Started. One assistant, used every day, by chat. The line to repeat: Starting is easy. Start this week. Steps 2, 3, and 4 are named and dimmed. Do not teach them. Ground rule: AI drafts, you decide, and you send. Plan 20 to 30 minutes, then questions. Audience has tried ChatGPT a bit. Plain language.">
-  <div class="opener">
+<section class="slide cover" data-notes="Thank Bailey Albert and Thomas Faris for collecting the team's questions. Today is Step 1 of 4, Getting Started. One assistant, used every day, by chat. The line to repeat: Starting is easy. Start this week. Steps 2, 3, and 4 are named and dimmed. Do not teach them. Ground rule: AI drafts, you decide, and you send. Plan 20 to 30 minutes, then questions. Audience has tried ChatGPT a bit. Plain language. Full title if you need it: AI leverage for the team, how to get started.">
+  <div class="talk">
     <div>
-      <div class="kicker">Faris Team · November 10, 2026</div>
-      <h1>AI leverage for the team:<br><em>how to get started</em></h1>
-      <p class="thanks">Thank you, Bailey and Thomas, for the team's questions.</p>
-      <p class="takeaway">Starting is easy. Start this week.</p>
-      <ul class="list compact">
-        <li>Today is Step 1 of 4: one assistant, by chat</li>
-        <li>AI drafts. You decide. You send.</li>
+      <h2>Starting is <em>easy</em></h2>
+      <ul class="points">
+        <li>Start this week</li>
+        <li>One assistant daily</li>
+        <li>You send it</li>
       </ul>
     </div>
-    <div class="ladder-card">
+    <div class="ladder-card visual">
       <p class="ladder-kicker">Step 1 of 4</p>
-      <ol class="ladder" aria-label="Step 1, Getting Started, one assistant used every day. Step 2, Connect Your Tools. Step 3, Teach It Your Way. Step 4, Build Your AI Team.">
+      <ol class="ladder" aria-label="Step 1, Getting Started. Step 2, Connect Your Tools. Step 3, Teach It Your Way. Step 4, Build Your AI Team.">
         <li class="ladder-item is-now">
           <div class="ladder-pill" style="--a:#E6C98A;--b:#E39B86">
             <div class="ladder-copy">
@@ -367,36 +427,33 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Keep this short. If they have used ChatGPT, they are ready. Pick the one they will open every day. Write a few rules. It drafts, they send. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the folder at the end. Do not ask anyone to copy during the talk. Sample card on the handout: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign.">
-  <div class="kicker">Step 1 of 4 · Getting Started</div>
-  <h2>How to <em>start</em></h2>
-  <div class="grid g3">
-    <div class="card"><span class="mark">01</span><h3>Pick one you already open</h3><p>ChatGPT is fine. So is Grok, Claude, Gemini, or Copilot. Use the one you will open every day.</p></div>
-    <div class="card"><span class="mark">02</span><h3>Write a few rules</h3><p>Your name, your area, your tone, your sign-off. Drafts only. You send.</p></div>
-    <div class="card"><span class="mark">03</span><h3>One task tonight</h3><p>A real email you have been putting off. It drafts. You read it. You send it.</p></div>
-  </div>
-  <div class="grid g4" style="margin-top:1.6vh">
-    <div class="card"><span class="mark">Today</span><h3>Your next call</h3><p>One card. You make the call.</p></div>
-    <div class="card"><span class="mark">Then</span><h3>Posts in your voice</h3><p>A one-page guide, then a caption.</p></div>
-    <div class="card"><span class="mark">Then</span><h3>A letter of opinion</h3><p>Set up once. Use it every time.</p></div>
-    <div class="card"><span class="mark">Close</span><h3>Cost, and what to skip</h3><p>Free to start. One plan if you need it.</p></div>
+<section class="slide" data-notes="Keep this short. If they have used ChatGPT, they are ready. Pick the one they will open every day: ChatGPT, Grok, Claude, Gemini, or Copilot. Write a few rules: name, area, tone, sign-off. Drafts only. They send. One task tonight: a real email they have been putting off. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the folder. Sample card: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
+  <div class="talk">
+    <div>
+      <h2>How to <em>start</em></h2>
+      <ul class="points">
+        <li>Pick one AI</li>
+        <li>One real email</li>
+        <li>You send it</li>
+      </ul>
+    </div>
+    <button type="button" class="shot visual" data-full="handout/examples/email.png">
+      <img src="handout/examples/email.png" alt="Sample email draft for Alex Sample. Fictional.">
+    </button>
   </div>
 </section>
 
-<section class="slide" data-notes="First wow. Frame it as more conversations, more conversions, more deals. This is the who-to-connect-with-next card. Sample only. Sam Sample is fictional. The phone is a 555 number. The email is example.com. One person at a time. Someone already handled today is not offered again. They make the call. It does not text or email anyone. Do not name internal tools. Click is not needed. The card is the visual.">
-  <div class="kicker">More conversations. More conversions. More deals.</div>
-  <h2>Your next call, <em>on one card</em></h2>
-  <div class="pair">
+<section class="slide" data-notes="First wow. More conversations, more conversions, more deals. This is the who-to-connect-with-next card. Sample only. Sam Sample is fictional. The phone is a 555 number. The email is example.com. One person at a time. Someone already handled today is not offered again. They make the call. It does not text or email anyone. Do not name internal tools. Stage Warm. Last contact September 8, sample only. Why now: about two months since the last conversation. A newsletter does not count. Suggested opening: Hi Sam, it's your name. Checking in since we last spoke. Do you have two minutes?">
+  <div class="talk">
     <div>
-      <p class="sub">The people already in your database. One card tells you who to talk to next. You make the call.</p>
-      <ul class="nlist">
-        <li>One person at a time.</li>
-        <li>Someone already handled today is not offered again.</li>
-        <li>You choose what happened. It never texts or emails the client.</li>
+      <h2>One card. <em>You call.</em></h2>
+      <ul class="points">
+        <li>One person</li>
+        <li>You make the call</li>
+        <li>It never texts</li>
       </ul>
-      <div class="lesson"><b>Sample only.</b> Sam Sample is not a real client.</div>
     </div>
-    <div class="dial" aria-label="Sample who to connect with next card">
+    <div class="dial visual" aria-label="Sample who to connect with next card">
       <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
       <div class="dial-body">
         <h3>Sam Sample</h3>
@@ -416,137 +473,122 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="How to build the card without a connector. Team members will not have their own Follow Up Boss API keys. Use the Follow Up Boss website. One: an assistant that can open a web browser. In the notes only, you may say this is often called agent mode or computer use. Check the plan. Do not name a vendor feature you have not confirmed. Two: give it the Deal Card kit. Three: at the sign-in page they take over. The AI never gets the password. Four: it reads the screen, read only. Five: how often. Hot leads every 7 to 10 days, warm about every 2 months, past clients and sphere quarterly. Newsletters do not count. Skip unsubscribed or parked contacts. Six: they call, say the outcome, it drafts a one-line note to paste, then the next card. It never sends a message. Say: you do not have to recreate this, but this is the power of AI.">
-  <div class="kicker">No connector. You sign in on the website.</div>
-  <h2>How the card <em>gets built</em></h2>
-  <div class="pair">
-    <ol class="nlist">
-      <li>Use an assistant that can open a web browser.<span>Check that your plan includes it.</span></li>
-      <li>Give it the Deal Card kit.<span>In the folder at the end.</span></li>
-      <li>On the Follow Up Boss sign-in page, you sign in yourself.<span>The AI never needs your password.</span></li>
-      <li>It reads the screen. It does not change anything.<span>Hot leads every 7 to 10 days. Warm about every 2 months. Past clients and your sphere each quarter. A newsletter does not count.</span></li>
-      <li>You call, say what happened, and it drafts a one-line note for you to paste.<span>Then the next person. Nobody is offered twice today.</span></li>
-    </ol>
-    <div class="browser" aria-label="Example of the sign-in handoff">
+<section class="slide" data-notes="How to build the card without a connector. Team members will not have their own Follow Up Boss API keys. Use the Follow Up Boss website. One: an assistant that can open a web browser. In the notes only, this is often called agent mode or computer use. Check the plan. Do not name a vendor feature you have not confirmed. Two: give it the Deal Card kit, in the folder at the end. Three: at the sign-in page they take over. The AI never gets the password. Four: it reads the screen, read only. Five: how often. Hot leads every 7 to 10 days, warm about every 2 months, past clients and sphere quarterly. Newsletters do not count. Skip unsubscribed or parked contacts. Six: they call, say the outcome, it drafts a one-line note to paste, then the next card. It never sends a message. Say: you do not have to recreate this, but this is the power of AI.">
+  <div class="talk">
+    <div>
+      <h2>You <em>sign in</em></h2>
+      <ul class="points">
+        <li>You type the password</li>
+        <li>It only reads</li>
+        <li>Then one card</li>
+      </ul>
+    </div>
+    <div class="browser visual" aria-label="Example of the sign-in handoff">
       <div class="browser-bar"><i></i><i></i><i></i><span>Example · you sign in</span></div>
       <div class="browser-body">
         <p>The assistant stops on the sign-in page.</p>
         <div class="pass">Password: you type it. The assistant does not see it.</div>
-        <p style="margin-top:12px">Then one card comes back. You make the call.</p>
-      </div>
-    </div>
-  </div>
-  <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b> It never texts or emails anyone. You log the note, or you paste the draft it wrote.</div>
-</section>
-
-<section class="slide" data-notes="Brand guide, example only. Sample Realty and Alex Sample are fictional. This is not the Faris brand file. Do not show colours, fonts, or prompts from your own brand file. First step is Share with your AI: share 10 social media posts they like the style of, so it understands their taste, alongside fonts, colour palettes, designs, and their logo. Websites, photos, and brokerage rules can come too. Screenshots are fine. Then it builds the one-page guide. Walk the sample guide: mark, three colours, heading and body font, photo style, voice, do and don't, sign-off.">
-  <div class="kicker">Step 1 · Share with your AI</div>
-  <h2>Share what you like. <em>Then it builds the guide.</em></h2>
-  <div class="share-row">
-    <div class="mood" aria-label="Example of what you share before the guide is written">
-      <div class="label">Share with your AI</div>
-      <div class="spec">
-        <span class="serif">Georgia<small>A font you like</small></span>
-        <span class="sans">Clean sans<small>A font you like</small></span>
-      </div>
-      <div class="pals" aria-hidden="true">
-        <div class="pal"><i><b style="background:#1F3A5F"></b><b style="background:#C4A574"></b><b style="background:#F4EFE6"></b></i><em>Palette</em></div>
-        <div class="pal"><i><b style="background:#2F4A3C"></b><b style="background:#C4654A"></b><b style="background:#F4EDE4"></b></i><em>Palette</em></div>
-        <div class="pal"><i><b style="background:#1C1B19"></b><b style="background:#B8975A"></b><b style="background:#FAF7F0"></b></i><em>Palette</em></div>
-      </div>
-      <div class="label">10 posts</div>
-      <div class="thumbs" aria-label="10 posts you like the style of">
-        <b style="background-image:url('assets/sample-cafe.jpg')"></b>
-        <b style="background:#D9C7B2"></b>
-        <b style="background:#E7D3C4"></b>
-        <b style="background-image:url('assets/sample-cafe.jpg');background-position:left"></b>
-        <b style="background:#C4A574"></b>
-      </div>
-      <p class="note">Share 10 social media posts you like the style of, so it understands your taste. Fonts, colour palettes, designs, and your logo.</p>
-    </div>
-    <div class="arrow" aria-hidden="true">→</div>
-    <div class="brand" aria-label="Example one-page brand guide for Sample Realty">
-      <div class="brand-top">
-        <div>
-          <h3>Sample Realty</h3>
-          <div class="who">Alex Sample, REALTOR® · one page</div>
-        </div>
-        <div class="brand-mark" aria-hidden="true">S</div>
-      </div>
-      <div class="brand-body">
-        <div class="swatches">
-          <div class="swatch"><b style="background:#2F4A3C"></b><span>#2F4A3C</span></div>
-          <div class="swatch"><b style="background:#C4654A"></b><span>#C4654A</span></div>
-          <div class="swatch"><b style="background:#F4EDE4"></b><span>#F4EDE4</span></div>
-        </div>
-        <div><dt>Type</dt><dd>Headings: a serif. Body: a plain sans.</dd></div>
-        <div><dt>Photos</dt><dd>Bright, natural light, real local places.</dd></div>
-        <div><dt>Voice</dt><dd>Warm, local, plain words.</dd></div>
-        <div><dt>Do / Don't</dt><dd>Max 5 hashtags. No all caps. No copied captions.</dd></div>
-        <div><dt>Sign-off</dt><dd>Alex Sample, REALTOR® · Sample Realty</dd></div>
+        <p style="margin-top:16px">Then one card comes back. You make the call.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Steps after they share taste. Two: upload photos, headshots, and listing photos to one Drive folder with subfolders Headshots, Listing Photos, Local Spots, and Logo. Tip: only share that one folder, not the whole Drive. Three: edit the guide until it sounds like them and save one file. Four: attach it and say follow my brand guide. When it wanders, fix the guide. The before and after uses a sample cafe photo. The prompt is in the folder at the end. Do not ask anyone to copy during the talk. Say 10 social media posts.">
-  <div class="kicker">Then give it real photos, and follow the page</div>
-  <h2>One folder. One file. <em>Your voice.</em></h2>
-  <div class="pair">
+<section class="slide" data-notes="Brand guide, example only. Sample Realty and Alex Sample, REALTOR®, are fictional. This is not the Faris brand file. Do not show colours, fonts, or prompts from your own brand file. First step is Share with your AI: share 10 social media posts they like the style of, so it understands their taste, alongside fonts, colour palettes, designs, and their logo. Websites, photos, and brokerage rules can come too. Screenshots are fine. Then it builds the one-page guide. Walk the sample guide: mark, three colours, heading and body font, photo style, voice, do and don't, sign-off. Canadian spelling.">
+  <div class="talk">
     <div>
-      <ol class="nlist">
-        <li>Share with your AI.<span>Share 10 social media posts you like the style of, so it understands your taste. Fonts, colour palettes, designs, and your logo.</span></li>
-        <li>Upload photos to one Drive folder.<span>Headshots, Listing Photos, Local Spots, and Logo. Only share that one folder, not your whole Drive.</span></li>
-        <li>Edit the guide until it sounds like you. Save one file.</li>
-        <li>Attach it and say: follow my brand guide.<span>When it wanders, fix the guide, not only the post.</span></li>
-      </ol>
-      <div class="lesson"><b>Prompt in the folder at the end.</b></div>
+      <h2>Share what <em>you like</em></h2>
+      <ul class="points">
+        <li>Ten posts you like</li>
+        <li>Fonts and colours</li>
+        <li>Then the guide</li>
+      </ul>
     </div>
-    <div>
-      <div class="folder" aria-label="Example Drive folder">
-        <div class="label">Example · one folder only</div>
-        <h3>My AI photos</h3>
-        <ul>
-          <li>Headshots</li>
-          <li>Listing Photos</li>
-          <li>Local Spots</li>
-          <li>Logo</li>
-        </ul>
-        <p class="minor">Only share that one folder, not your whole Drive.</p>
-      </div>
-      <div class="mini-posts" style="margin-top:8px">
-        <div class="mini">
-          <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
-            <img src="assets/sample-cafe.jpg" alt="Example cafe photo on a generic post.">
-          </button>
-          <p class="bad">AMAZING COFFEE IN TOWN. You will not believe this. #coffee #cafe #foodie #yummy #instagood</p>
+    <div class="share-row visual">
+      <div class="mood" aria-label="Example of what you share before the guide is written">
+        <div class="label">Share with your AI</div>
+        <div class="spec">
+          <span class="serif">Georgia<small>A font you like</small></span>
+          <span class="sans">Clean sans<small>A font you like</small></span>
         </div>
-        <div class="mini">
-          <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
-            <img src="assets/sample-cafe.jpg" alt="The same example cafe photo, written to the sample guide.">
-          </button>
-          <p>Stopped in for a latte and a plain pastry. Bright window, good crust.</p>
-          <p style="padding-top:0">Alex Sample, REALTOR®<br>#Midland #LocalCafe</p>
+        <div class="pals" aria-hidden="true">
+          <div class="pal"><i><b style="background:#1F3A5F"></b><b style="background:#C4A574"></b><b style="background:#F4EFE6"></b></i><em>Palette</em></div>
+          <div class="pal"><i><b style="background:#2F4A3C"></b><b style="background:#C4654A"></b><b style="background:#F4EDE4"></b></i><em>Palette</em></div>
+          <div class="pal"><i><b style="background:#1C1B19"></b><b style="background:#B8975A"></b><b style="background:#FAF7F0"></b></i><em>Palette</em></div>
+        </div>
+        <div class="label">10 posts</div>
+        <div class="thumbs" aria-label="10 posts you like the style of">
+          <b style="background-image:url('assets/sample-cafe.jpg')"></b>
+          <b style="background:#D9C7B2"></b>
+          <b style="background:#E7D3C4"></b>
+          <b style="background-image:url('assets/sample-cafe.jpg');background-position:left"></b>
+          <b style="background:#C4A574"></b>
+        </div>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="brand" aria-label="Example one-page brand guide for Sample Realty">
+        <div class="brand-top">
+          <div>
+            <h3>Sample Realty</h3>
+            <div class="who">Alex Sample, REALTOR® · one page</div>
+          </div>
+          <div class="brand-mark" aria-hidden="true">S</div>
+        </div>
+        <div class="brand-body">
+          <div class="swatches">
+            <div class="swatch"><b style="background:#2F4A3C"></b><span>#2F4A3C</span></div>
+            <div class="swatch"><b style="background:#C4654A"></b><span>#C4654A</span></div>
+            <div class="swatch"><b style="background:#F4EDE4"></b><span>#F4EDE4</span></div>
+          </div>
+          <div><dt>Type</dt><dd>Headings: a serif. Body: a plain sans.</dd></div>
+          <div><dt>Photos</dt><dd>Bright, natural light, real local places.</dd></div>
+          <div><dt>Voice</dt><dd>Warm, local, plain words.</dd></div>
+          <div><dt>Do / Don't</dt><dd>Max 5 hashtags. No all caps.</dd></div>
+          <div><dt>Sign-off</dt><dd>Alex Sample, REALTOR® · Sample Realty</dd></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Social captions, after the guide. Two example local food posts. Photos are examples until their own pictures are in the folder. Steps: photo of their spot, the brand guide or two or three posts they like, a new caption in that style, original wording, never copied, max 5 hashtags, then they review and post. They may park a draft in a tool like Buffer, then review and post. Line: AI drafts, you post. No web addresses. No engagement numbers. Ciao Italian Market and the coffee picks are examples of the caption shape.">
-  <div class="kicker">From samples to a post you would actually publish</div>
-  <h2>A caption in <em>your style</em></h2>
-  <div class="pair">
+<section class="slide" data-notes="Steps after they share taste. Upload photos, headshots, and listing photos to one Drive folder with subfolders Headshots, Listing Photos, Local Spots, and Logo. Tip: only share that one folder, not the whole Drive. Edit the guide until it sounds like them and save one file. Attach it and say follow my brand guide. When it wanders, fix the guide, not only the post. The before and after uses a sample cafe photo. Bad caption: amazing coffee in town, too many hashtags. Better: stopped in for a latte and a plain pastry. Bright window, good crust. Alex Sample, REALTOR®, Sample Realty. The prompt is in the folder at the end.">
+  <div class="talk">
     <div>
-      <ol class="nlist">
-        <li>Use a photo from your folder. A local spot is a good first post.</li>
-        <li>Attach your brand guide, or paste 2 or 3 posts you like.</li>
-        <li>Ask for a new caption in that style.<span>Original wording. Never copied. Max 5 hashtags.</span></li>
-        <li>Review it, tweak it, and post it yourself.</li>
-      </ol>
-      <div class="lesson"><b>Prompt in the folder at the end.</b> AI drafts. You post.</div>
+      <h2>One photo <em>folder</em></h2>
+      <ul class="points">
+        <li>Only that folder</li>
+        <li>Fix the guide</li>
+        <li>Your voice</li>
+      </ul>
     </div>
-    <div class="phones" aria-label="Two example captions">
+    <div class="ba visual" aria-label="Before and after, sample cafe caption">
+      <div class="mini">
+        <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
+          <img src="assets/sample-cafe.jpg" alt="Example cafe photo on a generic post.">
+        </button>
+        <p class="bad">Before. All caps. Too many tags.</p>
+      </div>
+      <div class="mini">
+        <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
+          <img src="assets/sample-cafe.jpg" alt="The same example cafe photo, written to the sample guide.">
+        </button>
+        <p>After. Alex Sample, REALTOR®</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Social captions, after the guide. Two example local food posts. Photos are examples until their own pictures are in the folder. Steps: photo of their spot, the brand guide or two or three posts they like, a new caption in that style, original wording, never copied, max 5 hashtags, then they review and post. They may park a draft in a tool like Buffer, then review and post. Line: AI drafts, you post. No web addresses. No engagement numbers. Left phone: We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich. Right phone: Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss? Prompt is in the folder.">
+  <div class="talk">
+    <div>
+      <h2>Caption in <em>your style</em></h2>
+      <ul class="points">
+        <li>Your photo</li>
+        <li>Your examples</li>
+        <li>You post it</li>
+      </ul>
+    </div>
+    <div class="phones visual" aria-label="Two example captions">
       <div class="phone">
         <div class="screen">
           <div class="ph" style="background:#E7D3C4 center/cover no-repeat;background-image:url('assets/sample-cafe.jpg')">Example</div>
@@ -563,343 +605,264 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Real published posts. Intro only. Left is the winter market update: listings came off for winter, 149 sales, 8.4 months of inventory, a buyer's market. Right is a personal day, a dad day at Canadian Tire Motorsport Park. Do not name a tool, a bot, or a brand file. Do not read a web address or a handle. One line: same method every time. Give it examples you like, it learns your style, you approve. The right side is the personal post: a dad day at Canadian Tire Motorsport Park. Do not invent details about people in the picture.">
-  <div class="kicker">Already out in the world</div>
-  <h2>Real posts, <em>made with AI in my style</em></h2>
-  <div class="covers">
-    <figure>
-      <button type="button" class="shot" data-full="assets/market-update-winter.jpg">
-        <img src="assets/market-update-winter.jpg" alt="Winter market update cover. 8.4 months of inventory. Buyer's market.">
-      </button>
-      <figcaption>Market update</figcaption>
-    </figure>
-    <figure>
-      <div class="reelcard" style="min-height:42vh;justify-content:center;background:#f4efe6;color:#1c1b19;border:1px solid #e6dcc8">
-        <b>Personal and life</b>
-        <span style="color:#8a7040">Dad day at Canadian Tire Motorsport Park</span>
-      </div>
-      <figcaption>Personal and life</figcaption>
-    </figure>
-  </div>
-  <div class="lesson"><b>Same method every time.</b> Give it examples you like, it learns your style, you approve.</div>
-</section>
-
-<section class="slide" data-notes="Letter of Opinion, setup. In your experience a letter takes about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say: you do not have to recreate this, but this is the power of AI. Four setup steps. The picture is a sample letter for Alex and Jordan Sample. Click it to enlarge. The kit is in the folder at the end. Do not read a web address. Do not ask anyone to scan until the close.">
-  <div class="kicker">A letter you already write</div>
-  <h2>Your Letter of Opinion, <em>set up once</em></h2>
-  <div class="pair">
+<section class="slide" data-notes="Real published posts. Intro only. Left is the winter market update: listings came off for winter, 149 sales, 8.4 months of inventory, a buyer's market. Right is a personal day, a dad day at Canadian Tire Motorsport Park. The photo of that day is not on this slide. Do not invent details about people. Do not name a tool, a bot, or a brand file. Do not read a web address or a handle. One line: same method every time. Give it examples you like, it learns your style, you approve.">
+  <div class="talk">
     <div>
-      <p class="sub">In my experience: about 30 minutes by hand. About 30 minutes to set up once, then about 30 minutes back on each letter.</p>
-      <ol class="nlist">
-        <li>Download the Faris Team Word template from the shared folder into your own Drive.</li>
-        <li>Photograph your signature on white paper. Save the photo to Drive.</li>
-        <li>The kit is in the folder at the end.</li>
-        <li>Give your AI the template, the signature, and the kit once.</li>
-      </ol>
-      <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
+      <h2>Real posts. <em>Your style.</em></h2>
+      <ul class="points">
+        <li>Market update</li>
+        <li>Personal and life</li>
+        <li>You approve</li>
+      </ul>
     </div>
-    <div>
-      <button type="button" class="shot tall" data-full="assets/loo-sample-page1.png">
-        <img src="assets/loo-sample-page1.png" alt="Sample Faris Team Letter of Opinion for Alex and Jordan Sample. Fictional.">
-        <small>Sample letter · click to enlarge</small>
-      </button>
+    <div class="covers visual">
+      <figure>
+        <button type="button" class="shot" data-full="assets/market-update-winter.jpg">
+          <img src="assets/market-update-winter.jpg" alt="Winter market update cover. 8.4 months of inventory. Buyer's market.">
+        </button>
+      </figure>
+      <figure>
+        <div class="reelcard" style="min-height:52vh;justify-content:center;background:#f4efe6;color:#1c1b19;border:1px solid #e6dcc8">
+          <b>Personal and life</b>
+          <span style="color:#8a7040">Dad day at Canadian Tire Motorsport Park</span>
+        </div>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Every letter after setup. Names on title, address, their value range, a max list price only if they have one, and their comps. It sorts the comps, fills the letter, places the signature, makes a one-page PDF and a Word copy, and drafts the email. The picture is that email, with the PDF attached. Sample only. They read it, check every figure and every name, and they send it. The opinion is theirs. The full sample request is in the kit and the playbook. Alex and Jordan Sample. 123 Sample Street, Midland, is not a real home.">
-  <div class="kicker">Every letter after the setup</div>
-  <h2>Then each letter is <em>one request</em></h2>
-  <div class="pair">
+<section class="slide" data-notes="Letter of Opinion, setup. In your experience a letter takes about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say: you do not have to recreate this, but this is the power of AI. Four setup steps. Download the Faris Team Word template from the shared folder into your own Drive. Photograph your signature on white paper. Save the photo to Drive. The kit is in the folder at the end. Give your AI the template, the signature, and the kit once. The picture is a sample letter for Alex and Jordan Sample. Click it to enlarge. Do not read a web address. Do not ask anyone to scan until the close.">
+  <div class="talk">
     <div>
-      <ol class="nlist">
-        <li>Names on title. The address. Your value range, and a max list price if you have one. Your comps.</li>
-        <li>It sorts the comps, fills the letter, places your signature, and makes a one-page PDF and a Word copy.</li>
-        <li>It drafts the client email. You read it, check every figure, and you send it.<span>The opinion is yours.</span></li>
-      </ol>
-      <div class="lesson"><b>Sample only.</b> Alex and Jordan Sample. 123 Sample Street is not a real home.</div>
+      <h2>Set up <em>the letter</em></h2>
+      <ul class="points">
+        <li>Template in Drive</li>
+        <li>Your signature photo</li>
+        <li>Kit in the folder</li>
+      </ul>
     </div>
-    <button type="button" class="shot" data-full="assets/outlook-loo-email.png">
+    <button type="button" class="shot tall visual" data-full="assets/loo-sample-page1.png">
+      <img src="assets/loo-sample-page1.png" alt="Sample Faris Team Letter of Opinion for Alex and Jordan Sample. Fictional.">
+    </button>
+  </div>
+</section>
+
+<section class="slide" data-notes="Every letter after setup. Names on title, address, their value range, a max list price only if they have one, and their comps. It sorts the comps, fills the letter, places the signature, makes a one-page PDF and a Word copy, and drafts the email. The picture is that email, with the PDF attached. Sample only. They read it, check every figure and every name, and they send it. The opinion is theirs. The full sample request is in the kit and the playbook. Alex and Jordan Sample. 123 Sample Street, Midland, is not a real home. Also 123 Banana Street appears on the fictional checklist examples. Neither is a real listing.">
+  <div class="talk">
+    <div>
+      <h2>Then one <em>request</em></h2>
+      <ul class="points">
+        <li>Your comps</li>
+        <li>It fills the letter</li>
+        <li>You send it</li>
+      </ul>
+    </div>
+    <button type="button" class="shot visual" data-full="assets/outlook-loo-email.png">
       <img src="assets/outlook-loo-email.png" alt="Sample Outlook draft of the Letter of Opinion email, with the PDF attached.">
-      <small>Sample email draft · click to enlarge</small>
     </button>
   </div>
 </section>
 
-<section class="slide" data-notes="Plaud is advanced. Frame this as what is possible, not as something they should set up this month. His photo. The client stays in the conversation, the dog and the closing date do not get lost, the follow-up can go the same day. The Outlook picture is a sample of what comes out. The doable version is the free voice memo or a spoken recap after the meeting. Same three outputs: CRM note, tasks, follow-up draft. Let people know you are recording. That is advice, not a legal ruling. Do not quote a Plaud price. Do not put Plaud in the 30-day plan. The prompt is on the playbook: a 3-line CRM note, tasks with dates, and a short follow-up email. No em dashes. Do not invent details.">
-  <div class="kicker">What's possible</div>
-  <h2>Record the call. <em>The notes still get done.</em></h2>
-  <div class="pair">
-    <button type="button" class="shot half" data-full="assets/plaud-phone.jpg">
-      <img src="assets/plaud-phone.jpg" alt="A recorder clipped to the back of a phone.">
-      <small>A recorder on the phone · click to enlarge</small>
-    </button>
-    <button type="button" class="shot half" data-full="assets/outlook-followup.png">
-      <img src="assets/outlook-followup.png" alt="Sample follow-up email drafted from call notes.">
-      <small>What comes out · sample · click to enlarge</small>
-    </button>
-  </div>
-  <div class="lesson"><b>No recorder? Same result, free.</b> A voice memo, or talk it through after the meeting. A CRM note, the tasks, and a follow-up you send. Let people know you are recording.</div>
-</section>
-
-<section class="slide" data-notes="Advanced. Intro only. Do not teach how to make a video. This is a script writer for their own videos. The example is a short reel about mortgage paperwork after an accepted offer, from November 6. Read the opening lines if you want, then the one line: give it a topic and your voice. It drafts the hook, the script and the caption. You film it. Do not name a tool. Do not read a web address. Do not put this in the 30-day plan.">
-  <div class="kicker">Advanced: what's possible</div>
-  <h2>A script writer <em>for your videos</em></h2>
-  <div class="pair">
-    <div class="reelcard" aria-label="Mortgage paperwork reel, November 6">
-      <b>You found it.</b>
-      <span>Mortgage paperwork reel · Nov 6</span>
+<section class="slide" data-notes="Plaud is advanced. Frame this as what is possible, not as something they should set up this month. His photo. The client stays in the conversation, the dog and the closing date do not get lost, the follow-up can go the same day. The Outlook picture is a sample of what comes out. The doable version is the free voice memo or a spoken recap after the meeting. Same three outputs: CRM note, tasks, follow-up draft. Let people know you are recording. That is advice, not a legal ruling. Do not quote a Plaud price. Do not put Plaud in the 30-day plan. The prompt is on the playbook: a 3-line CRM note, tasks with dates, and a short follow-up email. Do not invent details.">
+  <div class="talk">
+    <div>
+      <h2>Record <em>the call</em></h2>
+      <ul class="points">
+        <li>You stay present</li>
+        <li>Notes still get done</li>
+        <li>Or a voice memo</li>
+      </ul>
     </div>
-    <div class="tele" aria-label="Opening lines of the script">
-      <p>You found it.</p>
-      <p>The one that finally felt right.</p>
-      <p>Offer accepted… and then the clock starts.</p>
-      <p>Deadline coming fast, and now you're scrambling for mortgage papers you thought you already had.</p>
+    <div class="pair visual">
+      <button type="button" class="shot half" data-full="assets/plaud-phone.jpg">
+        <img src="assets/plaud-phone.jpg" alt="A recorder clipped to the back of a phone.">
+      </button>
+      <button type="button" class="shot half" data-full="assets/outlook-followup.png">
+        <img src="assets/outlook-followup.png" alt="Sample follow-up email drafted from call notes.">
+      </button>
     </div>
   </div>
-  <div class="lesson"><b>Give it a topic and your voice.</b> It drafts the hook, the script and the caption. You film it.</div>
 </section>
 
-<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. The picture is a sample Drafts folder. Fictional names. Dictate while parked, never while driving. A closing checklist is for a sample freehold purchase, and anything legal is confirm with the brokerage. Property search stays in MLS. Do not describe a follow-up assistant. That is Step 4. This is the middle of the deck. Say the line: Starting is easy. Start this week.">
-  <div class="kicker">The rest of a normal week</div>
-  <h2>Notes, emails, and <em>your day</em></h2>
-  <div class="pair">
-    <div class="stack">
-      <div class="card"><span class="mark">Your day</span><h3>Hand it the messy list</h3><p>Ask for a plan with income work first. Dictate while you are parked. Never while driving.</p></div>
-      <div class="card"><span class="mark">Emails and texts</span><h3>The follow-up you put off</h3><p>A thank-you, a past-client check-in, a still-looking text. You edit. You send.</p></div>
-      <div class="card"><span class="mark">Before you walk in</span><h3>Summaries and prep</h3><p>A long email, or a one-page sheet. Check it against the original. Search stays in MLS.</p></div>
+<section class="slide" data-notes="Advanced. Intro only. Do not teach how to make a video. This is a script writer for their own videos. The example is a short reel about mortgage paperwork after an accepted offer, from November 6. Read the opening lines if you want: You found it. The one that finally felt right. Offer accepted, and then the clock starts. Deadline coming fast, and now you're scrambling for mortgage papers you thought you already had. Then the one line: give it a topic and your voice. It drafts the hook, the script and the caption. You film it. Do not name a tool. Do not read a web address. Do not put this in the 30-day plan. Tag if you need it: Advanced, what's possible.">
+  <div class="talk">
+    <div>
+      <h2>A script <em>for videos</em></h2>
+      <ul class="points">
+        <li>Give it a topic</li>
+        <li>It drafts the script</li>
+        <li>You film it</li>
+      </ul>
     </div>
-    <button type="button" class="shot" data-full="assets/outlook-drafts.png">
+    <div class="pair visual">
+      <div class="reelcard" aria-label="Mortgage paperwork reel, November 6">
+        <b>You found it.</b>
+        <span>Mortgage paperwork reel · Nov 6</span>
+      </div>
+      <div class="tele" aria-label="Opening lines of the script">
+        <p>You found it.</p>
+        <p>The one that finally felt right.</p>
+        <p>Offer accepted… and then the clock starts.</p>
+        <p>Deadline coming fast, and now you're scrambling for mortgage papers you thought you already had.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. Before you walk in: a long email, or a one-page sheet. Check it against the original. Search stays in MLS. A closing checklist is for a sample freehold purchase, and anything legal is confirm with the brokerage. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week. The picture is a sample Drafts folder. Fictional names.">
+  <div class="talk">
+    <div>
+      <h2>Notes, emails, <em>your day</em></h2>
+      <ul class="points">
+        <li>Messy list first</li>
+        <li>The follow-up</li>
+        <li>Check the original</li>
+      </ul>
+    </div>
+    <button type="button" class="shot visual" data-full="assets/outlook-drafts.png">
       <img src="assets/outlook-drafts.png" alt="Sample Outlook Drafts folder with follow-up emails waiting for review.">
-      <small>Sample drafts · you still send them · click to enlarge</small>
     </button>
   </div>
-  <div class="lesson"><b>Starting is easy. Start this week.</b></div>
 </section>
 
-<section class="slide" data-notes="Best practices. It does not remember unless they give it a place to keep things. Each correction gets saved. At the end of each chat, save your SOPs and the decisions you made. Explain SOP as a step-by-step. Save it to the house rules file or an SOP doc in the one Drive folder, so the next chat starts smarter. The card is fictional: two SOPs and two decisions. The prompt is in the folder at the end. Do not ask anyone to copy during the talk. Takeaway: Correct once, save it forever. Canadian spelling. Date each rule. Newest rule wins.">
-  <div class="kicker">Best practices · keep your AI on track</div>
-  <h2>Correct once, <em>save it forever</em></h2>
-  <div class="pair">
+<section class="slide" data-notes="Best practices. It does not remember unless they give it a place to keep things. Each correction gets saved. At the end of each chat, save your SOPs and the decisions you made. Explain SOP as a step-by-step. Save it to the house rules file or an SOP doc in the one Drive folder, so the next chat starts smarter. Example house rules: Canadian spelling. Short paragraphs. Dated 10 Nov 2026. Warm, plain words. My sign-off, every time. Never send without my review. If a fact is missing, say so. Do not guess. Example end of chat: SOP, letter, check the comps, then the value sentence. SOP, deal card, one person, then paste the note. Decision, short paragraphs. Decision, never send without my review. Newest rule wins. The prompt is in the folder. Do not ask anyone to copy during the talk.">
+  <div class="talk">
     <div>
-      <ol class="nlist">
-        <li>It does not remember on its own. Give it a file.</li>
-        <li>A correction you only say once is gone. Save it.</li>
-        <li>At the end of each chat, save your SOPs and the decisions you made.<span>An SOP is a step-by-step. Save it to your rules file, or an SOP doc in your one Drive folder.</span></li>
-      </ol>
-      <div class="lesson"><b>Prompt in the folder at the end.</b></div>
+      <h2>Save it <em>forever</em></h2>
+      <ul class="points">
+        <li>It forgets</li>
+        <li>Save the rule</li>
+        <li>End of each chat</li>
+      </ul>
     </div>
-    <div class="stack">
-      <div class="rules" aria-label="Example house rules">
-        <h3>House rules · example</h3>
-        <ul>
-          <li>Canadian spelling. Short paragraphs. 10 Nov 2026.</li>
-          <li>Warm, plain words. My sign-off, every time.</li>
-          <li>Never send without my review.</li>
-          <li>If a fact is missing, say so. Do not guess.</li>
-        </ul>
-      </div>
-      <div class="sop" aria-label="Example end of chat summary">
-        <div class="label">Example · end of chat</div>
-        <h3>Two SOPs, two decisions</h3>
-        <p><b>SOP.</b> Letter: check the comps, then the value sentence.</p>
-        <p><b>SOP.</b> Deal card: one person, then paste the note.</p>
-        <p><b>Decision.</b> Short paragraphs.</p>
-        <p><b>Decision.</b> Never send without my review.</p>
-      </div>
+    <div class="sop visual" aria-label="Example end of chat summary">
+      <div class="label">Example · end of chat</div>
+      <h3>Two SOPs, two decisions</h3>
+      <p><b>SOP.</b> Letter: check the comps, then the value sentence.</p>
+      <p><b>SOP.</b> Deal card: one person, then paste the note.</p>
+      <p><b>Decision.</b> Short paragraphs.</p>
+      <p><b>Decision.</b> Never send without my review.</p>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Sources in order of trust: their own templates and past approved work, brokerage forms and rules, official sources such as RECO and the board, then the open web. Tell it which sources it may use, and to say when something is missing. When it wanders: point at the rules file and a good example at the start of each task, fix the file not only the answer, one source of truth, review before anything goes out, start a fresh chat when a thread gets muddled. Examples of good beat long instructions.">
-  <div class="kicker">Best practices · where it should look</div>
-  <h2>Point it at the <em>right source</em></h2>
-  <div class="pair">
-    <div class="trust">
-      <div><b>1. Your own work</b><span>Templates, letters, and posts you already approved.</span></div>
-      <div><b>2. Brokerage</b><span>Your forms and your brokerage rules.</span></div>
-      <div><b>3. Official sources</b><span>RECO, and your board.</span></div>
-      <div><b>4. The open web</b><span>Last. Tell it to say when something is missing.</span></div>
-    </div>
+<section class="slide" data-notes="Sources in order of trust: their own templates and past approved work, brokerage forms and rules, official sources such as RECO and the board, then the open web. Tell it which sources it may use, and to say when something is missing. When it wanders: point at the rules file and a good example at the start of each task, fix the file not only the answer, one source of truth, review before anything goes out, start a fresh chat when a thread gets muddled. Examples of good beat long instructions. Bad example: amazing home in town, you will not believe this. Saved rule: warm, plain words, no all caps, dated 10 Nov 2026.">
+  <div class="talk">
     <div>
-      <ol class="nlist">
-        <li>Start the task by pointing at your rules and one example you loved.</li>
-        <li>When it wanders, fix the file, not only that answer.</li>
-        <li>One source of truth. No second copy that disagrees.</li>
-        <li>When a chat gets muddled, start a fresh one and ask it to read your rules back.</li>
-      </ol>
-      <div class="mini-posts" style="margin-top:1vh">
-        <div class="mini"><p class="bad">Example · it wandered<br>AMAZING HOME IN TOWN. You will not believe this.</p></div>
-        <div class="mini"><p>Example · saved in the rules file<br>Warm, plain words. No all caps. 10 Nov 2026.</p></div>
-      </div>
+      <h2>Right source <em>first</em></h2>
+      <ul class="points">
+        <li>Your own work</li>
+        <li>Then the brokerage</li>
+        <li>Web is last</li>
+      </ul>
+    </div>
+    <div class="ba visual" aria-label="A caption that wandered, beside the saved rule">
+      <div class="mini"><p class="bad" style="font-size:clamp(20px,1.6vw,28px);padding:8vh 1.4vw">It wandered. All caps. Hype.</p></div>
+      <div class="mini"><p style="font-size:clamp(20px,1.6vw,28px);padding:8vh 1.4vw">Saved rule. Warm, plain words.</p></div>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Time math, if asked: 20 minutes times 20 days is about 7 hours. At a sample 50 dollars an hour, about 350 dollars of time, beside one everyday plan of about 25 to 42 dollars. That math is an example, not a measured result. Claude amounts had no currency label. Prices are before tax, as of November 9, 2026.">
-  <div class="kicker">You can start for $0</div>
-  <h2>What it costs: <em>published prices</em></h2>
-  <p class="takeaway">For about $50 to $100 a month you will have all the tools you need.</p>
-  <table class="prices">
-    <thead>
-      <tr><th>Tool</th><th>Free</th><th>Published plans</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Grok</th>
-        <td class="free">$0</td>
-        <td>
-          <div class="chips">
-            <span class="chip"><b>Plus</b> CA$9.99</span>
-            <span class="chip"><b>Premium</b> CA$41.99</span>
-            <span class="chip"><b>Super</b> CA$139.99</span>
-            <span class="chip"><b>Ultra</b> CA$279.99</span>
-            <span class="chip"><b>Teams</b> from US$30 / user</span>
-          </div>
-          <p class="minor">Premium first month CA$21. Super and Ultra are half off the first month. US page: Plus $8, Premium $30, Super $100, Ultra $200.</p>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">ChatGPT</th>
-        <td class="free">CA$0</td>
-        <td>
-          <div class="chips">
-            <span class="chip"><b>Go</b> CA$11</span>
-            <span class="chip"><b>Plus</b> CA$25</span>
-            <span class="chip"><b>Pro</b> from CA$136</span>
-            <span class="chip"><b>Business</b> CA$34 / seat</span>
-          </div>
-          <p class="minor">Go may include ads. Business is CA$27 / seat if billed annually.</p>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Claude</th>
-        <td class="free">$0</td>
-        <td>
-          <div class="chips">
-            <span class="chip"><b>Pro</b> $28</span>
-            <span class="chip"><b>Max</b> $140</span>
-            <span class="chip"><b>Ultra</b> $280</span>
-            <span class="chip"><b>Team</b> $35 / seat</span>
-          </div>
-          <p class="minor">Pro is $23 / month on an annual plan ($280 up front). Team is $28 / seat annually. The page showed no currency label.</p>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Google Gemini</th>
-        <td class="free">CA$0</td>
-        <td>
-          <div class="chips">
-            <span class="chip"><b>AI Plus</b> CA$6.99</span>
-            <span class="chip"><b>AI Pro</b> CA$26.99</span>
-            <span class="chip"><b>AI Ultra</b> from CA$139.99</span>
-            <span class="chip"><b>Business</b> from US$21 / seat</span>
-          </div>
-          <p class="minor">Ultra also lists CA$279.99. Business had no Canadian dollar price.</p>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Microsoft Copilot</th>
-        <td class="free">Free</td>
-        <td>
-          <div class="chips">
-            <span class="chip"><b>365 Personal</b> CAD $11.50</span>
-            <span class="chip"><b>365 Premium</b> CAD $27</span>
-            <span class="chip"><b>Copilot Business</b> CAD $34.20 / user</span>
-          </div>
-          <p class="minor">Personal is CAD $115 / year, and a 1-month trial was offered. Premium is CAD $270 / year. Business add-on is CAD $28.50 / year (promo from CAD $24.43). Free chat limits were not confirmed.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <p class="footnote">Published prices as of Nov 9, 2026, before tax. Free is enough for week one.</p>
+<section class="slide" data-notes="Published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Time math, if asked: 20 minutes times 20 days is about 7 hours. At a sample 50 dollars an hour, about 350 dollars of time, beside one everyday plan of about 25 to 42 dollars. That math is an example, not a measured result. Prices are before tax, as of November 9, 2026. The full table is in the playbook. Grok: Plus CA$9.99, Premium CA$41.99, Super CA$139.99, Ultra CA$279.99, Teams from US$30 a user. ChatGPT: Go CA$11, Plus CA$25, Pro from CA$136, Business CA$34 a seat. Claude: Pro $28, Max $140, Ultra $280, Team $35 a seat, and the page showed no currency label. Gemini: AI Plus CA$6.99, AI Pro CA$26.99, AI Ultra from CA$139.99, Business from US$21 a seat. Copilot: 365 Personal CAD $11.50, 365 Premium CAD $27, Copilot Business CAD $34.20 a user. Promos and annual prices are in the playbook.">
+  <div class="talk">
+    <div>
+      <h2>Fifty to <em>one hundred</em></h2>
+      <ul class="points">
+        <li>Start for free</li>
+        <li>One plan later</li>
+        <li>Before tax</li>
+      </ul>
+    </div>
+    <div class="bigprice visual" aria-label="About 50 to 100 dollars a month">
+      <b>$50 to $100</b>
+      <span>A month · before tax</span>
+    </div>
+  </div>
 </section>
 
 <section class="slide" data-notes="Advice, not a study. Do not quote a personal bill. Pick one tool and learn it. Do not chase every new app. Do not spend hours perfecting a prompt: talk to it like an assistant and correct it once. Do not build automations or custom bots on day one. Scheduled automations get messy. Do not let it send before you read. Do not trust MLS facts, prices, or legal and contract wording without checking. Do not paste private client information into a tool before the rules note is in place. Connections and a team of assistants are later steps.">
-  <div class="kicker">While you are learning</div>
-  <h2>What not to <em>waste time with</em></h2>
-  <ul class="list compact">
-    <li>Don't subscribe to every tool. Pick one and learn it.</li>
-    <li>Don't chase every new app.</li>
-    <li>Don't spend hours perfecting a prompt. Talk to it, then correct it once and save the correction.</li>
-    <li>Don't build automations or custom bots on day one.</li>
-    <li>Don't let it send anything before you have read it.</li>
-    <li>Don't trust it for MLS facts, prices, or legal wording without checking.</li>
-    <li>Don't paste private client information in before your rules are in place.</li>
-  </ul>
-</section>
-
-<section class="slide" data-notes="Preview only. Do not teach connectors, permission screens, standing instructions, or a team of assistants. This week is chat. They copy the draft into Outlook, their CRM, or their texts. Step 2, later, is Connect Your Tools: email, calendar, CRM and Drive. Step 3 is Teach It Your Way. Step 4 is Build Your AI Team. Say the names and move on.">
-  <div class="kicker">After Step 1</div>
-  <h2>What's next: <em>Step 2, Connect Your Tools</em></h2>
-  <div class="grid g3">
-    <div class="card">
-      <span class="mark">This week</span>
-      <h3>Chat only</h3>
-      <p>You copy the draft into the tool you already use. You read it. You send it.</p>
+  <div class="talk">
+    <div>
+      <h2>Leave this <em>for later</em></h2>
+      <ul class="points">
+        <li>Pick one tool</li>
+        <li>No bots yet</li>
+        <li>You still send</li>
+      </ul>
     </div>
-    <div class="card">
-      <span class="mark">Step 2</span>
-      <h3>Connect Your Tools</h3>
-      <p>Email, calendar, CRM and Drive. Once Drive is connected, it can pull your letter template and your photo folder. Not today.</p>
-    </div>
-    <div class="card">
-      <span class="mark">Then</span>
-      <h3>Steps 3 and 4</h3>
-      <p>Teach It Your Way. Then Build Your AI Team.</p>
-    </div>
-  </div>
-  <div class="lesson"><b>Not today:</b> connecting accounts, and more than one assistant.</div>
-</section>
-
-<section class="slide" data-notes="The 30 days, grouped. Read the rule first. Days 1 to 9 are about 15 to 20 minutes. Days 10 to 20 are about 30. Days 21 to 30 are about 30 to 45. Days 7, 16, and 24 are good spots to catch up. Do not read the full list. The checklist is in the folder. Foundations: one email, house rules, text templates. Then one review. Then posts. Then calendar, notes, and listing descriptions. Then the letter and a deadline tracker. Then the deal card. Then the month review. Do not name a private tool chain. Follow Up Boss is only an example of a CRM, and only if someone asks. Do not open WEBForms or BrokerBay today.">
-  <div class="kicker">One focus a day, in order</div>
-  <h2>Your next <em>30 days</em></h2>
-  <p class="ruleline"><b>Do one day at a time.</b> If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay.</p>
-  <div class="plan">
-    <div class="card"><span class="mark">Days 1 to 9 · 15 to 20 min</span><h3>Foundations</h3><p>One real email. House rules. Day 7, text templates, is a good spot to catch up.</p></div>
-    <div class="card"><span class="mark">Day 10 · 30 min</span><h3>Clients and reviews</h3><p>Ask for one review. One text and one email, from a sale this year.</p></div>
-    <div class="card"><span class="mark">Days 11 to 16 · 30 min</span><h3>Brand and social</h3><p>Ten posts you like. Your first post. Day 16, two more posts, is a good spot to catch up.</p></div>
-    <div class="card"><span class="mark">Days 17 to 20 · 30 min</span><h3>Connect your tools</h3><p>Book by voice. Teach it your notes. Save your top five listing descriptions.</p></div>
-    <div class="card"><span class="mark">Days 21 to 24 · 30 to 45 min</span><h3>Letters and offers</h3><p>Set up the letter, then use it. Day 24, the deadline tracker, is a good spot to catch up.</p></div>
-    <div class="card"><span class="mark">Days 25 to 30 · 30 to 45 min</span><h3>Deal card, then the month</h3><p>Ten calls, then the next ten. Day 30: what saved time, and what is next.</p></div>
-  </div>
-</section>
-
-<section class="slide" data-notes="Close. Read the rule again. One code only. It opens the shared folder. Do not read a web address. The label is Scan for every prompt and kit. Also say the 30 days live in an online learning centre where they sign in with their name and tick off each day. Do not read a link. The link is not on the slide. Restate: Starting is easy. Start this week. By day 30: a rules file, saved prompts, the letter working, a deal card habit, a brand guide, three posts, and a cleaned rules file. The huddle date is not set. Ask Thomas rather than naming one.">
-  <div class="closing">
-    <p class="ruleline"><b>Do one day at a time.</b> If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay.</p>
-    <h2>Starting is easy. <em>Start this week.</em></h2>
-    <p class="result">By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide, and three posts out.</p>
-    <p class="lesson"><b>Your 30 days also live in an online learning centre</b> where you sign in with your name and tick off each day.</p>
-    <div class="close-foot">
-      <p class="sub">The full 30 days, one task at a time, are in the folder. Days 7, 16, and 24 are good spots to catch up.</p>
-      <div class="qr-wrap">
-        <img src="assets/folder-qr.png" alt="QR code. Scan for every prompt and kit." width="798" height="798">
-        <p class="qr-cap">Scan for every prompt and kit</p>
-      </div>
+    <div class="skipvis visual" aria-label="Skip these for now">
+      <div>Every new app</div>
+      <div>Custom bots</div>
+      <div>Auto-send</div>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Which tool: the one they will open every day. Pay: not to start. About 50 to 100 dollars a month when they need the tools. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting accounts is Step 2, not today. Plaud is optional and advanced. The free path is a voice memo. Ads and a full nurture campaign are a later session. The one-page guide is the starter. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. Do not discuss personal spend.">
-  <div class="kicker">10 to 15 minutes</div>
-  <h2><em>Q&amp;A</em></h2>
-  <div class="qa">
-    <div class="card">
-      <h3>Which tool, and do I pay?</h3>
-      <p>The one you will open every day. Free is enough to start. About $50 to $100 a month covers the tools when you need them.</p>
+<section class="slide" data-notes="Preview only. Do not teach connectors, permission screens, standing instructions, or a team of assistants. This week is chat. They copy the draft into Outlook, their CRM, or their texts. Step 2, later, is Connect Your Tools: email, calendar, CRM and Drive. Once Drive is connected, it can pull the letter template and the photo folder. Not today. Step 3 is Teach It Your Way. Step 4 is Build Your AI Team. Say the names and move on.">
+  <div class="talk">
+    <div>
+      <h2>Connect <em>your tools</em></h2>
+      <ul class="points">
+        <li>Not today</li>
+        <li>Email, calendar, Drive</li>
+        <li>You still send</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>Mistakes, and sending</h3>
-      <p>Check prices, dates, and legal wording. You read it. You send it. Anything client-facing gets your eyes first.</p>
-    </div>
-    <div class="card">
-      <h3>Client information</h3>
-      <p>Keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting tools is Step 2.</p>
+    <div class="steps2 visual" aria-label="Step 2 comes after this week">
+      <div><span>1</span><b>Chat only. This week.</b></div>
+      <div class="now"><span>2</span><b>Connect your tools</b></div>
+      <div><span>3</span><b>Teach it your way</b></div>
+      <div><span>4</span><b>Build your AI team</b></div>
     </div>
   </div>
-  <div class="lesson"><b>If you only remember one line:</b> Starting is easy. Start this week.</div>
+</section>
+
+<section class="slide" data-notes="The 30 days, grouped into seven sections. Do not read a day list. The full list is in the folder and in the online learning centre. Read the rule: Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay. Days 1 to 9 are about 15 to 20 minutes: Foundations, one real email, talk instead of type, three tasks you hate, about-me note, house rules, writing style, text templates, save SOPs, inbox cleanup. Day 7 is a good spot to catch up. Day 10, about 30 minutes: Clients and reviews, one text and one email from a sale this year. Days 11 to 16, about 30 minutes: Brand and social. Ten posts, fonts and colours, one photo folder, the brand guide, first post, then two more. Day 16 is a good spot to catch up. Days 17 to 20, about 30 minutes: Connect your tools. Book by voice, teach it your notes, stay in touch, listing descriptions and your top five. Days 21 to 24, about 30 to 45 minutes: Letters and offers. Letter setup, practice, read an offer, deadline tracker. Day 24 is a good spot to catch up. Days 25 to 27: Deal card. Setup, ten calls, then the next ten. Days 28 to 30, about 30 to 45 minutes: Advanced. Listing paperwork, BrokerBay showings, month review. Do not open WEBForms or BrokerBay today. Follow Up Boss is only an example of a CRM, and only if someone asks.">
+  <div class="talk">
+    <div>
+      <h2>Your next <em>30 days</em></h2>
+    </div>
+    <ol class="path visual" aria-label="Seven sections, in order">
+      <li><span>1</span><b>Foundations</b></li>
+      <li><span>2</span><b>Clients and reviews</b></li>
+      <li><span>3</span><b>Brand and social</b></li>
+      <li><span>4</span><b>Connect your tools</b></li>
+      <li><span>5</span><b>Letters and offers</b></li>
+      <li><span>6</span><b>Deal card</b></li>
+      <li><span>7</span><b>Advanced</b></li>
+    </ol>
+  </div>
+</section>
+
+<section class="slide" data-notes="Close. Read the rule again. Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay. One code only. It opens the shared folder. Do not read a web address. The label is Scan for every prompt and kit. Also say the 30 days live in an online learning centre where they sign in with their name and tick off each day. Do not read a link. The link is not on the slide. Restate: Starting is easy. Start this week. By day 30: a rules file, saved prompts, the letter working, a deal card habit, a brand guide, three posts, and a cleaned rules file. Days 7, 16, and 24 are good spots to catch up. The huddle date is not set. Ask Thomas rather than naming one.">
+  <div class="talk">
+    <div>
+      <h2>Start <em>this week</em></h2>
+      <ul class="points">
+        <li>One day at a time</li>
+        <li>Scan for the kit</li>
+        <li>You still send</li>
+      </ul>
+    </div>
+    <div class="qr-wrap visual">
+      <img src="assets/folder-qr.png" alt="QR code. Scan for every prompt and kit." width="798" height="798">
+      <p class="qr-cap">Scan for every prompt and kit</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Which tool: the one they will open every day. Pay: not to start. About 50 to 100 dollars a month when they need the tools. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting accounts is Step 2, not today. Plaud is optional and advanced. The free path is a voice memo. Ads and a full nurture campaign are a later session. The one-page guide is the starter. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. Do not discuss personal spend. If you only remember one line: Starting is easy. Start this week.">
+  <div class="talk">
+    <div>
+      <h2><em>Questions</em></h2>
+      <ul class="points">
+        <li>Which tool</li>
+        <li>You still send</li>
+        <li>No client ID</li>
+      </ul>
+    </div>
+    <div class="bigq visual" aria-hidden="true">?</div>
+  </div>
 </section>
 
 </main>
