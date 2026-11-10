@@ -145,19 +145,19 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .lb .x{position:absolute;top:14px;right:16px;width:40px;height:40px;border:0;border-radius:50%;background:#fff;font-size:24px;cursor:pointer;color:var(--ink)}
 .dial{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 50px rgba(120,95,50,.12);overflow:hidden;font-size:clamp(12px,.9vw,14px)}
 .dial-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--ivory2);border-bottom:1px solid var(--line)}
-.dial-bar span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.dial-bar span{font-size:clamp(14px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .dial-bar .tag{color:#fff}
 .dial-body{padding:12px 14px 10px}
 .dial h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(20px,1.7vw,28px);margin:4px 0 2px;line-height:1.15}
 .dial .meta{color:var(--muted);font-size:clamp(12px,.85vw,14px);line-height:1.45;margin-bottom:8px}
 .dial .meta b{color:var(--ink);font-weight:500}
 .dial .why,.dial .open{border-left:2px solid var(--gold);padding-left:10px;margin:8px 0;line-height:1.4}
-.dial .why small,.dial .open small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:3px;font-weight:500}
+.dial .why small,.dial .open small{display:block;font-size:clamp(14px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:3px;font-weight:600}
 .dial .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .dial .actions .call{background:var(--gold-ink);color:#fff;border:0;border-radius:999px;padding:7px 14px;font-size:clamp(12px,.85vw,14px);font-weight:500}
 .dial .actions .out{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:clamp(11px,.78vw,13px);color:var(--muted)}
 .dial-next{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
-.dial-next small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.dial-next small{display:block;font-size:clamp(14px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .dial-next div{display:flex;gap:8px;flex-wrap:wrap}
 .dial-next span{border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:clamp(11px,.8vw,13px);color:var(--muted)}
 .brand{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(120,95,50,.12);overflow:hidden;color:#243028}
@@ -339,9 +339,8 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .reelcard span{font-size:clamp(18px,1.35vw,26px);color:#E6C98A;line-height:1.3}
 .talk .dial{font-size:clamp(18px,1.35vw,22px)}
 .talk .dial h3{font-size:clamp(32px,2.8vw,48px)}
-.talk .dial .meta,.talk .dial .why,.talk .dial .open{font-size:clamp(18px,1.4vw,24px)}
-.talk .dial .actions .call{font-size:clamp(15px,1.05vw,18px)}
-.talk .dial .actions .out,.talk .dial-next span{font-size:clamp(14px,1vw,17px)}
+.talk .dial .meta,.talk .dial .why,.talk .dial .open{font-size:clamp(18px,1.4vw,26px)}
+.talk .dial .actions .call,.talk .dial .actions .out,.talk .dial-next span,.talk .dial-next small,.talk .dial-bar span{font-size:clamp(16px,1.2vw,24px)}
 .talk .brand-body{font-size:clamp(18px,1.5vw,30px)}
 .talk .phone{width:min(360px,23vw)}
 .talk .pair{width:100%;grid-template-columns:1fr 1fr;align-items:stretch}
@@ -431,10 +430,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .igpost header div{min-width:0}
 .igpost header strong{display:block;font-size:clamp(16px,1.2vw,24px);font-weight:650}
 .igpost header small{display:block;color:#3d3d3d;font-size:clamp(14px,1.15vw,22px)}
-.igpic{height:16vh;min-height:84px;background:#c4a574 center/cover no-repeat}
-.igpic.window{background:linear-gradient(180deg,#d7e4ef 0 42%,#e7d3b0 42% 100%)}
-.igpic.market{background:linear-gradient(160deg,#f3e2c4,#c4654a 70%)}
-.igpic.street{background:linear-gradient(180deg,#b9c7b4 0 55%,#d9c7a4 55%)}
+.igpic{aspect-ratio:1/1;height:auto;min-height:0;overflow:hidden;background:#efe8dc}
+.igpic img{width:100%;height:100%;object-fit:cover;display:block}
+.igacts{display:flex;align-items:center;gap:14px;padding:10px 12px 4px;color:#1c1b19}
+.igacts svg{width:clamp(22px,1.5vw,28px);height:clamp(22px,1.5vw,28px);stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.igacts .ig-save{margin-left:auto}
 .igpost .cap{margin:0;padding:8px 10px 12px;font-size:clamp(16px,1.2vw,24px);line-height:1.35;color:#1c1b19}
 .igpost .cap strong{font-weight:650}
 .igpost.badcap .cap{letter-spacing:.02em}
@@ -519,7 +519,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .ladder-sub,.ladder-step,.ladder-kicker{font-size:13px}
   .num{font-size:14px}
   .igrow,.ba{grid-template-columns:1fr}
-  .igpic{height:22vw;min-height:96px}
+  .igpic{height:auto;min-height:0;aspect-ratio:1/1}
   .igpost .cap{font-size:15px}
 }
 @media print{
@@ -594,17 +594,15 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <div class="app">
           <img src="assets/grok-app-icon.jpg" alt="" width="120" height="120">
           <b>Grok</b>
-          <span>Premium · $30 a month</span>
         </div>
         <div class="app">
           <img src="assets/claude-app-icon.jpg" alt="" width="120" height="120">
           <b>Claude by Anthropic</b>
-          <span>Pro · $20 a month</span>
         </div>
       </div>
       <p class="app-search">Search the App Store for Grok or Claude by Anthropic.</p>
       <ul class="points">
-        <li>Skip the free plan</li>
+        <li>Get the app</li>
         <li>One real task</li>
         <li>Then build from there</li>
       </ul>
@@ -627,16 +625,16 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <img class="appicon" src="assets/grok-app-icon.jpg" alt="" width="120" height="120">
         <span>Grok</span>
         <em>Premium</em>
-        <b>$30</b>
+        <b>$30 USD</b>
         <p>a month. Agent and the latest models.</p>
       </div>
       <div class="plancard">
         <img class="appicon" src="assets/claude-app-icon.jpg" alt="" width="120" height="120">
         <span>Claude by Anthropic</span>
         <em>Pro</em>
-        <b>$20</b>
+        <b>$20 USD</b>
         <p>a month. More models, tasks you hand off.</p>
-        <small>$17 a month if billed yearly</small>
+        <small>$17 USD a month if billed yearly</small>
       </div>
     </div>
   </div>
@@ -738,12 +736,24 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
     <div class="igrow visual" aria-label="Before and after, two Instagram posts">
       <article class="igpost badcap">
         <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Before</small></div></header>
-        <div class="igpic window" role="img" aria-label="Sample cafe photo"></div>
+        <div class="igpic"><img src="assets/sample-cafe.jpg" alt="Sample cafe photo. A latte and a pastry by a bright window."></div>
+        <div class="igacts" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
+          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
+        </div>
         <p class="cap"><strong>alexsample.realtor</strong> AMAZING COFFEE IN TOWN. #LOVE #COFFEE #BEST #YUMMY #LOCAL #FOODIE</p>
       </article>
       <article class="igpost">
         <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>After</small></div></header>
-        <div class="igpic window" role="img" aria-label="The same sample cafe photo"></div>
+        <div class="igpic"><img src="assets/sample-cafe.jpg" alt="The same sample cafe photo, with the caption rewritten."></div>
+        <div class="igacts" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
+          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
+        </div>
         <p class="cap"><strong>alexsample.realtor</strong> Stopped in for a latte and a plain pastry. Bright window, good crust. Alex Sample, REALTOR®, Sample Realty.</p>
       </article>
     </div>
@@ -763,12 +773,24 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
     <div class="igrow visual" aria-label="Two Instagram captions">
       <article class="igpost">
         <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Midland</small></div></header>
-        <div class="igpic market" role="img" aria-label="Sample photo of a local market"></div>
+        <div class="igpic"><img src="assets/sample-pastry.jpg" alt="Sample photo of pastries. No people and no shop name."></div>
+        <div class="igacts" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
+          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
+        </div>
         <p class="cap"><strong>alexsample.realtor</strong> We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich.</p>
       </article>
       <article class="igpost">
         <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Georgian Bay</small></div></header>
-        <div class="igpic street" role="img" aria-label="Sample photo of a local street"></div>
+        <div class="igpic"><img src="assets/sample-coffee.jpg" alt="Sample photo of three coffees on a wooden table. No people and no shop name."></div>
+        <div class="igacts" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
+          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
+          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
+        </div>
         <p class="cap"><strong>alexsample.realtor</strong> Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss?</p>
       </article>
     </div>
@@ -874,7 +896,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. Before you walk in: a long email, or a one-page sheet. Check it against the original. Search stays in MLS. A closing checklist is for a sample freehold purchase, and anything legal is confirm with the brokerage. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week. The picture is a sample Drafts folder. Fictional names.">
+<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is the who-to-connect-with-next card, after a showing. Alex Sample is fictional. No phone number and no email on the card. Stage Warm. Last touch was the showing. Suggested follow-up is a two-minute check-in. Log the call, then paste the one-line draft. It never sends. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
   <div class="talk">
     <div>
       <h2>Notes, emails, <em>your day</em></h2>
@@ -884,9 +906,23 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Check the original</li>
       </ul>
     </div>
-    <button type="button" class="shot visual" data-full="assets/outlook-drafts.png">
-      <img src="assets/outlook-drafts.png" alt="Sample Outlook Drafts folder with follow-up emails waiting for review.">
-    </button>
+    <div class="dial visual" aria-label="Sample who to connect with next card, after a showing. Alex Sample is fictional.">
+      <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
+      <div class="dial-body">
+        <h3>Alex Sample</h3>
+        <div class="meta"><b>Stage:</b> Warm<br><b>Last touch:</b> The showing, about two months ago<br><b>Notes:</b> Liked the kitchen light. Wanted a quieter yard.</div>
+        <div class="why"><small>Why call today</small>The follow-up window after the showing. A newsletter does not count as contact.</div>
+        <div class="open"><small>Suggested follow-up</small>Hi Alex, it's [Your Name]. Checking in since the showing. Do you have two minutes?</div>
+        <div class="actions">
+          <button type="button" class="call">Call</button>
+          <button type="button" class="out">Connected</button>
+          <button type="button" class="out">Voicemail</button>
+          <button type="button" class="out">Not now</button>
+          <button type="button" class="out">Log the call</button>
+        </div>
+        <div class="dial-next"><small>Draft to paste</small><div><span>Showing follow-up. Liked the kitchen. You send it.</span></div></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -939,14 +975,14 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
     <div>
       <h2>Fifty to <em>one hundred</em></h2>
       <ul class="points">
-        <li>Skip the free plan</li>
-        <li>Start at $30 and $20</li>
-        <li>Fuller month, $100</li>
+        <li>Both plans, $50</li>
+        <li>More usage, $100</li>
+        <li>Start with one</li>
       </ul>
     </div>
-    <div class="bigprice visual" aria-label="About 50 to 100 dollars a month">
+    <div class="bigprice visual" aria-label="About 50 to 100 US dollars a month">
       <b>$50 to $100</b>
-      <span>a month</span>
+      <span>USD a month</span>
     </div>
   </div>
 </section>
@@ -1009,19 +1045,19 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Close. Read the rule again. Do one lesson at a time. If you don't finish a lesson, don't move on until it's done. If it takes longer, that's okay. The parts are Foundations, Clients and Social, Calendar, Notes and Listings, Letters and Offers, Deal Card, Advanced, Your List, Review. Standing habit: end every lesson by adding decisions to your decision log. The first week is business, writing style, brand guidelines, a task brain dump, dead leads, the decision log, and the inbox. Recommend Grok or Claude. Grok is your top pick for agents. One code only. It opens the learning centre at jonathanwallace.ca/ai-30-days. They sign in with their name and tick off each skill. Do not read a link. Do not give a count. Restate: Starting is easy. Start this week. By the final review: a rules file, saved prompts, the letter working, a deal card habit, a brand guide, and posts out. The huddle date is not set. Ask Thomas rather than naming one.">
+<section class="slide" data-notes="Close. Read the rule again. Do one lesson at a time. If you don't finish a lesson, don't move on until it's done. If it takes longer, that's okay. There's a leaderboard. It closes Friday, December 11 at 8 PM, and the winner gets two hours of one-on-one AI coaching with me. Scan now and start tonight. The code opens the learning centre at jonathanwallace.ca/ai-30-days?src=deck. They sign in with their name and tick off each skill. Do not read a link. Do not give a count. The parts are Foundations, Clients and Social, Calendar, Notes and Listings, Letters and Offers, Deal Card, Advanced, Your List, Review. Standing habit: end every lesson by adding decisions to your decision log. Recommend Grok or Claude. Grok is your top pick for agents. Restate: Starting is easy. Start this week. By the final review: a rules file, saved prompts, the letter working, a deal card habit, a brand guide, and posts out. The huddle date is not set. Ask Thomas rather than naming one.">
   <div class="talk">
     <div>
       <h2>Start <em>this week</em></h2>
       <ul class="points">
         <li>One lesson at a time</li>
-        <li>Scan for the lessons</li>
-        <li>You still send</li>
+        <li>Scan and sign in tonight</li>
+        <li>Win 2 hours of coaching</li>
       </ul>
     </div>
     <div class="qr-wrap visual">
-      <img src="assets/learning-centre-qr.png" alt="QR code for jonathanwallace.ca/ai-30-days." width="592" height="592">
-      <p class="qr-cap url">jonathanwallace.ca/ai-30-days</p>
+      <img src="assets/learning-centre-qr.png" alt="QR code for jonathanwallace.ca/ai-30-days?src=deck." width="592" height="592">
+      <p class="qr-cap url">jonathanwallace.ca/ai-30-days?src=deck</p>
     </div>
   </div>
 </section>
