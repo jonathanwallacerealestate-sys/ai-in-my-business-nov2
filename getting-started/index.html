@@ -334,6 +334,13 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .talk .qr-wrap img{width:min(460px,56vh)}
 .talk .qr-cap{font-family:"Playfair Display",serif;font-size:clamp(22px,1.8vw,32px);margin-top:1.2vh;max-width:16ch;color:#1c1b19}
 .talk .qr-cap.url{max-width:none;white-space:nowrap;font-size:clamp(18px,1.5vw,30px)}
+.textcard{background:#fff;color:var(--ink);border-radius:4px;padding:clamp(14px,1.6vh,22px) clamp(16px,1.3vw,26px)}
+.textcard p{margin:0 0 .4em;font-size:clamp(20px,1.3vw,26px);line-height:1.28}
+.textcard p:last-child{margin:0}
+.outreach{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw 1.6vw;width:100%;min-width:0}
+.outreach h3{font-family:Inter,system-ui,sans-serif;font-weight:650;font-size:clamp(20px,1.4vw,28px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 .6vh}
+.outreach ol{margin:0;padding-left:1.2em;display:grid;gap:.8vh}
+.outreach li{font-size:clamp(18px,1.2vw,24px);line-height:1.28}
 .reelphone{background:#141311;border-radius:28px;padding:8px;width:min(300px,24vw);margin:0 auto;box-shadow:0 16px 40px rgba(40,32,20,.18)}
 .reelphone img{display:block;width:100%;height:auto;max-height:62vh;object-fit:cover;object-position:center;border-radius:22px;aspect-ratio:9/16}
 .reelcard b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(28px,2.6vw,46px);line-height:1.12}
@@ -450,7 +457,23 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .igshots.solo .igpic{aspect-ratio:1350/1688;max-height:50vh}
 .igviews{margin:0;padding:2px 10px 0;font-size:clamp(22px,1.55vw,30px);font-weight:700;line-height:1.1;color:#1c1b19;letter-spacing:-.01em}
 .igshots .igpost header strong,.igshots .igpost .cap,.igshots .iglikes{font-size:clamp(16px,1.15vw,22px);line-height:1.25}
-.igshots .igpost header strong{overflow-wrap:anywhere}
+.igfeed{background:#fff;color:#262626;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;border:1px solid #efefef;width:min(420px,48%);flex:1 1 280px;max-width:440px;min-width:0}
+.igshots.solo .igfeed{flex:0 1 400px;width:min(400px,46%)}
+.igfeed header{display:flex;align-items:center;gap:10px;padding:8px 12px}
+.igfeed .av{width:34px;height:34px;border-radius:50%;padding:2px;background:conic-gradient(from 210deg,#f9ce34,#ee2a7b,#6228d7);flex:none}
+.igfeed .av b{display:block;width:100%;height:100%;border-radius:50%;background:#efefef}
+.igfeed header strong{font-weight:650;font-size:clamp(15px,1.05vw,20px);line-height:1.1}
+.igfeed .igmenu{margin-left:auto;width:20px;height:20px;flex:none}
+.igfeed>img{width:100%;height:auto;display:block}
+.igfeed .igacts{display:flex;align-items:center;gap:14px;padding:8px 12px 2px}
+.igfeed .igacts svg{width:26px;height:26px;stroke:#262626;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.igfeed .ig-save{margin-left:auto}
+.igfeed .iglikes{margin:0;padding:2px 12px 0;font-weight:700;font-size:clamp(16px,1.15vw,22px);line-height:1.2}
+.igfeed .igviews{margin:0;padding:1px 12px 0;font-size:clamp(15px,1.05vw,20px);line-height:1.2;color:#262626}
+.igfeed .cap{margin:0;padding:6px 12px 0;font-size:clamp(15px,1.05vw,20px);line-height:1.3}
+.igfeed .cap strong{font-weight:700}
+.igfeed .more{color:#737373}
+.igfeed .igdate{margin:0;padding:8px 12px 12px;color:#737373;font-size:clamp(12px,.85vw,15px);letter-spacing:.06em;text-transform:uppercase}
 .reelcard.igreel{position:relative}
 .reelcard .igreel-top,.reelcard .igreel-bot{font-family:"Segoe UI","Noto Sans",sans-serif;font-size:clamp(16px,1.2vw,24px);letter-spacing:.04em}
 .reelcard .igreel-bot{display:flex;align-items:center;gap:8px}
@@ -512,6 +535,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .talk .pair{grid-template-columns:1fr}
   .talk .reelcard,.reelcard,.talk .tele{min-height:0}
   .slide.boot .path.names{grid-template-columns:1fr}
+  .outreach{grid-template-columns:1fr}
   .reelphone{width:min(220px,62vw)}
   .talk .tele p{font-size:18px}
   .talk .sop{padding:16px}
@@ -727,31 +751,23 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
       </ul>
     </div>
     <div class="igshots visual" aria-label="Two Instagram posts. Webers, 3,811 views and 93 likes. Che Roba, 1,843 views and 75 likes.">
-      <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>Webers</small></div></header>
-        <div class="igpic"><img src="assets/ig-webers.jpg" alt="Webers, the roadside stop. Jonathan Wallace's Instagram post."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="igviews">3,811 views</p>
+      <article class="igfeed">
+        <header><span class="av" aria-hidden="true"><b></b></span><strong>jonathanwallacerealestate</strong><svg class="igmenu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="#262626"/><circle cx="12" cy="12" r="1.6" fill="#262626"/><circle cx="19" cy="12" r="1.6" fill="#262626"/></svg></header>
+        <img src="assets/ig-webers.jpg" alt="Webers, the roadside stop. Jonathan Wallace's Instagram post.">
+        <div class="igacts" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg><svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"/></svg><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"/></svg><svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/></svg></div>
         <p class="iglikes">93 likes</p>
-        <p class="cap">Almost forty years since my parents were driving me down from North Bay to see my grandparents, and Webers was always the halfway point… Some places don't change because they don't need to.</p>
+        <p class="igviews">3,811 views</p>
+        <p class="cap"><strong>jonathanwallacerealestate</strong> Almost forty years since my parents were driving me down from North Bay <span class="more">... more</span></p>
+        <p class="igdate">November 2026</p>
       </article>
-      <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>Che Roba</small></div></header>
-        <div class="igpic"><img src="assets/ig-cheroba.jpg" alt="Che Roba Focaccia Bar. Jonathan Wallace's Instagram post."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="igviews">1,843 views</p>
+      <article class="igfeed">
+        <header><span class="av" aria-hidden="true"><b></b></span><strong>jonathanwallacerealestate</strong><svg class="igmenu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="#262626"/><circle cx="12" cy="12" r="1.6" fill="#262626"/><circle cx="19" cy="12" r="1.6" fill="#262626"/></svg></header>
+        <img src="assets/ig-cheroba.jpg" alt="Che Roba Focaccia Bar. Jonathan Wallace's Instagram post.">
+        <div class="igacts" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg><svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"/></svg><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"/></svg><svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/></svg></div>
         <p class="iglikes">75 likes</p>
-        <p class="cap">Tucked along River Road West in Wasaga Beach is a little taste of Italy you need to know about… Who is coming with me?</p>
+        <p class="igviews">1,843 views</p>
+        <p class="cap"><strong>jonathanwallacerealestate</strong> Tucked along River Road West in Wasaga Beach is a little taste of Italy <span class="more">... more</span></p>
+        <p class="igdate">November 2026</p>
       </article>
     </div>
   </div>
@@ -840,18 +856,14 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
       </ul>
     </div>
     <div class="igshots solo visual" aria-label="Instagram post. The boat. 1,292 views and 40 likes.">
-      <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>The boat</small></div></header>
-        <div class="igpic"><img src="assets/ig-boat.jpg" alt="A boat at the dock. Jonathan Wallace's Instagram post."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="igviews">1,292 views</p>
+      <article class="igfeed">
+        <header><span class="av" aria-hidden="true"><b></b></span><strong>jonathanwallacerealestate</strong><svg class="igmenu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="#262626"/><circle cx="12" cy="12" r="1.6" fill="#262626"/><circle cx="19" cy="12" r="1.6" fill="#262626"/></svg></header>
+        <img src="assets/ig-boat.jpg" alt="A boat at the dock. Jonathan Wallace's Instagram post.">
+        <div class="igacts" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg><svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"/></svg><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"/></svg><svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/></svg></div>
         <p class="iglikes">40 likes</p>
-        <p class="cap">The house gets you to the dock. The boat decides whether you ever use it. … Thanks for the honesty, Caleb.</p>
+        <p class="igviews">1,292 views</p>
+        <p class="cap"><strong>jonathanwallacerealestate</strong> The house gets you to the dock. The boat decides whether you ever use it. <span class="more">... more</span></p>
+        <p class="igdate">November 2026</p>
       </article>
     </div>
   </div>
@@ -881,7 +893,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is the who-to-connect-with-next card, after a showing. Alex Sample is fictional. The phone is a 555 number. The email is example.com. Stage Warm. Last contact was the showing. Suggested opening is a two-minute check-in. Outcomes are Voicemail, Connected, Skip, or Defer. Then paste the one-line draft. It never sends. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
+<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is a generic card. No name, no phone, no email, no address. Stage Hot. Nobody has called yet. The angle is a check-in on their plans and an updated market value. It never sends. The next slide has texts and emails to copy. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
   <div class="talk">
     <div>
       <h2>Notes, emails, <em>your day</em></h2>
@@ -891,21 +903,37 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Check the original</li>
       </ul>
     </div>
-    <div class="dial visual" aria-label="Who to connect with next. Alex Sample is fictional.">
-      <div class="dial-bar"><span>Who to connect with next</span></div>
-      <div class="dial-body">
-        <div class="row"><small>Name</small><b>Alex Sample</b></div>
-        <div class="row"><small>Phone</small><a href="tel:+15550100142">(555) 010-0142</a></div>
-        <div class="row"><small>Email</small><span>alex.sample@example.com</span></div>
-        <div class="row"><small>Stage</small><span>Warm</span></div>
-        <div class="row"><small>Last contact</small><span>The showing, about two months ago</span></div>
-        <div class="row"><small>Why now</small><span>The follow-up window after the showing. A newsletter does not count.</span></div>
-        <div class="row"><small>Suggested opening line</small><span>Hi Alex, it's [Your Name]. Checking in since the showing. Do you have two minutes?</span></div>
-        <div class="actions">
-          <span class="out">Voicemail</span>
-          <span class="out">Connected</span>
-          <span class="out">Skip</span>
-          <span class="out">Defer</span>
+    <div class="textcard visual" aria-label="Generic call card. No named lead.">
+      <p><b>Your lead</b> (CRM record)</p>
+      <p>Call or text, email on file</p>
+      <p><b>Stage:</b> Hot. A likely seller who came in through the team.</p>
+      <p><b>Last contact:</b> Nobody has called yet. Only a template email and your newsletter.</p>
+      <p><b>Why now:</b> Seller tags on the file, never reached, and no listing or sale on the property since last year.</p>
+      <p><b>Angle:</b> Check in on their plans for the house, and offer an updated market value.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Copy and paste. Two texts and two emails, plus one seasonal pair. Brackets are theirs to fill: name and your name. They edit, then they send. No real client on this slide. First text offers an updated value. Second asks about 2026 or 2027. Third is the seasonal spring-move note. Email subjects: An updated value for your home. Still thinking about 2026? Getting ready for a spring move. Do not read every word unless you have time. It never sends.">
+  <div class="talk" style="grid-template-columns:1fr;align-items:start">
+    <div>
+      <h2>Copy and <em>paste</em></h2>
+      <div class="outreach">
+        <div>
+          <h3>Text</h3>
+          <ol>
+            <li>Hi [Name], [Your name] here. Prices on your street have shifted this year. Want me to send you an updated value for your home? No pressure either way.</li>
+            <li>Hi [Name], quick one from [Your name]. Are you still planning anything with the house in 2026 or 2027? Happy to help whenever the timing is right.</li>
+            <li>Hi [Name], [Your name] here. Before the holidays get busy, are you thinking about a spring move? Winter is a great time to get ready, and I'm happy to send what's selling near you.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <ol>
+            <li><b>Subject: An updated value for your home</b> Hi [Name], a lot has changed in the market since you first reached out. I can put together an updated value for your home at no cost. Just reply and I'll get started. [Your name]</li>
+            <li><b>Subject: Still thinking about 2026?</b> Hi [Name], are you still planning anything with the house in the next year or two? Even if it's early, I can share what's selling nearby so you can plan. [Your name]</li>
+            <li><b>Subject: Getting ready for a spring move</b> Hi [Name], spring is the busiest time to sell, and the sellers who do best start planning over the winter. If the house is on your mind for 2026, I can send an updated value and a simple prep list. Enjoy the season, [Your name]</li>
+          </ol>
         </div>
       </div>
     </div>
