@@ -435,6 +435,15 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .igpost .cap{margin:0;padding:8px 10px 12px;font-size:clamp(16px,1.2vw,24px);line-height:1.35;color:#1c1b19}
 .igpost .cap strong{font-weight:650}
 .igpost.badcap .cap{letter-spacing:.02em}
+.igshots{display:flex;justify-content:center;align-items:stretch;gap:14px;min-width:0}
+.igshots .igpost{flex:1 1 260px;width:min(380px,46%);max-width:400px}
+.igshots .igpic{aspect-ratio:3/4;max-height:40vh;height:auto}
+.igshots .igpic img{width:100%;height:100%;object-fit:cover;object-position:center}
+.igshots.solo .igpost{flex:0 1 460px;width:min(460px,70%);max-width:460px}
+.igshots.solo .igpic{aspect-ratio:1350/1688;max-height:50vh}
+.iglikes{margin:0;padding:0 10px 4px;font-size:clamp(18px,1.2vw,24px);font-weight:650;line-height:1.2;color:#1c1b19}
+.igshots .igpost header strong,.igshots .igpost .cap,.igshots .iglikes{font-size:clamp(16px,1.15vw,22px);line-height:1.25}
+.igshots .igpost header strong{overflow-wrap:anywhere}
 .reelcard.igreel{position:relative}
 .reelcard .igreel-top,.reelcard .igreel-bot{font-family:"Segoe UI","Noto Sans",sans-serif;font-size:clamp(16px,1.2vw,24px);letter-spacing:.04em}
 .reelcard .igreel-bot{display:flex;align-items:center;gap:8px}
@@ -517,6 +526,10 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .num{font-size:14px}
   .igrow,.ba{grid-template-columns:1fr}
   .igpic{height:auto;min-height:0;aspect-ratio:1/1}
+  .igshots{flex-direction:column;align-items:center}
+  .igshots .igpost,.igshots.solo .igpost{width:min(100%,320px);max-width:100%;flex:none}
+  .igshots .igpic{max-height:38vh}
+  .igshots.solo .igpic{max-height:42vh}
   .igpost .cap{font-size:15px}
 }
 @media print{
@@ -694,7 +707,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Steps after they share taste. Upload photos, headshots, and listing photos to one Drive folder with subfolders Headshots, Listing Photos, Local Spots, and Logo. Tip: only share that one folder, not the whole Drive. Edit the guide until it sounds like them and save one file. Attach it and say follow my brand guide. When it wanders, fix the guide, not only the post. The before and after uses a sample cafe photo. Bad caption: amazing coffee in town, too many hashtags. Better: stopped in for a latte and a plain pastry. Bright window, good crust. Alex Sample, REALTOR®, Sample Realty. The prompt is in the learning centre. The QR at the end opens it.">
+<section class="slide" data-notes="Steps after they share taste. Upload photos, headshots, and listing photos to one Drive folder with subfolders Headshots, Listing Photos, Local Spots, and Logo. Tip: only share that one folder, not the whole Drive. Edit the guide until it sounds like them and save one file. Attach it and say follow my brand guide. When it wanders, fix the guide, not only the post. The picture is his boat post. It was a collab with Caleb Deleon of Northern Beaver Marine Services and became a blog post. Handle @jonathanwallacerealestate. 40 likes. The next slide is Webers and Che Roba, two of his most-liked local posts. The prompt is in the learning centre. The QR at the end opens it.">
   <div class="talk">
     <div>
       <h2>One photo <em>folder</em></h2>
@@ -704,34 +717,24 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Your voice</li>
       </ul>
     </div>
-    <div class="igrow visual" aria-label="Before and after, two Instagram posts">
-      <article class="igpost badcap">
-        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Before</small></div></header>
-        <div class="igpic"><img src="assets/sample-cafe.jpg" alt="Sample cafe photo. A latte and a pastry by a bright window."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="cap"><strong>alexsample.realtor</strong> AMAZING COFFEE IN TOWN. #LOVE #COFFEE #BEST #YUMMY #LOCAL #FOODIE</p>
-      </article>
+    <div class="igshots solo visual" aria-label="Instagram post. The boat. 40 likes.">
       <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>After</small></div></header>
-        <div class="igpic"><img src="assets/sample-cafe.jpg" alt="The same sample cafe photo, with the caption rewritten."></div>
+        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>The boat</small></div></header>
+        <div class="igpic"><img src="assets/ig-boat.jpg" alt="A boat at the dock. Jonathan Wallace's Instagram post."></div>
         <div class="igacts" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
           <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
           <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
           <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
         </div>
-        <p class="cap"><strong>alexsample.realtor</strong> Stopped in for a latte and a plain pastry. Bright window, good crust. Alex Sample, REALTOR®, Sample Realty.</p>
+        <p class="iglikes">40 likes</p>
+        <p class="cap">The house gets you to the dock. The boat decides whether you ever use it. … Thanks for the honesty, Caleb.</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="slide" data-notes="Social captions, after the guide. Two example local food posts. Photos are examples until their own pictures are in the folder. Steps: photo of their spot, the brand guide or two or three posts they like, a new caption in that style, original wording, never copied, max 5 hashtags, then they review and post. They may park a draft in a tool like Buffer, then review and post. Line: AI drafts, you post. No web addresses. No engagement numbers. Left phone: We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich. Right phone: Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss? The prompt is in the learning centre. The QR at the end opens it.">
+<section class="slide" data-notes="Social captions, after the guide. These are his two most-liked local posts. Webers, 93 likes. Che Roba Focaccia Bar in Wasaga Beach, 75 likes. Handle @jonathanwallacerealestate. Steps: photo of their spot, the brand guide or two or three posts they like, a new caption in that style, original wording, never copied, max 5 hashtags, then they review and post. They may park a draft in a tool like Buffer, then review and post. Line: AI drafts, you post. No web addresses. The prompt is in the learning centre. The QR at the end opens it.">
   <div class="talk">
     <div>
       <h2>Caption in <em>your style</em></h2>
@@ -741,28 +744,30 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>You post it</li>
       </ul>
     </div>
-    <div class="igrow visual" aria-label="Two Instagram captions">
+    <div class="igshots visual" aria-label="Two Instagram posts. Webers, 93 likes. Che Roba, 75 likes.">
       <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Midland</small></div></header>
-        <div class="igpic"><img src="assets/sample-pastry.jpg" alt="Sample photo of pastries. No people and no shop name."></div>
+        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>Webers</small></div></header>
+        <div class="igpic"><img src="assets/ig-webers.jpg" alt="Webers, the roadside stop. Jonathan Wallace's Instagram post."></div>
         <div class="igacts" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
           <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
           <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
           <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
         </div>
-        <p class="cap"><strong>alexsample.realtor</strong> We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich.</p>
+        <p class="iglikes">93 likes</p>
+        <p class="cap">Almost forty years since my parents were driving me down from North Bay to see my grandparents, and Webers was always the halfway point… Some places don't change because they don't need to.</p>
       </article>
       <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Georgian Bay</small></div></header>
-        <div class="igpic"><img src="assets/sample-coffee.jpg" alt="Sample photo of three coffees on a wooden table. No people and no shop name."></div>
+        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>Che Roba</small></div></header>
+        <div class="igpic"><img src="assets/ig-cheroba.jpg" alt="Che Roba Focaccia Bar. Jonathan Wallace's Instagram post."></div>
         <div class="igacts" aria-hidden="true">
           <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
           <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
           <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
           <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
         </div>
-        <p class="cap"><strong>alexsample.realtor</strong> Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss?</p>
+        <p class="iglikes">75 likes</p>
+        <p class="cap">Tucked along River Road West in Wasaga Beach is a little taste of Italy you need to know about… Who is coming with me?</p>
       </article>
     </div>
   </div>
