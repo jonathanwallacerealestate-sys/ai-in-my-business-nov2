@@ -21,7 +21,7 @@ How to use this file: paste it into the one assistant you chose, then ask it to 
 
 ## 1. How to start
 
-Use Grok or Claude, and open it every day. Grok is the top pick for agents.
+Use Grok or Claude, and open it every day. Grok is the top pick for agents, because your computer at home doesn't have to be on. Grok's agent starts on Premium, $30 US a month. Claude's computer use starts on Pro, $20 US a month.
 
 Three moves, from the beginner level:
 
@@ -171,7 +171,7 @@ A sample answer, not yours: paperwork follow-up, CMA prep, writing listing descr
 
 You can start for $0. Every tool below has a free tier that is enough to learn the habit.
 
-Jonathan's takeaway for the team: for about $50 to $100 a month you will have all the tools you need. That is a budget for the tools, not a quote for one specific plan, and it is not anyone's personal bill.
+Jonathan's takeaway for the team: for about $50 to $100 US a month you will have the fuller set. Grok Premium at $30 US plus Claude Pro at $20 US is $50 US. Grok Super or Claude Max is $100 US. Chat can start free. The agent with a computer cannot. That is a budget, not a quote for one specific plan, and it is not anyone's personal bill.
 
 Published prices as of Nov 9, 2026, before tax. Prices change. A promo price is marked. Where the page did not name a currency, the table says so.
 
@@ -235,7 +235,7 @@ These amounts were shown to a Canadian browser session with no currency label. T
 
 Weeks 1 and 2: stay on a free tier.
 
-Week 3: if you are using it every day and hitting limits, pay for one plan. Everyday individual plans published on Nov 9, 2026 include ChatGPT Plus at CA$25, Google AI Pro at CA$26.99, Claude Pro at $28 with the currency caveat above, and Grok Premium at CA$41.99. Microsoft 365 Personal with Copilot is CAD $11.50 if you also want the Office apps.
+Week 3: if you are using it every day and hitting limits, pay for one agent plan. Grok Premium is $30 US a month. Claude Pro is $20 US a month, or $17 US if billed yearly. Prices checked Nov 9, 2026, in US dollars.
 
 Review the choice after 30 days.
 
@@ -295,7 +295,7 @@ Foundations · 15 to 20 min
 
 It can only help with a business it understands.
 
-1. Pick one AI. My picks are Grok or Claude, and I think Grok is the easiest to use for real estate agents.
+1. Pick one AI. My picks are Grok or Claude, and I think Grok is the easiest to use for real estate agents. Grok's agent starts on Premium, $30 US a month, and runs on its own cloud computer, so your computer at home doesn't have to be on. Claude's computer use starts on Pro, $20 US a month, and needs your Mac or PC awake with the app open. About $50 to $100 US a month still covers the fuller set.
 2. Install it on your phone and your computer.
 3. Explain your business: who you are, your experience, and everything it would need to know to help you. Examples: how many houses you have sold, what areas you like to work in, and the roadblocks and challenges where it could help you manage, fix, solve or add leverage.
 4. Ask it to save what you set up today.

@@ -342,6 +342,13 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .path.eight li{padding:.35vh .9vw}
 .path.eight span,.path.eight b{font-size:clamp(18px,1.7vw,30px)}
 .boot h2{font-size:clamp(26px,2.15vw,40px);line-height:1.08}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;align-items:stretch}
+.plancard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:4vh 1.2vw 3vh;text-align:center;box-shadow:0 16px 40px rgba(120,95,50,.12);display:flex;flex-direction:column;justify-content:center}
+.plancard.pick{background:#1c1b19;color:#f6f1e8}
+.plancard span{display:block;letter-spacing:.16em;text-transform:uppercase;font-size:clamp(13px,1vw,16px);color:var(--gold)}
+.plancard b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(42px,4.2vw,76px);line-height:.95;margin:.15em 0}
+.plancard em{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(20px,1.6vw,28px)}
+.plancard p{margin:.7em 0 0;font-size:clamp(15px,1.2vw,20px);line-height:1.25}
 .path span{color:#8a6840}
 .path b{color:#1c1b19}
 .bigprice b{color:#1c1b19}
@@ -445,7 +452,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Keep this short. If they have used ChatGPT, they are ready. The recommendation is Grok or Claude. Grok is your top pick for agents. Write a few rules: name, area, tone, sign-off. Drafts only. They send. One task tonight: a real email they have been putting off. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the folder. Sample card: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
+<section class="slide" data-notes="Keep this short. If they have used a chatbot, they are ready. The recommendation is Grok or Claude. Grok is your top pick for agents. The next slide is the plan. Do not read prices here. Write a few rules: name, area, tone, sign-off. Drafts only. They send. One task tonight: a real email they have been putting off. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the folder. Sample card: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
   <div class="talk">
     <div>
       <h2>How to <em>start</em></h2>
@@ -458,6 +465,33 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
     <button type="button" class="shot visual" data-full="handout/examples/email.png">
       <img src="handout/examples/email.png" alt="Sample email draft for Alex Sample. Fictional.">
     </button>
+  </div>
+</section>
+
+<section class="slide" data-notes="Why I pick Grok: your computer at home doesn't have to be on. Grok's agent works on its own cloud computer and keeps going when the laptop is closed. Claude is the other one I recommend. Its computer use drives your own Mac or PC, so that computer has to be awake with the Claude app open. Prices checked Nov 9, 2026, in US dollars, before tax. Grok Bot, the agent with its own computer, starts on Premium at $30 US a month. Super is $100 US and Ultra is $200 US. Those add more weekly usage. Plus and Free do not include it. Legacy names, only if someone asks: SuperGrok at $30 US, SuperGrok Plus at $100 US, and Heavy include it. SuperGrok Lite does not. Claude computer use starts on Pro at $20 US a month, or $17 US if billed yearly. Max at $100 US and Ultra at $200 US include it too. Free, Team, and Enterprise do not. About $50 to $100 US a month still covers the fuller set: Grok Premium plus Claude Pro is $50 US, and Grok Super or Claude Max is $100 US. Chat itself can start free. The agent with a computer cannot. Do not quote a personal bill. Do not bring up other chat tools.">
+  <div class="talk">
+    <div>
+      <h2>Which plan <em>do I need?</em></h2>
+      <ul class="points">
+        <li>Why I pick Grok</li>
+        <li>Your computer at home doesn't have to be on.</li>
+        <li>Grok from $30 US</li>
+      </ul>
+    </div>
+    <div class="plans visual" aria-label="Grok Premium at 30 US dollars, Claude Pro at 20 US dollars">
+      <div class="plancard pick">
+        <span>Grok</span>
+        <b>$30 US</b>
+        <em>Premium</em>
+        <p>Own cloud computer</p>
+      </div>
+      <div class="plancard">
+        <span>Claude</span>
+        <b>$20 US</b>
+        <em>Pro</em>
+        <p>Your computer, awake</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -774,19 +808,19 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Published prices only. Do not mention your own spend, and do not mention a one thousand dollar figure. Read the takeaway: for about 50 to 100 dollars a month you will have all the tools you need. Free is enough for week one. Time math, if asked: 20 minutes times 20 days is about 7 hours. At a sample 50 dollars an hour, about 350 dollars of time, beside one everyday plan of about 25 to 42 dollars. That math is an example, not a measured result. Prices are before tax, as of November 9, 2026. The full table is in the playbook. Grok: Plus CA$9.99, Premium CA$41.99, Super CA$139.99, Ultra CA$279.99, Teams from US$30 a user. ChatGPT: Go CA$11, Plus CA$25, Pro from CA$136, Business CA$34 a seat. Claude: Pro $28, Max $140, Ultra $280, Team $35 a seat, and the page showed no currency label. Gemini: AI Plus CA$6.99, AI Pro CA$26.99, AI Ultra from CA$139.99, Business from US$21 a seat. Copilot: 365 Personal CAD $11.50, 365 Premium CAD $27, Copilot Business CAD $34.20 a user. Promos and annual prices are in the playbook.">
+<section class="slide" data-notes="The big number is the fuller month, in US dollars, before tax, checked Nov 9, 2026. Chat can start free. The agent with a computer cannot. Grok Premium is $30 US. Claude Pro is $20 US. Together that is $50 US. Grok Super or Claude Max is $100 US. So about $50 to $100 US a month still covers the fuller set. Do not quote a personal bill. Do not read a list of other chat tools. If asked, the plan slide has the detail: Grok keeps working when the laptop is closed. Claude needs your computer awake.">
   <div class="talk">
     <div>
       <h2>Fifty to <em>one hundred</em></h2>
       <ul class="points">
-        <li>Start for free</li>
-        <li>One plan later</li>
-        <li>Before tax</li>
+        <li>Chat can be free</li>
+        <li>Agent from $30 US</li>
+        <li>Fuller set, $100 US</li>
       </ul>
     </div>
-    <div class="bigprice visual" aria-label="About 50 to 100 dollars a month">
+    <div class="bigprice visual" aria-label="About 50 to 100 US dollars a month">
       <b>$50 to $100</b>
-      <span>A month · before tax</span>
+      <span>US a month</span>
     </div>
   </div>
 </section>
@@ -866,7 +900,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Which tool: Grok or Claude. Grok is your top pick for agents. Pay: not to start. About 50 to 100 dollars a month when they need the tools. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting accounts is Step 2, not today. Plaud is optional and advanced. The free path is a voice memo. Ads and a full nurture campaign are a later session. The one-page guide is the starter. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. Do not discuss personal spend. Standing habit: end every lesson by adding decisions to your decision log. If you only remember one line: Starting is easy. Start this week.">
+<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Which tool: Grok or Claude. Grok is your top pick for agents, because your computer at home doesn't have to be on. Pay: chat can start free. The agent starts at $30 US for Grok Premium, or $20 US for Claude Pro. About $50 to $100 US a month covers the fuller set. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting accounts is Step 2, not today. Plaud is optional and advanced. The free path is a voice memo. Ads and a full nurture campaign are a later session. The one-page guide is the starter. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. Do not discuss personal spend. Standing habit: end every lesson by adding decisions to your decision log. If you only remember one line: Starting is easy. Start this week.">
   <div class="talk">
     <div>
       <h2><em>Questions</em></h2>
