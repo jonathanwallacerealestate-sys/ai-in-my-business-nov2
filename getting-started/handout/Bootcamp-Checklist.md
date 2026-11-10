@@ -20,7 +20,7 @@ Foundations · 15 to 20 min
 
 It can only help with a business it understands.
 
-1. Pick one AI. My picks are Grok or Claude, and I think Grok is the easiest to use for real estate agents.
+1. Pick one AI. My picks are Grok or Claude, and I think Grok is the easiest to use for real estate agents. Grok's agent starts on Premium, $30 US a month, and runs on its own cloud computer, so your computer at home doesn't have to be on. Claude's computer use starts on Pro, $20 US a month, and needs your Mac or PC awake with the app open. About $50 to $100 US a month still covers the fuller set.
 2. Install it on your phone and your computer.
 3. Explain your business: who you are, your experience, and everything it would need to know to help you. Examples: how many houses you have sold, what areas you like to work in, and the roadblocks and challenges where it could help you manage, fix, solve or add leverage.
 4. Ask it to save what you set up today.
