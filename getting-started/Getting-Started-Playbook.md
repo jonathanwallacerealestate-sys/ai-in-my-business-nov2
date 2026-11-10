@@ -275,40 +275,42 @@ Connecting accounts, saving a standing process, and adding more assistants are l
 
 Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay.
 
-One focus a day. About 30 minutes. Each day builds on the last. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
+One focus a day. Each day builds on the last. Days 1 to 9 are about 15 to 20 minutes. Days 10 to 20 are about 30 minutes. Days 21 to 30 are about 30 to 45 minutes. Days 7, 16, and 24 are good spots to catch up. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
 
-1. Pick one AI. Install it on your phone and computer. Use it on one real email.
-2. Brainstorm with it: three tasks you hate that it could help with in the next 30 days.
-3. Write your about-me note: market, brokerage, who you serve, sign-off, contact details.
-4. Write your house rules: tone, spelling, short paragraphs, what it never does.
-5. Set your approval line: what it can do alone, what always needs your eyes. Client-facing always gets your review.
-6. Talk instead of type: do one full task by voice.
-7. Save three reusable prompts: email reply, text reply, appointment summary.
-8. Save examples of good: one or two finished pieces you loved for each repeat task.
-9. Text templates: showing follow-up, offer update, check-in.
-10. Inbox cleanup: your 5 oldest unanswered emails, drafted for you to review and send.
-11. Voice memo recap: after an appointment, turn a voice memo into a CRM note, tasks and a follow-up email.
-12. At the end of each chat, save SOPs and decisions to your rules file. Read your rules back. Keep doing this after every chat.
-13. Letter of Opinion setup: Word template and signature photo into Drive, load the kit.
-14. Practice the letter on a past deal. Fix what is off.
-15. Real letter on a live request. Time it against your old way.
-16. Deal card setup with the kit. Sign in yourself.
-17. Deal card on 10 leads. Make the calls.
-18. Paste the notes back in. Run the next 10.
-19. Make the deal card a habit: three times a week from here on.
-20. Create one Drive folder for your photos: headshots, listing photos, local spots, logo. Share only that folder.
-21. Share with your AI: 10 social media posts you like the style of, plus fonts, colour palettes, designs and your logo.
-22. Have it draft your one-page brand guide.
-23. Edit the guide until it sounds like you. Save it as one file.
-24. First post: a local food or community spot, using your guide.
-25. Second post.
-26. Third post. Schedule it.
-27. Listing description or meeting prep sheet from your notes.
-28. Turn your most repeated task into a saved kit: a prompt plus the steps.
-29. Clean up your rules file: remove conflicts, one source of truth.
-30. Review the month: what saved time, what is next for Step 2.
+Your 30 days also live in an online learning centre where you sign in with your name and tick off each day.
 
-By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide, three posts out, and one saved kit.
+1. Pick one AI and use it on one real email.
+2. Talk instead of type. Tip: save any prompt you reuse.
+3. Brainstorm three tasks you hate.
+4. About-me note: market, brokerage, who you serve, sign-off, contact details.
+5. House rules. The approval line is rule one: it drafts, you approve.
+6. Teach it your writing style. Share emails you have sent, plus authors and articles you like. Dictate a mock client email. Save an email writing SOP. Fix one thing you do not like and update the SOP.
+7. Text templates: showing follow-up, offer update, check-in. Good spot to catch up.
+8. Save your SOPs and decisions at the end of each chat.
+9. Inbox cleanup: your 5 oldest unanswered emails, drafted for you to review and send.
+10. Ask for reviews. Teach it where and how you ask, your review links, and your text and email templates. Send one text and one email to a client from a sale this year.
+11. Share 10 posts you like. Copy each post link and say what you like. Have it make one new version for your business.
+12. Pick your fonts and colours, and share examples of styles you like.
+13. One Drive photo folder: headshots, listing photos, local spots, logo. Share only that folder.
+14. Draft and save your brand guide.
+15. First post.
+16. Second and third posts. Schedule the third. Good spot to catch up.
+17. Book appointments into your calendar by voice, with a leave-by reminder for drive time.
+18. Teach it how you keep notes. Dictate a note and have it log to your CRM, such as Follow Up Boss, and the deal card.
+19. Stay in touch with past clients. Dictate who they are, how you met, the last deal, their kids, and the house. It drafts an email, suggests follow-ups, and stores the details.
+20. Listing descriptions and your top 5. Share your last 20 descriptions. Dictate a sample property. Save the finished top 5 as your template.
+21. Letter of Opinion setup.
+22. Letter of Opinion: practice on a past deal, then a real one, timed.
+23. Read an offer. Teach it the agreement of purchase and sale, mock signbacks, the Confirmation of Acceptance, and what is relevant for a client. Do one mock and email the Coles Notes to yourself.
+24. Deal deadline tracker. From an accepted agreement, add condition dates, the title search date, and closing to your calendar. Good spot to catch up.
+25. Deal card setup. Sign in yourself.
+26. Deal card on 10 leads. Make the calls.
+27. Paste the notes back. Run the next 10. Tip: three times a week.
+28. Prep your listing appointment paperwork. A blank RECO guide and listing agreement, with your standard Schedule A, as editable PDF masters from WEBForms, and your standard terms filled in. Pull owner details from GeoWarehouse and the postal code from Google. Every PDF in one minute.
+29. Book showings in BrokerBay. Your windows, a Google Maps route check, book a mock showing, draft the client note, and how to cancel.
+30. Month review. Clean up your rules file. Pick what is next for Step 2.
+
+By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide, and three posts out.
 
 ### What the team could set up together
 
