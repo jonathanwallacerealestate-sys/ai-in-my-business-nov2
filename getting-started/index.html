@@ -359,6 +359,20 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   .bigprice{padding:5vh 2vw}
   .bigprice b{font-size:clamp(52px,5.4vw,84px)}
 }
+.posts{gap:1.2vh}
+.posts h2{margin:0;font-size:clamp(34px,3.2vw,56px)}
+.ig{display:flex;justify-content:center;align-items:flex-start;gap:clamp(12px,2vw,28px);width:100%;min-width:0}
+.ig figure{width:min(44%,calc((100vh - 300px) * 0.8));max-width:440px;min-width:0;margin:0}
+.ig .shot{width:100%;padding:0;border:0;border-radius:16px;overflow:hidden;box-shadow:0 14px 32px rgba(120,95,50,.16);background:#fff;line-height:0}
+.ig .shot img{width:100%;height:auto;max-height:none;aspect-ratio:4/5;object-fit:contain;object-position:center;background:#f4efe6;display:block}
+.ig figcaption{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(18px,1.5vw,26px);margin-top:8px;color:#1c1b19}
+.postline{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(18px,1.55vw,28px);margin:0}
+@media (max-width:700px){
+  .posts h2{font-size:clamp(28px,7.2vw,40px)}
+  .ig figure{width:min(46%,calc((100vh - 260px) * 0.8))}
+  .ig figcaption{font-size:15px}
+  .postline{font-size:16px}
+}
 @media print{
   html,body{overflow:visible}
   .slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;page-break-after:always}
@@ -605,30 +619,23 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Real published posts. Intro only. Left is the winter market update: listings came off for winter, 149 sales, 8.4 months of inventory, a buyer's market. Right is a personal day, a dad day at Canadian Tire Motorsport Park. The photo of that day is not on this slide. Do not invent details about people. Do not name a tool, a bot, or a brand file. Do not read a web address or a handle. One line: same method every time. Give it examples you like, it learns your style, you approve.">
-  <div class="talk">
-    <div>
-      <h2>Real posts. <em>Your style.</em></h2>
-      <ul class="points">
-        <li>Market update</li>
-        <li>Personal and life</li>
-        <li>You approve</li>
-      </ul>
-    </div>
-    <div class="covers visual">
-      <figure>
-        <button type="button" class="shot" data-full="assets/market-update-winter.jpg">
-          <img src="assets/market-update-winter.jpg" alt="Winter market update cover. 8.4 months of inventory. Buyer's market.">
-        </button>
-      </figure>
-      <figure>
-        <div class="reelcard" style="min-height:52vh;justify-content:center;background:#f4efe6;color:#1c1b19;border:1px solid #e6dcc8">
-          <b>Personal and life</b>
-          <span style="color:#8a7040">Dad day at Canadian Tire Motorsport Park</span>
-        </div>
-      </figure>
-    </div>
+<section class="slide posts" data-notes="Real published posts. Intro only. Left is the winter market update: listings came off for winter, 8.4 months of inventory, a buyer's market. Right is a personal day, a dad day at Canadian Tire Motorsport Park. Do not invent details about the people in the photo. Do not name a tool, a bot, or a brand file. Do not read a web address or a handle. One line: same method every time. Give it examples you like, it learns your style, you approve.">
+  <h2>Real posts. <em>Your style.</em></h2>
+  <div class="ig">
+    <figure>
+      <button type="button" class="shot" data-full="assets/02-market-update-winter.jpg">
+        <img src="assets/02-market-update-winter.jpg" alt="Georgian Bay market update. 8.4 months of inventory. Buyer's market.">
+      </button>
+      <figcaption>Market update</figcaption>
+    </figure>
+    <figure>
+      <button type="button" class="shot" data-full="assets/05-track-day.jpg">
+        <img src="assets/05-track-day.jpg" alt="A dad day at Canadian Tire Motorsport Park.">
+      </button>
+      <figcaption>Personal and life</figcaption>
+    </figure>
   </div>
+  <p class="postline">Same method every time. You approve.</p>
 </section>
 
 <section class="slide" data-notes="Letter of Opinion, setup. In your experience a letter takes about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say: you do not have to recreate this, but this is the power of AI. Four setup steps. Download the Faris Team Word template from the shared folder into your own Drive. Photograph your signature on white paper. Save the photo to Drive. The kit is in the folder at the end. Give your AI the template, the signature, and the kit once. The picture is a sample letter for Alex and Jordan Sample. Click it to enlarge. Do not read a web address. Do not ask anyone to scan until the close.">
