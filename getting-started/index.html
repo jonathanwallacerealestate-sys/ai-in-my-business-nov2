@@ -381,6 +381,57 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .bigprice{padding:5vh 2vw}
   .bigprice b{font-size:clamp(52px,5.4vw,84px)}
 }
+.ol{background:#fff;border:1px solid #e1e1e1;border-radius:12px;box-shadow:0 16px 40px rgba(40,32,20,.12);overflow:hidden;color:#242424;font-family:"Segoe UI","Segoe UI Variable Text","Noto Sans","Liberation Sans",sans-serif;font-size:clamp(13px,1vw,16px);line-height:1.35}
+.ol-top{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#f5f5f5;border-bottom:1px solid #e1e1e1}
+.ol-env{width:18px;height:14px;border:1.5px solid #0F6CBD;border-radius:2px;position:relative;flex:none}
+.ol-env::before{content:"";position:absolute;left:1px;right:1px;top:1px;height:7px;border-left:1.5px solid transparent;border-right:1.5px solid transparent;border-top:7px solid #0F6CBD;opacity:.9}
+.ol-top b{font-weight:600;font-size:15px}
+.ol-top .me{margin-left:auto;width:26px;height:26px;border-radius:50%;background:#0F6CBD;color:#fff;display:grid;place-items:center;font-size:11px;font-weight:600}
+.ol-tools{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid #eee}
+.ol-send{background:#0F6CBD;color:#fff;border:0;border-radius:4px;padding:6px 14px;font:inherit;font-weight:600}
+.ol-ghost{background:#fff;color:#242424;border:1px solid #d1d1d1;border-radius:4px;padding:6px 12px;font:inherit}
+.ol-row{display:grid;grid-template-columns:72px 1fr;gap:8px;align-items:baseline;padding:5px 12px;border-bottom:1px solid #f0f0f0}
+.ol-row span{color:#616161;font-size:.86em}
+.ol-row b{font-weight:600}
+.ol-body{padding:12px 14px 14px}
+.ol-body p{margin:0 0 .9em}
+.ol-body p:last-child{margin:0}
+.ol-format{display:flex;gap:10px;padding:6px 12px;border-top:1px solid #eee;color:#616161;font-size:.8em}
+.fub{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(40,32,20,.12);padding:22px 22px 20px;color:#1c1b19;font-family:"Segoe UI","Noto Sans","Liberation Sans",sans-serif}
+.fub-top{display:flex;align-items:center;gap:8px;font-weight:650;font-size:clamp(16px,1.3vw,20px);margin-bottom:14px}
+.fub-mark{width:22px;height:22px;border-radius:6px;background:#146C43;position:relative;flex:none}
+.fub-mark::after{content:"";position:absolute;left:5px;right:5px;top:6px;height:8px;border:2px solid #fff;border-bottom:0;border-radius:2px 2px 0 0}
+.fub h3{font-family:"Segoe UI","Noto Sans",sans-serif;font-weight:650;font-size:clamp(22px,1.8vw,28px);margin:0 0 12px}
+.fub label{display:block;font-size:12px;letter-spacing:.04em;color:#3d3a34;margin:8px 0 4px;font-weight:600}
+.fub-field{border:1px solid #cfc8b8;border-radius:8px;padding:8px 10px;background:#fff;font-size:clamp(14px,1.05vw,16px)}
+.fub-field.lock{background:#f4f1ea}
+.fub-btn{margin-top:14px;background:#146C43;color:#fff;border-radius:8px;text-align:center;padding:10px 12px;font-weight:650}
+.fub p{margin:12px 0 0;font-size:clamp(14px,1.05vw,16px);line-height:1.35}
+.soc{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.soc-card{background:#fff;border:1px solid #e6e1d6;border-radius:8px;min-height:72px;padding:6px 6px 8px;display:flex;flex-direction:column;justify-content:space-between;font-family:"Segoe UI","Noto Sans",sans-serif}
+.soc-card span{font-size:9px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#1c1b19}
+.soc-card.fb span{color:#0B4FA8}
+.soc-card.li span{color:#084B8A}
+.soc-card em{font-style:normal;font-size:11px;line-height:1.25;color:#242424}
+.igrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
+.igpost{background:#fff;border:1px solid #dbdbdb;border-radius:12px;overflow:hidden;color:#262626;font-family:"Segoe UI","Noto Sans","Liberation Sans",sans-serif;box-shadow:0 10px 24px rgba(40,32,20,.08);display:flex;flex-direction:column;min-width:0}
+.igpost header{display:flex;align-items:center;gap:8px;padding:8px 10px}
+.igpost header i{width:28px;height:28px;border-radius:50%;background:conic-gradient(from 200deg,#f9ce34,#ee2a7b,#6228d7);padding:2px;flex:none}
+.igpost header i b{display:block;width:100%;height:100%;border-radius:50%;background:#fff}
+.igpost header div{min-width:0}
+.igpost header strong{display:block;font-size:13px;font-weight:650}
+.igpost header small{display:block;color:#3d3d3d;font-size:11px}
+.igpic{height:16vh;min-height:84px;background:#c4a574 center/cover no-repeat}
+.igpic.window{background:linear-gradient(180deg,#d7e4ef 0 42%,#e7d3b0 42% 100%)}
+.igpic.market{background:linear-gradient(160deg,#f3e2c4,#c4654a 70%)}
+.igpic.street{background:linear-gradient(180deg,#b9c7b4 0 55%,#d9c7a4 55%)}
+.igpost .cap{margin:0;padding:8px 10px 12px;font-size:clamp(13px,1vw,16px);line-height:1.35;color:#1c1b19}
+.igpost .cap strong{font-weight:650}
+.igpost.badcap .cap{letter-spacing:.02em}
+.reelcard.igreel{position:relative}
+.reelcard .igreel-top,.reelcard .igreel-bot{font-family:"Segoe UI","Noto Sans",sans-serif;font-size:14px;letter-spacing:.04em}
+.reelcard .igreel-bot{display:flex;align-items:center;gap:8px}
+.reelcard .igreel-bot i{width:22px;height:22px;border-radius:50%;border:2px solid #E6C98A;flex:none}
 .posts{gap:1.2vh}
 .posts h2{margin:0;font-size:clamp(34px,3.2vw,56px)}
 .ig{display:flex;justify-content:center;align-items:flex-start;gap:clamp(12px,2vw,28px);width:100%;min-width:0}
@@ -437,6 +488,16 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .talk .dial .meta,.talk .dial .why,.talk .dial .open{font-size:15px}
   .talk .qr-wrap img{width:min(200px,54vw)}
   .talk .qr-cap.url{font-size:15px}
+  .ol{font-size:14px}
+  .ol-row{grid-template-columns:64px 1fr}
+  .ol-body{font-size:15px}
+  .fub{padding:16px}
+  .soc{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+  .soc-card{height:78px;min-height:0;overflow:hidden;padding:4px}
+  .soc-card em{font-size:10px}
+  .igrow,.ba{grid-template-columns:1fr}
+  .igpic{height:22vw;min-height:96px}
+  .igpost .cap{font-size:15px}
 }
 @media print{
   html,body{overflow:visible}
@@ -516,9 +577,24 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Then build from there</li>
       </ul>
     </div>
-    <button type="button" class="shot visual" data-full="handout/examples/email.png">
-      <img src="handout/examples/email.png" alt="Sample email draft for Alex Sample. Fictional.">
-    </button>
+    <div class="ol visual" aria-label="Outlook draft. A past-client check-in from Jonathan Wallace to Alex Sample at example.com.">
+      <div class="ol-top"><span class="ol-env" aria-hidden="true"></span><b>Outlook</b><span class="me">JW</span></div>
+      <div class="ol-tools">
+        <span class="ol-send">Send</span>
+        <span class="ol-ghost">Discard</span>
+      </div>
+      <div class="ol-row"><span>From</span><b>Jonathan Wallace &lt;jonathan@faristeam.ca&gt;</b></div>
+      <div class="ol-row"><span>To</span><div>Alex Sample &lt;alex.sample@example.com&gt;</div></div>
+      <div class="ol-row"><span>Cc</span><div></div></div>
+      <div class="ol-row"><span>Subject</span><b>Checking in</b></div>
+      <div class="ol-body">
+        <p>Hi Alex,</p>
+        <p>It was good to catch up. I hope the first months in the house have treated you well.</p>
+        <p>If you want a quick read on what similar homes nearby have sold for, I can pull that together. I will not send anything until you have read it.</p>
+        <p>Jonathan Wallace, REALTOR®<br>Faris Team</p>
+      </div>
+      <div class="ol-format" aria-hidden="true"><span>B</span><span>I</span><span>U</span><span>Attach</span></div>
+    </div>
   </div>
 </section>
 
@@ -589,13 +665,15 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Then one card</li>
       </ul>
     </div>
-    <div class="browser visual" aria-label="Example of the sign-in handoff">
-      <div class="browser-bar"><i></i><i></i><i></i><span>Example · you sign in</span></div>
-      <div class="browser-body">
-        <p>The assistant stops on the sign-in page.</p>
-        <div class="pass">Password: you type it. The assistant does not see it.</div>
-        <p style="margin-top:16px">Then one card comes back. You make the call.</p>
-      </div>
+    <div class="fub visual" aria-label="Follow Up Boss sign-in. You type the password. The assistant does not see it.">
+      <div class="fub-top"><span class="fub-mark" aria-hidden="true"></span> Follow Up Boss</div>
+      <h3>Sign in</h3>
+      <label>Email</label>
+      <div class="fub-field">you@example.com</div>
+      <label>Password</label>
+      <div class="fub-field lock">You type it. The assistant does not see it.</div>
+      <div class="fub-btn">Sign in</div>
+      <p>The assistant stops on this page. Then one card comes back. You make the call.</p>
     </div>
   </div>
 </section>
@@ -623,12 +701,12 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
           <div class="pal"><i><b style="background:#1C1B19"></b><b style="background:#B8975A"></b><b style="background:#FAF7F0"></b></i><em>Palette</em></div>
         </div>
         <div class="label">Posts you like</div>
-        <div class="thumbs" aria-label="Posts you like the style of">
-          <b style="background-image:url('assets/sample-cafe.jpg')"></b>
-          <b style="background:#D9C7B2"></b>
-          <b style="background:#E7D3C4"></b>
-          <b style="background-image:url('assets/sample-flowers.jpg')"></b>
-          <b style="background:#C4A574"></b>
+        <div class="soc" aria-label="Posts you like the style of">
+          <div class="soc-card"><span>Instagram</span><em>Ciao Italian Market</em></div>
+          <div class="soc-card fb"><span>Facebook</span><em>Saturday at the market</em></div>
+          <div class="soc-card li"><span>LinkedIn</span><em>A note to past clients</em></div>
+          <div class="soc-card"><span>Instagram</span><em>Coffee in Midland</em></div>
+          <div class="soc-card fb"><span>Facebook</span><em>A local open house</em></div>
         </div>
       </div>
       <div class="arrow" aria-hidden="true">→</div>
@@ -667,19 +745,17 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Your voice</li>
       </ul>
     </div>
-    <div class="ba visual" aria-label="Before and after, sample cafe caption">
-      <div class="mini">
-        <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
-          <img src="assets/sample-cafe.jpg" alt="Example cafe photo on a generic post.">
-        </button>
-        <p class="bad">Before. All caps. Too many tags.</p>
-      </div>
-      <div class="mini">
-        <button type="button" class="shot" data-full="assets/sample-cafe.jpg" style="padding:0;border:0;box-shadow:none;border-radius:0">
-          <img src="assets/sample-cafe.jpg" alt="The same example cafe photo, written to the sample guide.">
-        </button>
-        <p>After. Alex Sample, REALTOR®</p>
-      </div>
+    <div class="igrow visual" aria-label="Before and after, two Instagram posts">
+      <article class="igpost badcap">
+        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Before</small></div></header>
+        <div class="igpic window" role="img" aria-label="Sample cafe photo"></div>
+        <p class="cap"><strong>alexsample.realtor</strong> AMAZING COFFEE IN TOWN. #LOVE #COFFEE #BEST #YUMMY #LOCAL #FOODIE</p>
+      </article>
+      <article class="igpost">
+        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>After</small></div></header>
+        <div class="igpic window" role="img" aria-label="The same sample cafe photo"></div>
+        <p class="cap"><strong>alexsample.realtor</strong> Stopped in for a latte and a plain pastry. Bright window, good crust. Alex Sample, REALTOR®, Sample Realty.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -694,19 +770,17 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>You post it</li>
       </ul>
     </div>
-    <div class="phones visual" aria-label="Two example captions">
-      <div class="phone">
-        <div class="screen">
-          <div class="ph" style="background:#E7D3C4 center/cover no-repeat;background-image:url('assets/sample-cafe.jpg')"><span>Example</span></div>
-          <p>We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich: &#128076;</p>
-        </div>
-      </div>
-      <div class="phone">
-        <div class="screen">
-          <div class="ph" style="background:#E7D3C4 center/cover no-repeat;background-image:url('assets/sample-cafe.jpg');background-position:left"><span>Example</span></div>
-          <p>Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss?</p>
-        </div>
-      </div>
+    <div class="igrow visual" aria-label="Two Instagram captions">
+      <article class="igpost">
+        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Midland</small></div></header>
+        <div class="igpic market" role="img" aria-label="Sample photo of a local market"></div>
+        <p class="cap"><strong>alexsample.realtor</strong> We tried Ciao Italian Market, Midland's new Italian bakery and market. Latte: great. Pizza slice: amazing crust. Veal sandwich.</p>
+      </article>
+      <article class="igpost">
+        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>Georgian Bay</small></div></header>
+        <div class="igpic street" role="img" aria-label="Sample photo of a local street"></div>
+        <p class="cap"><strong>alexsample.realtor</strong> Coffee and treat picks across Midland, Penetanguishene, Tiny, Tay, and Wasaga. Which did we miss?</p>
+      </article>
     </div>
   </div>
 </section>
@@ -794,9 +868,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
       </ul>
     </div>
     <div class="pair visual">
-      <div class="reelcard" aria-label="Mortgage paperwork reel, November 6">
+      <div class="reelcard igreel" aria-label="Instagram Reel. Mortgage paperwork, November 6.">
+        <div class="igreel-top">Reels</div>
         <b>You found it.</b>
-        <span>Mortgage paperwork reel · Nov 6</span>
+        <div class="igreel-bot"><i aria-hidden="true"></i><span>alexsample.realtor</span></div>
+        <span>Mortgage paperwork · Nov 6</span>
       </div>
       <div class="tele" aria-label="Opening lines of the script">
         <p>You found it.</p>
@@ -855,9 +931,15 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Web is last</li>
       </ul>
     </div>
-    <div class="ba visual" aria-label="A caption that wandered, beside the saved rule">
-      <div class="mini"><p class="bad" style="font-size:clamp(20px,1.6vw,28px);padding:8vh 1.4vw">It wandered. All caps. Hype.</p></div>
-      <div class="mini"><p style="font-size:clamp(20px,1.6vw,28px);padding:8vh 1.4vw">Saved rule. Warm, plain words.</p></div>
+    <div class="igrow visual" aria-label="An Instagram caption that wandered, beside the saved rule">
+      <article class="igpost badcap">
+        <header><i aria-hidden="true"><b></b></i><div><strong>alexsample.realtor</strong><small>It wandered</small></div></header>
+        <p class="cap"><strong>alexsample.realtor</strong> AMAZING HOME IN TOWN. YOU WILL NOT BELIEVE THIS.</p>
+      </article>
+      <article class="igpost">
+        <header><i aria-hidden="true"><b></b></i><div><strong>Saved rule</strong><small>10 Nov 2026</small></div></header>
+        <p class="cap">Warm, plain words. No all caps.</p>
+      </article>
     </div>
   </div>
 </section>
