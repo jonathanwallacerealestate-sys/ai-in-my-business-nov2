@@ -1,4 +1,4 @@
-# AI Bootcamp: Hiring Your First AI Agent
+# AI Bootcamp: Zero to Hero
 
 Do one lesson at a time. If you don't finish a lesson, don't move on until it's done. If 30 lessons takes you 90 days, that's okay.
 
