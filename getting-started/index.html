@@ -360,6 +360,16 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .plancard b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(42px,4.2vw,76px);line-height:.95;margin:.15em 0}
 .plancard em{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(22px,1.8vw,36px)}
 .plancard p{margin:.7em 0 0;font-size:clamp(18px,1.5vw,30px);line-height:1.25}
+.plancard .appicon{width:clamp(72px,6.2vw,120px);height:auto;border-radius:22%;margin:0 auto 10px;display:block}
+.plancard small{display:block;margin-top:.55em;font-size:clamp(14px,1vw,20px);line-height:1.3;color:var(--muted)}
+.plancard.pick small{color:#d9d0c4}
+.apps{display:flex;flex-wrap:wrap;gap:clamp(16px,2vw,36px);margin:1.4vh 0 1.6vh}
+.app{display:flex;flex-direction:column;align-items:flex-start;gap:4px;max-width:16em}
+.app img{width:clamp(72px,6.4vw,120px);height:auto;border-radius:22%;display:block}
+.app b{font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:clamp(18px,1.45vw,28px);color:var(--ink)}
+.app span{font-size:clamp(16px,1.25vw,24px);line-height:1.3;color:var(--ink)}
+.app-search{margin:0 0 1.4vh;font-size:clamp(16px,1.15vw,22px);color:var(--muted);line-height:1.35}
+.qlist{gap:1.1vh}
 .path span{color:#8a6840}
 .path b{color:#1c1b19}
 .bigprice b{color:#1c1b19}
@@ -466,6 +476,10 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .plancard{padding:16px 14px}
   .plancard b{font-size:44px}
   .plancard p,.plancard em{font-size:16px}
+  .plancard small,.app span,.app-search{font-size:14px}
+  .plancard .appicon,.app img{width:64px}
+  .app b{font-size:16px}
+  .apps{gap:14px}
   .share-row{grid-template-columns:1fr}
   .share-row>.arrow{transform:rotate(90deg);height:24px}
   .talk .brand-body{font-size:15px}
@@ -572,12 +586,25 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Keep this short. If they have used a chatbot, they are ready. The recommendation is Grok or Claude. Grok is your top pick for agents. The next slide is the plan. Do not read prices here. Start small with one real task from your own day, not a made-up example. The email on the slide is only one example of that. You still read it and you send it. Then build from there. Do not name or number a lesson. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the learning centre. The QR at the end opens it. Sample card: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
+<section class="slide" data-notes="Keep this short. Skip the free plans. Start on Grok Premium or Claude Pro. The App Store names are Grok, and Claude by Anthropic. Prices checked 10 Nov 2026. x.ai/pricing lists Premium at $30 a month. claude.com/pricing lists Pro at $20 if billed monthly, or $17 a month if billed yearly. Those pages print a $ sign and do not print USD or CAD on these cards. The next slide has the detail. Then one real task from their own day. You still read it and you send it. Then build from there. Do not name or number a lesson. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the learning centre. The QR at the end opens it. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
   <div class="talk concept">
     <div>
       <h2>How to <em>start</em></h2>
+      <div class="apps" aria-label="Grok and Claude by Anthropic">
+        <div class="app">
+          <img src="assets/grok-app-icon.jpg" alt="" width="120" height="120">
+          <b>Grok</b>
+          <span>Premium · $30 a month</span>
+        </div>
+        <div class="app">
+          <img src="assets/claude-app-icon.jpg" alt="" width="120" height="120">
+          <b>Claude by Anthropic</b>
+          <span>Pro · $20 a month</span>
+        </div>
+      </div>
+      <p class="app-search">Search the App Store for Grok or Claude by Anthropic.</p>
       <ul class="points">
-        <li>Grok or Claude</li>
+        <li>Skip the free plan</li>
         <li>One real task</li>
         <li>Then build from there</li>
       </ul>
@@ -585,28 +612,31 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Why I pick Grok: your computer at home doesn't have to be on. Grok's agent works on its own cloud computer and keeps going when the laptop is closed. Claude is the other one I recommend. Its computer use drives your own Mac or PC, so that computer has to be awake with the Claude app open. Prices checked Nov 9, 2026, in US dollars, before tax. Grok Bot, the agent with its own computer, starts on Premium at $30 US a month. Super is $100 US and Ultra is $200 US. Those add more weekly usage. Plus and Free do not include it. Legacy names, only if someone asks: SuperGrok at $30 US, SuperGrok Plus at $100 US, and Heavy include it. SuperGrok Lite does not. Claude computer use starts on Pro at $20 US a month, or $17 US if billed yearly. Max at $100 US and Ultra at $200 US include it too. Free, Team, and Enterprise do not. About $50 to $100 US a month still covers the fuller set: Grok Premium plus Claude Pro is $50 US, and Grok Super or Claude Max is $100 US. Chat itself can start free. The agent with a computer cannot. Do not quote a personal bill. Do not bring up other chat tools.">
+<section class="slide" data-notes="Skip the free plans. Prices checked 10 Nov 2026. x.ai/pricing lists Premium at $30 a month. That is the first paid plan with the latest models, Grok's agent, and cloud agents. Plus is $8 a month and does not include the agent. Super is $100 a month and Ultra is $200 a month, for more usage. claude.com/pricing lists Pro at $20 if billed monthly, or $17 a month if billed yearly, $200 up front. Pro adds more models and tasks you can hand off. Max is $100 a month. Ultra is $200 a month. Those pages print a $ sign. They do not print USD or CAD on these individual cards. Prices do not include tax. Why Grok: your computer at home does not have to be on. Claude's computer use needs your computer awake. Do not quote a personal bill. Do not name a proprietary bot.">
   <div class="talk">
     <div>
       <h2>Which plan <em>do I need?</em></h2>
       <ul class="points">
-        <li>Why I pick Grok</li>
-        <li>Your computer at home doesn't have to be on.</li>
-        <li>Grok from $30 US</li>
+        <li>Skip the free plan</li>
+        <li>Your computer can be off</li>
+        <li>Start on the paid plan</li>
       </ul>
     </div>
-    <div class="plans visual" aria-label="Grok Premium at 30 US dollars, Claude Pro at 20 US dollars">
+    <div class="plans visual" aria-label="Grok Premium, 30 dollars a month. Claude Pro, 20 dollars a month.">
       <div class="plancard pick">
+        <img class="appicon" src="assets/grok-app-icon.jpg" alt="" width="120" height="120">
         <span>Grok</span>
-        <b>$30 US</b>
         <em>Premium</em>
-        <p>Own cloud computer</p>
+        <b>$30</b>
+        <p>a month. Agent and the latest models.</p>
       </div>
       <div class="plancard">
-        <span>Claude</span>
-        <b>$20 US</b>
+        <img class="appicon" src="assets/claude-app-icon.jpg" alt="" width="120" height="120">
+        <span>Claude by Anthropic</span>
         <em>Pro</em>
-        <p>Your computer, awake</p>
+        <b>$20</b>
+        <p>a month. More models, tasks you hand off.</p>
+        <small>$17 a month if billed yearly</small>
       </div>
     </div>
   </div>
@@ -904,19 +934,19 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="The big number is the fuller month, in US dollars, before tax, checked Nov 9, 2026. Chat can start free. The agent with a computer cannot. Grok Premium is $30 US. Claude Pro is $20 US. Together that is $50 US. Grok Super or Claude Max is $100 US. So about $50 to $100 US a month still covers the fuller set. Do not quote a personal bill. Do not read a list of other chat tools. If asked, the plan slide has the detail: Grok keeps working when the laptop is closed. Claude needs your computer awake.">
+<section class="slide" data-notes="The fuller month, checked 10 Nov 2026 on x.ai/pricing and claude.com/pricing. Skip the free plans. Premium is $30 a month and Pro is $20 a month. Together that is $50. Super or Max is $100 a month. The pages print a $ sign and do not print USD or CAD on these cards. Do not quote a personal bill. If asked, the plan slide has the detail. Grok keeps working when the laptop is closed. Claude needs your computer awake.">
   <div class="talk">
     <div>
       <h2>Fifty to <em>one hundred</em></h2>
       <ul class="points">
-        <li>Chat can be free</li>
-        <li>Agent from $30 US</li>
-        <li>Fuller set, $100 US</li>
+        <li>Skip the free plan</li>
+        <li>Start at $30 and $20</li>
+        <li>Fuller month, $100</li>
       </ul>
     </div>
-    <div class="bigprice visual" aria-label="About 50 to 100 US dollars a month">
+    <div class="bigprice visual" aria-label="About 50 to 100 dollars a month">
       <b>$50 to $100</b>
-      <span>US a month</span>
+      <span>a month</span>
     </div>
   </div>
 </section>
@@ -996,17 +1026,19 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Open the floor for 10 to 15 minutes. Which tool: Grok or Claude. Grok is your top pick for agents, because your computer at home doesn't have to be on. Pay: chat can start free. The agent starts at $30 US for Grok Premium, or $20 US for Claude Pro. About $50 to $100 US a month covers the fuller set. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. Connecting accounts is Step 2, not today. Plaud is optional and advanced. The free path is a voice memo. Ads and a full nurture campaign are a later session. The one-page guide is the starter. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. Do not discuss personal spend. Standing habit: end every lesson by adding decisions to your decision log. If you only remember one line: Starting is easy. Start this week.">
-  <div class="talk">
+<section class="slide" data-notes="Open the floor for 10 to 15 minutes. These are the questions the slides do not already answer. Permissions and access: you sign in yourself, it only reads, and it never gets the password. TRREB and social links: connecting accounts is Step 2, not today. Search stays in MLS. FUB nurture posts: a later session. This week is posts you approve. First three things: one real task, then the letter, then the one-person card. Do not build a team of assistants today. AI for buyers: a showing sheet you check, and a follow-up you edit and send. Search stays in MLS. Leads or servicing: this month is the people you already have. New lead campaigns are later. Also, if asked: skip the free plan. Premium is $30 a month. Pro is $20 a month, or $17 if billed yearly. Grok keeps working when the laptop is closed. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. If you only remember one line: Starting is easy. Start this week.">
+  <div class="talk concept">
     <div>
       <h2><em>Questions</em></h2>
-      <ul class="points">
-        <li>Grok or Claude</li>
-        <li>You still send</li>
-        <li>No client ID</li>
+      <ul class="points qlist">
+        <li>Permissions and access</li>
+        <li>TRREB and social links</li>
+        <li>FUB nurture posts</li>
+        <li>First three things</li>
+        <li>AI for buyers</li>
+        <li>Leads or servicing</li>
       </ul>
     </div>
-    <div class="bigq visual" aria-hidden="true">?</div>
   </div>
 </section>
 
