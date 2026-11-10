@@ -155,7 +155,10 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .dial .actions .out{background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:clamp(11px,.78vw,13px);color:var(--muted)}
 .dial-next{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
 .dial-next small{display:block;font-size:clamp(14px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.dial-next div{display:flex;gap:8px;flex-wrap:wrap}
+.dial .row{display:grid;grid-template-columns:minmax(9.2em,34%) 1fr;gap:6px 10px;align-items:baseline;padding:3px 0;border-bottom:1px solid var(--line)}
+.dial .row small{font-size:clamp(14px,1.05vw,20px);letter-spacing:.04em;text-transform:uppercase;color:var(--gold-ink);font-weight:600}
+.dial .row b,.dial .row span,.dial .row a{font-size:clamp(16px,1.2vw,24px);color:var(--ink);line-height:1.25;text-decoration:none}
+.talk .dial .row small,.talk .dial .row b,.talk .dial .row span,.talk .dial .row a{font-size:clamp(16px,1.15vw,22px)}
 .dial-next span{border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:clamp(11px,.8vw,13px);color:var(--muted)}
 .brand{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(120,95,50,.12);overflow:hidden;color:#243028}
 .brand-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;padding:14px 16px 10px;background:#F4EDE4}
@@ -847,7 +850,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Advanced. Intro only. Do not teach how to make a video. This is a script writer for their own videos. The script on the slide is the short reel about mortgage paperwork after an accepted offer, from November 6. The phone is his real Reel. Posted Nov 9: foreign buyers can buy new builds again, from a CP24 story. Read the opening lines if you want: You found it. The one that finally felt right. Offer accepted, and then the clock starts. Deadline coming fast, and now you're scrambling for mortgage papers you thought you already had. Then the one line: give it a topic and your voice. It drafts the hook, the script and the caption. You film it. Do not name a tool. Do not read a web address. Do not put this in the bootcamp. Tag if you need it: Advanced, what's possible.">
+<section class="slide" data-notes="Advanced. Intro only. Do not teach how to make a video. This is a script writer for their own videos. The script matches his real Reel on the phone. Client question: Can foreign buyers buy in Canada again? Posted Nov 9. Source: CP24, Nov 8, 2026. Big news for new homes in Canada. Foreign buyers can purchase again, but only brand new builds. Existing homes stay off limits until 2029, and Ontario's 25% foreign buyer tax still applies. Then the one line: give it a topic and your voice. It drafts the hook, the script and the caption. You film it. Do not name a tool. Do not read a web address. Do not put this in the bootcamp. Tag if you need it: Advanced, what's possible.">
   <div class="talk">
     <div>
       <h2>A script <em>for videos</em></h2>
@@ -858,11 +861,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
       </ul>
     </div>
     <div class="pair visual">
-      <div class="tele" aria-label="Opening lines of the script">
-        <p>You found it.</p>
-        <p>The one that finally felt right.</p>
-        <p>Offer accepted… and then the clock starts.</p>
-        <p>Deadline coming fast, and now you're scrambling for mortgage papers you thought you already had.</p>
+      <div class="tele" aria-label="Script for the foreign buyers Reel.">
+        <p>Big news for new homes in Canada.</p>
+        <p>Foreign buyers can purchase again, but only brand new builds.</p>
+        <p>Existing homes stay off limits until 2029, and Ontario's 25% foreign buyer tax still applies.</p>
+        <p>Source: CP24, Nov 8, 2026</p>
       </div>
       <div class="reelphone" aria-label="His Reel, posted November 9, foreign buyers and new builds.">
         <img src="assets/ig-foreign-buyers.jpg" alt="Jonathan Wallace in a Reel about foreign buyers and new builds, posted November 9.">
@@ -871,7 +874,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is the who-to-connect-with-next card, after a showing. Alex Sample is fictional. No phone number and no email on the card. Stage Warm. Last touch was the showing. Suggested follow-up is a two-minute check-in. Log the call, then paste the one-line draft. It never sends. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
+<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is the who-to-connect-with-next card, after a showing. Alex Sample is fictional. The phone is a 555 number. The email is example.com. Stage Warm. Last contact was the showing. Suggested opening is a two-minute check-in. Outcomes are Voicemail, Connected, Skip, or Defer. Then paste the one-line draft. It never sends. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
   <div class="talk">
     <div>
       <h2>Notes, emails, <em>your day</em></h2>
@@ -881,21 +884,22 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Check the original</li>
       </ul>
     </div>
-    <div class="dial visual" aria-label="Sample who to connect with next card, after a showing. Alex Sample is fictional.">
-      <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
+    <div class="dial visual" aria-label="Who to connect with next. Alex Sample is fictional.">
+      <div class="dial-bar"><span>Who to connect with next</span></div>
       <div class="dial-body">
-        <h3>Alex Sample</h3>
-        <div class="meta"><b>Stage:</b> Warm<br><b>Last touch:</b> The showing, about two months ago<br><b>Notes:</b> Liked the kitchen light. Wanted a quieter yard.</div>
-        <div class="why"><small>Why call today</small>The follow-up window after the showing. A newsletter does not count as contact.</div>
-        <div class="open"><small>Suggested follow-up</small>Hi Alex, it's [Your Name]. Checking in since the showing. Do you have two minutes?</div>
+        <div class="row"><small>Name</small><b>Alex Sample</b></div>
+        <div class="row"><small>Phone</small><a href="tel:+15550100142">(555) 010-0142</a></div>
+        <div class="row"><small>Email</small><span>alex.sample@example.com</span></div>
+        <div class="row"><small>Stage</small><span>Warm</span></div>
+        <div class="row"><small>Last contact</small><span>The showing, about two months ago</span></div>
+        <div class="row"><small>Why now</small><span>The follow-up window after the showing. A newsletter does not count.</span></div>
+        <div class="row"><small>Suggested opening line</small><span>Hi Alex, it's [Your Name]. Checking in since the showing. Do you have two minutes?</span></div>
         <div class="actions">
-          <span class="call">Call</span>
-          <span class="out">Connected</span>
           <span class="out">Voicemail</span>
-          <span class="out">Not now</span>
-          <span class="out">Log the call</span>
+          <span class="out">Connected</span>
+          <span class="out">Skip</span>
+          <span class="out">Defer</span>
         </div>
-        <div class="dial-next"><small>Draft to paste</small><div><span>Showing follow-up. Liked the kitchen. You send it.</span></div></div>
       </div>
     </div>
   </div>
