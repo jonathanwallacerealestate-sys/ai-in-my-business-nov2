@@ -19,8 +19,8 @@ html,body{height:100%;background:var(--ivory);color:var(--ink);font-family:Inter
 .slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:72px 6.2vw 58px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .45s ease,transform .45s ease;pointer-events:none;z-index:0}
 .slide.on{opacity:1;visibility:visible;transform:none;pointer-events:auto;z-index:1}
 .slide::before{content:"";position:absolute;top:28px;left:6.2vw;right:6.2vw;height:1px;background:var(--line)}
-.num{position:absolute;top:40px;left:6.2vw;font-family:"Playfair Display",serif;font-size:16px;color:var(--gold-ink);letter-spacing:.12em}
-.foot{position:absolute;bottom:18px;left:6.2vw;right:6.2vw;display:flex;justify-content:space-between;gap:24px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);pointer-events:none}
+.num{position:absolute;top:40px;left:6.2vw;font-family:"Playfair Display",serif;font-size:clamp(16px,1.15vw,22px);color:var(--gold-ink);letter-spacing:.12em}
+.foot{position:absolute;bottom:18px;left:6.2vw;right:6.2vw;display:flex;justify-content:space-between;gap:24px;font-size:clamp(16px,1.1vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);pointer-events:none}
 h1,h2{font-family:"Playfair Display",serif;font-weight:500;line-height:1.08;letter-spacing:-.01em}
 h1{font-size:clamp(34px,3.5vw,58px)}
 h2{font-size:clamp(28px,2.7vw,46px);margin-bottom:1.6vh}
@@ -52,15 +52,15 @@ h1 em,h2 em{font-style:italic;color:var(--gold-ink)}
 .cover{background:radial-gradient(900px 520px at 8% 0%,#F1E6CF 0%,transparent 58%),var(--ivory)}
 .opener{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:clamp(22px,3vw,48px);align-items:center;width:100%}
 .ladder-card{background:radial-gradient(120% 80% at 50% 0%,rgba(232,196,140,.2),transparent 62%),#141311;border-radius:28px;padding:clamp(16px,2vh,26px) clamp(16px,1.5vw,24px) clamp(18px,2.2vh,28px);box-shadow:0 22px 50px rgba(40,32,20,.16)}
-.ladder-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#E6C98A;font-weight:500;margin-bottom:12px}
+.ladder-kicker{font-size:clamp(14px,1.5vw,28px);letter-spacing:.14em;text-transform:uppercase;color:#E6C98A;font-weight:500;margin-bottom:12px}
 .ladder{list-style:none;display:flex;flex-direction:column;gap:12px}
 .ladder-pill{position:relative;display:flex;align-items:center;min-height:78px;padding:8px 86px 8px 22px;border-radius:999px;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(100deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
 .ladder-copy{display:flex;flex-direction:column;gap:1px;min-width:0}
-.ladder-step{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#E8D7B0;font-weight:500;line-height:1}
+.ladder-step{font-size:clamp(14px,1.5vw,30px);letter-spacing:.1em;text-transform:uppercase;color:#E8D7B0;font-weight:500;line-height:1}
 .ladder-item.is-now .ladder-step{color:#F0D7A4}
-.ladder-name{font-family:"Playfair Display",serif;font-size:clamp(16px,1.35vw,22px);color:#fff;font-weight:500;line-height:1.12}
-.ladder-item.is-now .ladder-name{font-size:clamp(20px,1.7vw,28px)}
-.ladder-sub{display:block;margin-top:3px;font-size:clamp(11px,.85vw,13.5px);line-height:1.25;color:#d9d0c4;font-weight:400;letter-spacing:0}
+.ladder-name{font-family:"Playfair Display",serif;font-size:clamp(20px,1.7vw,34px);color:#fff;font-weight:500;line-height:1.12}
+.ladder-item.is-now .ladder-name{font-size:clamp(24px,2vw,40px)}
+.ladder-sub{display:block;margin-top:3px;font-size:clamp(16px,1.45vw,28px);line-height:1.25;color:#d9d0c4;font-weight:400;letter-spacing:0}
 .ladder-item.is-now .ladder-sub{color:#F6E6CC}
 .ladder-pill{min-height:92px;padding:10px 96px 10px 22px}
 .ladder-num{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:28px;font-weight:500;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(140deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
@@ -162,14 +162,14 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .dial-next span{border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:clamp(11px,.8vw,13px);color:var(--muted)}
 .brand{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(120,95,50,.12);overflow:hidden;color:#243028}
 .brand-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-end;padding:14px 16px 10px;background:#F4EDE4}
-.brand-mark{width:46px;height:46px;border:1.5px solid #2F4A3C;border-radius:8px;display:grid;place-items:center;font-family:"Playfair Display",serif;color:#2F4A3C;font-size:18px}
-.brand h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(18px,1.5vw,26px);margin:0;color:#2F4A3C}
-.brand .who{font-size:12px;color:#5c685f;margin-top:2px}
+.brand-mark{width:56px;height:56px;border:1.5px solid #2F4A3C;border-radius:8px;display:grid;place-items:center;font-family:"Playfair Display",serif;color:#2F4A3C;font-size:clamp(20px,1.5vw,28px)}
+.brand h3{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(22px,1.9vw,36px);margin:0;color:#2F4A3C}
+.brand .who{font-size:clamp(16px,1.2vw,24px);color:#3d443f;margin-top:2px}
 .brand-body{padding:12px 16px 14px;display:grid;gap:8px;font-size:clamp(12px,.95vw,14px);line-height:1.35}
 .swatches{display:flex;gap:10px}
 .swatch b{display:block;width:42px;height:28px;border-radius:6px;border:1px solid rgba(0,0,0,.06)}
-.swatch span{display:block;font-size:10px;letter-spacing:.04em;color:#5c685f;margin-top:3px}
-.brand dt{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8C4634;font-weight:500}
+.swatch span{display:block;font-size:clamp(14px,1.2vw,24px);letter-spacing:.02em;color:#3d443f;margin-top:3px}
+.brand dt{font-size:clamp(16px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:#8C4634;font-weight:600}
 .brand dd{margin:0 0 4px}
 .mini-posts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mini{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 10px 24px rgba(120,95,50,.1)}
@@ -238,17 +238,17 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .share-row{display:grid;grid-template-columns:minmax(0,.95fr) 32px minmax(0,1.05fr);gap:12px;align-items:stretch}
 .share-row>.arrow{display:grid;place-items:center;font-size:28px;align-self:center}
 .mood{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;box-shadow:0 16px 40px rgba(120,95,50,.12);display:flex;flex-direction:column;gap:8px;min-width:0}
-.mood .label,.folder .label,.sop .label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);font-weight:500}
+.mood .label,.folder .label,.sop .label{font-size:clamp(16px,1.5vw,28px);letter-spacing:.06em;text-transform:uppercase;color:var(--gold-ink);font-weight:600}
 .spec{display:flex;gap:8px}
 .spec span{flex:1;background:var(--ivory2);border-radius:8px;padding:8px;line-height:1.05}
-.spec .serif{font-family:"Playfair Display",serif;font-size:clamp(16px,1.4vw,22px)}
-.spec .sans{font-family:Inter,system-ui,sans-serif;font-size:clamp(14px,1.1vw,18px);font-weight:500}
-.spec small{display:block;margin-top:4px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.spec .serif{font-family:"Playfair Display",serif;font-size:clamp(20px,1.6vw,32px)}
+.spec .sans{font-family:Inter,system-ui,sans-serif;font-size:clamp(18px,1.4vw,28px);font-weight:500}
+.spec small{display:block;margin-top:4px;font-family:Inter,system-ui,sans-serif;font-size:clamp(14px,1.2vw,24px);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .pals{display:flex;gap:8px}
 .pal{flex:1;min-width:0}
 .pal i{display:flex;height:22px;border-radius:6px;overflow:hidden}
 .pal i b{flex:1;display:block}
-.pal em{display:block;font-style:normal;font-size:10px;color:var(--muted);margin-top:3px}
+.pal em{display:block;font-style:normal;font-size:clamp(14px,1.2vw,24px);color:var(--muted);margin-top:3px}
 .thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
 .thumbs b{display:block;aspect-ratio:1;border-radius:4px;background:#E7D3C4 center/cover no-repeat}
 .mood .note{font-size:clamp(12px,.9vw,14px);color:var(--muted);line-height:1.35}
@@ -304,9 +304,12 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .pal i{height:18px}
 }
 .talk{display:grid;grid-template-columns:minmax(220px,.58fr) minmax(0,1.42fr);gap:2.4vw;align-items:center;width:100%;min-height:0}
-.talk h2{font-size:clamp(40px,3.6vw,64px);margin:0 0 2.4vh;line-height:1.02}
+.talk h2{font-size:clamp(48px,4.4vw,86px);margin:0 0 2.4vh;line-height:1.02}
 .points{list-style:none;display:grid;gap:1.5vh}
-.points li{font-family:"Playfair Display",serif;font-size:clamp(24px,2.15vw,36px);line-height:1.12;padding-left:.95em;position:relative}
+.points li{font-family:"Playfair Display",serif;font-size:clamp(26px,2vw,40px);line-height:1.12;padding-left:.95em;position:relative}
+@media (min-width:481px){
+  .talk.concept{grid-template-columns:minmax(280px,46vw);justify-content:center}
+}
 .points li::before{content:"";position:absolute;left:0;top:.52em;width:.55em;height:2px;background:var(--gold)}
 .visual{min-width:0}
 .talk .shot img,.talk .shot.tall img{max-height:66vh}
@@ -316,7 +319,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .talk .phone p{font-size:clamp(17px,1.3vw,22px)}
 .talk .sop{padding:22px 24px}
 .talk .sop h3{font-size:clamp(26px,2.1vw,36px)}
-.talk .sop p{font-size:clamp(22px,1.7vw,30px);line-height:1.3;margin-bottom:10px}
+.talk .sop p{font-size:clamp(22px,1.7vw,36px);line-height:1.3;margin-bottom:10px}
 .talk .browser-body p,.talk .pass{font-size:clamp(22px,1.7vw,30px)}
 .ba{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw}
 .ba .mini p{font-size:clamp(16px,1.25vw,22px);padding:14px 16px 16px;line-height:1.3}
@@ -327,22 +330,22 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .path b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(26px,2.3vw,40px)}
 .bigprice{background:#fff;border:1px solid var(--line);border-radius:18px;padding:8vh 3vw;text-align:center;box-shadow:0 18px 44px rgba(120,95,50,.12)}
 .bigprice b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(64px,6.4vw,108px);line-height:.95}
-.bigprice span{display:block;margin-top:1.6vh;font-size:clamp(16px,1.3vw,22px);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.bigprice span{display:block;margin-top:1.6vh;font-size:clamp(18px,1.5vw,30px);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .skipvis{display:grid;gap:2vh;padding:2vh 1vw}
 .skipvis div{font-family:"Playfair Display",serif;font-size:clamp(32px,3vw,52px);color:var(--muted);text-decoration:line-through;text-decoration-thickness:3px;line-height:1.1}
 .bigq{font-family:"Playfair Display",serif;font-size:clamp(200px,24vw,340px);line-height:.75;color:var(--gold-ink);text-align:center}
 .talk .qr-wrap img{width:min(460px,56vh)}
 .talk .qr-cap{font-family:"Playfair Display",serif;font-size:clamp(22px,1.8vw,32px);margin-top:1.2vh;max-width:16ch;color:#1c1b19}
-.talk .qr-cap.url{max-width:none;white-space:nowrap;font-size:clamp(16px,1.25vw,24px)}
+.talk .qr-cap.url{max-width:none;white-space:nowrap;font-size:clamp(18px,1.5vw,30px)}
 .reelcard{background:#141311;color:#f6f1e8;border-radius:16px;min-height:48vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:32px 28px;box-shadow:0 16px 40px rgba(40,32,20,.18)}
 .reelcard b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(28px,2.6vw,46px);line-height:1.12}
-.reelcard span{font-size:clamp(18px,1.45vw,26px);color:#E6C98A;line-height:1.3}
+.reelcard span{font-size:clamp(18px,1.35vw,26px);color:#E6C98A;line-height:1.3}
 .talk .dial{font-size:clamp(18px,1.35vw,22px)}
 .talk .dial h3{font-size:clamp(32px,2.8vw,48px)}
 .talk .dial .meta,.talk .dial .why,.talk .dial .open{font-size:clamp(18px,1.4vw,24px)}
 .talk .dial .actions .call{font-size:clamp(15px,1.05vw,18px)}
 .talk .dial .actions .out,.talk .dial-next span{font-size:clamp(14px,1vw,17px)}
-.talk .brand-body{font-size:clamp(16px,1.25vw,18px)}
+.talk .brand-body{font-size:clamp(18px,1.5vw,30px)}
 .talk .phone{width:min(360px,23vw)}
 .talk .pair{width:100%;grid-template-columns:1fr 1fr;align-items:stretch}
 .talk .tele{min-height:48vh;display:flex;flex-direction:column;justify-content:center}
@@ -355,11 +358,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .plans{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;align-items:stretch}
 .plancard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:4vh 1.2vw 3vh;text-align:center;box-shadow:0 16px 40px rgba(120,95,50,.12);display:flex;flex-direction:column;justify-content:center}
 .plancard.pick{background:#1c1b19;color:#f6f1e8}
-.plancard span{display:block;letter-spacing:.16em;text-transform:uppercase;font-size:clamp(13px,1vw,16px);color:var(--gold-ink)}
+.plancard span{display:block;letter-spacing:.1em;text-transform:uppercase;font-size:clamp(16px,1.55vw,32px);color:var(--gold-ink)}
 .plancard.pick span{color:#E6C98A}
 .plancard b{display:block;font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(42px,4.2vw,76px);line-height:.95;margin:.15em 0}
-.plancard em{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(20px,1.6vw,28px)}
-.plancard p{margin:.7em 0 0;font-size:clamp(15px,1.2vw,20px);line-height:1.25}
+.plancard em{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(22px,1.8vw,36px)}
+.plancard p{margin:.7em 0 0;font-size:clamp(18px,1.5vw,30px);line-height:1.25}
 .path span{color:#8a6840}
 .path b{color:#1c1b19}
 .bigprice b{color:#1c1b19}
@@ -372,8 +375,8 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .steps2 .now{background:#1c1b19;color:#fff}
 .steps2 .now span{color:#E6C98A}
 @media (max-height:820px){
-  .talk h2{font-size:clamp(32px,3vw,46px);margin-bottom:1.4vh}
-  .talk .points li{font-size:clamp(20px,1.8vw,28px)}
+  .talk h2{font-size:clamp(44px,4.2vw,76px);margin-bottom:1.2vh}
+  .talk .points li{font-size:clamp(24px,2vw,38px)}
   .talk .shot img,.talk .shot.tall img{max-height:56vh}
   .path b,.path span,.path.eight span,.path.eight b{font-size:clamp(16px,1.55vw,24px)}
   .path.eight li{padding:.15vh .7vw}
@@ -407,39 +410,39 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .fub-field.lock{background:#f4f1ea}
 .fub-btn{margin-top:14px;background:#146C43;color:#fff;border-radius:8px;text-align:center;padding:10px 12px;font-weight:650}
 .fub p{margin:12px 0 0;font-size:clamp(14px,1.05vw,16px);line-height:1.35}
-.soc{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.soc{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
 .soc-card{background:#fff;border:1px solid #e6e1d6;border-radius:8px;min-height:72px;padding:6px 6px 8px;display:flex;flex-direction:column;justify-content:space-between;font-family:"Segoe UI","Noto Sans",sans-serif}
-.soc-card span{font-size:9px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:#1c1b19}
+.soc-card span{font-size:clamp(14px,1.15vw,22px);letter-spacing:.02em;text-transform:uppercase;font-weight:700;color:#1c1b19;overflow-wrap:anywhere}
 .soc-card.fb span{color:#0B4FA8}
 .soc-card.li span{color:#084B8A}
-.soc-card em{font-style:normal;font-size:11px;line-height:1.25;color:#242424}
+.soc-card em{font-style:normal;font-size:clamp(14px,1.15vw,22px);line-height:1.25;color:#242424}
 .igrow{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:stretch}
 .igpost{background:#fff;border:1px solid #dbdbdb;border-radius:12px;overflow:hidden;color:#262626;font-family:"Segoe UI","Noto Sans","Liberation Sans",sans-serif;box-shadow:0 10px 24px rgba(40,32,20,.08);display:flex;flex-direction:column;min-width:0}
 .igpost header{display:flex;align-items:center;gap:8px;padding:8px 10px}
 .igpost header i{width:28px;height:28px;border-radius:50%;background:conic-gradient(from 200deg,#f9ce34,#ee2a7b,#6228d7);padding:2px;flex:none}
 .igpost header i b{display:block;width:100%;height:100%;border-radius:50%;background:#fff}
 .igpost header div{min-width:0}
-.igpost header strong{display:block;font-size:13px;font-weight:650}
-.igpost header small{display:block;color:#3d3d3d;font-size:11px}
+.igpost header strong{display:block;font-size:clamp(16px,1.2vw,24px);font-weight:650}
+.igpost header small{display:block;color:#3d3d3d;font-size:clamp(14px,1.15vw,22px)}
 .igpic{height:16vh;min-height:84px;background:#c4a574 center/cover no-repeat}
 .igpic.window{background:linear-gradient(180deg,#d7e4ef 0 42%,#e7d3b0 42% 100%)}
 .igpic.market{background:linear-gradient(160deg,#f3e2c4,#c4654a 70%)}
 .igpic.street{background:linear-gradient(180deg,#b9c7b4 0 55%,#d9c7a4 55%)}
-.igpost .cap{margin:0;padding:8px 10px 12px;font-size:clamp(13px,1vw,16px);line-height:1.35;color:#1c1b19}
+.igpost .cap{margin:0;padding:8px 10px 12px;font-size:clamp(16px,1.2vw,24px);line-height:1.35;color:#1c1b19}
 .igpost .cap strong{font-weight:650}
 .igpost.badcap .cap{letter-spacing:.02em}
 .reelcard.igreel{position:relative}
-.reelcard .igreel-top,.reelcard .igreel-bot{font-family:"Segoe UI","Noto Sans",sans-serif;font-size:14px;letter-spacing:.04em}
+.reelcard .igreel-top,.reelcard .igreel-bot{font-family:"Segoe UI","Noto Sans",sans-serif;font-size:clamp(16px,1.2vw,24px);letter-spacing:.04em}
 .reelcard .igreel-bot{display:flex;align-items:center;gap:8px}
 .reelcard .igreel-bot i{width:22px;height:22px;border-radius:50%;border:2px solid #E6C98A;flex:none}
 .posts{gap:1.2vh}
-.posts h2{margin:0;font-size:clamp(34px,3.2vw,56px)}
+.posts h2{margin:0;font-size:clamp(48px,4.4vw,86px)}
 .ig{display:flex;justify-content:center;align-items:flex-start;gap:clamp(12px,2vw,28px);width:100%;min-width:0}
 .ig figure{width:min(44%,calc((100vh - 300px) * 0.8));max-width:440px;min-width:0;margin:0}
 .ig .shot{width:100%;padding:0;border:0;border-radius:16px;overflow:hidden;box-shadow:0 14px 32px rgba(120,95,50,.16);background:#fff;line-height:0}
 .ig .shot img{width:100%;height:auto;max-height:none;aspect-ratio:4/5;object-fit:contain;object-position:center;background:#f4efe6;display:block}
-.ig figcaption{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(18px,1.5vw,26px);margin-top:8px;color:#1c1b19}
-.postline{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(18px,1.55vw,28px);margin:0}
+.ig figcaption{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(22px,1.7vw,34px);margin-top:8px;color:#1c1b19}
+.postline{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(22px,1.8vw,36px);margin:0}
 @media (max-width:700px){
   .posts h2{font-size:clamp(28px,7.2vw,40px)}
   .ig figure{width:min(46%,calc((100vh - 260px) * 0.8))}
@@ -458,6 +461,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .brand-body{gap:4px;padding:8px 12px 8px}
   .brand-top{padding:8px 12px 6px}
   .mood{gap:6px;padding:8px 10px}
+  .talk.concept{grid-template-columns:1fr;justify-content:stretch}
   .talk h2{font-size:30px;margin-bottom:8px}
   .points{gap:8px}
   .points li{font-size:18px}
@@ -472,6 +476,10 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .talk .dial .actions .call{font-size:12px}
   .talk .dial .actions .out,.talk .dial-next span{font-size:11px}
   .brand h3{font-size:26px}
+  .brand .who{font-size:13px}
+  .brand dt{font-size:12px}
+  .mood .label,.folder .label,.sop .label{font-size:12px}
+  .spec small,.pal em,.swatch span{font-size:11px}
   .spec .serif{font-size:20px}
   .spec .sans{font-size:16px}
   .talk .phones{flex-direction:column;align-items:center}
@@ -493,8 +501,12 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .ol-body{font-size:15px}
   .fub{padding:16px}
   .soc{grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
-  .soc-card{height:78px;min-height:0;overflow:hidden;padding:4px}
-  .soc-card em{font-size:10px}
+  .soc-card{height:70px;min-height:0;overflow:hidden;padding:4px}
+  .soc-card span,.soc-card em{font-size:10px}
+  .igpost header strong,.igpost header small,.igpost .cap,.reelcard .igreel-top,.reelcard .igreel-bot{font-size:14px}
+  .ladder-name,.ladder-item.is-now .ladder-name{font-size:16px}
+  .ladder-sub,.ladder-step,.ladder-kicker{font-size:13px}
+  .num{font-size:14px}
   .igrow,.ba{grid-template-columns:1fr}
   .igpic{height:22vw;min-height:96px}
   .igpost .cap{font-size:15px}
@@ -568,7 +580,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 </section>
 
 <section class="slide" data-notes="Keep this short. If they have used a chatbot, they are ready. The recommendation is Grok or Claude. Grok is your top pick for agents. The next slide is the plan. Do not read prices here. Start small with one real task from your own day, not a made-up example. The email on the slide is only one example of that. You still read it and you send it. Then build from there. Do not name or number a lesson. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the learning centre. The QR at the end opens it. Sample card: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
-  <div class="talk">
+  <div class="talk concept">
     <div>
       <h2>How to <em>start</em></h2>
       <ul class="points">
@@ -576,24 +588,6 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>One real task</li>
         <li>Then build from there</li>
       </ul>
-    </div>
-    <div class="ol visual" aria-label="Outlook draft. A past-client check-in from Jonathan Wallace to Alex Sample at example.com.">
-      <div class="ol-top"><span class="ol-env" aria-hidden="true"></span><b>Outlook</b><span class="me">JW</span></div>
-      <div class="ol-tools">
-        <span class="ol-send">Send</span>
-        <span class="ol-ghost">Discard</span>
-      </div>
-      <div class="ol-row"><span>From</span><b>Jonathan Wallace &lt;jonathan@faristeam.ca&gt;</b></div>
-      <div class="ol-row"><span>To</span><div>Alex Sample &lt;alex.sample@example.com&gt;</div></div>
-      <div class="ol-row"><span>Cc</span><div></div></div>
-      <div class="ol-row"><span>Subject</span><b>Checking in</b></div>
-      <div class="ol-body">
-        <p>Hi Alex,</p>
-        <p>It was good to catch up. I hope the first months in the house have treated you well.</p>
-        <p>If you want a quick read on what similar homes nearby have sold for, I can pull that together. I will not send anything until you have read it.</p>
-        <p>Jonathan Wallace, REALTOR®<br>Faris Team</p>
-      </div>
-      <div class="ol-format" aria-hidden="true"><span>B</span><span>I</span><span>U</span><span>Attach</span></div>
     </div>
   </div>
 </section>
@@ -626,7 +620,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 </section>
 
 <section class="slide" data-notes="First wow. More conversations, more conversions, more deals. This is the who-to-connect-with-next card. Sample only. Sam Sample is fictional. The phone is a 555 number. The email is example.com. One person at a time. Someone already handled today is not offered again. They make the call. It does not text or email anyone. Do not name internal tools. Stage Warm. Last contact September 8, sample only. Why now: about two months since the last conversation. A newsletter does not count. Suggested opening: Hi Sam, it's your name. Checking in since we last spoke. Do you have two minutes?">
-  <div class="talk">
+  <div class="talk concept">
     <div>
       <h2>One card. <em>You call.</em></h2>
       <ul class="points">
@@ -635,28 +629,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>It never texts</li>
       </ul>
     </div>
-    <div class="dial visual" aria-label="Sample who to connect with next card">
-      <div class="dial-bar"><span class="tag" style="margin:0">Sample</span><span>Who to connect with next</span></div>
-      <div class="dial-body">
-        <h3>Sam Sample</h3>
-        <div class="meta"><b>Phone:</b> (555) 010-0142<br><b>Email:</b> sam.sample@example.com<br><b>Stage:</b> Warm<br><b>Last contact:</b> September 8 · Sample only</div>
-        <div class="why"><small>Why now</small>About two months since the last conversation. A newsletter does not count as contact.</div>
-        <div class="open"><small>Suggested opening</small>Hi Sam, it's [Your Name]. I am checking in since we last spoke. Do you have two minutes?</div>
-        <div class="actions">
-          <button type="button" class="call">Call</button>
-          <button type="button" class="out">Voicemail</button>
-          <button type="button" class="out">Connected</button>
-          <button type="button" class="out">Skip</button>
-          <button type="button" class="out">Defer</button>
-        </div>
-        <div class="dial-next"><small>One at a time</small><div><span>Already handled today: not offered again</span></div></div>
-      </div>
-    </div>
   </div>
 </section>
 
 <section class="slide" data-notes="How to build the card without a connector. Team members will not have their own Follow Up Boss API keys. Use the Follow Up Boss website. One: an assistant that can open a web browser. In the notes only, this is often called agent mode or computer use. Check the plan. Do not name a vendor feature you have not confirmed. Two: give it the Deal Card kit, in the learning centre. The QR at the end opens it. Three: at the sign-in page they take over. The AI never gets the password. Four: it reads the screen, read only. Five: how often. Hot leads every 7 to 10 days, warm about every 2 months, past clients and sphere quarterly. Newsletters do not count. Skip unsubscribed or parked contacts. Six: they call, say the outcome, it drafts a one-line note to paste, then the next card. It never sends a message. Say: you do not have to recreate this, but this is the power of AI.">
-  <div class="talk">
+  <div class="talk concept">
     <div>
       <h2>You <em>sign in</em></h2>
       <ul class="points">
@@ -664,16 +641,6 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>It only reads</li>
         <li>Then one card</li>
       </ul>
-    </div>
-    <div class="fub visual" aria-label="Follow Up Boss sign-in. You type the password. The assistant does not see it.">
-      <div class="fub-top"><span class="fub-mark" aria-hidden="true"></span> Follow Up Boss</div>
-      <h3>Sign in</h3>
-      <label>Email</label>
-      <div class="fub-field">you@example.com</div>
-      <label>Password</label>
-      <div class="fub-field lock">You type it. The assistant does not see it.</div>
-      <div class="fub-btn">Sign in</div>
-      <p>The assistant stops on this page. Then one card comes back. You make the call.</p>
     </div>
   </div>
 </section>
@@ -702,11 +669,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         </div>
         <div class="label">Posts you like</div>
         <div class="soc" aria-label="Posts you like the style of">
-          <div class="soc-card"><span>Instagram</span><em>Ciao Italian Market</em></div>
-          <div class="soc-card fb"><span>Facebook</span><em>Saturday at the market</em></div>
-          <div class="soc-card li"><span>LinkedIn</span><em>A note to past clients</em></div>
-          <div class="soc-card"><span>Instagram</span><em>Coffee in Midland</em></div>
-          <div class="soc-card fb"><span>Facebook</span><em>A local open house</em></div>
+          <div class="soc-card"><span>Instagram</span><em>Ciao Market</em></div>
+          <div class="soc-card fb"><span>Facebook</span><em>The market</em></div>
+          <div class="soc-card li"><span>LinkedIn</span><em>Past clients</em></div>
+          <div class="soc-card"><span>Instagram</span><em>Midland coffee</em></div>
+          <div class="soc-card fb"><span>Facebook</span><em>Open house</em></div>
         </div>
       </div>
       <div class="arrow" aria-hidden="true">→</div>
