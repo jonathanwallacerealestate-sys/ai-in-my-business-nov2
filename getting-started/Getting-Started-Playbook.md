@@ -126,7 +126,7 @@ Copy the finished draft into the tool you already use. You hit send.
 
 One worked example is the Faris Team Letter of Opinion. In Jonathan's experience, about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. The steps and the instruction file are in the [Letter of Opinion kit](loo-kit.html). Download the Word template from the shared folder named in that kit, add your own signature photo, and give your AI the template, the photo, and the kit.
 
-What's possible on a call: a recorder such as Plaud can clip to the phone. The app makes a transcript and a summary, and your AI can turn that into a CRM note, the tasks, and a follow-up email. That is advanced. You do not need one to start, and it is not in the 30-day plan.
+What's possible on a call: a recorder such as Plaud can clip to the phone. The app makes a transcript and a summary, and your AI can turn that into a CRM note, the tasks, and a follow-up email. That is advanced. You do not need one to start, and it is not in this bootcamp.
 
 The version to do this month is free. After an appointment, record a voice memo, or talk through how it went. Let people know you are recording. Ask for the same three things:
 
@@ -160,7 +160,7 @@ Before we finish, list any new SOPs and decisions from this chat in short bullet
 On day 1, ask it to help you pick the work:
 
 ```
-I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with over the next 30 days. For each, tell me how we'd start and how much time it could save.
+I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with during this bootcamp. For each, tell me how we'd start and how much time it could save.
 ```
 
 A sample answer, not yours: paperwork follow-up, CMA prep, writing listing descriptions.
@@ -271,17 +271,17 @@ Connecting accounts, saving a standing process, and adding more assistants are l
 
 ---
 
-## Your next 30 days
+## AI Bootcamp: Hiring Your First AI Agent
 
-Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay.
+Do one lesson at a time. If you don't finish a lesson, don't move on until it's done. If 30 lessons takes you 90 days, that's okay.
 
-Days 1 to 9 are about 15 to 20 minutes. Days 10 to 20 are about 30 minutes. Days 21 to 30 are about 30 to 45 minutes. Days 7, 16, and 24 are good spots to catch up. Each person's Day 1 starts when they first sign in.
+Lessons 1 to 9 are about 15 to 20 minutes. Lessons 10 to 20 are about 30 minutes. Lessons 21 to 30 are about 30 to 45 minutes. Lessons 7, 16, and 24 are good spots to catch up. Each person's Lesson 1 starts when they first sign in.
 
-Eight parts: Foundations (days 1 to 7), Clients and social (8 to 10), Connect your tools (11 to 14), Letters and offers (15 to 18), Deal card (19 to 21), Advanced (22 and 23), Your list (24 to 29), Review (30).
+Eight parts: Foundations (lessons 1 to 7), Clients and social (8 to 10), Connect your tools (11 to 14), Letters and offers (15 to 18), Deal card (19 to 21), Advanced (22 and 23), Your list (24 to 29), Review (30).
 
-From Day 6 on, end every day by adding decisions to your decision log. Use Grok or Claude. Grok is the top pick for agents.
+From Lesson 6 on, end every lesson by adding decisions to your decision log. Use Grok or Claude. Grok is the top pick for agents.
 
-Your 30 days also live in an online learning centre where you sign in with your name and tick off each day.
+This bootcamp also lives in an online learning centre where you sign in with your name and tick off each lesson.
 
 Examples, where a picture helps, are Sample Realty, Alex Sample, REALTOR®, and 123 Banana Street. Not a real home.
 
@@ -289,7 +289,7 @@ The same list is on the playbook download page, where you can tick each day off 
 
 ### Foundations
 
-## Day 1. Pick your AI and tell it about your business
+## Lesson 1. Pick your AI and tell it about your business
 
 Foundations · 15 to 20 min
 
@@ -308,7 +308,7 @@ It can only help with a business it understands.
 I'm a REALTOR® and I want you to understand my business. Ask me questions one at a time: how many houses I've sold, what areas I like to work in, how long I've been in real estate, and the roadblocks and challenges where you could help me manage, fix, solve or add leverage. When we're done, give me a short summary of my business and save it.
 ```
 
-## Day 2. Teach it your writing style
+## Lesson 2. Teach it your writing style
 
 Foundations · 15 to 20 min
 
@@ -331,7 +331,7 @@ Here are samples of writing I like, and things I never want, such as em dashes. 
 
 ![Example](handout/examples/email.png)
 
-## Day 3. Build your brand guidelines
+## Lesson 3. Build your brand guidelines
 
 Foundations · 15 to 20 min
 
@@ -355,7 +355,7 @@ I'm going to give you the fonts I like, my colour palette, my headshots, marketi
 
 ![Example](handout/examples/brand.png)
 
-## Day 4. Brain dump the tasks you hate
+## Lesson 4. Brain dump the tasks you hate
 
 Foundations · 15 to 20 min
 
@@ -376,7 +376,7 @@ Now that it knows your business and your style, it can help you decide what to h
 I'm going to brain dump every task in my business I hate doing. Don't suggest anything until I say I'm done. Then help me rank them from easiest to hardest for you to take on. Build a strategy for how we'll work through them one at a time, starting with the easiest. Keep us on this list and don't drift into other topics. Save the ranked list and the strategy.
 ```
 
-## Day 5. Re-engage your dead leads
+## Lesson 5. Re-engage your dead leads
 
 Foundations · 15 to 20 min
 
@@ -397,7 +397,7 @@ Your database already has people who went quiet. The right message can restart t
 Research the best ways to re-engage cold real estate leads by text and by email, and the best practices for each. Then I'll explain my situation and give you a couple of examples. Create a skill: when I give you a person's details, give me 5 text messages, or 5 email options if email is where they'd rather be reached, to restart a conversation about buying or selling. Don't send anything. I approve first.
 ```
 
-## Day 6. Set up your decision log
+## Lesson 6. Set up your decision log
 
 Foundations · 15 to 20 min
 
@@ -405,11 +405,11 @@ A decision log gives your AI a memory, so you do not have to retrain it every ti
 
 1. Choose where it lives: an Excel spreadsheet, Google Drive or Dropbox, however you see fit.
 2. Have your AI set up the columns: date, area (for example email, texts, leads), the decision or SOP, and the reason.
-3. Add everything from Days 1 to 5: your business summary, Email writing SOP, brand guidelines, hated-task list, and re-engagement skill.
-4. Practise the closing prompt. From today on, it is the last step of every day.
+3. Add everything from Lessons 1 to 5: your business summary, Email writing SOP, brand guidelines, hated-task list, and re-engagement skill.
+4. Practise the closing prompt. From today on, it is the last step of every lesson.
 5. Before we close, add every decision and SOP we made in this chat to my decision log.
 
-**Done when:** Your decision log exists, holds everything from Days 1 to 5, and your AI can read it back to you.
+**Done when:** Your decision log exists, holds everything from Lessons 1 to 5, and your AI can read it back to you.
 
 **Prompt**
 
@@ -417,7 +417,7 @@ A decision log gives your AI a memory, so you do not have to retrain it every ti
 Help me set up a decision log as a spreadsheet with columns for date, area, decision or SOP, and reason. Add everything we've decided so far. From now on, read it at the start of our work so you don't need retraining. At the end of every chat, add any new decisions and SOPs to it.
 ```
 
-## Day 7. Teach it to clean up your inbox Good spot to catch up.
+## Lesson 7. Teach it to clean up your inbox Good spot to catch up.
 
 Foundations · 15 to 20 min
 
@@ -441,7 +441,7 @@ I'm going to teach you how I manage my inbox: how I filter and file, what can be
 
 ### Clients and social
 
-## Day 8. Ask for reviews
+## Lesson 8. Ask for reviews
 
 Clients and social · 15 to 20 min
 
@@ -464,7 +464,7 @@ When I say something like "Hey, I just did a deal with [client]. We just sold 12
 
 ![Example](handout/examples/review.png)
 
-## Day 9. Share 10 posts you like
+## Lesson 9. Share 10 posts you like
 
 Clients and social · 15 to 20 min
 
@@ -485,13 +485,13 @@ I am going to paste links to at least 10 social posts I like the style of, and s
 
 ![Example](handout/examples/post.png)
 
-## Day 10. Post, then schedule two more
+## Lesson 10. Post, then schedule two more
 
 Clients and social · 30 min
 
 One live post, plus two more waiting, is a rhythm you can keep.
 
-1. Publish the post you made on Day 9 (or a local food spot or community moment), after you approve it.
+1. Publish the post you made on Lesson 9 (or a local food spot or community moment), after you approve it.
 2. Draft two more posts using your brand guidelines.
 3. Schedule them, or set a reminder to post them if you have no scheduler.
 4. Before we close, add every decision and SOP we made in this chat to my decision log.
@@ -508,7 +508,7 @@ Help me publish the post from yesterday, or a local food spot or community momen
 
 ### Connect your tools
 
-## Day 11. Book appointments into your calendar
+## Lesson 11. Book appointments into your calendar
 
 Connect your tools · 30 min
 
@@ -530,7 +530,7 @@ Put a booking in my calendar for tomorrow's listing appointment at 123 Banana St
 
 ![Example](handout/examples/calendar.png)
 
-## Day 12. Teach it how you keep notes
+## Lesson 12. Teach it how you keep notes
 
 Connect your tools · 30 min
 
@@ -553,13 +553,13 @@ When I give you a note, keep the specific information about the client and add i
 
 ![Example](handout/examples/crm.png)
 
-## Day 13. Stay in touch with past clients
+## Lesson 13. Stay in touch with past clients
 
 Connect your tools · 30 min
 
 Past clients are your best source of repeat and referral business, and your AI can remember the details you cannot.
 
-1. Unlike Day 5, which is for cold leads, this is for people you have already helped. It is about remembering their details.
+1. Unlike Lesson 5, which is for cold leads, this is for people you have already helped. It is about remembering their details.
 2. Pull up one past client from your database.
 3. Dictate who they are, how you met, how you helped them on their last transaction, who their kids are, and what house they bought.
 4. Have it draft an email to them, and give you a few follow-up ideas for that specific client based on your notes.
@@ -576,7 +576,7 @@ This is not for cold leads. It is for people I have already helped, and it is ab
 
 ![Example](handout/examples/email.png)
 
-## Day 14. Listing descriptions and your top 5
+## Lesson 14. Listing descriptions and your top 5
 
 Connect your tools · 30 min
 
@@ -597,7 +597,7 @@ I will share listing descriptions I like and how I want a top 5 written. Then I 
 
 ### Letters and offers
 
-## Day 15. Letter of Opinion setup
+## Lesson 15. Letter of Opinion setup
 
 Letters and offers · 30 min
 
@@ -617,7 +617,7 @@ The template, a few past letters, and your signature live in one folder, and onl
 Help me set up a Letter of Opinion. I will put a Word template and a signature photo in one Drive folder, and I will share only that folder, not my whole drive. I will also share 2 or 3 past letters so you learn the format. A letter needs the property, the owners (addressed to everyone on title), 3 to 5 sold comparables, 3 to 5 actives, and the opinion range. Save this as a Letter of Opinion skill, then draft one test letter for a fake property in that format. Nothing is final until I approve it.
 ```
 
-## Day 16. Practise, then time a real letter Good spot to catch up.
+## Lesson 16. Practise, then time a real letter Good spot to catch up.
 
 Letters and offers · 30 min
 
@@ -638,7 +638,7 @@ We are going to write a Letter of Opinion from my skill. First, practise on a pa
 
 ![Example](handout/examples/letter.png)
 
-## Day 17. Read an offer: the Coles Notes
+## Lesson 17. Read an offer: the Coles Notes
 
 Letters and offers · 30 min
 
@@ -661,7 +661,7 @@ Learn how to read an Agreement of Purchase and Sale. I will give you mock signba
 
 ![Example](handout/examples/coles.png)
 
-## Day 18. Deal deadline tracker
+## Lesson 18. Deal deadline tracker
 
 Letters and offers · 30 min
 
@@ -684,7 +684,7 @@ From an accepted Agreement of Purchase and Sale, find the conditional dates, the
 
 ### Deal card
 
-## Day 19. Deal card setup
+## Lesson 19. Deal card setup
 
 Deal card · 30 min
 
@@ -705,14 +705,14 @@ Help me set up a simple deal card I can reuse for each lead: name, phone, what t
 
 ![Example](handout/examples/deal.png)
 
-## Day 20. Ten leads, then make the calls
+## Lesson 20. Ten leads, then make the calls
 
 Deal card · 30 min
 
 The card only matters if you pick up the phone.
 
 1. Pick 10 leads and make a deal card for each.
-2. Use your Day 5 re-engagement skill for the openers.
+2. Use your Lesson 5 re-engagement skill for the openers.
 3. Make the calls yourself. Your AI does not contact anyone. Write a one-line note for each call.
 4. Before we close, add every decision and SOP we made in this chat to my decision log.
 
@@ -721,12 +721,12 @@ The card only matters if you pick up the phone.
 **Prompt**
 
 ```
-I am going to name 10 leads. For each one, make a deal card and a short call opener using my re-engagement skill from Day 5. I will make the calls. Do not contact anyone yourself. I will give you a one-line note after each call.
+I am going to name 10 leads. For each one, make a deal card and a short call opener using my re-engagement skill from Lesson 5. I will make the calls. Do not contact anyone yourself. I will give you a one-line note after each call.
 ```
 
 ![Example](handout/examples/deal.png)
 
-## Day 21. Paste the notes, then the next 10
+## Lesson 21. Paste the notes, then the next 10
 
 Deal card · 30 to 45 min
 
@@ -751,7 +751,7 @@ I am pasting notes from the calls I just made. Update each deal card. Then set u
 
 ### Advanced
 
-## Day 22. Prep your listing appointment paperwork
+## Lesson 22. Prep your listing appointment paperwork
 
 Advanced · 30 to 45 min
 
@@ -771,7 +771,7 @@ The forms you print for every listing appointment can be ready in a minute.
 I build the blank masters myself in WEBForms: the RECO guide, and a listing agreement with my standard Schedule A, saved as editable PDFs. My standard terms are commission 5% total, with 2.5% to the co-operating brokerage, and a 60-day holdover. When I give you a GeoWarehouse report, turn it into a ready-to-fill details sheet: owner names, address and property details, postal code checked on Google, and where the listing start date and the number of days go. Save this as a skill. Then make the details sheet for a fake property. I fill the PDFs myself.
 ```
 
-## Day 23. Book showings in BrokerBay
+## Lesson 23. Book showings in BrokerBay
 
 Advanced · 30 to 45 min
 
@@ -796,13 +796,13 @@ Learn how I book showings. Ask which time windows I will take, and always check 
 
 ### Your list
 
-## Day 24. Teach your next task Good spot to catch up.
+## Lesson 24. Teach your next task Good spot to catch up.
 
 Your list · 30 to 45 min
 
-Work the next easiest task on the list you ranked on Day 4, one at a time.
+Work the next easiest task on the list you ranked on Lesson 4, one at a time.
 
-1. Pick the next easiest task on your ranked list from Day 4.
+1. Pick the next easiest task on your ranked list from Lesson 4.
 2. Teach it one step at a time.
 3. Test it on one real example.
 4. Save it as a skill or SOP.
@@ -813,16 +813,16 @@ Work the next easiest task on the list you ranked on Day 4, one at a time.
 **Prompt**
 
 ```
-Look at my ranked list from Day 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
+Look at my ranked list from Lesson 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
 ```
 
-## Day 25. Teach your second task
+## Lesson 25. Teach your second task
 
 Your list · 30 to 45 min
 
-Work the next easiest task on the list you ranked on Day 4, one at a time.
+Work the next easiest task on the list you ranked on Lesson 4, one at a time.
 
-1. Pick the next easiest task still left on your ranked list from Day 4.
+1. Pick the next easiest task still left on your ranked list from Lesson 4.
 2. Teach it one step at a time.
 3. Test it on one real example.
 4. Save it as a skill or SOP.
@@ -833,16 +833,16 @@ Work the next easiest task on the list you ranked on Day 4, one at a time.
 **Prompt**
 
 ```
-Look at my ranked list from Day 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
+Look at my ranked list from Lesson 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
 ```
 
-## Day 26. Teach your third task
+## Lesson 26. Teach your third task
 
 Your list · 30 to 45 min
 
-Work the next easiest task on the list you ranked on Day 4, one at a time.
+Work the next easiest task on the list you ranked on Lesson 4, one at a time.
 
-1. Pick the next easiest task still left on your ranked list from Day 4.
+1. Pick the next easiest task still left on your ranked list from Lesson 4.
 2. Teach it one step at a time.
 3. Test it on one real example.
 4. Save it as a skill or SOP.
@@ -853,16 +853,16 @@ Work the next easiest task on the list you ranked on Day 4, one at a time.
 **Prompt**
 
 ```
-Look at my ranked list from Day 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
+Look at my ranked list from Lesson 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
 ```
 
-## Day 27. Teach your fourth task
+## Lesson 27. Teach your fourth task
 
 Your list · 30 to 45 min
 
-Work the next easiest task on the list you ranked on Day 4, one at a time.
+Work the next easiest task on the list you ranked on Lesson 4, one at a time.
 
-1. Pick the next easiest task still left on your ranked list from Day 4.
+1. Pick the next easiest task still left on your ranked list from Lesson 4.
 2. Teach it one step at a time.
 3. Test it on one real example.
 4. Save it as a skill or SOP.
@@ -873,16 +873,16 @@ Work the next easiest task on the list you ranked on Day 4, one at a time.
 **Prompt**
 
 ```
-Look at my ranked list from Day 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
+Look at my ranked list from Lesson 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
 ```
 
-## Day 28. Teach your fifth task
+## Lesson 28. Teach your fifth task
 
 Your list · 30 to 45 min
 
-Work the next easiest task on the list you ranked on Day 4, one at a time.
+Work the next easiest task on the list you ranked on Lesson 4, one at a time.
 
-1. Pick the next easiest task still left on your ranked list from Day 4.
+1. Pick the next easiest task still left on your ranked list from Lesson 4.
 2. Teach it one step at a time.
 3. Test it on one real example.
 4. Save it as a skill or SOP.
@@ -893,16 +893,16 @@ Work the next easiest task on the list you ranked on Day 4, one at a time.
 **Prompt**
 
 ```
-Look at my ranked list from Day 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
+Look at my ranked list from Lesson 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
 ```
 
-## Day 29. Teach your sixth task
+## Lesson 29. Teach your sixth task
 
 Your list · 30 to 45 min
 
-Work the next easiest task on the list you ranked on Day 4, one at a time.
+Work the next easiest task on the list you ranked on Lesson 4, one at a time.
 
-1. Pick the next easiest task still left on your ranked list from Day 4.
+1. Pick the next easiest task still left on your ranked list from Lesson 4.
 2. Teach it one step at a time.
 3. Test it on one real example.
 4. Save it as a skill or SOP.
@@ -913,12 +913,12 @@ Work the next easiest task on the list you ranked on Day 4, one at a time.
 **Prompt**
 
 ```
-Look at my ranked list from Day 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
+Look at my ranked list from Lesson 4 and take the next easiest task we have not taught yet. Teach it with me, one step at a time. We will test it on one real example, then save it as a skill or SOP. If my list has run out, say so and use a keep-going idea. Before we close, add every decision and SOP we made in this chat to my decision log.
 ```
 
 ### Review
 
-## Day 30. Review the month
+## Lesson 30. Review the month
 
 Review · 30 to 45 min
 
@@ -937,7 +937,7 @@ Look at what you actually used, leave one clean decision log, and write down wha
 Help me review the month: what I used, what I skipped, and what saved me time. Help me clean my decision log so there is one source of truth. Then help me write down what I want next for Step 2. Do not add anything new until I choose.
 ```
 
-By day 30: your decision log is cleaned up and your Step 2 choice is written down.
+By lesson 30: your decision log is cleaned up and your Step 2 choice is written down.
 
 ### What the team could set up together
 
@@ -954,7 +954,7 @@ By day 30: your decision log is cleaned up and your Step 2 choice is written dow
 - **Step 3, Teach It Your Way.** Your standards, voice and processes, kept so you are not pasting them from scratch every time.
 - **Step 4, Build Your AI Team.** Specialized assistants working alongside you.
 
-Ads and a full nurture campaign are a separate session. A one-page brand guide and your first local posts are in the 30-day plan above.
+Ads and a full nurture campaign are a separate session. A one-page brand guide and your first local posts are in the bootcamp above.
 
 ---
 

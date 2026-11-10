@@ -2,7 +2,7 @@
 
 Step 1 of 4: Getting Started. From the Faris Team talk.
 
-Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay. The day numbers below match the 30-day checklist.
+Do one lesson at a time. If you don't finish a lesson, don't move on until it's done. If 30 lessons takes you 90 days, that's okay. The day numbers below match the bootcamp checklist.
 
 Paste your house rules at the start of a chat. These prompts are samples. Use Sample names. Do not paste client ID, banking, or mortgage numbers. Drafts only. You review. You send.
 
@@ -14,7 +14,7 @@ The Deal Card kit and the Letter of Opinion kit are in this same folder. Attach 
 
 ### House rules
 
-When to use: Day 2. The approval line is rule one: it drafts, you approve. Use it at the start of a chat after that.
+When to use: Lesson 2. The approval line is rule one: it drafts, you approve. Use it at the start of a chat after that.
 
 ```
 I'm a REALTOR® with Faris Team Real Estate Brokerage. I work in [your area].
@@ -31,7 +31,7 @@ This is not legal advice.
 
 ### About-me note
 
-When to use: Day 1, so your AI always has the basics of your business.
+When to use: Lesson 1, so your AI always has the basics of your business.
 
 ```
 About me. Use these basics on every draft. Do not invent a brokerage, a market, or contact details.
@@ -45,7 +45,7 @@ Contact: [the phone and email you want on drafts].
 
 ### Approval line
 
-When to use: Day 2, as rule one of the email writing SOP. Client-facing work always gets your review.
+When to use: Lesson 2, as rule one of the email writing SOP. Client-facing work always gets your review.
 
 ```
 Approval line. You may organize notes and checklists on your own. Anything a client would see, an email, a text, a post, or a letter, waits for my review. I send it myself.
@@ -53,17 +53,17 @@ Approval line. You may organize notes and checklists on your own. Anything a cli
 
 ### Three things I hate
 
-When to use: Day 4, the brain dump of tasks you hate.
+When to use: Lesson 4, the brain dump of tasks you hate.
 
 ```
-I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with over the next 30 days. For each, tell me how we'd start and how much time it could save.
+I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with during this bootcamp. For each, tell me how we'd start and how much time it could save.
 ```
 
 A sample answer, not yours: paperwork follow-up, CMA prep, writing listing descriptions.
 
 ### Email reply
 
-When to use: Day 2, while you teach it your writing style, and any time a reply is waiting.
+When to use: Lesson 2, while you teach it your writing style, and any time a reply is waiting.
 
 ```
 Draft a reply to the email below. Warm, short, plain language. No exclamation marks. Draft only. I will review it and send it myself. Do not invent facts.
@@ -84,7 +84,7 @@ What happened: [a few words].
 
 ### Appointment summary
 
-When to use: Day 12, when you teach it how you keep notes.
+When to use: Lesson 12, when you teach it how you keep notes.
 
 ```
 Turn these notes into an appointment summary. Give me key points, open questions, and what I must verify. Do not add facts that are not in the notes.
@@ -102,7 +102,7 @@ Write three short texts I can reuse: a showing follow-up, an offer update, and a
 
 ### Inbox cleanup
 
-When to use: Day 7, a good spot to catch up. Skip it if you do not want your AI in your email.
+When to use: Lesson 7, a good spot to catch up. Skip it if you do not want your AI in your email.
 
 ```
 Here are my 5 oldest unanswered emails. Private details are removed.
@@ -112,7 +112,7 @@ Draft a reply to each one. Short. Warm. Plain language. Number them to match. I 
 
 ### Time-blocked day plan
 
-When to use: any morning after Day 1. While you are parked. Never while driving.
+When to use: any morning after Lesson 1. While you are parked. Never while driving.
 
 ```
 I'm a REALTOR®. Here is my messy list for today. SAMPLE DATA ONLY.
@@ -178,7 +178,7 @@ Explain, in plain language a buyer can follow, what a home inspection condition 
 
 ## Deal card
 
-When to use: Days 19 to 21. Attach Deal-Card-Kit.md from this folder. You sign in yourself. The AI never gets your password. It never texts or emails anyone. Day 21 sets a repeating reminder three times a week.
+When to use: Lessons 19 to 21. Attach Deal-Card-Kit.md from this folder. You sign in yourself. The AI never gets your password. It never texts or emails anyone. Lesson 21 sets a repeating reminder three times a week.
 
 ```
 Read the Deal Card kit I attached. Open the Follow Up Boss website in the browser and stop at the sign-in page. I will sign in. You never need my password. Then show me one person to call. One card only. Draft only.
@@ -188,7 +188,7 @@ Read the Deal Card kit I attached. Open the Follow Up Boss website in the browse
 
 ## Letter of Opinion
 
-When to use: Days 15 and 16. Day 15 is setup. Day 16 is a past letter, then a real one, timed. Day 16 is a good spot to catch up. Attach Letter-of-Opinion-Kit.md. The opinion of value is yours. You check every name and every figure, and you send it.
+When to use: Lessons 15 and 16. Lesson 15 is setup. Lesson 16 is a past letter, then a real one, timed. Lesson 16 is a good spot to catch up. Attach Letter-of-Opinion-Kit.md. The opinion of value is yours. You check every name and every figure, and you send it.
 
 ```
 I'm a REALTOR®. Draft a Letter of Opinion and the client email. Use my template, my signature photo, and the Letter of Opinion kit. SAMPLE DATA ONLY. Do not invent a comp, a price, or a postal code.
@@ -211,7 +211,7 @@ One page. Draft only. I will check every figure and send it myself.
 
 ## Voice memo and appointment recap
 
-When to use: Day 2, when you talk instead of type, and Day 12, when a note has to land in your CRM. Let people know you are recording.
+When to use: Lesson 2, when you talk instead of type, and Lesson 12, when a note has to land in your CRM. Let people know you are recording.
 
 ```
 Here is my voice memo, or my spoken recap, from a call with [client].
@@ -228,7 +228,7 @@ No em dashes. Flag anything I need to verify. Do not invent details.
 
 ## Brand guide
 
-When to use: Day 3. Fonts, colours, headshots, marketing materials, and the Faris Team logo become one brand guidelines file.
+When to use: Lesson 3. Fonts, colours, headshots, marketing materials, and the Faris Team logo become one brand guidelines file.
 
 ```
 Here are 10 social media posts I like the style of, so you understand my taste, plus fonts, colour palettes, and designs I like, and my logo. My photos, headshots, and listing photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder, not my whole Drive.
@@ -240,7 +240,7 @@ Build me a one-page brand guide: colours with hex codes, a heading and body font
 
 ## Caption in your style
 
-When to use: Day 9 for 10 posts you like, and Day 10 to publish one and schedule two more. Run the new version through the brand guidelines from Day 3.
+When to use: Lesson 9 for 10 posts you like, and Lesson 10 to publish one and schedule two more. Run the new version through the brand guidelines from Lesson 3.
 
 ```
 Follow my brand guide. Here is a photo of my local spot.
@@ -259,7 +259,7 @@ I will review it and post it myself.
 
 ### End of each chat
 
-When to use: Day 6, and at the end of every day after that. Save the list to your decision log. An SOP is a step-by-step. Day 2 is where you save the email writing SOP.
+When to use: Lesson 6, and at the end of every lesson after that. Save the list to your decision log. An SOP is a step-by-step. Lesson 2 is where you save the email writing SOP.
 
 ```
 Before we finish, list any new SOPs and decisions from this chat in short bullet points so I can save them to my rules file.
@@ -267,7 +267,7 @@ Before we finish, list any new SOPs and decisions from this chat in short bullet
 
 ### Read my rules back
 
-When to use: Day 6 and Day 30, and at the start of a fresh chat, or when a thread gets muddled.
+When to use: Lesson 6 and Lesson 30, and at the start of a fresh chat, or when a thread gets muddled.
 
 ```
 Read my house rules back to me in short bullets before we start. If anything is missing, ask. Do not invent a rule I did not give you.
