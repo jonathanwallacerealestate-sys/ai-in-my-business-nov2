@@ -21,7 +21,7 @@ How to use this file: paste it into the one assistant you chose, then ask it to 
 
 ## 1. How to start
 
-Pick one assistant and open it every day. Grok is the one Jonathan uses most, day to day, by voice. ChatGPT, Claude, Gemini, and Copilot can do this beginner work too. Pick the one you will actually open.
+Use Grok or Claude, and open it every day. Grok is the top pick for agents.
 
 Three moves, from the beginner level:
 
@@ -275,11 +275,17 @@ Connecting accounts, saving a standing process, and adding more assistants are l
 
 Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay.
 
-One focus a day. Each day builds on the last. Days 1 to 9 are about 15 to 20 minutes. Days 10 to 20 are about 30 minutes. Days 21 to 30 are about 30 to 45 minutes. Days 7, 16, and 24 are good spots to catch up. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
+Eight parts, in order: Foundations, Clients and social, Connect your tools, Letters and offers, Deal card, Advanced, Your list, Review.
+
+End every day by adding decisions to your decision log.
+
+The first week covers your business, your writing style, brand guidelines, a task brain dump, dead leads, your decision log, and your inbox. Use Grok or Claude. Grok is the top pick for agents.
+
+One focus a day. Each day builds on the last. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
 
 Your 30 days also live in an online learning centre where you sign in with your name and tick off each day.
 
-1. Pick one AI and use it on one real email.
+1. Use Grok or Claude on one real email. Grok is the top pick for agents.
 2. Talk instead of type. Tip: save any prompt you reuse.
 3. Brainstorm three tasks you hate.
 4. About-me note: market, brokerage, who you serve, sign-off, contact details.
