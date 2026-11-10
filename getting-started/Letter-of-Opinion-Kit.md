@@ -9,7 +9,7 @@ Working files folder: https://drive.google.com/drive/folders/1gVOahhpWV00QdTg44B
 That folder holds three things:
 
 - Faris Team Letter of Opinion Template.docx
-- Letter of Opinion Client Email Template.md
+- Letter-of-Opinion-Client-Email-Template.md
 - This kit
 
 ## For you, before you paste this into an AI
