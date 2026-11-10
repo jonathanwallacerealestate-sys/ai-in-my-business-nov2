@@ -1,6 +1,6 @@
 # Prompts by area
 
-Step 1 of 4: Getting Started. From the Faris Team talk.
+AI Bootcamp: Zero to Hero. From the Faris Team talk.
 
 Do one lesson at a time. If you don't finish a lesson, don't move on until it's done. If 30 lessons takes you 90 days, that's okay. The day numbers below match the bootcamp checklist.
 
