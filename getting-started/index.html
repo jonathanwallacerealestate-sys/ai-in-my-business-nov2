@@ -457,7 +457,23 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .igshots.solo .igpic{aspect-ratio:1350/1688;max-height:50vh}
 .igviews{margin:0;padding:2px 10px 0;font-size:clamp(22px,1.55vw,30px);font-weight:700;line-height:1.1;color:#1c1b19;letter-spacing:-.01em}
 .igshots .igpost header strong,.igshots .igpost .cap,.igshots .iglikes{font-size:clamp(16px,1.15vw,22px);line-height:1.25}
-.igshots .igpost header strong{overflow-wrap:anywhere}
+.igfeed{background:#fff;color:#262626;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;border:1px solid #efefef;width:min(420px,48%);flex:1 1 280px;max-width:440px;min-width:0}
+.igshots.solo .igfeed{flex:0 1 400px;width:min(400px,46%)}
+.igfeed header{display:flex;align-items:center;gap:10px;padding:8px 12px}
+.igfeed .av{width:34px;height:34px;border-radius:50%;padding:2px;background:conic-gradient(from 210deg,#f9ce34,#ee2a7b,#6228d7);flex:none}
+.igfeed .av b{display:block;width:100%;height:100%;border-radius:50%;background:#efefef}
+.igfeed header strong{font-weight:650;font-size:clamp(15px,1.05vw,20px);line-height:1.1}
+.igfeed .igmenu{margin-left:auto;width:20px;height:20px;flex:none}
+.igfeed>img{width:100%;height:auto;display:block}
+.igfeed .igacts{display:flex;align-items:center;gap:14px;padding:8px 12px 2px}
+.igfeed .igacts svg{width:26px;height:26px;stroke:#262626;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.igfeed .ig-save{margin-left:auto}
+.igfeed .iglikes{margin:0;padding:2px 12px 0;font-weight:700;font-size:clamp(16px,1.15vw,22px);line-height:1.2}
+.igfeed .igviews{margin:0;padding:1px 12px 0;font-size:clamp(15px,1.05vw,20px);line-height:1.2;color:#262626}
+.igfeed .cap{margin:0;padding:6px 12px 0;font-size:clamp(15px,1.05vw,20px);line-height:1.3}
+.igfeed .cap strong{font-weight:700}
+.igfeed .more{color:#737373}
+.igfeed .igdate{margin:0;padding:8px 12px 12px;color:#737373;font-size:clamp(12px,.85vw,15px);letter-spacing:.06em;text-transform:uppercase}
 .reelcard.igreel{position:relative}
 .reelcard .igreel-top,.reelcard .igreel-bot{font-family:"Segoe UI","Noto Sans",sans-serif;font-size:clamp(16px,1.2vw,24px);letter-spacing:.04em}
 .reelcard .igreel-bot{display:flex;align-items:center;gap:8px}
@@ -735,31 +751,23 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
       </ul>
     </div>
     <div class="igshots visual" aria-label="Two Instagram posts. Webers, 3,811 views and 93 likes. Che Roba, 1,843 views and 75 likes.">
-      <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>Webers</small></div></header>
-        <div class="igpic"><img src="assets/ig-webers.jpg" alt="Webers, the roadside stop. Jonathan Wallace's Instagram post."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="igviews">3,811 views</p>
+      <article class="igfeed">
+        <header><span class="av" aria-hidden="true"><b></b></span><strong>jonathanwallacerealestate</strong><svg class="igmenu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="#262626"/><circle cx="12" cy="12" r="1.6" fill="#262626"/><circle cx="19" cy="12" r="1.6" fill="#262626"/></svg></header>
+        <img src="assets/ig-webers.jpg" alt="Webers, the roadside stop. Jonathan Wallace's Instagram post.">
+        <div class="igacts" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg><svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"/></svg><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"/></svg><svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/></svg></div>
         <p class="iglikes">93 likes</p>
-        <p class="cap">Almost forty years since my parents were driving me down from North Bay to see my grandparents, and Webers was always the halfway point… Some places don't change because they don't need to.</p>
+        <p class="igviews">3,811 views</p>
+        <p class="cap"><strong>jonathanwallacerealestate</strong> Almost forty years since my parents were driving me down from North Bay <span class="more">... more</span></p>
+        <p class="igdate">November 2026</p>
       </article>
-      <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>Che Roba</small></div></header>
-        <div class="igpic"><img src="assets/ig-cheroba.jpg" alt="Che Roba Focaccia Bar. Jonathan Wallace's Instagram post."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="igviews">1,843 views</p>
+      <article class="igfeed">
+        <header><span class="av" aria-hidden="true"><b></b></span><strong>jonathanwallacerealestate</strong><svg class="igmenu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="#262626"/><circle cx="12" cy="12" r="1.6" fill="#262626"/><circle cx="19" cy="12" r="1.6" fill="#262626"/></svg></header>
+        <img src="assets/ig-cheroba.jpg" alt="Che Roba Focaccia Bar. Jonathan Wallace's Instagram post.">
+        <div class="igacts" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg><svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"/></svg><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"/></svg><svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/></svg></div>
         <p class="iglikes">75 likes</p>
-        <p class="cap">Tucked along River Road West in Wasaga Beach is a little taste of Italy you need to know about… Who is coming with me?</p>
+        <p class="igviews">1,843 views</p>
+        <p class="cap"><strong>jonathanwallacerealestate</strong> Tucked along River Road West in Wasaga Beach is a little taste of Italy <span class="more">... more</span></p>
+        <p class="igdate">November 2026</p>
       </article>
     </div>
   </div>
@@ -848,18 +856,14 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
       </ul>
     </div>
     <div class="igshots solo visual" aria-label="Instagram post. The boat. 1,292 views and 40 likes.">
-      <article class="igpost">
-        <header><i aria-hidden="true"><b></b></i><div><strong>@jonathanwallacerealestate</strong><small>The boat</small></div></header>
-        <div class="igpic"><img src="assets/ig-boat.jpg" alt="A boat at the dock. Jonathan Wallace's Instagram post."></div>
-        <div class="igacts" aria-hidden="true">
-          <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"></path></svg>
-          <svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"></path></svg>
-          <svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"></path></svg>
-        </div>
-        <p class="igviews">1,292 views</p>
+      <article class="igfeed">
+        <header><span class="av" aria-hidden="true"><b></b></span><strong>jonathanwallacerealestate</strong><svg class="igmenu" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6" fill="#262626"/><circle cx="12" cy="12" r="1.6" fill="#262626"/><circle cx="19" cy="12" r="1.6" fill="#262626"/></svg></header>
+        <img src="assets/ig-boat.jpg" alt="A boat at the dock. Jonathan Wallace's Instagram post.">
+        <div class="igacts" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 4.6-7 9-7 9z"/></svg><svg viewBox="0 0 24 24"><path d="M6 16.5 4 20l4-1.5A9 9 0 1 0 6 16.5z"/></svg><svg viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-2.5-6.5z"/></svg><svg class="ig-save" viewBox="0 0 24 24"><path d="M7 4h10a1 1 0 0 1 1 1v15l-6-3.5L6 20V5a1 1 0 0 1 1-1z"/></svg></div>
         <p class="iglikes">40 likes</p>
-        <p class="cap">The house gets you to the dock. The boat decides whether you ever use it. … Thanks for the honesty, Caleb.</p>
+        <p class="igviews">1,292 views</p>
+        <p class="cap"><strong>jonathanwallacerealestate</strong> The house gets you to the dock. The boat decides whether you ever use it. <span class="more">... more</span></p>
+        <p class="igdate">November 2026</p>
       </article>
     </div>
   </div>
