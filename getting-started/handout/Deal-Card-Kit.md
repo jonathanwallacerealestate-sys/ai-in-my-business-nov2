@@ -4,6 +4,8 @@ From Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage.
 
 One card for the next person to call. You do not need an API key, and the brokerage does not hand out a connector.
 
+![Sample deal card for Jordan Sample. Fictional.](examples/deal.png)
+
 ## For you
 
 This is the "who to connect with next" card. It shows one person at a time. Someone you already handled today is not offered again.

@@ -4,6 +4,8 @@ From Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage.
 
 One tool. One time saver. You do not have to recreate the format. This file already holds it.
 
+![Sample Letter of Opinion for 123 Banana Street. Fictional. No signature.](examples/letter.png)
+
 Working files folder: https://drive.google.com/drive/folders/1gVOahhpWV00QdTg44BbqIaCOhjplNq1t
 
 That folder holds three things:
