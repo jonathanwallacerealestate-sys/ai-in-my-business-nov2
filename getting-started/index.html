@@ -334,6 +334,13 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .talk .qr-wrap img{width:min(460px,56vh)}
 .talk .qr-cap{font-family:"Playfair Display",serif;font-size:clamp(22px,1.8vw,32px);margin-top:1.2vh;max-width:16ch;color:#1c1b19}
 .talk .qr-cap.url{max-width:none;white-space:nowrap;font-size:clamp(18px,1.5vw,30px)}
+.textcard{background:#fff;color:var(--ink);border-radius:4px;padding:clamp(14px,1.6vh,22px) clamp(16px,1.3vw,26px)}
+.textcard p{margin:0 0 .4em;font-size:clamp(20px,1.3vw,26px);line-height:1.28}
+.textcard p:last-child{margin:0}
+.outreach{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw 1.6vw;width:100%;min-width:0}
+.outreach h3{font-family:Inter,system-ui,sans-serif;font-weight:650;font-size:clamp(20px,1.4vw,28px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink);margin:0 0 .6vh}
+.outreach ol{margin:0;padding-left:1.2em;display:grid;gap:.8vh}
+.outreach li{font-size:clamp(18px,1.2vw,24px);line-height:1.28}
 .reelphone{background:#141311;border-radius:28px;padding:8px;width:min(300px,24vw);margin:0 auto;box-shadow:0 16px 40px rgba(40,32,20,.18)}
 .reelphone img{display:block;width:100%;height:auto;max-height:62vh;object-fit:cover;object-position:center;border-radius:22px;aspect-ratio:9/16}
 .reelcard b{font-family:"Playfair Display",serif;font-weight:500;font-size:clamp(28px,2.6vw,46px);line-height:1.12}
@@ -512,6 +519,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   .talk .pair{grid-template-columns:1fr}
   .talk .reelcard,.reelcard,.talk .tele{min-height:0}
   .slide.boot .path.names{grid-template-columns:1fr}
+  .outreach{grid-template-columns:1fr}
   .reelphone{width:min(220px,62vw)}
   .talk .tele p{font-size:18px}
   .talk .sop{padding:16px}
@@ -881,7 +889,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is the who-to-connect-with-next card, after a showing. Alex Sample is fictional. The phone is a 555 number. The email is example.com. Stage Warm. Last contact was the showing. Suggested opening is a two-minute check-in. Outcomes are Voicemail, Connected, Skip, or Defer. Then paste the one-line draft. It never sends. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
+<section class="slide" data-notes="Other basics, condensed. Everyday admin, emails and texts, summaries and prep. Hand it the messy list and ask for a plan with income work first. Dictate while parked, never while driving. The follow-up you put off: a thank-you, a past-client check-in, a still-looking text. You edit. You send. The picture is a generic card. No name, no phone, no email, no address. Stage Hot. Nobody has called yet. The angle is a check-in on their plans and an updated market value. It never sends. The next slide has texts and emails to copy. Search stays in MLS. Do not describe a follow-up assistant. That is Step 4. Say the line: Starting is easy. Start this week.">
   <div class="talk">
     <div>
       <h2>Notes, emails, <em>your day</em></h2>
@@ -891,21 +899,37 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <li>Check the original</li>
       </ul>
     </div>
-    <div class="dial visual" aria-label="Who to connect with next. Alex Sample is fictional.">
-      <div class="dial-bar"><span>Who to connect with next</span></div>
-      <div class="dial-body">
-        <div class="row"><small>Name</small><b>Alex Sample</b></div>
-        <div class="row"><small>Phone</small><a href="tel:+15550100142">(555) 010-0142</a></div>
-        <div class="row"><small>Email</small><span>alex.sample@example.com</span></div>
-        <div class="row"><small>Stage</small><span>Warm</span></div>
-        <div class="row"><small>Last contact</small><span>The showing, about two months ago</span></div>
-        <div class="row"><small>Why now</small><span>The follow-up window after the showing. A newsletter does not count.</span></div>
-        <div class="row"><small>Suggested opening line</small><span>Hi Alex, it's [Your Name]. Checking in since the showing. Do you have two minutes?</span></div>
-        <div class="actions">
-          <span class="out">Voicemail</span>
-          <span class="out">Connected</span>
-          <span class="out">Skip</span>
-          <span class="out">Defer</span>
+    <div class="textcard visual" aria-label="Generic call card. No named lead.">
+      <p><b>Your lead</b> (CRM record)</p>
+      <p>Call or text, email on file</p>
+      <p><b>Stage:</b> Hot. A likely seller who came in through the team.</p>
+      <p><b>Last contact:</b> Nobody has called yet. Only a template email and your newsletter.</p>
+      <p><b>Why now:</b> Seller tags on the file, never reached, and no listing or sale on the property since last year.</p>
+      <p><b>Angle:</b> Check in on their plans for the house, and offer an updated market value.</p>
+    </div>
+  </div>
+</section>
+
+<section class="slide" data-notes="Copy and paste. Two texts and two emails, plus one seasonal pair. Brackets are theirs to fill: name and your name. They edit, then they send. No real client on this slide. First text offers an updated value. Second asks about 2026 or 2027. Third is the seasonal spring-move note. Email subjects: An updated value for your home. Still thinking about 2026? Getting ready for a spring move. Do not read every word unless you have time. It never sends.">
+  <div class="talk" style="grid-template-columns:1fr;align-items:start">
+    <div>
+      <h2>Copy and <em>paste</em></h2>
+      <div class="outreach">
+        <div>
+          <h3>Text</h3>
+          <ol>
+            <li>Hi [Name], [Your name] here. Prices on your street have shifted this year. Want me to send you an updated value for your home? No pressure either way.</li>
+            <li>Hi [Name], quick one from [Your name]. Are you still planning anything with the house in 2026 or 2027? Happy to help whenever the timing is right.</li>
+            <li>Hi [Name], [Your name] here. Before the holidays get busy, are you thinking about a spring move? Winter is a great time to get ready, and I'm happy to send what's selling near you.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <ol>
+            <li><b>Subject: An updated value for your home</b> Hi [Name], a lot has changed in the market since you first reached out. I can put together an updated value for your home at no cost. Just reply and I'll get started. [Your name]</li>
+            <li><b>Subject: Still thinking about 2026?</b> Hi [Name], are you still planning anything with the house in the next year or two? Even if it's early, I can share what's selling nearby so you can plan. [Your name]</li>
+            <li><b>Subject: Getting ready for a spring move</b> Hi [Name], spring is the busiest time to sell, and the sellers who do best start planning over the winter. If the house is on your mind for 2026, I can send an updated value and a simple prep list. Enjoy the season, [Your name]</li>
+          </ol>
         </div>
       </div>
     </div>
