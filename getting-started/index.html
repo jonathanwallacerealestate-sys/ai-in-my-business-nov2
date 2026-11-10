@@ -195,6 +195,9 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
 .qr-row{display:flex;justify-content:center;align-items:flex-start;gap:2vw}
 .qr-row .qr-wrap img{width:min(156px,20vh)}
 .qr-row .qr-cap{font-size:clamp(14px,1.15vw,20px);max-width:24ch;margin-top:.6vh}
+.qr-row.one{justify-content:center}
+.qr-row.one .qr-wrap img{width:min(188px,24vh)}
+.qr-row.one .qr-cap{max-width:28ch;font-size:clamp(16px,1.3vw,22px)}
 @media (max-height:820px){
   .slide{padding:64px 5.4vw 50px}
   .slide::before{top:22px}
@@ -214,6 +217,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   .qr-stack{gap:.6vh}
   .qr-stack .qr-cap{font-size:14px}
   .qr-row .qr-wrap img{width:min(112px,15vh)}
+  .qr-row.one .qr-wrap img{width:min(148px,20vh)}
   .qr-row{gap:1.2vw}
   .qr-row .qr-cap{font-size:13px}
   .shot img,.shot.tall img{max-height:48vh}
@@ -340,7 +344,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Keep this short. If they have used ChatGPT, they are ready. Pick the one they will open every day. Write a few rules. It drafts, they send. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The copyable prompt for three tasks they hate is on the playbook page, not this slide. Sample card on the handout: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign.">
+<section class="slide" data-notes="Keep this short. If they have used ChatGPT, they are ready. Pick the one they will open every day. Write a few rules. It drafts, they send. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the folder at the end. Do not ask anyone to copy during the talk. Sample card on the handout: paperwork follow-up, CMA prep, writing listing descriptions. Do not open ads or a full nurture campaign.">
   <div class="kicker">Step 1 of 4 · Getting Started</div>
   <h2>How to <em>start</em></h2>
   <div class="grid g3">
@@ -395,7 +399,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   <div class="pair">
     <ol class="nlist">
       <li>Use an assistant that can open a web browser.<span>Check that your plan includes it.</span></li>
-      <li>Give it the Deal Card kit. The code is at the end.</li>
+      <li>Give it the Deal Card kit.<span>In the folder at the end.</span></li>
       <li>On the Follow Up Boss sign-in page, you sign in yourself.<span>The AI never needs your password.</span></li>
       <li>It reads the screen. It does not change anything.<span>Hot leads every 7 to 10 days. Warm about every 2 months. Past clients and your sphere each quarter. A newsletter does not count.</span></li>
       <li>You call, say what happened, and it drafts a one-line note for you to paste.<span>Then the next person. Nobody is offered twice today.</span></li>
@@ -462,7 +466,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
   </div>
 </section>
 
-<section class="slide" data-notes="Steps after they share taste. Two: upload photos, headshots, and listing photos to one Drive folder with subfolders Headshots, Listing Photos, Local Spots, and Logo. Tip: only share that one folder, not the whole Drive. Three: edit the guide until it sounds like them and save one file. Four: attach it and say follow my brand guide. When it wanders, fix the guide. The before and after uses a sample cafe photo. The prompt is on this slide. Say 10 social media posts.">
+<section class="slide" data-notes="Steps after they share taste. Two: upload photos, headshots, and listing photos to one Drive folder with subfolders Headshots, Listing Photos, Local Spots, and Logo. Tip: only share that one folder, not the whole Drive. Three: edit the guide until it sounds like them and save one file. Four: attach it and say follow my brand guide. When it wanders, fix the guide. The before and after uses a sample cafe photo. The prompt is in the folder at the end. Do not ask anyone to copy during the talk. Say 10 social media posts.">
   <div class="kicker">Then give it real photos, and follow the page</div>
   <h2>One folder. One file. <em>Your voice.</em></h2>
   <div class="pair">
@@ -473,12 +477,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold)}
         <li>Edit the guide until it sounds like you. Save one file.</li>
         <li>Attach it and say: follow my brand guide.<span>When it wanders, fix the guide, not only the post.</span></li>
       </ol>
-      <div class="copybox" style="margin-top:.6vh">
-        <div class="copyhead"><span class="tag">Copy this prompt</span><button class="copybtn" type="button" data-copy="brand-prompt">Copy</button></div>
-        <pre id="brand-prompt">Here are 10 social media posts I like the style of, so you understand my taste, plus fonts, colour palettes, and designs I like, and my logo. My photos, headshots, and listing photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder, not my whole Drive.
-
-Build me a one-page brand guide: colours with hex codes, a heading and body font, photo style, voice, dos and don'ts, max 5 hashtags, my sign-off line. Ask me questions if anything is unclear.</pre>
-      </div>
+      <div class="lesson"><b>Prompt in the folder at the end.</b></div>
     </div>
     <div>
       <div class="folder" aria-label="Example Drive folder">
@@ -522,18 +521,7 @@ Build me a one-page brand guide: colours with hex codes, a heading and body font
         <li>Ask for a new caption in that style.<span>Original wording. Never copied. Max 5 hashtags.</span></li>
         <li>Review it, tweak it, and post it yourself.</li>
       </ol>
-      <div class="copybox" style="margin-top:.6vh">
-        <div class="copyhead"><span class="tag">Copy this prompt</span><button class="copybtn" type="button" data-copy="social-prompt">Copy</button></div>
-        <pre id="social-prompt">Follow my brand guide. Here is a photo of my local spot.
-
-Write a new caption in that style.
-Original wording. Do not copy anyone else's sentences.
-Short paragraphs. Max 5 hashtags.
-Do not invent details.
-
-I will review it and post it myself.</pre>
-      </div>
-      <div class="lesson"><b>AI drafts. You post.</b></div>
+      <div class="lesson"><b>Prompt in the folder at the end.</b> AI drafts. You post.</div>
     </div>
     <div class="phones" aria-label="Two example captions">
       <div class="phone">
@@ -552,7 +540,7 @@ I will review it and post it myself.</pre>
   </div>
 </section>
 
-<section class="slide" data-notes="Letter of Opinion, setup. In your experience a letter takes about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say: you do not have to recreate this, but this is the power of AI. Four setup steps. The picture is a sample letter for Alex and Jordan Sample. Click it to enlarge. The link opens the sample PDF. Do not read a web address or the shared folder address.">
+<section class="slide" data-notes="Letter of Opinion, setup. In your experience a letter takes about 30 minutes by hand, about 30 minutes to set up once, then about 30 minutes back on each letter. Say that as your estimate. Say: you do not have to recreate this, but this is the power of AI. Four setup steps. The picture is a sample letter for Alex and Jordan Sample. Click it to enlarge. The kit is in the folder at the end. Do not read a web address. Do not ask anyone to scan until the close.">
   <div class="kicker">A letter you already write</div>
   <h2>Your Letter of Opinion, <em>set up once</em></h2>
   <div class="pair">
@@ -561,7 +549,7 @@ I will review it and post it myself.</pre>
       <ol class="nlist">
         <li>Download the Faris Team Word template from the shared folder into your own Drive.</li>
         <li>Photograph your signature on white paper. Save the photo to Drive.</li>
-        <li>Get the kit from the code at the end.</li>
+        <li>The kit is in the folder at the end.</li>
         <li>Give your AI the template, the signature, and the kit once.</li>
       </ol>
       <div class="lesson"><b>You don't have to recreate this, but this is the power of AI.</b></div>
@@ -571,7 +559,6 @@ I will review it and post it myself.</pre>
         <img src="assets/loo-sample-page1.png" alt="Sample Faris Team Letter of Opinion for Alex and Jordan Sample. Fictional.">
         <small>Sample letter · click to enlarge</small>
       </button>
-      <a class="pdf-link" href="assets/Letter-of-Opinion-123-Sample-Street-SAMPLE.pdf" target="_blank" rel="noopener">Open the sample letter (PDF)</a>
     </div>
   </div>
 </section>
@@ -628,7 +615,7 @@ I will review it and post it myself.</pre>
   <div class="lesson"><b>Starting is easy. Start this week.</b></div>
 </section>
 
-<section class="slide" data-notes="Best practices. It does not remember unless they give it a place to keep things. Each correction gets saved. At the end of each chat, save your SOPs and the decisions you made. Explain SOP as a step-by-step. Save it to the house rules file or an SOP doc in the one Drive folder, so the next chat starts smarter. The card is fictional: two SOPs and two decisions. Copy the prompt. Takeaway: Correct once, save it forever. Canadian spelling. Date each rule. Newest rule wins.">
+<section class="slide" data-notes="Best practices. It does not remember unless they give it a place to keep things. Each correction gets saved. At the end of each chat, save your SOPs and the decisions you made. Explain SOP as a step-by-step. Save it to the house rules file or an SOP doc in the one Drive folder, so the next chat starts smarter. The card is fictional: two SOPs and two decisions. The prompt is in the folder at the end. Do not ask anyone to copy during the talk. Takeaway: Correct once, save it forever. Canadian spelling. Date each rule. Newest rule wins.">
   <div class="kicker">Best practices · keep your AI on track</div>
   <h2>Correct once, <em>save it forever</em></h2>
   <div class="pair">
@@ -638,10 +625,7 @@ I will review it and post it myself.</pre>
         <li>A correction you only say once is gone. Save it.</li>
         <li>At the end of each chat, save your SOPs and the decisions you made.<span>An SOP is a step-by-step. Save it to your rules file, or an SOP doc in your one Drive folder.</span></li>
       </ol>
-      <div class="copybox" style="margin-top:.6vh">
-        <div class="copyhead"><span class="tag">End of each chat</span><button class="copybtn" type="button" data-copy="sop-prompt">Copy</button></div>
-        <pre id="sop-prompt">Before we finish, list any new SOPs and decisions from this chat in short bullet points so I can save them to my rules file.</pre>
-      </div>
+      <div class="lesson"><b>Prompt in the folder at the end.</b></div>
     </div>
     <div class="stack">
       <div class="rules" aria-label="Example house rules">
@@ -806,7 +790,7 @@ I will review it and post it myself.</pre>
   <div class="lesson"><b>Not today:</b> connecting accounts, and more than one assistant.</div>
 </section>
 
-<section class="slide" data-notes="Close. Week 1 is 30 minutes every day for 7 days. Read the seven lines. Days 8 to 30 are 30 minutes every other day. The full tick list, with the prompts, is on the playbook page they scan. Day 2 is house rules, an about-me note, and the approval line: anything client-facing gets their review first. Day 3 includes examples of good. Examples beat instructions. Day 1 includes three tasks they hate. The card is a sample: paperwork follow-up, CMA prep, writing listing descriptions. The prompt is on the handout. Three codes. Do not read a web address. First: playbook. Second: Letter of Opinion kit. Third: Deal Card kit. No Plaud in the plan. Restate: Starting is easy. Start this week. By day 30: a rules file, saved prompts, the letter working, a deal card habit, a brand guide, and three posts out. The huddle date is not set. Ask Thomas rather than naming one.">
+<section class="slide" data-notes="Close. Week 1 is 30 minutes every day for 7 days. Read the seven lines. Days 8 to 30 are 30 minutes every other day. One code only, at the end. It opens the shared folder. Do not read a web address, and do not show one. The label is Scan for every prompt and kit. Week 1 is 30 minutes every day. Days 8 to 30 are every other day. Day 2 is house rules, an about-me note, and the approval line. Day 3 includes examples of good. Day 1 includes three tasks they hate. The card is a sample: paperwork follow-up, CMA prep, writing listing descriptions. No Plaud in the plan. Restate: Starting is easy. Start this week. By day 30: a rules file, saved prompts, the letter working, a deal card habit, a brand guide, and three posts out. The huddle date is not set. Ask Thomas rather than naming one.">
   <div class="closing">
     <div>
       <div class="kicker">30 minutes a day this week, then every other day</div>
@@ -835,18 +819,10 @@ I will review it and post it myself.</pre>
         </div>
       </div>
     </div>
-    <div class="qr-row">
+    <div class="qr-row one">
       <div class="qr-wrap">
-        <img src="assets/playbook-qr.png" alt="QR code. Scan to download the playbook." width="798" height="798">
-        <p class="qr-cap">Scan to download the playbook</p>
-      </div>
-      <div class="qr-wrap">
-        <img src="assets/loo-kit-qr.png" alt="QR code. Scan to download the Letter of Opinion kit." width="798" height="798">
-        <p class="qr-cap">Scan to download the Letter of Opinion kit</p>
-      </div>
-      <div class="qr-wrap">
-        <img src="assets/deal-card-qr.png" alt="QR code. Scan to download the Deal Card kit." width="798" height="798">
-        <p class="qr-cap">Scan to download the Deal Card kit</p>
+        <img src="assets/folder-qr.png" alt="QR code. Scan for every prompt and kit." width="798" height="798">
+        <p class="qr-cap">Scan for every prompt and kit</p>
       </div>
     </div>
   </div>
