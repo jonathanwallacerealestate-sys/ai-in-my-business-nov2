@@ -54,7 +54,7 @@ h1 em,h2 em{font-style:italic;color:var(--gold-ink)}
 .ladder-card{background:radial-gradient(120% 80% at 50% 0%,rgba(232,196,140,.2),transparent 62%),#141311;border-radius:28px;padding:clamp(16px,2vh,26px) clamp(16px,1.5vw,24px) clamp(18px,2.2vh,28px);box-shadow:0 22px 50px rgba(40,32,20,.16)}
 .ladder-kicker{font-size:clamp(14px,1.5vw,28px);letter-spacing:.14em;text-transform:uppercase;color:#E6C98A;font-weight:500;margin-bottom:12px}
 .ladder{list-style:none;display:flex;flex-direction:column;gap:12px}
-.ladder-pill{position:relative;display:flex;align-items:center;min-height:78px;padding:clamp(12px,1.4vh,16px) clamp(88px,5.2vw,112px) clamp(12px,1.4vh,16px) clamp(24px,1.5vw,32px);border-radius:999px;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(100deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
+.ladder-pill{position:relative;display:flex;align-items:center;min-height:78px;padding:clamp(12px,1.4vh,16px) clamp(88px,5.2vw,112px) clamp(12px,1.4vh,16px) clamp(24px,1.5vw,32px);border-radius:14px;cursor:default;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(100deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
 .ladder-copy{display:flex;flex-direction:column;gap:1px;min-width:0}
 .ladder-step{font-size:clamp(14px,1.5vw,30px);letter-spacing:.1em;text-transform:uppercase;color:#E8D7B0;font-weight:500;line-height:1}
 .ladder-item.is-now .ladder-step{color:#F0D7A4}
@@ -66,14 +66,10 @@ h1 em,h2 em{font-style:italic;color:var(--gold-ink)}
 .ladder-num{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:28px;font-weight:500;background:linear-gradient(#161513,#161513) padding-box,linear-gradient(140deg,var(--a),var(--b)) border-box;border:2.5px solid transparent}
 .ladder-item:not(.is-now){opacity:.62}
 .ladder-item.is-now{opacity:1}
-.ladder-item.is-now .ladder-pill{animation:stepglow 3.2s ease-in-out infinite}
-@keyframes stepglow{
-  0%,100%{box-shadow:0 0 0 1px rgba(230,201,138,.28),0 0 16px rgba(227,155,134,.28)}
-  50%{box-shadow:0 0 0 1px rgba(230,201,138,.7),0 0 28px rgba(227,155,134,.62)}
-}
+.ladder-item.is-now .ladder-pill{box-shadow:inset 4px 0 0 #E6C98A}
+.ladder-num{cursor:default}
 @media (prefers-reduced-motion:reduce){
   .slide{transition:none}
-  .ladder-item.is-now .ladder-pill{animation:none;box-shadow:0 0 0 1px rgba(230,201,138,.55),0 0 22px rgba(227,155,134,.45)}
 }
 html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:none;height:100vh;pointer-events:auto}
 .stack{display:grid;gap:1.15vh;align-content:center}
@@ -154,8 +150,9 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
 .dial .why,.dial .open{border-left:2px solid var(--gold);padding-left:10px;margin:8px 0;line-height:1.4}
 .dial .why small,.dial .open small{display:block;font-size:clamp(14px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:3px;font-weight:600}
 .dial .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.dial .actions .call{background:var(--gold-ink);color:#fff;border:0;border-radius:999px;padding:7px 14px;font-size:clamp(12px,.85vw,14px);font-weight:500}
-.dial .actions .out{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:clamp(11px,.78vw,13px);color:var(--muted)}
+.dial .actions .call,.dial .actions .out{display:inline-block;cursor:default;pointer-events:none}
+.dial .actions .call{background:var(--gold-ink);color:#fff;border:0;border-radius:6px;padding:7px 14px;font-size:clamp(12px,.85vw,14px);font-weight:500}
+.dial .actions .out{background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:clamp(11px,.78vw,13px);color:var(--muted)}
 .dial-next{border-top:1px dashed var(--line);margin-top:10px;padding-top:8px}
 .dial-next small{display:block;font-size:clamp(14px,1.15vw,22px);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .dial-next div{display:flex;gap:8px;flex-wrap:wrap}
@@ -586,7 +583,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Keep this short. Skip the free plans. Start on Grok Premium or Claude Pro. The App Store names are Grok, and Claude by Anthropic. Prices checked 10 Nov 2026. x.ai/pricing lists Premium at $30 a month. claude.com/pricing lists Pro at $20 if billed monthly, or $17 a month if billed yearly. Those pages print a $ sign and do not print USD or CAD on these cards. The next slide has the detail. Then one real task from their own day. You still read it and you send it. Then build from there. Do not name or number a lesson. Today, in this order: the deal card, posts that sound like them, a letter of opinion, then cost and what to skip. The prompt for three tasks they hate is in the learning centre. The QR at the end opens it. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
+<section class="slide" data-notes="Keep this short. Skip the free plans. Start on Grok Premium or Claude Pro. The App Store names are Grok, and Claude by Anthropic. Prices checked 10 Nov 2026. x.ai/pricing lists Premium at $30 a month. claude.com/pricing lists Pro at $20 if billed monthly, or $17 a month if billed yearly. Those pages print a $ sign and do not print USD or CAD on these cards. The next slide has the detail. Then one real task from their own day. You still read it and you send it. Then build from there. Do not name or number a lesson. Today, in this order: the paid plans, posts that sound like them, a letter of opinion, the follow-up card, then the learning centre. The who-to-connect-with-next card is the follow-up after a showing. The prompt for three tasks they hate is in the learning centre. The QR at the end opens it. Do not open ads or a full nurture campaign. Do not ask anyone to copy during the talk.">
   <div class="talk concept">
     <div>
       <h2>How to <em>start</em></h2>
@@ -610,7 +607,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Skip the free plans. Prices checked 10 Nov 2026. x.ai/pricing lists Premium at $30 a month. That is the first paid plan with the latest models, Grok's agent, and cloud agents. Plus is $8 a month and does not include the agent. Super is $100 a month and Ultra is $200 a month, for more usage. claude.com/pricing lists Pro at $20 if billed monthly, or $17 a month if billed yearly, $200 up front. Pro adds more models and tasks you can hand off. Max is $100 a month. Ultra is $200 a month. Those pages print a $ sign. They do not print USD or CAD on these individual cards. Prices do not include tax. Why Grok: your computer at home does not have to be on. Claude's computer use needs your computer awake. Do not quote a personal bill. Do not name a proprietary bot.">
+<section class="slide" data-notes="Skip the free plans. Prices checked 10 Nov 2026. x.ai/pricing lists Premium at $30 a month. That is the first paid plan with the latest models, Grok's agent, and cloud agents. Plus is $8 a month and does not include the agent. Super is $100 a month and Ultra is $200 a month, for more usage. claude.com/pricing lists Pro at $20 if billed monthly, or $17 a month if billed yearly, $200 up front. Pro adds more models and tasks you can hand off. Max is $100 a month. Ultra is $200 a month. Those pages print a $ sign. They do not print USD or CAD on these individual cards. Prices do not include tax. Why Grok: your computer at home does not have to be on. Claude's computer use needs your computer awake. If asked about the month: Premium and Pro together are about $50. Super or Max, for more usage, is $100 a month. Start with one plan. Do not quote a personal bill. Do not name a proprietary bot.">
   <div class="talk">
     <div>
       <h2>Which plan <em>do I need?</em></h2>
@@ -636,32 +633,6 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <p>a month. More models, tasks you hand off.</p>
         <small>$17 USD a month if billed yearly</small>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-notes="First wow. More conversations, more conversions, more deals. This is the who-to-connect-with-next card. Sample only. Sam Sample is fictional. The phone is a 555 number. The email is example.com. One person at a time. Someone already handled today is not offered again. They make the call. It does not text or email anyone. Do not name internal tools. Stage Warm. Last contact September 8, sample only. Why now: about two months since the last conversation. A newsletter does not count. Suggested opening: Hi Sam, it's your name. Checking in since we last spoke. Do you have two minutes?">
-  <div class="talk concept">
-    <div>
-      <h2>One card. <em>You call.</em></h2>
-      <ul class="points">
-        <li>One person</li>
-        <li>You make the call</li>
-        <li>It never texts</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-notes="How to build the card without a connector. Team members will not have their own Follow Up Boss API keys. Use the Follow Up Boss website. One: an assistant that can open a web browser. In the notes only, this is often called agent mode or computer use. Check the plan. Do not name a vendor feature you have not confirmed. Two: give it the Deal Card kit, in the learning centre. The QR at the end opens it. Three: at the sign-in page they take over. The AI never gets the password. Four: it reads the screen, read only. Five: how often. Hot leads every 7 to 10 days, warm about every 2 months, past clients and sphere quarterly. Newsletters do not count. Skip unsubscribed or parked contacts. Six: they call, say the outcome, it drafts a one-line note to paste, then the next card. It never sends a message. Say: you do not have to recreate this, but this is the power of AI.">
-  <div class="talk concept">
-    <div>
-      <h2>You <em>sign in</em></h2>
-      <ul class="points">
-        <li>You type the password</li>
-        <li>It only reads</li>
-        <li>Then one card</li>
-      </ul>
     </div>
   </div>
 </section>
@@ -914,11 +885,11 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
         <div class="why"><small>Why call today</small>The follow-up window after the showing. A newsletter does not count as contact.</div>
         <div class="open"><small>Suggested follow-up</small>Hi Alex, it's [Your Name]. Checking in since the showing. Do you have two minutes?</div>
         <div class="actions">
-          <button type="button" class="call">Call</button>
-          <button type="button" class="out">Connected</button>
-          <button type="button" class="out">Voicemail</button>
-          <button type="button" class="out">Not now</button>
-          <button type="button" class="out">Log the call</button>
+          <span class="call">Call</span>
+          <span class="out">Connected</span>
+          <span class="out">Voicemail</span>
+          <span class="out">Not now</span>
+          <span class="out">Log the call</span>
         </div>
         <div class="dial-next"><small>Draft to paste</small><div><span>Showing follow-up. Liked the kitchen. You send it.</span></div></div>
       </div>
@@ -970,42 +941,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="The fuller month, checked 10 Nov 2026 on x.ai/pricing and claude.com/pricing. Skip the free plans. Premium is $30 a month and Pro is $20 a month. Together that is $50. Super or Max is $100 a month. The pages print a $ sign and do not print USD or CAD on these cards. Do not quote a personal bill. If asked, the plan slide has the detail. Grok keeps working when the laptop is closed. Claude needs your computer awake.">
-  <div class="talk">
-    <div>
-      <h2>Fifty to <em>one hundred</em></h2>
-      <ul class="points">
-        <li>Both plans, $50</li>
-        <li>More usage, $100</li>
-        <li>Start with one</li>
-      </ul>
-    </div>
-    <div class="bigprice visual" aria-label="About 50 to 100 US dollars a month">
-      <b>$50 to $100</b>
-      <span>USD a month</span>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-notes="Advice, not a study. Do not quote a personal bill. Pick one tool and learn it. Do not chase every new app. Do not spend hours perfecting a prompt: talk to it like an assistant and correct it once. Do not build automations or custom bots on day one. Scheduled automations get messy. Do not let it send before you read. Do not trust MLS facts, prices, or legal and contract wording without checking. Do not paste private client information into a tool before the rules note is in place. Connections and a team of assistants are later steps.">
-  <div class="talk">
-    <div>
-      <h2>Leave this <em>for later</em></h2>
-      <ul class="points">
-        <li>Pick one tool</li>
-        <li>No bots yet</li>
-        <li>You still send</li>
-      </ul>
-    </div>
-    <div class="skipvis visual" aria-label="Skip these for now">
-      <div>Every new app</div>
-      <div>Custom bots</div>
-      <div>Auto-send</div>
-    </div>
-  </div>
-</section>
-
-<section class="slide" data-notes="Preview only. Do not teach connectors, permission screens, standing instructions, or a team of assistants. This week is chat. They copy the draft into Outlook, their CRM, or their texts. Step 2, later, is Connect Your Tools: email, calendar, CRM and Drive. Once Drive is connected, it can pull the letter template and the photo folder. Not today. Step 3 is Teach It Your Way. Step 4 is Build Your AI Team. Say the names and move on.">
+<section class="slide" data-notes="Preview only. Do not teach connectors, permission screens, standing instructions, or a team of assistants. This week is chat. They copy the draft into Outlook, their CRM, or their texts. Step 2, later, is Connect Your Tools: email, calendar, CRM and Drive. Once Drive is connected, it can pull the letter template and the photo folder. Not today. Step 3 is Teach It Your Way. Step 4 is Build Your AI Team. Say the names and move on. If asked what to skip: pick one tool and learn it. Do not chase every new app. Do not spend hours perfecting a prompt. Talk to it like an assistant and correct it once. Do not build automations or custom bots on day one. Do not let it send before you read. Do not trust MLS facts, prices, or legal and contract wording without checking. Do not paste private client information before the rules note is in place. You still send. Connections and a team of assistants are later steps.">
   <div class="talk">
     <div>
       <h2>Connect <em>your tools</em></h2>
@@ -1062,7 +998,7 @@ html:not(.js) .slide{position:relative;opacity:1;visibility:visible;transform:no
   </div>
 </section>
 
-<section class="slide" data-notes="Open the floor for 10 to 15 minutes. These are the questions the slides do not already answer. Permissions and access: you sign in yourself, it only reads, and it never gets the password. TRREB and social links: connecting accounts is Step 2, not today. Search stays in MLS. FUB nurture posts: a later session. This week is posts you approve. First three things: one real task, then the letter, then the one-person card. Do not build a team of assistants today. AI for buyers: a showing sheet you check, and a follow-up you edit and send. Search stays in MLS. Leads or servicing: this month is the people you already have. New lead campaigns are later. Also, if asked: skip the free plan. Premium is $30 a month. Pro is $20 a month, or $17 if billed yearly. Grok keeps working when the laptop is closed. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. If you only remember one line: Starting is easy. Start this week.">
+<section class="slide" data-notes="Open the floor for 10 to 15 minutes. These are the questions the slides do not already answer. Permissions and access, if asked: you sign in yourself, it only reads, and it never gets the password. That is not its own slide. TRREB and social links: connecting accounts is Step 2, not today. Search stays in MLS. FUB nurture posts: a later session. This week is posts you approve. First three things: one real task, then posts that sound like them, then the letter. The one-person card is the follow-up example later in the deck. Do not build a team of assistants today. AI for buyers: a showing sheet you check, and a follow-up you edit and send. Search stays in MLS. Leads or servicing: this month is the people you already have. New lead campaigns are later. Also, if asked: skip the free plan. Premium is $30 a month. Pro is $20 a month, or $17 if billed yearly. Both together are about $50. More usage is $100. Start with one. Grok keeps working when the laptop is closed. Mistakes: verify prices, dates, addresses, schools, and legal wording, then read before you send. Client information: keep it out. Use Sample. No ID, banking, or mortgage numbers. They remain responsible for what they send. Ask leadership for brokerage policy. Not legal advice. If you only remember one line: Starting is easy. Start this week.">
   <div class="talk concept">
     <div>
       <h2><em>Questions</em></h2>
