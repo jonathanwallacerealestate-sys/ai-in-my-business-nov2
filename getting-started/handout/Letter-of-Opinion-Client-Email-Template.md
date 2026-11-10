@@ -4,6 +4,8 @@ From Jonathan Wallace, REALTOR®, Faris Team Real Estate Brokerage.
 
 When to use: after the letter is a one-page PDF. The letter is addressed to everyone on title. This email goes only to the person who asked. Paste it into your own email. You send it.
 
+![Sample email for Jordan Sample about 123 Banana Street. Fictional.](examples/email.png)
+
 Give this file to your AI with the Letter of Opinion kit. The opinion of value is yours. The AI only writes the note.
 
 ## Rules

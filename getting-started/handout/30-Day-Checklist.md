@@ -40,3 +40,16 @@ Your 30 days also live in an online learning centre where you sign in with your 
 | [ ] | 30 | Month review. Clean up your rules file. Pick what is next for Step 2. | |
 
 By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide, and three posts out.
+
+The printable copies show a small example beside the days where a picture helps. Every example is Sample Realty, Alex Sample, REALTOR®, and 123 Banana Street. Not a real home.
+
+![Email draft](examples/email.png)
+![Review text](examples/review.png)
+![Brand guide](examples/brand.png)
+![Social post](examples/post.png)
+![Calendar](examples/calendar.png)
+![CRM note](examples/crm.png)
+![Letter of Opinion](examples/letter.png)
+![Coles Notes](examples/coles.png)
+![Deadline dates](examples/deadlines.png)
+![Deal card](examples/deal.png)
