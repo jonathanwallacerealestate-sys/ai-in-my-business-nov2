@@ -14,7 +14,7 @@ Examples, where a picture helps, are Sample Realty, Alex Sample, REALTOR®, and 
 
 # Foundations
 
-## Pick your AI and tell it about your business
+## Pick Your AI and Tell It About Your Business
 
 Foundations · 15 to 20 min
 
@@ -35,7 +35,7 @@ I'm a REALTOR® and I want you to understand my business. Ask me questions one a
 Ask it to save what you set up today.
 ```
 
-## Teach it your writing style
+## Teach It Your Writing Style
 
 Foundations · 15 to 20 min
 
@@ -62,7 +62,7 @@ Ask it to save what you set up today.
 
 ![Example](examples/email.png)
 
-## Build your brand guidelines
+## Build Your Brand Guidelines
 
 Foundations · 15 to 20 min
 
@@ -88,7 +88,7 @@ Ask it to save what you set up today.
 
 ![Example](examples/brand.png)
 
-## Brain dump the tasks you hate
+## Brain Dump the Tasks You Hate
 
 Foundations · 15 to 20 min
 
@@ -111,7 +111,7 @@ I'm going to brain dump every task in my business I hate doing. Don't suggest an
 Ask it to save what you set up today.
 ```
 
-## Re-engage your dead leads
+## Re-Engage Your Dead Leads
 
 Foundations · 15 to 20 min
 
@@ -134,7 +134,7 @@ Research the best ways to re-engage cold real estate leads by text and by email,
 Ask it to save what you set up today.
 ```
 
-## Set up your decision log
+## Set Up Your Decision Log
 
 Foundations · 15 to 20 min
 
@@ -156,7 +156,7 @@ Help me set up a decision log as a spreadsheet with columns for date, area, deci
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Teach it to clean up your inbox Good spot to catch up.
+## Teach It to Clean Up Your Inbox Good spot to catch up.
 
 Foundations · 15 to 20 min
 
@@ -183,9 +183,9 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/email.png)
 
-# Clients and social
+# Clients and Social
 
-## Ask for reviews
+## Ask for Reviews
 
 Clients and social · 15 to 20 min
 
@@ -212,7 +212,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/review.png)
 
-## Share 10 posts you like
+## Share 10 Posts You Like
 
 Clients and social · 15 to 20 min
 
@@ -235,7 +235,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/post.png)
 
-## Plan your social media strategy
+## Plan Your Social Media Strategy
 
 Clients and social · 30 min
 
@@ -259,7 +259,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/post.png)
 
-## Create your first three posts
+## Create Your First Three Posts
 
 Clients and social · 30 min
 
@@ -284,9 +284,9 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/post.png)
 
-# Calendar, notes and listings
+# Calendar, Notes and Listings
 
-## Book appointments into your calendar
+## Book Appointments into Your Calendar
 
 Calendar, notes and listings · 30 min
 
@@ -313,7 +313,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/calendar.png)
 
-## Teach it how you keep notes
+## Teach It How You Keep Notes
 
 Calendar, notes and listings · 30 min
 
@@ -341,7 +341,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/crm.png)
 
-## Stay in touch with past clients
+## Stay in Touch with Past Clients
 
 Calendar, notes and listings · 30 min
 
@@ -367,7 +367,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/email.png)
 
-## Listing descriptions and your top 5
+## Listing Descriptions and Your Top 5
 
 Calendar, notes and listings · 30 min
 
@@ -388,9 +388,9 @@ I will share listing descriptions I like and how I want a top 5 written. Then I 
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-# Letters and offers
+# Letters and Offers
 
-## Letter of Opinion setup
+## Letter of Opinion Setup
 
 Letters and offers · 30 min
 
@@ -412,7 +412,7 @@ Help me set up a Letter of Opinion. I will put a Word template and a signature p
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Practise, then time a real letter Good spot to catch up.
+## Practise, then Time a Real Letter Good spot to catch up.
 
 Letters and offers · 30 min
 
@@ -435,7 +435,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/letter.png)
 
-## Read an offer: the Coles Notes
+## Read an Offer: The Coles Notes
 
 Letters and offers · 30 min
 
@@ -460,7 +460,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/coles.png)
 
-## Deal deadline tracker
+## Deal Deadline Tracker
 
 Letters and offers · 30 min
 
@@ -483,9 +483,9 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/deadlines.png)
 
-# Deal card
+# Deal Card
 
-## Deal card setup
+## Deal Card Setup
 
 Deal card · 30 min
 
@@ -508,7 +508,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/deal.png)
 
-## Ten leads, then make the calls
+## Ten Leads, then Make the Calls
 
 Deal card · 30 to 45 min
 
@@ -531,7 +531,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/deal.png)
 
-## Paste the notes, then the next 10
+## Paste the Notes, then the Next 10
 
 Deal card · 30 to 45 min
 
@@ -558,7 +558,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 # Advanced
 
-## Prep your listing appointment paperwork
+## Prep Your Listing Appointment Paperwork
 
 Advanced · 30 to 45 min
 
@@ -580,7 +580,7 @@ I build the blank masters myself in WEBForms: the RECO guide, and a listing agre
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Book showings in BrokerBay
+## Book Showings in BrokerBay
 
 Advanced · 30 to 45 min
 
@@ -605,31 +605,9 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 ![Example](examples/calendar.png)
 
-# Your list
+# Your List
 
-## Your list: task 1 Good spot to catch up.
-
-Your list · 30 to 45 min
-
-Hand off the jobs you hate most, one at a time.
-
-1. Open your Brain dump the tasks you hate brain dump and take the next easiest task.
-2. Teach it start to finish. One task this lesson, with no drifting.
-3. Test it on a real example.
-4. Save it as a skill.
-5. Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
-
-**Done when:** That task runs as a saved skill and you've tested it once.
-
-**Prompt**
-
-```
-Here is my list of tasks I hate from Brain dump the tasks you hate [paste it]. Take the next easiest one that we haven't done yet. Ask me questions one at a time until you understand how I do it today. Then do it for me once using a real example, and I'll tell you what to change in plain English. When I'm happy, save it as a skill with clear steps so you can repeat it every time.
-
-Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
-```
-
-## Your list: task 2
+## Your List: Task 1 Good spot to catch up.
 
 Your list · 30 to 45 min
 
@@ -651,7 +629,7 @@ Here is my list of tasks I hate from Brain dump the tasks you hate [paste it]. T
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Your list: task 3
+## Your List: Task 2
 
 Your list · 30 to 45 min
 
@@ -673,7 +651,7 @@ Here is my list of tasks I hate from Brain dump the tasks you hate [paste it]. T
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Your list: task 4
+## Your List: Task 3
 
 Your list · 30 to 45 min
 
@@ -695,7 +673,7 @@ Here is my list of tasks I hate from Brain dump the tasks you hate [paste it]. T
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Your list: task 5
+## Your List: Task 4
 
 Your list · 30 to 45 min
 
@@ -717,7 +695,29 @@ Here is my list of tasks I hate from Brain dump the tasks you hate [paste it]. T
 Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
 ```
 
-## Your list: task 6
+## Your List: Task 5
+
+Your list · 30 to 45 min
+
+Hand off the jobs you hate most, one at a time.
+
+1. Open your Brain dump the tasks you hate brain dump and take the next easiest task.
+2. Teach it start to finish. One task this lesson, with no drifting.
+3. Test it on a real example.
+4. Save it as a skill.
+5. Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
+
+**Done when:** That task runs as a saved skill and you've tested it once.
+
+**Prompt**
+
+```
+Here is my list of tasks I hate from Brain dump the tasks you hate [paste it]. Take the next easiest one that we haven't done yet. Ask me questions one at a time until you understand how I do it today. Then do it for me once using a real example, and I'll tell you what to change in plain English. When I'm happy, save it as a skill with clear steps so you can repeat it every time.
+
+Before we close, give me every decision and SOP we made in this chat as new rows for my decision log.
+```
+
+## Your List: Task 6
 
 Your list · 30 to 45 min
 
@@ -741,7 +741,7 @@ Before we close, give me every decision and SOP we made in this chat as new rows
 
 # Review
 
-## Final review
+## Final Review
 
 Review · 30 to 45 min
 
