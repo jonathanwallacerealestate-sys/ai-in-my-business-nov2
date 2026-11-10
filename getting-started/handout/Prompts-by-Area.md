@@ -2,6 +2,8 @@
 
 Step 1 of 4: Getting Started. From the Faris Team talk.
 
+Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay. The day numbers below match the 30-day checklist.
+
 Paste your house rules at the start of a chat. These prompts are samples. Use Sample names. Do not paste client ID, banking, or mortgage numbers. Drafts only. You review. You send.
 
 The Deal Card kit and the Letter of Opinion kit are in this same folder. Attach the kit. Do not retype it.
@@ -12,7 +14,7 @@ The Deal Card kit and the Letter of Opinion kit are in this same folder. Attach 
 
 ### House rules
 
-When to use: at the start of a chat, so the drafts sound like you.
+When to use: Day 4, and at the start of a chat after that, so the drafts sound like you.
 
 ```
 I'm a REALTOR® with Faris Team Real Estate Brokerage. I work in [your area].
@@ -29,7 +31,7 @@ This is not legal advice.
 
 ### About-me note
 
-When to use: Day 2, with your house rules, so your AI always has the basics.
+When to use: Day 3, so your AI always has the basics.
 
 ```
 About me. Use these basics on every draft. Do not invent a brokerage, a market, or contact details.
@@ -43,7 +45,7 @@ Contact: [the phone and email you want on drafts].
 
 ### Approval line
 
-When to use: Day 2, with your house rules.
+When to use: Day 5. Client-facing work always gets your review.
 
 ```
 Approval line. You may organize notes and checklists on your own. Anything a client would see, an email, a text, a post, or a letter, waits for my review. I send it myself.
@@ -51,7 +53,7 @@ Approval line. You may organize notes and checklists on your own. Anything a cli
 
 ### Three things I hate
 
-When to use: Day 1, after you install one AI and answer one real email.
+When to use: Day 2, after you have used it on one real email.
 
 ```
 I'm a real estate agent. Ask me a few questions about my week, then help me pick three tasks I hate doing that you could help me with over the next 30 days. For each, tell me how we'd start and how much time it could save.
@@ -61,7 +63,7 @@ A sample answer, not yours: paperwork follow-up, CMA prep, writing listing descr
 
 ### Email reply
 
-When to use: when you save your three reusable prompts, and any time a reply is waiting.
+When to use: Day 7, and any time a reply is waiting.
 
 ```
 Draft a reply to the email below. Warm, short, plain language. No exclamation marks. Draft only. I will review it and send it myself. Do not invent facts.
@@ -71,7 +73,7 @@ Draft a reply to the email below. Warm, short, plain language. No exclamation ma
 
 ### Text reply
 
-When to use: with the email prompt, for a short message you will send yourself.
+When to use: Day 7, for a short message you will send yourself.
 
 ```
 Draft a short text I can send. One to three sentences. Plain language. Draft only. I will review it and send it myself.
@@ -82,7 +84,7 @@ What happened: [a few words].
 
 ### Appointment summary
 
-When to use: with the email and text prompts, after a meeting.
+When to use: Day 7, and again on Day 11 after a voice memo.
 
 ```
 Turn these notes into an appointment summary. Give me key points, open questions, and what I must verify. Do not add facts that are not in the notes.
@@ -92,7 +94,7 @@ Turn these notes into an appointment summary. Give me key points, open questions
 
 ### Text templates
 
-When to use: Day 3, so you are not writing the same three texts from scratch.
+When to use: Day 9, so you are not writing the same three texts from scratch.
 
 ```
 Write three short texts I can reuse: a showing follow-up, an offer update, and a check-in. Plain language. Leave a blank where the name and the detail go. I will edit each one before I send it.
@@ -100,7 +102,7 @@ Write three short texts I can reuse: a showing follow-up, an offer update, and a
 
 ### Inbox cleanup
 
-When to use: in Days 8 to 30, one 30-minute session.
+When to use: Day 10.
 
 ```
 Here are my 5 oldest unanswered emails. Private details are removed.
@@ -110,7 +112,7 @@ Draft a reply to each one. Short. Warm. Plain language. Number them to match. I 
 
 ### Time-blocked day plan
 
-When to use: in the morning, while you are parked. Never while driving.
+When to use: any morning after Day 1. While you are parked. Never while driving.
 
 ```
 I'm a REALTOR®. Here is my messy list for today. SAMPLE DATA ONLY.
@@ -146,7 +148,7 @@ Do not invent sale prices or school facts. Say "verify" where I need to check.
 
 ### Buyer consultation prep
 
-When to use: before a first meeting. Search stays in MLS.
+When to use: Day 27, or before a first meeting. Search stays in MLS.
 
 ```
 Build me a one-page prep sheet for a first buyer consultation with a sample couple relocating to Midland. SAMPLE DATA ONLY.
@@ -156,7 +158,7 @@ Include questions I should ask, a showing-day checklist, and what I must verify 
 
 ### Summarize a long note
 
-When to use: a long email, condo notes, or call notes. Check it against the original.
+When to use: Day 27, or for a long email or call notes. Check it against the original.
 
 ```
 Summarize the notes below. SAMPLE DATA ONLY. Give me key points, risks, and questions to ask. Tell me what to verify against the original. Do not add facts that are not in the notes.
@@ -176,7 +178,7 @@ Explain, in plain language a buyer can follow, what a home inspection condition 
 
 ## Deal card
 
-When to use: when you want one person to call next. Attach Deal-Card-Kit.md from this folder. You sign in on the Follow Up Boss website yourself. The AI never gets your password. It never texts or emails anyone.
+When to use: Days 16 to 19. Attach Deal-Card-Kit.md from this folder. You sign in yourself. The AI never gets your password. It never texts or emails anyone.
 
 ```
 Read the Deal Card kit I attached. Open the Follow Up Boss website in the browser and stop at the sign-in page. I will sign in. You never need my password. Then show me one person to call. One card only. Draft only.
@@ -186,7 +188,7 @@ Read the Deal Card kit I attached. Open the Follow Up Boss website in the browse
 
 ## Letter of Opinion
 
-When to use: after your Word template, your signature photo, and Letter-of-Opinion-Kit.md are in your Drive. Attach the kit. The opinion of value is yours. You check every name and every figure, and you send it.
+When to use: Days 13 to 15. Day 13 is setup. Day 14 is a past deal. Day 15 is a live request. Attach Letter-of-Opinion-Kit.md. The opinion of value is yours. You check every name and every figure, and you send it.
 
 ```
 I'm a REALTOR®. Draft a Letter of Opinion and the client email. Use my template, my signature photo, and the Letter of Opinion kit. SAMPLE DATA ONLY. Do not invent a comp, a price, or a postal code.
@@ -209,7 +211,7 @@ One page. Draft only. I will check every figure and send it myself.
 
 ## Voice memo and appointment recap
 
-When to use: after an appointment, with a voice memo or a spoken recap. You do not need a recorder. Let people know you are recording.
+When to use: Day 11, after an appointment. A voice memo or a spoken recap. Let people know you are recording.
 
 ```
 Here is my voice memo, or my spoken recap, from a call with [client].
@@ -226,7 +228,7 @@ No em dashes. Flag anything I need to verify. Do not invent details.
 
 ## Brand guide
 
-When to use: when you share 10 social media posts you like the style of, plus fonts, colour palettes, designs, and your logo. Only share the one photo folder, not your whole Drive.
+When to use: Days 20 to 23. Day 20 is one photo folder. Day 21 is 10 posts, fonts, colour palettes, designs, and your logo. Day 22 drafts the guide. Day 23 you edit it and save one file. Share only that folder, not your whole Drive.
 
 ```
 Here are 10 social media posts I like the style of, so you understand my taste, plus fonts, colour palettes, and designs I like, and my logo. My photos, headshots, and listing photos are in one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Use only that folder, not my whole Drive.
@@ -238,7 +240,7 @@ Build me a one-page brand guide: colours with hex codes, a heading and body font
 
 ## Caption in your style
 
-When to use: when you have a photo and a brand guide. You review it, and you post it.
+When to use: Days 24, 25, and 26. You review it, and you post it. Day 26 is the one you schedule.
 
 ```
 Follow my brand guide. Here is a photo of my local spot.
@@ -257,7 +259,7 @@ I will review it and post it myself.
 
 ### End of each chat
 
-When to use: before you close a chat. Save the list to your house rules file, or to an SOP doc in the one Drive folder, so the next chat starts smarter. An SOP is a step-by-step.
+When to use: Day 12, and at the end of every chat after that. Save the list to your rules file, or to an SOP doc in the one Drive folder. An SOP is a step-by-step.
 
 ```
 Before we finish, list any new SOPs and decisions from this chat in short bullet points so I can save them to my rules file.
@@ -265,7 +267,7 @@ Before we finish, list any new SOPs and decisions from this chat in short bullet
 
 ### Read my rules back
 
-When to use: at the start of a fresh chat, or when a thread gets muddled.
+When to use: Day 12, and at the start of a fresh chat, or when a thread gets muddled.
 
 ```
 Read my house rules back to me in short bullets before we start. If anything is missing, ask. Do not invent a rule I did not give you.

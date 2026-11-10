@@ -273,40 +273,42 @@ Connecting accounts, saving a standing process, and adding more assistants are l
 
 ## Your next 30 days
 
-Week 1 is 30 minutes every day. Days 8 to 30 are 30 minutes every other day, about 12 sessions. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
+Do one day at a time. If you don't finish a day's task, don't move on until it's done. If 30 days takes you 90, that's okay.
 
-No recorder to buy. The call notes in week 1 use a voice memo.
+One focus a day. About 30 minutes. Each day builds on the last. The same list is on the playbook download page, where you can tick items off and this phone remembers them.
 
-### Week 1, 30 minutes a day
+1. Pick one AI. Install it on your phone and computer. Use it on one real email.
+2. Brainstorm with it: three tasks you hate that it could help with in the next 30 days.
+3. Write your about-me note: market, brokerage, who you serve, sign-off, contact details.
+4. Write your house rules: tone, spelling, short paragraphs, what it never does.
+5. Set your approval line: what it can do alone, what always needs your eyes. Client-facing always gets your review.
+6. Talk instead of type: do one full task by voice.
+7. Save three reusable prompts: email reply, text reply, appointment summary.
+8. Save examples of good: one or two finished pieces you loved for each repeat task.
+9. Text templates: showing follow-up, offer update, check-in.
+10. Inbox cleanup: your 5 oldest unanswered emails, drafted for you to review and send.
+11. Voice memo recap: after an appointment, turn a voice memo into a CRM note, tasks and a follow-up email.
+12. At the end of each chat, save SOPs and decisions to your rules file. Read your rules back. Keep doing this after every chat.
+13. Letter of Opinion setup: Word template and signature photo into Drive, load the kit.
+14. Practice the letter on a past deal. Fix what is off.
+15. Real letter on a live request. Time it against your old way.
+16. Deal card setup with the kit. Sign in yourself.
+17. Deal card on 10 leads. Make the calls.
+18. Paste the notes back in. Run the next 10.
+19. Make the deal card a habit: three times a week from here on.
+20. Create one Drive folder for your photos: headshots, listing photos, local spots, logo. Share only that folder.
+21. Share with your AI: 10 social media posts you like the style of, plus fonts, colour palettes, designs and your logo.
+22. Have it draft your one-page brand guide.
+23. Edit the guide until it sounds like you. Save it as one file.
+24. First post: a local food or community spot, using your guide.
+25. Second post.
+26. Third post. Schedule it.
+27. Listing description or meeting prep sheet from your notes.
+28. Turn your most repeated task into a saved kit: a prompt plus the steps.
+29. Clean up your rules file: remove conflicts, one source of truth.
+30. Review the month: what saved time, what is next for Step 2.
 
-Day 1. Pick one AI and install it on your phone and computer. Answer one real email with it. Ask it to help you pick three tasks you hate doing that it could help with over the next 30 days.
-
-Day 2. Write your house rules: tone, sign-off, short paragraphs, never send without your review. Write an about-me note: your market, brokerage, who you serve, sign-off, and contact details, so your AI always has the basics. Set your approval line: decide what AI can do on its own and what always needs your eyes. Anything client-facing gets your review first.
-
-Day 3. Save 3 prompts you will reuse: an email reply, a text reply, and an appointment summary. Create short reusable texts for showing follow-ups, offer updates, and check-ins. Save examples of good: one or two finished pieces you loved for each repeat task. Examples beat instructions.
-
-Day 4. Talk instead of type: use voice dictation for one full task and notice how much faster it is. After an appointment, record a voice memo and turn it into a CRM note, tasks, and a follow-up email.
-
-Day 5. Put your Word template and signature photo in Drive and load the Letter of Opinion kit.
-
-Day 6. Practice the Letter of Opinion on a past deal. Fix what is off.
-
-Day 7. Set up the deal card. Run it on 10 leads. Make the calls.
-
-At the end of each chat, save your SOPs and the decisions you made. An SOP is a step-by-step. Save it to your house rules file, or to an SOP doc in the one Drive folder you share, so the next chat starts smarter.
-
-### Days 8 to 30, 30 minutes every other day
-
-- Use the Letter of Opinion on a real request and time it against your old way.
-- Run the deal card three times a week and paste the notes back in.
-- Share 10 social media posts you like the style of, so it understands your taste, alongside fonts, colour palettes, designs, and your logo.
-- Upload your photos, headshots, and listing photos to one Drive folder: Headshots, Listing Photos, Local Spots, and Logo. Only share that one folder with your AI, not your whole Drive.
-- Have your AI draft a one-page brand guide. Edit it until it sounds like you. Save it as one file.
-- Make your first local food or community post with the guide. Batch two more posts and schedule them.
-- Inbox cleanup: paste in your 5 oldest unanswered emails and have your AI draft replies for you to review and send yourself.
-- Day 30: review what saved time, update your rules, and pick what is next for Step 2.
-
-By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide and three posts out.
+By day 30: a rules file, saved prompts, the Letter of Opinion working, a deal card habit, a brand guide, three posts out, and one saved kit.
 
 ### What the team could set up together
 
